@@ -14,7 +14,7 @@ alias irctest=irctest
 
 # Tmux session handling
 alias t-create="tmux new -s local"
-alias t-resume="tmux a #local"
+alias t-attach="tmux a #local"
 alias t-kill="tmux kill-session -t local"
 
 # Prompt
