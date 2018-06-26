@@ -1,4 +1,4 @@
-# ~/.bash_profile
+#~/.bash_profile
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
 # Locacles
@@ -9,8 +9,8 @@ export LANG=en_US.UTF-8
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
-alias transfer=transfer
 alias irctest=irctest
+alias screenfetch="screenfetch -E"
 
 # Tmux session handling
 alias t-create="tmux new -s local"
