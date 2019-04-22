@@ -1,0 +1,16 @@
+htop/ranger/tmux/git/vim
+audacity
+chrome/chromium/firefox
+discord
+dropbox
+fragments? (slow startup) / transmission-gtk
+gnome mpv? / vlc
+pinta/krita/gimp
+lollypop/gnome-music
+kid3 - music tagger
+hexchat/weechat or polari for nice gtk
+steam - cs:go
+lutris - ovw, simpsons hnr
+libreoffice
+tilix/terminator/urxvt
+vscode/subl3/atom
