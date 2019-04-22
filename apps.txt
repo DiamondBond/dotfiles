@@ -3,8 +3,8 @@ audacity
 chrome/chromium/firefox
 discord
 dropbox
-fragments? (slow startup) / transmission-gtk
-gnome mpv? / vlc
+fragments? (slow startup) / transmission-gtk(flatpak's & dpkg/main pkg manager)
+gnome mpv (preffered) / vlc (fallback)
 pinta/krita/gimp
 lollypop/gnome-music
 kid3 - music tagger
