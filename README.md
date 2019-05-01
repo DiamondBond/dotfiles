@@ -1,7 +1,7 @@
 # dotfiles
 
-rx580 freesync;
-
+## amd rx580 freesync configuration
+------
 r.conf --> /etc/X11/xorg.conf.d/r.conf
 
 sudo reboot
