@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ##### PLUGINS #####################################
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions git dnf)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions colorize cp git dnf)
 
 ##### BINDS #######################################
 
