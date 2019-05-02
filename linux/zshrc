@@ -1,0 +1,61 @@
+##### .zshrc / Diamond ###########################
+
+##### OHMYZSH #####################################
+
+# PATH
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="terminalpartied"
+source $ZSH/oh-my-zsh.sh
+
+##### MISC ########################################
+
+CASE_SENSITIVE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+
+##### PLUGINS #####################################
+
+plugins=(git fedora)
+
+##### BINDS #######################################
+
+# CLIMB BIND
+bindkey -s "^k" '^Ucd ..^M'
+# DIR BIND
+bindkey -s "^l" '^Ule^M'
+
+##### ALIASES #####################################
+
+# SPACED DIR
+alias le="echo ''; ls; echo ''"
+# RELOAD XRESOURCES
+alias xr="xrdb -merge ~/.Xresources"
+# TIME
+alias now="echo -e $(date +'%I:%M')"
+
+##### PATH ######################################## 
+
+# BIN
+export PATH=$HOME/.bin/:$PATH
+# PYTHON
+#export PATH=/usr/local/anaconda/bin/:$PATH
+# JAVA
+#export PATH=/usr/lib/jvm/java-10-jdk/bin/:$PATH
+
+##### OTHER #######################################
+
+if [[ "$TERM" == "dumb" ]]
+then
+	unsetopt zle
+	unsetopt prompt_cr
+	unsetopt prompt_subst
+	unfunction precmd
+	unfunction preexec
+	PS1='$ '
+fi
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+	export EDITOR='vim'
+fi
+
