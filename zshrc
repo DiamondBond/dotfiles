@@ -8,6 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="avit"
 #ZSH_THEME="lambda"
 ZSH_THEME="minimal"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='nerdfont-complete'
 
 ##### MISC ########################################
 
