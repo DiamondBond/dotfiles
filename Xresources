@@ -1,4 +1,4 @@
-!!!!! .Xresources / Diamond !!!!!
+!!!!! Diamond's ~/.Xresources !!!!!
 
 ! MOLOKAI
 *foreground:   #f8f8f8
@@ -20,7 +20,7 @@
 *color7:       #f8f8f8
 *color15:      #ffffff
 
-!!!!! URXVT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!! URXVT !!!!!
 
 URxvt*termName:         rxvt-unicode-256color
 
@@ -42,3 +42,14 @@ URxvt*internalBorder:   0
 URxvt.perl-ext-common:  default,matcher
 URxvt.url-launcher:     /usr/bin/xdg-open
 URxvt.matcher.button:   1
+
+!!!!! FONTS !!!!!
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
