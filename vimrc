@@ -87,3 +87,11 @@ function! HasPaste()
     endif
     return ''
 endfunction
+
+" Call the .vimrc.plug file - remember to run :PlugInstall if firstime
+if filereadable(expand("~/.vimrc.plug"))
+    source ~/.vimrc.plug
+endif
+
+" NERDTreeToggle
+map <C-n> :NERDTreeToggle<CR>

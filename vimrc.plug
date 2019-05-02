@@ -1,0 +1,9 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/goyo.vim'
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+call plug#end()
