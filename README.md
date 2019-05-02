@@ -1,2 +1,2 @@
 # dotfiles
-scruffy ~/. files
+my scruffy ~/. files
