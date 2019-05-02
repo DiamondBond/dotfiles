@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ##### PLUGINS #####################################
 
-plugins=(git fedora)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions git dnf)
 
 ##### BINDS #######################################
 
@@ -32,6 +32,8 @@ alias le="echo ''; ls; echo ''"
 alias xr="xrdb -merge ~/.Xresources"
 # TIME
 alias now="echo -e $(date +'%I:%M')"
+# YOUTUBE-DL
+alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
 
 ##### PATH ######################################## 
 
