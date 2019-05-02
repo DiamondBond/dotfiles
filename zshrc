@@ -5,7 +5,6 @@
 # PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="terminalpartied"
-source $ZSH/oh-my-zsh.sh
 
 ##### MISC ########################################
 
@@ -15,7 +14,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ##### PLUGINS #####################################
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions colorize cp git dnf)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions colorize cp git dnf colored-man-pages emoji-clock rand-quote)
 
 ##### BINDS #######################################
 
@@ -43,6 +42,8 @@ export PATH=$HOME/.bin/:$PATH
 #export PATH=/usr/local/anaconda/bin/:$PATH
 # JAVA
 #export PATH=/usr/lib/jvm/java-10-jdk/bin/:$PATH
+# ZSH
+source $ZSH/oh-my-zsh.sh
 
 ##### OTHER #######################################
 
