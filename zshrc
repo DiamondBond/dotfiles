@@ -1,4 +1,4 @@
-##### .zshrc / Diamond ###########################
+##### .zshrc / Diamond ############################
 
 ##### OHMYZSH #####################################
 
@@ -6,8 +6,8 @@
 export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="terminalpartied"
 #ZSH_THEME="avit"
-#ZSH_THEME="lambda"
-ZSH_THEME="minimal"
+ZSH_THEME="lambda"
+#ZSH_THEME="minimal"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 #POWERLEVEL9K_MODE='nerdfont-complete'
 #POWERLEVEL9K_MODE='nerdfont-complete'
@@ -20,7 +20,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ##### PLUGINS #####################################
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions colorize cp git dnf colored-man-pages emoji-clock rand-quote)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions colorize cp git colored-man-pages emoji-clock rand-quote)
 
 ##### BINDS #######################################
 
