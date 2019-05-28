@@ -67,3 +67,7 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'
 fi
+
+# git
+export VISUAL=vim
+export EDITOR="$VISUAL"
