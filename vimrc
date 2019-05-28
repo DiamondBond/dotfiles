@@ -15,12 +15,12 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
+"try
+"    colorscheme desert
+"catch
+"endtry
 
-set background=dark
+"set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -51,7 +51,7 @@ set showcmd
 set showmatch
 set matchpairs+=<:>
 set hlsearch
-set smartcase
+"set smartcase
 set ignorecase
 set incsearch
 set autoindent
@@ -66,7 +66,7 @@ set wrap
 set undolevels=1000
 set backspace=indent,eol,start
 set hidden
-set mouse=a
+" set mouse=a
 set ttyfast
 "set foldcolumn=1
 
@@ -75,10 +75,10 @@ set ttyfast
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
 
 " Always show the status line
-set laststatus=2
+"set laststatus=2
 
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -95,3 +95,28 @@ endif
 
 " NERDTreeToggle
 map <C-n> :NERDTreeToggle<CR>
+
+" Theme
+colorscheme default
+set laststatus=2
+hi StatusLine ctermfg=0 ctermbg=1 cterm=NONE
+"hi StatusLineNC ctermfg=blue ctermbg=red cterm=NONE
+hi User1 ctermfg=0 ctermbg=2
+hi User2 ctermfg=NONE ctermbg=NONE
+hi User3 ctermfg=0 ctermbg=2
+hi User4 ctermfg=0 ctermbg=3
+set statusline=\                    "
+set statusline+=%t                  "
+set statusline+=\ %1*\              "
+set statusline+=%y                  "
+set statusline+=\ %2*\              "
+set statusline+=%=                  "
+set statusline+=\ %3*\              "
+set statusline+=line                "
+set statusline+=\                   "
+set statusline+=%l                  "
+set statusline+=\ %4*\              "
+set statusline+=of                  "
+set statusline+=\                   "
+set statusline+=%L                  "
+set statusline+=\                   "
