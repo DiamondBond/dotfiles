@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "2" > /sys/class/drm/card0/device/hwmon/hwmon3/pwm1_enable
