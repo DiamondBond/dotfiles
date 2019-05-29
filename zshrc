@@ -39,6 +39,8 @@ alias xr="xrdb -merge ~/.Xresources"
 alias now="echo -e $(date +'%I:%M')"
 # YOUTUBE-DL
 alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+# MC
+alias mc="java -jar ~/.minecraft/mc.jar"
 
 ##### PATH ######################################## 
 
@@ -50,6 +52,9 @@ export PATH=$HOME/.bin/:$PATH
 #export PATH=/usr/lib/jvm/java-10-jdk/bin/:$PATH
 # ZSH
 source $ZSH/oh-my-zsh.sh
+# git
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 ##### OTHER #######################################
 
@@ -67,7 +72,3 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'
 fi
-
-# git
-export VISUAL=vim
-export EDITOR="$VISUAL"
