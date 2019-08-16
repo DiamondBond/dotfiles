@@ -1,0 +1,41 @@
+background yes
+use_xft no
+xftfont Hack:size 8
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type override
+own_window_argb_visual no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 150 150
+maximum_width 200
+draw_shades no
+draw_outline no
+draw_borders yes
+draw_graph_borders no
+default_color 656667
+default_shade_color 000000
+default_outline_color 828282
+alignment top_right
+gap_x 20
+gap_y 44
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+
+TEXT
+${hr}
+Host:$alignr$nodename
+Kernel:$alignr$kernel
+Uptime:$alignr$uptime
+CPU1:${alignr}${cpubar cpu1 8,60}
+CPU2:${alignr}${cpubar cpu2 8,60}
+Temp:${alignr}${execi 10 sensors | grep ^temp1 | tail -n 1 |awk '{print $2}'}
+RAM: $memperc% ${alignr}${membar 8,60}
+Disk usage:$alignr${fs_bar 8,60}
+Disk I/O:$alignr$diskio
+Batt:${alignr}$battery_time
