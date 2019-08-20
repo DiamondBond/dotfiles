@@ -1,0 +1,2 @@
+/set weechat.look.buffer_time_format ""
+
