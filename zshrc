@@ -42,6 +42,17 @@ alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+best
 # MC
 alias mc="java -jar ~/.minecraft/mc.jar"
 
+# Misc
+alias ll='ls -l'
+alias perf='sudo cpupower frequency-set -g performance && clear && cpupower frequency-info'
+alias psave='sudo cpupower frequency-set -g powersave && clear && cpupower frequency-info'
+alias cpuinfo='cpupower frequency-info'
+alias weather="curl -s \"https://wttr.in/colombo?q&n&p\" | head -n -3"
+alias pls="sudo"
+
+# Star Wars ASCII
+alias starwars="telnet towel.blinkenlights.nl"
+
 ##### PATH ######################################## 
 
 # BIN
