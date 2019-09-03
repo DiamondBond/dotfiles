@@ -49,6 +49,10 @@ alias psave='sudo cpupower frequency-set -g powersave && clear && cpupower frequ
 alias cpuinfo='cpupower frequency-info'
 alias weather="curl -s \"https://wttr.in/colombo?q&n&p\" | head -n -3"
 alias pls="sudo"
+alias please="sudo"
+alias playing="mpc current"
+alias skip="mpc next"
+alias prev="mpc prev"
 
 # Star Wars ASCII
 alias starwars="telnet towel.blinkenlights.nl"
@@ -82,4 +86,9 @@ fi
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'
+fi
+
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte-2.91.sh
 fi
