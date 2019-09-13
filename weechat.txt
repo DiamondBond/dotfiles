@@ -1,2 +1,2 @@
-/set weechat.look.buffer_time_format ""
-
+#weechat quickstart guide
+/set weechat.look.buffer_time_format "~ "
