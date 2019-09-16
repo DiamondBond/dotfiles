@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "1" > /sys/class/drm/card0/device/hwmon/hwmon3/pwm1_enable
-echo "255" > /sys/class/drm/card0/device/hwmon/hwmon3/pwm1
