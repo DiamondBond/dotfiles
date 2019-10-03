@@ -1,0 +1,7 @@
+sudo apt install build-essential curl vim git weechat weechat-scripts hexchat mpv mpd ncmpcpp
+nomacs curl screenfetch htop ranger tmux neofetch scrot atool ffmpegthumbnailer 
+xsel mediainfo exiftool xsel w3m-el gimp sl rar unrar markdown
+
+# nano /etc/apt/sources.list
+# nano /etc/default/grub
+# sudo vim /usr/share/lightdm/lightdm.conf.d/01_debian.conf
