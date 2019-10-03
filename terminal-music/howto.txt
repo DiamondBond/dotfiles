@@ -1,0 +1,18 @@
+# ncmpcpp & mpd
+sudo apt install ncmpcpp mpd mpc
+
+sudo systemctl disable mpd.service
+sudo systemctl disable mpd.socket
+
+mkdir ~/.mpd
+# copy mpd.conf
+
+# create files
+cd ~/.mpd
+touch mpd.db
+touch mpd.log
+touch mpd.pid
+touch mpdstate
+
+mkdir ~/.ncmpcpp
+# copy ncmpcpp conf
