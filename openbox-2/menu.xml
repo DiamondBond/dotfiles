@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="term">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal -e ncmpcpp</execute>
+			</action>
+		</item>
+		<item label="net">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="mpv">
+			<action name="Execute">
+				<execute>mpv --player-operation-mode=pseudo-gui --geometry=640x360</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<separator/>
+		<menu execute="/usr/bin/obamenu" id="applications-menu" label="apps"/>
+		<menu id="root-menu-35206" label="conf">
+			<item label="obconf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="obmenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="obkey">
+				<action name="Execute">
+					<execute>obkey</execute>
+				</action>
+			</item>
+			<item label="autostart">
+				<action name="Execute">
+					<execute>mousepad ~/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="theme">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="display">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="reload">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="restart">
+				<action name="Restart"/>
+			</item>
+			<item label="exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
