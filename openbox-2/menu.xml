@@ -26,8 +26,13 @@
 				<execute>mpv --player-operation-mode=pseudo-gui --geometry=640x360</execute>
 			</action>
 		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
 		<separator/>
+		<!-- This requires the presence of the 'openbox-menu' package to work -->
+		<item label="run">
+			<action name="Execute">
+				<execute>dmenu_run</execute>
+			</action>
+		</item>
 		<menu execute="/usr/bin/obamenu" id="applications-menu" label="apps"/>
 		<menu id="root-menu-35206" label="conf">
 			<item label="obconf">
@@ -59,6 +64,16 @@
 			<item label="display">
 				<action name="Execute">
 					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item label="144hz">
+				<action name="Execute">
+					<execute>/home/diamond/bin/hrfr</execute>
+				</action>
+			</item>
+			<item label="d_run">
+				<action name="Execute">
+					<execute>dmenu_run</execute>
 				</action>
 			</item>
 			<separator/>
