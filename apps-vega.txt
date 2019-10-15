@@ -1,0 +1,12 @@
+thunar
+obconf
+obkey
+obmenu
+openbox
+dmenu
+xfce4-appfinder
+xfce4-terminal
+lxappearance
+lxrandr
+xfce4-power-manager
+tint2
