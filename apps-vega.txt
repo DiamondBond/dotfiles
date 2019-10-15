@@ -10,3 +10,5 @@ lxappearance
 lxrandr
 xfce4-power-manager
 tint2
+pcsx2
+mupen64
