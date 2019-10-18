@@ -97,7 +97,7 @@ endif
 map <C-n> :NERDTreeToggle<CR>
 
 " Theme
-colorscheme default
+"colorscheme default
 set laststatus=2
 hi StatusLine ctermfg=0 ctermbg=1 cterm=NONE
 "hi StatusLineNC ctermfg=blue ctermbg=red cterm=NONE
