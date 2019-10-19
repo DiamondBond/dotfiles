@@ -1,0 +1,1 @@
+sudo apt install mate-media-common mate-media mate-desktop-common
