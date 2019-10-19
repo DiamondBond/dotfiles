@@ -18,7 +18,7 @@
 		</item>
 		<item label="music">
 			<action name="Execute">
-				<execute>ncmpcpp</execute>
+				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
 			</action>
 		</item>
 		<separator/>
@@ -50,17 +50,17 @@
 			<menu id="obConfig" label="openbox">
 				<item label="Edit menu.xml">
 					<action name="Execute">
-						<execute>geany ~/.config/openbox/menu.xml</execute>
+						<execute>mousepad ~/.config/openbox/menu.xml</execute>
 					</action>
 				</item>
 				<item label="Edit rc.xml">
 					<action name="Execute">
-						<execute>geany ~/.config/openbox/rc.xml</execute>
+						<execute>mousepad ~/.config/openbox/rc.xml</execute>
 					</action>
 				</item>
 				<item label="Edit autostart">
 					<action name="Execute">
-						<execute>geany ~/.config/openbox/autostart</execute>
+						<execute>mousepad ~/.config/openbox/autostart</execute>
 					</action>
 				</item>
 				<separator/>
@@ -95,7 +95,7 @@
 			<menu id="tint2config" label="tint2">
 				<item label="Edit config file">
 					<action name="Execute">
-						<execute>geany ~/.config/tint2/tint2rc</execute>
+						<execute>mousepad ~/.config/tint2/tint2rc</execute>
 					</action>
 				</item>
 				<item label="Restart tint2">
