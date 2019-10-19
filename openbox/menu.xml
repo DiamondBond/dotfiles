@@ -28,11 +28,6 @@
 					<execute>mupen64plus-qt</execute>
 				</action>
 			</item>
-			<item label="ps2">
-				<action name="Execute">
-					<execute>flatpak run net.pcsx2.PCSX2</execute>
-				</action>
-			</item>
 			<item label="gba">
 				<action name="Execute">
 					<execute>mgba-qt</execute>
@@ -43,64 +38,70 @@
 					<execute>zsnes</execute>
 				</action>
 			</item>
+			<item label="undertale">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
 		</menu>
 		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
 		<menu id="settings" label="other">
-			<menu execute="cbpp-compositor" id="CompositingPipeMenu" label="compositor"/>
 			<menu id="obConfig" label="openbox">
-				<item label="Edit menu.xml">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/menu.xml</execute>
-					</action>
-				</item>
-				<item label="Edit rc.xml">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/rc.xml</execute>
-					</action>
-				</item>
-				<item label="Edit autostart">
+				<item label="autostart">
 					<action name="Execute">
 						<execute>mousepad ~/.config/openbox/autostart</execute>
 					</action>
 				</item>
-				<separator/>
-				<item label="GUI Menu Editor">
-					<action name="Execute">
-						<execute>obmenu</execute>
-					</action>
-				</item>
-				<item label="GUI Key Editor">
-					<action name="Execute">
-						<execute>obkey</execute>
-					</action>
-				</item>
-				<item label="GUI Applications Settings Editor">
-					<action name="Execute">
-						<execute>obapps</execute>
-					</action>
-				</item>
-				<item label="GUI Config Tool">
+				<item label="obconf">
 					<action name="Execute">
 						<execute>obconf</execute>
 					</action>
 				</item>
+				<item label="obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="obkey">
+					<action name="Execute">
+						<execute>obkey</execute>
+					</action>
+				</item>
+				<item label="lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
 				<separator/>
-				<item label="Reconfigure">
+				<item label="reconf">
 					<action name="Reconfigure"/>
 				</item>
-				<item label="Restart">
+				<item label="restart">
 					<action name="Restart"/>
+				</item>
+				<item label="exit">
+					<action name="Exit"/>
 				</item>
 			</menu>
 			<menu id="tint2config" label="tint2">
-				<item label="Edit config file">
+				<item label="edit config">
 					<action name="Execute">
 						<execute>mousepad ~/.config/tint2/tint2rc</execute>
 					</action>
 				</item>
-				<item label="Restart tint2">
+				<item label="kill tint2">
 					<action name="Execute">
-						<execute>tint2restart</execute>
+						<execute>killall tint2</execute>
 					</action>
 				</item>
 			</menu>
@@ -115,41 +116,8 @@
 						<execute>arandr</execute>
 					</action>
 				</item>
-				<separator/>
-				<item label="144hz">
-					<action name="Execute">
-						<execute>/home/diamond/bin/144hz</execute>
-					</action>
-				</item>
-				<item label="120hz">
-					<action name="Execute">
-						<execute>/home/diamond/bin/120hz</execute>
-					</action>
-				</item>
-				<item label="75hz">
-					<action name="Execute">
-						<execute>/home/diamond/bin/75hz</execute>
-					</action>
-				</item>
-				<item label="60hz">
-					<action name="Execute">
-						<execute>/home/diamond/bin/60hz</execute>
-					</action>
-				</item>
-				<item label="50hz">
-					<action name="Execute">
-						<execute>/home/diamond/bin/50hz</execute>
-					</action>
-				</item>
 			</menu>
-			<menu id="Notifications" label="notifications">
-				<item label="settings">
-					<action name="Execute">
-						<execute>xfce4-notifyd-config</execute>
-					</action>
-				</item>
-			</menu>
-			<menu execute="cbpp-x-www-browser-pipemenu" id="pipe-981238" label="browsers"/>
+			<separator/>
 			<menu id="settings-99037" label="governor">
 				<item label="performance">
 					<action name="Execute">
@@ -162,19 +130,9 @@
 					</action>
 				</item>
 			</menu>
-			<item label="screenshot">
+			<item label="nomacs">
 				<action name="Execute">
-					<execute>scrot</execute>
-				</action>
-			</item>
-			<item label="edit defaults">
-				<action name="Execute">
-					<execute>x-terminal-emulator -e sudo update-alternatives --all</execute>
-				</action>
-			</item>
-			<item label="UI settings">
-				<action name="Execute">
-					<execute>lxappearance</execute>
+					<execute>nomacs</execute>
 				</action>
 			</item>
 			<item label="xosview">
@@ -182,41 +140,17 @@
 					<execute>xosview -battery</execute>
 				</action>
 			</item>
-			<item label="power">
+			<item label="screenshot">
 				<action name="Execute">
-					<execute>xfce4-power-manager-settings</execute>
+					<execute>scrot</execute>
 				</action>
-			</item>
-			<item label="screensaver">
-				<action name="Execute">
-					<execute>xscreensaver-demo</execute>
-				</action>
-			</item>
-			<item label="wallpaper">
-				<action name="Execute">
-					<execute>nitrogen ~/images/wallpapers/</execute>
-				</action>
-			</item>
-			<separator/>
-			<item label="logout">
-				<action name="Execute">
-					<execute>cbpp-exit</execute>
-				</action>
-			</item>
-			<item label="restart">
-				<action name="Restart"/>
-			</item>
-			<item label="reconfig">
-				<action name="Reconfigure"/>
-			</item>
-			<item label="lock">
-				<action name="Execute">
-					<execute>xscreensaver-command -lock</execute>
-				</action>
-			</item>
-			<item label="exit">
-				<action name="Exit"/>
 			</item>
 		</menu>
+		<separator/>
+		<item label="lock">
+			<action name="Execute">
+				<execute>xscreensaver-command -lock</execute>
+			</action>
+		</item>
 	</menu>
 </openbox_menu>

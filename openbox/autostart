@@ -29,7 +29,7 @@ hsetroot -solid "#9B9B9B" &
 ## 2. compositor - start
 ## 3. sleep - give compositor time to start
 ## 4. tint2 panel
-nitrogen --restore &
+#nitrogen --restore &
 #cbpp-compositor --start &
 tint2 &
 
@@ -58,6 +58,9 @@ xset r rate 250 25 &
 ## Turn on/off system beep
 xset b off &
 
+## KB Shortcuts for x220
+xbindkeys &
+
 ## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
 ## creates symlink in images to wallpaper folder only runs once. Safe to remove.
 ##~/.cbpp-user-setup &
@@ -70,4 +73,4 @@ xset b off &
 #conky -q &
 
 ## 144hz
-xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
+#xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
