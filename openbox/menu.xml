@@ -177,6 +177,11 @@
 					<execute>lxappearance</execute>
 				</action>
 			</item>
+			<item label="xosview">
+				<action name="Execute">
+					<execute>xosview -battery</execute>
+				</action>
+			</item>
 			<item label="power">
 				<action name="Execute">
 					<execute>xfce4-power-manager-settings</execute>

@@ -5,3 +5,5 @@ build-essential curl vim git weechat weechat-scripts hexchat mpv mpd ncmpcpp mpc
 # nano /etc/apt/sources.list
 # nano /etc/default/grub
 # sudo vim /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+
+xosview
