@@ -173,7 +173,7 @@ launcher_item_app = google-chrome.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M
+time1_format = %I:%M
 time2_format = 
 time1_font = Charcoal 10
 time1_timezone = 
