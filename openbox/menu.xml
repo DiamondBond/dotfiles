@@ -150,6 +150,18 @@
 				</item>
 			</menu>
 			<menu execute="cbpp-x-www-browser-pipemenu" id="pipe-981238" label="browsers"/>
+			<menu id="settings-99037" label="governor">
+				<item label="performance">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
+					</action>
+				</item>
+				<item label="powersave">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
+					</action>
+				</item>
+			</menu>
 			<item label="screenshot">
 				<action name="Execute">
 					<execute>scrot</execute>
