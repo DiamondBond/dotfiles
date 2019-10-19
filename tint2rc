@@ -52,12 +52,12 @@ border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #aa4400 100
-border_color = #aa7733 100
-background_color_hover = #cc7700 100
-border_color_hover = #aa7733 100
-background_color_pressed = #555555 4
-border_color_pressed = #aa7733 100
+background_color = #000000 100
+border_color = #000000 100
+background_color_hover = #000000 100
+border_color_hover = #000000 100
+background_color_pressed = #ffffff 4
+border_color_pressed = #000000 100
 
 # Background 5: Tooltip
 rounded = 1
