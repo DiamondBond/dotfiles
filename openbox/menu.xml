@@ -1,47 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="web">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
-			</action>
-		</item>
 		<item label="files">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="console">
+		<item label="term">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
-		<!-- This requires the presence of the 'openbox-menu' package to work -->
-		<menu id="/Debian"/>
-		<menu execute="/usr/bin/obamenu" id="applications-menu" label="apps"/>
-		<menu id="root-menu-353145" label="config">
-			<item label="settings">
+		<item label="net">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>ncmpcpp</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-93530" label="games">
+			<item label="n64">
 				<action name="Execute">
-					<execute>obconf</execute>
+					<execute>mupen64plus-qt</execute>
 				</action>
 			</item>
-			<item label="appearance">
+			<item label="ps2">
+				<action name="Execute">
+					<execute>flatpak run net.pcsx2.PCSX2</execute>
+				</action>
+			</item>
+			<item label="gba">
+				<action name="Execute">
+					<execute>mgba-qt</execute>
+				</action>
+			</item>
+			<item label="snes">
+				<action name="Execute">
+					<execute>zsnes</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
+		<menu id="settings" label="other">
+			<menu execute="cbpp-compositor" id="CompositingPipeMenu" label="compositor"/>
+			<menu id="obConfig" label="openbox">
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<execute>geany ~/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<execute>geany ~/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="Edit autostart">
+					<action name="Execute">
+						<execute>geany ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="GUI Menu Editor">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="GUI Key Editor">
+					<action name="Execute">
+						<execute>obkey</execute>
+					</action>
+				</item>
+				<item label="GUI Applications Settings Editor">
+					<action name="Execute">
+						<execute>obapps</execute>
+					</action>
+				</item>
+				<item label="GUI Config Tool">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu id="tint2config" label="tint2">
+				<item label="Edit config file">
+					<action name="Execute">
+						<execute>geany ~/.config/tint2/tint2rc</execute>
+					</action>
+				</item>
+				<item label="Restart tint2">
+					<action name="Execute">
+						<execute>tint2restart</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="DisplaySettings" label="display">
+				<item label="lxrandr">
+					<action name="Execute">
+						<execute>lxrandr</execute>
+					</action>
+				</item>
+				<item label="arandr">
+					<action name="Execute">
+						<execute>arandr</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="144hz">
+					<action name="Execute">
+						<execute>/home/diamond/bin/144hz</execute>
+					</action>
+				</item>
+				<item label="120hz">
+					<action name="Execute">
+						<execute>/home/diamond/bin/120hz</execute>
+					</action>
+				</item>
+				<item label="75hz">
+					<action name="Execute">
+						<execute>/home/diamond/bin/75hz</execute>
+					</action>
+				</item>
+				<item label="60hz">
+					<action name="Execute">
+						<execute>/home/diamond/bin/60hz</execute>
+					</action>
+				</item>
+				<item label="50hz">
+					<action name="Execute">
+						<execute>/home/diamond/bin/50hz</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="Notifications" label="notifications">
+				<item label="settings">
+					<action name="Execute">
+						<execute>xfce4-notifyd-config</execute>
+					</action>
+				</item>
+			</menu>
+			<menu execute="cbpp-x-www-browser-pipemenu" id="pipe-981238" label="browsers"/>
+			<item label="screenshot">
+				<action name="Execute">
+					<execute>scrot</execute>
+				</action>
+			</item>
+			<item label="edit defaults">
+				<action name="Execute">
+					<execute>x-terminal-emulator -e sudo update-alternatives --all</execute>
+				</action>
+			</item>
+			<item label="UI settings">
 				<action name="Execute">
 					<execute>lxappearance</execute>
 				</action>
 			</item>
-			<item label="menu">
+			<item label="power">
 				<action name="Execute">
-					<execute>obmenu</execute>
+					<execute>xfce4-power-manager-settings</execute>
 				</action>
 			</item>
-			<item label="reload">
-				<action name="Reconfigure"/>
+			<item label="screensaver">
+				<action name="Execute">
+					<execute>xscreensaver-demo</execute>
+				</action>
+			</item>
+			<item label="wallpaper">
+				<action name="Execute">
+					<execute>nitrogen ~/images/wallpapers/</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="logout">
+				<action name="Execute">
+					<execute>cbpp-exit</execute>
+				</action>
 			</item>
 			<item label="restart">
 				<action name="Restart"/>
 			</item>
-			<item label="leave">
+			<item label="reconfig">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="lock">
+				<action name="Execute">
+					<execute>xscreensaver-command -lock</execute>
+				</action>
+			</item>
+			<item label="exit">
 				<action name="Exit"/>
 			</item>
 		</menu>

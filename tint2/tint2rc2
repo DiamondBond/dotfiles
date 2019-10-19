@@ -1,0 +1,99 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+
+rounded = 0
+border_width = 2
+background_color = #F4F4F4 100
+border_color = #000000 100
+
+rounded = 0
+border_width = 2
+background_color = #000000 100
+border_color = #F4F4F4 100
+
+rounded = 0
+border_width = 2
+background_color = #9B9B9B 100
+border_color = #9B9B9B
+
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+panel_items = LTSC
+#panel_mode = single_monitor
+panel_position = top center
+panel_size = 100% 30
+panel_margin = 0 0
+panel_padding = 2 2 2 2
+font_shadow = 0
+panel_background_id = 3
+
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+task_icon = 0
+task_text = 1
+task_width = 150
+task_centered = 1
+task_margin = 15
+task_padding = 15
+#task_icon_size = 13
+task_font = Charcoal 9
+task_font_color = #000000
+task_active_font_color = #F4F4F4
+task_background_id = 1
+task_active_background_id = 2
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = single_monitor
+taskbar_padding = 0 0 5
+taskbar_background_id = 0
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %I:%M
+time2_format =
+time1_font = Charcoal 9
+time1_timezone =
+time2_timezone =
+time2_font =
+clock_font_color = #000000 100
+clock_padding = 2 2 2
+clock_background_id = 1
+clock_tooltip = 
+clock_tooltip_timezone = Asia/Colombo
+clock_lclick_command = gsimplecal
+clock_rclick_command = gsimplecal
+clock_mclick_command = gsimplecal
+clock_uwheel_command = gsimplecal
+clock_dwheel_command = gsimplecal
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = close
+mouse_right = iconify
+mouse_scroll_up = desktop_left
+mouse_scroll_down = desktop_right
+
+#---------------------------------------------
+# SYSTRAY
+#---------------------------------------------
+#systray_padding = 
+systray_background_id = 1
+systray_sort = ascending
+systray_icon_size = 20
+#systray_icon_asb = 120 3 63
+systray_monitor = 1
+systray_name_filter =

@@ -1,17 +1,73 @@
-#
-# These things are run when an Openbox X Session is started.
-# You may place a similar script in $HOME/.config/openbox/autostart
-# to run user-specific things.
-#
+## Openbox autostart.sh
+## ====================
+## When you login to your CrunchBang++ Openbox session, this autostart script
+## will be executed to set-up your environment and launch any applications
+## you want to run at startup.
+##
+## Note*: some programs, such as 'nm-applet' are run via XDG autostart.
+## Run '/usr/lib/openbox/openbox-xdg-autostart --list' to list any
+## XDG autostarted programs.
+##
+## More information about this can be found at:
+## http://openbox.org/wiki/Help:Autostart
+##
+## If you do something cool with your autostart script and you think others
+## could benefit from your hack, please consider sharing it at:
+## https://www.reddit.com/r/crunchbangplusplus
+##
+## Have fun & happy CrunchBangin'! :)
 
-# If you want to use GNOME config tools...
-#
-#if test -x /usr/lib/x86_64-linux-gnu/gnome-settings-daemon >/dev/null; then
-#  /usr/lib/x86_64-linux-gnu/gnome-settings-daemon &
-#elif which gnome-settings-daemon >/dev/null 2>&1; then
-#  gnome-settings-daemon &
-#fi
+## LX PolicyKit
+lxpolkit &
 
-# If you want to use XFCE config tools...
-#
-#xfce-mcs-manager &
+## Set root window colour
+hsetroot -solid "#9B9B9B" &
+#hsetroot -solid "#7C7C7C" &
+
+## Group start:
+## 1. nitrogen - restores wallpaper
+## 2. compositor - start
+## 3. sleep - give compositor time to start
+## 4. tint2 panel
+nitrogen --restore &
+#cbpp-compositor --start &
+tint2 &
+
+## Start nm-applet for systray
+nm-applet &
+
+## Volume keys daemon
+mate-volume-control-applet &
+
+## Enable power management
+xfce4-power-manager &
+
+## Start Thunar Daemon
+thunar --daemon &
+
+## Start xscreensaver
+xscreensaver -no-splash &
+
+## Start Clipboard manager
+#(sleep 3s && clipit) &
+
+## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
+## Adjust the values according to your preferances.
+xset r rate 250 25 &
+
+## Turn on/off system beep
+xset b off &
+
+## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
+## creates symlink in images to wallpaper folder only runs once. Safe to remove.
+##~/.cbpp-user-setup &
+
+## cbpp-welcome - post-installation script, will not run in a live session and
+## only runs once. Safe to remove.
+#(sleep 10s && cbpp-welcome --firstrun) &
+
+## Run the conky
+#conky -q &
+
+## 144hz
+xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
