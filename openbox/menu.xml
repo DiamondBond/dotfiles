@@ -146,11 +146,5 @@
 				</action>
 			</item>
 		</menu>
-		<separator/>
-		<item label="lock">
-			<action name="Execute">
-				<execute>xscreensaver-command -lock</execute>
-			</action>
-		</item>
 	</menu>
 </openbox_menu>

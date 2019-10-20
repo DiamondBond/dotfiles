@@ -53,7 +53,7 @@ xscreensaver -no-splash &
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
-xset r rate 250 25 &
+#xset r rate 250 25 &
 
 ## Turn on/off system beep
 xset b off &
