@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="files">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
 		<item label="term">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
 			</action>
 		</item>
 		<item label="net">
@@ -22,7 +22,7 @@
 			</action>
 		</item>
 		<separator/>
-		<menu id="root-menu-93530" label="games">
+		<menu id="root-menu-93530" label="fun">
 			<item label="n64">
 				<action name="Execute">
 					<execute>mupen64plus-qt</execute>
@@ -38,6 +38,12 @@
 					<execute>zsnes</execute>
 				</action>
 			</item>
+			<separator/>
+			<item label="dcss">
+				<action name="Execute">
+					<execute>crawl-tiles</execute>
+				</action>
+			</item>
 			<item label="undertale">
 				<action name="Execute">
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
@@ -48,15 +54,21 @@
 					<execute>/home/diamond/bin/cavestory</execute>
 				</action>
 			</item>
+			<separator/>
 			<item label="pinball">
 				<action name="Execute">
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
 				</action>
 			</item>
+			<item label="evolvotron">
+				<action name="Execute">
+					<execute>evolvotron</execute>
+				</action>
+			</item>
 		</menu>
 		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
-		<menu id="settings" label="other">
-			<menu id="obConfig" label="openbox">
+		<menu id="settings" label="misc">
+			<menu id="obConfig" label="wm">
 				<item label="autostart">
 					<action name="Execute">
 						<execute>mousepad ~/.config/openbox/autostart</execute>
@@ -89,36 +101,16 @@
 				<item label="restart">
 					<action name="Restart"/>
 				</item>
+				<item label="lock">
+					<action name="Execute">
+						<execute>xflock4</execute>
+					</action>
+				</item>
 				<item label="exit">
 					<action name="Exit"/>
 				</item>
 			</menu>
-			<menu id="tint2config" label="tint2">
-				<item label="edit config">
-					<action name="Execute">
-						<execute>mousepad ~/.config/tint2/tint2rc</execute>
-					</action>
-				</item>
-				<item label="kill tint2">
-					<action name="Execute">
-						<execute>killall tint2</execute>
-					</action>
-				</item>
-			</menu>
-			<menu id="DisplaySettings" label="display">
-				<item label="lxrandr">
-					<action name="Execute">
-						<execute>lxrandr</execute>
-					</action>
-				</item>
-				<item label="arandr">
-					<action name="Execute">
-						<execute>arandr</execute>
-					</action>
-				</item>
-			</menu>
-			<separator/>
-			<menu id="settings-99037" label="governor">
+			<menu id="settings-99037" label="cpu">
 				<item label="performance">
 					<action name="Execute">
 						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
@@ -129,7 +121,29 @@
 						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
 					</action>
 				</item>
+				<separator/>
+				<item label="freq-info">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;SysMon&quot; -e &quot;watch -n .1 cpupower frequency-info&quot;</execute>
+					</action>
+				</item>
 			</menu>
+			<separator/>
+			<item label="irc">
+				<action name="Execute">
+					<execute>hexchat</execute>
+				</action>
+			</item>
+			<item label="acme">
+				<action name="Execute">
+					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
+				</action>
+			</item>
+			<item label="nirvana">
+				<action name="Execute">
+					<execute>nedit-nc</execute>
+				</action>
+			</item>
 			<item label="nomacs">
 				<action name="Execute">
 					<execute>nomacs</execute>
@@ -140,17 +154,6 @@
 					<execute>xosview -battery</execute>
 				</action>
 			</item>
-			<item label="screenshot">
-				<action name="Execute">
-					<execute>scrot</execute>
-				</action>
-			</item>
 		</menu>
-		<separator/>
-		<item label="lock">
-			<action name="Execute">
-				<execute>xscreensaver-command -lock</execute>
-			</action>
-		</item>
 	</menu>
 </openbox_menu>
