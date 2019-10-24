@@ -40,6 +40,11 @@
 					</action>
 				</item>
 			</menu>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
 			<item label="cavestory">
 				<action name="Execute">
 					<execute>/home/diamond/bin/cavestory</execute>
@@ -53,16 +58,6 @@
 			<item label="minecraft">
 				<action name="Execute">
 					<execute>java -jar /home/diamond/games/mc.jar</execute>
-				</action>
-			</item>
-			<item label="pinball">
-				<action name="Execute">
-					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
-				</action>
-			</item>
-			<item label="steam">
-				<action name="Execute">
-					<execute>/usr/games/steam %U</execute>
 				</action>
 			</item>
 		</menu>
@@ -134,6 +129,16 @@
 				</item>
 			</menu>
 			<separator/>
+			<item label="acme">
+				<action name="Execute">
+					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
+				</action>
+			</item>
+			<item label="discord">
+				<action name="Execute">
+					<execute>/usr/share/discord/Discord</execute>
+				</action>
+			</item>
 			<item label="hexchat">
 				<action name="Execute">
 					<execute>hexchat</execute>
@@ -144,16 +149,24 @@
 					<execute>telegram-desktop</execute>
 				</action>
 			</item>
-			<item label="discord">
-				<action name="Execute">
-					<execute>/usr/share/discord/Discord</execute>
-				</action>
-			</item>
-			<item label="acme">
-				<action name="Execute">
-					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
-				</action>
-			</item>
+			<separator/>
+			<menu id="settings-46012" label="session">
+				<item label="suspend">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;zzz&quot; -e &quot;sudo systemctl suspend&quot;</execute>
+					</action>
+				</item>
+				<item label="shutdown">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;sudo poweroff&quot; --title &quot;zzz&quot;</execute>
+					</action>
+				</item>
+				<item label="reboot">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;sudo reboot&quot; --title &quot;zzz&quot;</execute>
+					</action>
+				</item>
+			</menu>
 		</menu>
 	</menu>
 </openbox_menu>
