@@ -119,8 +119,43 @@ PATH="$HOME/bin:$PATH"
 #export PS1="\w > "
 export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] \w > '
 
-# Git Editor
 # git config --global core.editor "vim"
 export GIT_EDITOR=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# plan9
+export BROWSER='firefox'
+PLAN9=/home/diamond/plan9 export PLAN9
+PATH=$PATH:$PLAN9/bin export PATH
+export DISPLAY=:0
+
+# Plumb files instead of starting new editor.
+#EDITOR=E
+#unset FCEDIT VISUAL
+
+# Get rid of backspace characters in Unix man output.
+PAGER=nobs
+MANPAGER=nobs
+
+# Default font for Plan 9 programs.
+font=$PLAN9/font/lucsans/unicode.10.font
+
+# Equivalent variables for rc(1).
+home=$HOME
+prompt=" $ "
+
+# if you want to use rc instead of your shell within acme, uncomment the following line
+# shell=rc
+
+user=$USER
+
+export \
+    BROWSER\
+    PLAN9\
+    font\
+    home\
+    prompt\
+    user\
+    PAGER\
+    MANPAGER
