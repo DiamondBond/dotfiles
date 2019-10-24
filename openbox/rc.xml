@@ -385,9 +385,9 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-g">
+    <keybind key="C-A-h">
       <action name="Execute">
-        <command>xfce4-terminal -e /home/diamond/bin/gotop --title &quot;System Monitor&quot;</command>
+        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
@@ -458,11 +458,11 @@
       </action>
     </keybind>
     <keybind key="A-F5">
-        <action name="Unmaximize"/>
-        <action name="MoveResizeTo">
-          <width>100%</width>
-          <height>100%</height>
-        </action>
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <width>100%</width>
+        <height>100%</height>
+      </action>
     </keybind>
     <keybind key="S-W-Up">
       <action name="MoveToEdgeNorth"/>

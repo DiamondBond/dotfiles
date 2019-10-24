@@ -1,4 +1,0 @@
-#default
-#hdparm -B 128 /dev/sda
-
-hdparm -B 255 /dev/sda

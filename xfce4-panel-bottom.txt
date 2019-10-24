@@ -1,1 +1,0 @@
-wmctrl -r :SELECT: -b add,below

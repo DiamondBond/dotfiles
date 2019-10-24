@@ -5,7 +5,7 @@ sudo systemctl disable mpd.service
 sudo systemctl disable mpd.socket
 
 mkdir ~/.mpd
-# copy mpd.conf
+cp mpd.conf ~/.mpd/mpd.conf
 
 # create files
 cd ~/.mpd
@@ -15,4 +15,4 @@ touch mpd.pid
 touch mpdstate
 
 mkdir ~/.ncmpcpp
-# copy ncmpcpp conf
+cp config ~/.ncmpcpp/config

@@ -23,25 +23,26 @@
 		</item>
 		<separator/>
 		<menu id="root-menu-93530" label="games">
-			<item label="n64">
+			<menu id="root-menu-93530-123156" label="emu">
+				<item label="n64">
+					<action name="Execute">
+						<execute>mupen64plus-qt</execute>
+					</action>
+				</item>
+				<item label="gba">
+					<action name="Execute">
+						<execute>mgba-qt</execute>
+					</action>
+				</item>
+				<item label="snes">
+					<action name="Execute">
+						<execute>zsnes</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="cavestory">
 				<action name="Execute">
-					<execute>mupen64plus-qt</execute>
-				</action>
-			</item>
-			<item label="gba">
-				<action name="Execute">
-					<execute>mgba-qt</execute>
-				</action>
-			</item>
-			<item label="snes">
-				<action name="Execute">
-					<execute>zsnes</execute>
-				</action>
-			</item>
-			<separator/>
-			<item label="dcss">
-				<action name="Execute">
-					<execute>crawl-tiles</execute>
+					<execute>/home/diamond/bin/cavestory</execute>
 				</action>
 			</item>
 			<item label="undertale">
@@ -49,25 +50,19 @@
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
 				</action>
 			</item>
-			<item label="cavestory">
+			<item label="minecraft">
 				<action name="Execute">
-					<execute>/home/diamond/bin/cavestory</execute>
+					<execute>java -jar /home/diamond/games/mc.jar</execute>
 				</action>
 			</item>
-			<item label="runescape">
-				<action name="Execute">
-					<execute>/home/diamond/bin/play_rsc</execute>
-				</action>
-			</item>
-			<separator/>
 			<item label="pinball">
 				<action name="Execute">
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
 				</action>
 			</item>
-			<item label="evolvotron">
+			<item label="steam">
 				<action name="Execute">
-					<execute>evolvotron</execute>
+					<execute>/usr/games/steam %U</execute>
 				</action>
 			</item>
 		</menu>
@@ -106,11 +101,6 @@
 				<item label="restart">
 					<action name="Restart"/>
 				</item>
-				<item label="lock">
-					<action name="Execute">
-						<execute>xflock4</execute>
-					</action>
-				</item>
 				<item label="exit">
 					<action name="Exit"/>
 				</item>
@@ -132,9 +122,14 @@
 						<execute>xosview -battery</execute>
 					</action>
 				</item>
+				<item label="sensors">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot;</execute>
+					</action>
+				</item>
 				<item label="freq-info">
 					<action name="Execute">
-						<execute>xfce4-terminal --title &quot;SysMon&quot; -e &quot;watch -n .1 cpupower frequency-info&quot;</execute>
+						<execute>xfce4-terminal --title &quot;cpu freq-info&quot; -e &quot;watch -n .1 cpupower frequency-info&quot;</execute>
 					</action>
 				</item>
 			</menu>
@@ -149,10 +144,9 @@
 					<execute>telegram-desktop</execute>
 				</action>
 			</item>
-			<separator/>
-			<item label="nirvana">
+			<item label="discord">
 				<action name="Execute">
-					<execute>nirvana</execute>
+					<execute>/usr/share/discord/Discord</execute>
 				</action>
 			</item>
 			<item label="acme">
