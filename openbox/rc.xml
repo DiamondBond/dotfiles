@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -118,7 +117,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>8</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -386,9 +385,9 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-h">
+    <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title "Process List"</command>
+        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
