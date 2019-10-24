@@ -70,7 +70,7 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 2 0 0
+systray_padding = 7 0 0
 systray_sort = ascending
 systray_background_id = 1
 systray_icon_size = 0
