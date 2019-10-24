@@ -46,7 +46,8 @@ xfce4-power-manager &
 thunar --daemon &
 
 ## Start xscreensaver
-xscreensaver -no-splash &
+#xscreensaver -no-splash &
+light-locker &
 
 ## Start Clipboard manager
 #(sleep 3s && clipit) &
