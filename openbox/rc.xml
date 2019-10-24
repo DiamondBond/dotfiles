@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -39,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>thicc_f4</name>
+    <name>dia</name>
     <titleLayout>LC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -156,10 +157,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>50</top>
-    <bottom>10</bottom>
-    <left>30</left>
-    <right>30</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>Top</position>
@@ -387,7 +388,7 @@
     </keybind>
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
+        <command>xfce4-terminal -e htop --title "Process List"</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
@@ -1042,7 +1043,7 @@
         <y>center</y>
       </position>
     </application>
-<!-- Match all windows and remove their decorations -->
+    <!-- Match all windows and remove their decorations -->
     <!--    <application class="*"> <decor>no</decor> </application> -->
   </applications>
 </openbox_config>
