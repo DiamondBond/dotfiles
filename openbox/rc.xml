@@ -211,7 +211,7 @@
     <keybind key="S-A-s">
       <action name="ToggleShade"/>
     </keybind>
-    <keybind key="A-grave">
+    <keybind key="A-Escape">
       <action name="Iconify"/>
     </keybind>
     <keybind key="A-1">
@@ -308,7 +308,7 @@
     <keybind key="S-A-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-Escape">
+    <keybind key="A-grave">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
@@ -527,9 +527,6 @@
         <width>1/2</width>
         <height>1/2</height>
       </action>
-    </keybind>
-    <keybind key="W-S-h">
-      <action name=""/>
     </keybind>
   </keyboard>
   <mouse>
