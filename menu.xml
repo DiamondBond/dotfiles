@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="term">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="web">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
+			</action>
+		</item>
+		<menu id="root-menu-93530" label="games">
+			<menu id="root-menu-93530-123156" label="emu">
+				<item label="n64">
+					<action name="Execute">
+						<execute>mupen64plus-qt</execute>
+					</action>
+				</item>
+				<item label="gba">
+					<action name="Execute">
+						<execute>mgba-qt</execute>
+					</action>
+				</item>
+				<item label="snes">
+					<action name="Execute">
+						<execute>zsnes</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="undertale">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
+				</action>
+			</item>
+			<item label="minecraft">
+				<action name="Execute">
+					<execute>java -jar /home/diamond/games/mc.jar</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
+		<menu id="settings" label="misc">
+			<menu id="obConfig" label="wm">
+				<item label="autostart">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<item label="obconf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="obkey">
+					<action name="Execute">
+						<execute>obkey</execute>
+					</action>
+				</item>
+				<item label="lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="reload">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="restart">
+					<action name="Restart"/>
+				</item>
+				<item label="exit">
+					<action name="Exit"/>
+				</item>
+			</menu>
+			<menu id="settings-99037" label="cpu">
+				<item label="performance">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
+					</action>
+				</item>
+				<item label="powersave">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="xosview">
+					<action name="Execute">
+						<execute>xosview -battery</execute>
+					</action>
+				</item>
+				<item label="sensors">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot;</execute>
+					</action>
+				</item>
+				<item label="freq-info">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;cpu freq-info&quot; -e &quot;watch -n .1 cpupower frequency-info&quot;</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="acme">
+				<action name="Execute">
+					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
+				</action>
+			</item>
+			<item label="discord">
+				<action name="Execute">
+					<execute>/usr/share/discord/Discord</execute>
+				</action>
+			</item>
+			<item label="hexchat">
+				<action name="Execute">
+					<execute>hexchat</execute>
+				</action>
+			</item>
+			<item label="telegram">
+				<action name="Execute">
+					<execute>telegram-desktop</execute>
+				</action>
+			</item>
+			<menu id="settings-46012" label="session">
+				<item label="suspend">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;zzz&quot; -e &quot;sudo systemctl suspend&quot;</execute>
+					</action>
+				</item>
+				<item label="shutdown">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;sudo poweroff&quot; --title &quot;zzz&quot;</execute>
+					</action>
+				</item>
+				<item label="reboot">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;sudo reboot&quot; --title &quot;zzz&quot;</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="screenshot">
+				<action name="Execute">
+					<execute>/home/diamond/bin/screengrab</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
