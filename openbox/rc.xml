@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -156,10 +157,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>24</top>
+    <bottom>6</bottom>
+    <left>5</left>
+    <right>5</right>
   </margins>
   <dock>
     <position>Top</position>
@@ -211,7 +212,7 @@
     <keybind key="S-A-s">
       <action name="ToggleShade"/>
     </keybind>
-    <keybind key="A-Escape">
+    <keybind key="A-grave">
       <action name="Iconify"/>
     </keybind>
     <keybind key="A-1">
@@ -308,7 +309,7 @@
     <keybind key="S-A-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-grave">
+    <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
@@ -387,7 +388,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
+        <command>xfce4-terminal -e htop --title "Process List"</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>

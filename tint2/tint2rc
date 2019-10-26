@@ -8,8 +8,7 @@
 # ID 1
 rounded = 0
 border_width = 0
-#background_color = #292421 100
-background_color = #1B1B1B 100
+background_color = #F4F4F4 100
 border_color = #FFFFFF 100
 
 # ID 2
@@ -21,7 +20,7 @@ border_color = #FFFFFF 100
 # Panel
 panel_monitor = all
 panel_position = top center horizontal
-panel_size = 0 20
+panel_size = 0 18
 panel_margin = 0 0
 panel_padding = 0 0 0
 panel_dock = 0
@@ -61,28 +60,29 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 100 0 0
 
 # Fonts
-task_font = Charcoal 9
-task_font_color = #FFFFF0 100
-task_active_font_color = #292421 100
-task_urgent_font_color = #292421 100
-task_iconified_font_color = #FFFFF0 100
+task_font = Charcoal 8
+task_font_color = #1B1B1B 100
+task_active_font_color = #000000 100
+task_urgent_font_color = #1B1B1B 100
+task_iconified_font_color = #1B1B1B 100
 font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 7 0 0
+systray_padding = 7 0 7
 systray_sort = ascending
 systray_background_id = 1
-systray_icon_size = 0
+systray_icon_size = 18
 systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %I:%M
-time1_font = Charcoal 9
-clock_font_color = #FFFFFF 100
+time1_font = Charcoal 8
+clock_font_color = #1B1B1B 100
 clock_tooltip = 
 clock_padding = 2 0 0
 clock_background_id = 1
+clock_lclick_command = gsimplecal
 
 # Tooltips
 tooltip = 0
@@ -90,7 +90,7 @@ tooltip_padding = 0 0
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
 tooltip_background_id = 0
-tooltip_font = Charcoal 9
+tooltip_font = Charcoal 8
 tooltip_font_color = #FFFFFF 100
 
 # Mouse
@@ -104,9 +104,9 @@ battery = 0
 battery_low_status = 20
 battery_low_cmd = notify-send "battery low"
 battery_hide = 90
-bat1_font = Charcoal 9
-bat2_font = Charcoal 9
-battery_font_color = #FFFFFF 100
+bat1_font = Charcoal 8
+bat2_font = Charcoal 8
+battery_font_color = #1B1B1B 100
 battery_padding = 0 0
 battery_background_id = 0
 
