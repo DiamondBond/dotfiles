@@ -88,6 +88,11 @@
 						<execute>lxappearance</execute>
 					</action>
 				</item>
+				<item label="screenshot">
+					<action name="Execute">
+						<execute>/home/diamond/bin/screengrab</execute>
+					</action>
+				</item>
 				<separator/>
 				<item label="reload">
 					<action name="Reconfigure"/>
@@ -132,6 +137,11 @@
 					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
 				</action>
 			</item>
+			<item label="mixer">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
 			<item label="discord">
 				<action name="Execute">
 					<execute>/usr/share/discord/Discord</execute>
@@ -164,11 +174,6 @@
 					</action>
 				</item>
 			</menu>
-			<item label="screenshot">
-				<action name="Execute">
-					<execute>/home/diamond/bin/screengrab</execute>
-				</action>
-			</item>
 		</menu>
 	</menu>
 </openbox_menu>
