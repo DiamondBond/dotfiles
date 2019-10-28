@@ -21,8 +21,9 @@
 lxpolkit &
 
 ## Set root window colour
-hsetroot -solid "#9B9B9B" &
+hsetroot -solid "#7c7c7c" &
 #hsetroot -solid "#7C7C7C" &
+#floatbg &
 
 ## Group start:
 ## 1. nitrogen - restores wallpaper

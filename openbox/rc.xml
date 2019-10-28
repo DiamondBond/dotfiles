@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>dia</name>
+    <name>anon</name>
     <titleLayout>LC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.

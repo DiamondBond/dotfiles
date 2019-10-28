@@ -21,7 +21,6 @@
 				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
 			</action>
 		</item>
-		<separator/>
 		<menu id="root-menu-93530" label="games">
 			<menu id="root-menu-93530-123156" label="emu">
 				<item label="n64">
@@ -89,6 +88,11 @@
 						<execute>lxappearance</execute>
 					</action>
 				</item>
+				<item label="screenshot">
+					<action name="Execute">
+						<execute>/home/diamond/bin/screengrab</execute>
+					</action>
+				</item>
 				<separator/>
 				<item label="reload">
 					<action name="Reconfigure"/>
@@ -128,10 +132,14 @@
 					</action>
 				</item>
 			</menu>
-			<separator/>
 			<item label="acme">
 				<action name="Execute">
 					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
+				</action>
+			</item>
+			<item label="mixer">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
 				</action>
 			</item>
 			<item label="discord">
@@ -149,24 +157,11 @@
 					<execute>telegram-desktop</execute>
 				</action>
 			</item>
-			<separator/>
-			<menu id="settings-46012" label="session">
-				<item label="suspend">
-					<action name="Execute">
-						<execute>xfce4-terminal --title &quot;zzz&quot; -e &quot;sudo systemctl suspend&quot;</execute>
-					</action>
-				</item>
-				<item label="shutdown">
-					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;sudo poweroff&quot; --title &quot;zzz&quot;</execute>
-					</action>
-				</item>
-				<item label="reboot">
-					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;sudo reboot&quot; --title &quot;zzz&quot;</execute>
-					</action>
-				</item>
-			</menu>
+			<item label="suspend">
+				<action name="Execute">
+					<execute>xfce4-terminal --title &quot;zzz&quot; -e &quot;systemctl suspend&quot;</execute>
+				</action>
+			</item>
 		</menu>
 	</menu>
 </openbox_menu>
