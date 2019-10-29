@@ -132,14 +132,14 @@
 					</action>
 				</item>
 			</menu>
-			<item label="acme">
-				<action name="Execute">
-					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
-				</action>
-			</item>
 			<item label="mixer">
 				<action name="Execute">
 					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<item label="acme">
+				<action name="Execute">
+					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
 				</action>
 			</item>
 			<item label="discord">

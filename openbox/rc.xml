@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -388,7 +387,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title "Process List"</command>
+        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
@@ -403,9 +402,6 @@
           <name>Volume</name>
         </startupnotify>
       </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Exit"/>
     </keybind>
     <keybind key="W-Tab">
       <action name="ShowMenu">
