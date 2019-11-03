@@ -116,13 +116,17 @@ fi
 PATH="$HOME/bin:$PATH"
 
 # set PS1
-#export PS1="\w > "
-export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] \w > '
+#export PS1=" % "
+export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] > '
 
 # git config --global core.editor "vim"
 export GIT_EDITOR=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# export filebrowser & terminal
+export FILEBROWSER=thunar
+export TERMINAL=xfce4-terminal
 
 # plan9
 export BROWSER='firefox'

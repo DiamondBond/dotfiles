@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/diamond/.gtkrc-2.0.mine"
-gtk-theme-name="Raleigh"
+gtk-theme-name="raleigh-reloaded-compact"
 gtk-icon-theme-name="Adwaita"
 gtk-font-name="Roboto 10"
 gtk-cursor-theme-name="Adwaita"

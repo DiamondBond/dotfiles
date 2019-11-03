@@ -21,9 +21,9 @@
 lxpolkit &
 
 ## Set root window colour
-hsetroot -solid "#7c7c7c" &
-#hsetroot -solid "#7C7C7C" &
-#floatbg &
+#hsetroot -solid "#4d5e63" &
+#hsetroot -solid "#7f7f7f" &
+feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
 
 ## Group start:
 ## 1. nitrogen - restores wallpaper
