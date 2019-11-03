@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=raleigh-reloaded-compact
+Version=v1.0
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=raleigh-reloaded-compact
+ButtonLayout=:minimize,maximize,close

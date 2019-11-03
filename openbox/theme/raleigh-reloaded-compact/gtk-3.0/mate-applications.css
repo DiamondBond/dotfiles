@@ -1,0 +1,129 @@
+/**
+ * Based on Raleigh Reloaded GTK theme by Vlasta Vesely
+ *
+ *
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/********
+ * Caja *
+ ********/
+.caja-navigation-window toolbar combobox button:not(:hover):not(:checked) {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
+.caja-navigation-window tab button,
+.caja-navigation-window tab button:active:hover {
+	padding: 0px;
+}
+.caja-side-pane notebook > stack {
+	border-image: url("assets/entry.png") 3 / 3px stretch;
+	padding: 2px;
+}
+.caja-side-pane treeview {
+	padding: .2em 0;
+}
+.caja-navigation-window statusbar border {
+	border: 0;
+}
+.caja-navigation-window notebook > stack {
+	border-image: url("assets/notebook.png") 3 / 3px stretch;
+	padding: 2px;
+}
+.caja-navigation-window notebook .view {
+	background: @theme_base_color;
+}
+.caja-navigation-window notebook *:selected {
+	background: @theme_bg_color;
+	color: @theme_fg_color;
+}
+.caja-navigation-window notebook *:focus .view:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+.caja-navigation-window notebook .view.rubberband {
+	background-color: alpha(@theme_selected_bg_color, 0.3);
+	border: 1px solid @theme_selected_bg_color;
+}
+.caja-notebook stack > box > frame > border {
+	background: @theme_info_bg_color;
+}
+.caja-side-pane notebook scrolledwindow,
+.caja-notebook scrolledwindow {
+	border: 0;
+	padding: 0;
+}
+.caja-desktop-window box,
+.caja-desktop-window scrolledwindow,
+.caja-navigation-window statusbar frame {
+	border: 0;
+}
+
+/*********
+ * Pluma *
+ *********/
+.pluma-window notebook header tabs {
+	min-height: 2.2em;
+	min-width: 2.2em;
+}
+.pluma-window statusbar > *:last-child {
+	padding-right: 5px;
+}
+
+/**************
+ * Mate Panel *
+ **************/
+PanelToplevel > grid {
+	border-image: url("assets/button.png") 2 / 2px stretch;
+	margin: -2px -2px 0 -2px;
+	padding: 2px;
+}
+#clock-applet-button {
+	border: 0;
+}
+MatePanelAppletFrameDBus {
+/*	background: transparent url("assets/mate-panel-background.png") left bottom; */
+	border: solid 1px white;
+	border-bottom-color: black;
+}
+PanelToplevel menubar {
+	border: 0;
+	margin: -1px;
+}
+wnck-tasklist button.flat:not(:hover):not(:checked) {
+	border-image: url("assets/button.png") 2 / 2px stretch;
+}
+
+/*****************
+ * Mate Terminal *
+ *****************/
+.mate-terminal notebook stack {
+	padding: 0;
+}
+.mate-terminal notebook header {
+	padding-bottom: 2px;
+}
+
+/******************
+ * GvcMixerDialog *
+ ******************/
+GvcMixerDialog border {
+	padding: 10px;
+}
+
+/***************
+ * Lock Screen *
+ ***************/
+.lock-dialog notebook > stack {
+	border: 0;
+}

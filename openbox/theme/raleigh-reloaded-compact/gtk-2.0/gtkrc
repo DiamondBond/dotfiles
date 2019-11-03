@@ -1,0 +1,15 @@
+gtk_color_scheme = "base_color:#ffffff\ntext_color:#000000\nfg_color:#000000"
+
+style "default" {
+
+	fg[NORMAL] = @fg_color
+	base[NORMAL] = @base_color
+	text[NORMAL] = @text_color
+
+        GtkTreeView::odd_row_color  = @base_color
+        GtkTreeView::even_row_color = @base_color
+        GtkScrollbar	::slider-width	= 16
+        GtkMenuItem::arrow-scaling = 0.6
+}
+
+class "GtkWidget" style "default"
