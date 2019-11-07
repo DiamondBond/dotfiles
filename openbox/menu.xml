@@ -73,7 +73,7 @@
 				<separator/>
 				<item label="sensors">
 					<action name="Execute">
-						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot;</execute>
+						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot; --geometry=62x16</execute>
 					</action>
 				</item>
 				<item label="autotune">
