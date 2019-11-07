@@ -22,24 +22,25 @@
 			</action>
 		</item>
 		<separator/>
-		<menu id="root-menu-103415" label="chat">
-			<item label="irc">
-				<action name="Execute">
-					<execute>xfce4-terminal -e weechat --title &quot;irc&quot;</execute>
-				</action>
-			</item>
-			<item label="discord">
-				<action name="Execute">
-					<execute>/usr/share/discord/Discord</execute>
-				</action>
-			</item>
-			<item label="telegram">
-				<action name="Execute">
-					<execute>telegram-desktop</execute>
-				</action>
-			</item>
-		</menu>
-		<menu id="root-menu-93530" label="game">
+		<menu id="root-menu-93530" label="games">
+			<menu id="root-menu-93530-123156" label="emu">
+				<item label="n64">
+					<action name="Execute">
+						<execute>mupen64plus-qt</execute>
+					</action>
+				</item>
+				<item label="gba">
+					<action name="Execute">
+						<execute>mgba-qt</execute>
+					</action>
+				</item>
+				<item label="snes">
+					<action name="Execute">
+						<execute>zsnes</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
 			<item label="cavestory">
 				<action name="Execute">
 					<execute>/home/diamond/bin/cavestory</execute>
@@ -60,24 +61,6 @@
 					<execute>AstroMenace</execute>
 				</action>
 			</item>
-			<separator/>
-			<menu id="root-menu-93530-123156" label="emulated">
-				<item label="n64">
-					<action name="Execute">
-						<execute>mupen64plus-qt</execute>
-					</action>
-				</item>
-				<item label="gba">
-					<action name="Execute">
-						<execute>mgba-qt</execute>
-					</action>
-				</item>
-				<item label="snes">
-					<action name="Execute">
-						<execute>zsnes</execute>
-					</action>
-				</item>
-			</menu>
 		</menu>
 		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
 		<menu id="settings" label="misc">
@@ -110,6 +93,34 @@
 				</item>
 			</menu>
 			<menu id="obConfig" label="config">
+				<menu id="obConfig-531325" label="bg">
+					<item label="black">
+						<action name="Execute">
+							<execute>/home/diamond/bin/wp_black</execute>
+						</action>
+					</item>
+					<item label="gray">
+						<action name="Execute">
+							<execute>/home/diamond/bin/wp_gray</execute>
+						</action>
+					</item>
+					<item label="blue">
+						<action name="Execute">
+							<execute>/home/diamond/bin/wp_blue</execute>
+						</action>
+					</item>
+					<item label="purple">
+						<action name="Execute">
+							<execute>/home/diamond/bin/wp_purple</execute>
+						</action>
+					</item>
+					<item label="checker">
+						<action name="Execute">
+							<execute>/home/diamond/bin/wp_checker</execute>
+						</action>
+					</item>
+				</menu>
+				<separator/>
 				<item label="autostart">
 					<action name="Execute">
 						<execute>mousepad ~/.config/openbox/autostart</execute>
@@ -136,8 +147,26 @@
 					</action>
 				</item>
 			</menu>
+			<separator/>
+			<item label="acme">
+				<action name="Execute">
+					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
+				</action>
+			</item>
+			<item label="telegram">
+				<action name="Execute">
+					<execute>telegram-desktop</execute>
+				</action>
+			</item>
+			<separator/>
 			<menu id="settings-41155" label="session">
-				<item label="exit">
+				<item label="info">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=55x15</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="logout">
 					<action name="Exit"/>
 				</item>
 				<item label="suspend">
