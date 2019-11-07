@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -40,7 +39,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>lah</name>
+    <name>schizo</name>
     <titleLayout>LIC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -52,7 +51,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Terminus</name>
@@ -118,7 +117,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>6</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -157,20 +156,20 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>45</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
-    <position>Top</position>
+    <position>TopRight</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
-    <noStrut>no</noStrut>
+    <noStrut>yes</noStrut>
     <stacking>Below</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>0</hideDelay>
@@ -188,6 +187,21 @@
     <keybind key="C-A-n">
       <action name="Execute">
         <command>/home/diamond/bin/np</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-y">
+      <action name="Execute">
+        <command>/home/diamond/bin/gimmetime</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-g">
+      <action name="Execute">
+        <command>/home/diamond/bin/t1</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-h">
+      <action name="Execute">
+        <command>/home/diamond/bin/t0</command>
       </action>
     </keybind>
     <keybind key="W-p">
@@ -393,7 +407,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title "Process List"</command>
+        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>

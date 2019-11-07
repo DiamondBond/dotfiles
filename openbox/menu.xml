@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="term">
+		<item label="cmd">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
-			</action>
-		</item>
-		<item label="files">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
-		<item label="music">
-			<action name="Execute">
-				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
 			</action>
 		</item>
 		<item label="web">
@@ -21,8 +11,13 @@
 				<execute>firefox</execute>
 			</action>
 		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
 		<separator/>
-		<menu id="root-menu-93530" label="games">
+		<menu id="root-menu-93530" label="vidya">
 			<menu id="root-menu-93530-123156" label="emu">
 				<item label="n64">
 					<action name="Execute">
@@ -76,51 +71,18 @@
 					</action>
 				</item>
 				<separator/>
-				<item label="tune">
-					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;sudo powertop --auto-tune&quot; --title &quot;auto power tune&quot;</execute>
-					</action>
-				</item>
 				<item label="sensors">
 					<action name="Execute">
 						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot;</execute>
 					</action>
 				</item>
-				<item label="freq-info">
+				<item label="autotune">
 					<action name="Execute">
-						<execute>xfce4-terminal --title &quot;cpu freq-info&quot; -e &quot;watch -n .1 cpupower frequency-info&quot;</execute>
+						<execute>xfce4-terminal -e &quot;sudo powertop --auto-tune&quot; --title &quot;auto power tune&quot;</execute>
 					</action>
 				</item>
 			</menu>
 			<menu id="obConfig" label="config">
-				<menu id="obConfig-531325" label="bg">
-					<item label="black">
-						<action name="Execute">
-							<execute>/home/diamond/bin/wp_black</execute>
-						</action>
-					</item>
-					<item label="gray">
-						<action name="Execute">
-							<execute>/home/diamond/bin/wp_gray</execute>
-						</action>
-					</item>
-					<item label="blue">
-						<action name="Execute">
-							<execute>/home/diamond/bin/wp_blue</execute>
-						</action>
-					</item>
-					<item label="purple">
-						<action name="Execute">
-							<execute>/home/diamond/bin/wp_purple</execute>
-						</action>
-					</item>
-					<item label="checker">
-						<action name="Execute">
-							<execute>/home/diamond/bin/wp_checker</execute>
-						</action>
-					</item>
-				</menu>
-				<separator/>
 				<item label="autostart">
 					<action name="Execute">
 						<execute>mousepad ~/.config/openbox/autostart</execute>
@@ -147,18 +109,6 @@
 					</action>
 				</item>
 			</menu>
-			<separator/>
-			<item label="acme">
-				<action name="Execute">
-					<execute>bash -ic &quot;acme -a -f /mnt/font/Monaco/10a/font $1&quot;</execute>
-				</action>
-			</item>
-			<item label="telegram">
-				<action name="Execute">
-					<execute>telegram-desktop</execute>
-				</action>
-			</item>
-			<separator/>
 			<menu id="settings-41155" label="session">
 				<item label="info">
 					<action name="Execute">
@@ -166,7 +116,7 @@
 					</action>
 				</item>
 				<separator/>
-				<item label="logout">
+				<item label="exit">
 					<action name="Exit"/>
 				</item>
 				<item label="suspend">

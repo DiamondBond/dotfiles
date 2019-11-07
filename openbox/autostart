@@ -36,7 +36,8 @@ hsetroot -solid "#AAAAAA" &
 ## 4. tint2 panel
 #nitrogen --restore &
 #cbpp-compositor --start &
-tint2 &
+#tint2 &
+#stalonetray &
 
 ## Start nm-applet for systray
 nm-applet &
