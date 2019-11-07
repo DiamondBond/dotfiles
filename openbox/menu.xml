@@ -18,7 +18,7 @@
 		</item>
 		<separator/>
 		<menu id="root-menu-93530" label="vidya">
-			<menu id="root-menu-93530-123156" label="emu">
+			<menu id="root-menu-93530-123156" label="emulation">
 				<item label="n64">
 					<action name="Execute">
 						<execute>mupen64plus-qt</execute>
