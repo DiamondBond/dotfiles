@@ -14,3 +14,4 @@ feh --bg-scale /home/diamond/Pictures/Wallpapers/ballooon.jpg
 #E2E2E7 - light gray 2.0
 #AAAAAA - default gray
 #535C6B - joeblue
+#2F3237 - oyasumi gray

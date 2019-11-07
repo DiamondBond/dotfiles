@@ -79,7 +79,7 @@ panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
 panel_pivot_struts = 0
-panel_position = bottom right horizontal
+panel_position = top right horizontal
 panel_layer = bottom
 panel_monitor = all
 panel_shrink = 1
@@ -171,11 +171,11 @@ launcher_item_app = google-chrome.desktop
 #-------------------------------------
 # Clock
 time1_format = %I:%M
-time2_format = %a %d %B
-time1_font = terminus 8
+#time2_format = %a %d %B
+time1_font = monaco 9
 time1_timezone = Asia/Colombo
 time2_timezone = Asia/Colombo
-time2_font = terminus 8
+time2_font = monaco 8
 clock_font_color = #1d1f28 100
 clock_padding = 10 0
 clock_background_id = 2
