@@ -1,0 +1,16 @@
+feh --bg-tile /home/diamond/Pictures/Wallpapers/qtile.png
+feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png
+feh --bg-scale /home/diamond/Pictures/Wallpapers/ballooon.jpg
+
+#F5DEB3 - yellow
+#1d1f28 - dark
+#4d5e63 - hal navy
+#1D3237 - light navy
+#5d5e63 - dark gray
+#021B21 - very dark navy blue
+#AFADBF - pale purple
+#DB7093 - palevioletred
+#E1E1E6 - light gray
+#E2E2E7 - light gray 2.0
+#AAAAAA - default gray
+#535C6B - joeblue
