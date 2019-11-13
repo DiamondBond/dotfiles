@@ -1,1 +1,4 @@
 /set weechat.look.buffer_time_format "~ "
+/set weechat.bar.input.items "+buffer_short_name
+[+mode_indicator+(away)+ input_search+ input_paste+ vi_buffer+]
+input_text+minimal"

@@ -1,0 +1,46 @@
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 8192
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 12
+XTerm.vt100.internalBorder: 5
+
+!*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+
+! special
+! #4D5E63
+*.foreground:   #000000
+*.background:   #ffffff
+*.cursorColor:  #000000
+
+! black
+*.color0:       #282A36
+*.color8:       #282A36
+
+! red
+*.color1:       #F37F97
+*.color9:       #F37F97
+
+! green
+*.color2:       #5ADECD
+*.color10:      #5ADECD
+
+! yellow
+*.color3:       #F2A272
+*.color11:      #F2A272
+
+! blue
+*.color4:       #8897F4
+*.color12:      #8897F4
+
+! magenta
+*.color5:       #C574DD
+*.color13:      #C574DD
+
+! cyan
+*.color6:       #79E6F3
+*.color14:      #79E6F3
+
+! white
+*.color7:       #BEBEBE
+*.color15:      #BEBEBE
