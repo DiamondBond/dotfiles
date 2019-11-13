@@ -4,7 +4,15 @@ XTerm.vt100.saveLines: 8192
 XTerm.vt100.scrollBar: true
 XTerm.vt100.scrollbar.width: 12
 XTerm.vt100.internalBorder: 5
-
+XTerm*selectToClipboard: true
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+*VT100*translations: #override Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+XTerm*printerCommand: xterm -T History -e sh -c 'less -r <&3' 3<&0
+XTerm*translations: #override \n\
+  Ctrl <Key>slash: print-everything() \n\
+  Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+XTerm*allowBoldFonts: false
 !*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
 
 ! special
