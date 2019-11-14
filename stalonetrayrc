@@ -1,8 +1,8 @@
-#background "#AAAAAA"
+background "#000000"
 decorations none
-dockapp_mode none 
+dockapp_mode simple
 fuzzy_edges 0
-#geometry 100x10+1310 # position x:333 y:0
+geometry 1x1+1312+12 # position x:333 y:0
 grow_gravity NW
 icon_gravity NW
 icon_size 16
