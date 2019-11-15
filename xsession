@@ -1,18 +1,21 @@
 #!/bin/bash
 
+# X11
+xrdb "/home/diamond/.Xresources"
+xset -b
+
 dunst &
-lxpolkit &
+#lxpolkit &
 nm-applet &
 mate-volume-control-applet &
 xfce4-power-manager &
-thunar --daemon &
+#thunar --daemon &
 light-locker &
-xset b off &
 xbindkeys &
 
 while true; do
-    xsetroot -name "$(/home/diamond/bin/battery) | $(date +%F) | $(date +%I:%M)"
-    sleep 60
+    xsetroot -name "$(/home/diamond/bin/battery) | $(/home/diamond/bin/cputemp) | $(date +%F) $(date +%I:%M)"
+    sleep 10
 done &
 
 hsetroot -solid "#AAAAAA"

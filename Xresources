@@ -1,51 +1,66 @@
-!!!!! FONTS !!!!!
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
+! Misc QOL
+!XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 8192
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 14
+XTerm.vt100.internalBorder: 5
 
-! MOLOKAI
-!*foreground:   #f8f8f8
-!*background:   #1b1d1e
-!*color0:       #808080
-!*color8:       #465457
-!*color1:       #d7005f
-!*color9:       #f92672
-!*color2:       #87ff00
-!*color10:      #a6e22e
-!*color3:       #ff8700
-!*color11:      #fd971f
-!*color4:       #acac85
-!*color12:      #c4be89
-!*color5:       #af5fff
-!*color13:      #ae81ff
-!*color6:       #5fd7ff
-!*color14:      #84e0f2
-!*color7:       #f8f8f8
-!*color15:      #ffffff
+! Fonts
+!*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+XTerm*allowBoldFonts: false
 
-!!!!! URXVT !!!!!
+! Clipboard shenanigans
+XTerm*selectToClipboard: true
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+*VT100*translations: #override Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+XTerm*printerCommand: xterm -T History -e sh -c 'less -r <&3' 3<&0
 
-!URxvt*termName:         rxvt-unicode-256color
+! KB Shortcuts
+XTerm*translations: #override \n\
+  Ctrl <Key>slash: print-everything() \n\
+  Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+Ctrl Alt <Key>S: secure()
 
-! SETTINGS
-!URxvt*buffered:         false
-!URxvt*saveLines:        0
-!URxvt*scrollBar:        false
-!URxvt*iso14755:         false
-!URxvt*iso14755_52:      false
+! Colors
+! #4D5E63
+*.foreground:   #000000
+*.background:   #ffffff
+*.cursorColor:  #000000
 
-! BORDER
-!URxvt*borderWidth:      0
-!URxvt*internalBorder:   10
+! black
+*.color0:       #282A36
+*.color8:       #282A36
 
-! FONT
-!URxvt*font:             xft:Hasklug Nerd Font Mono:size=11
+! red
+*.color1:       #F37F97
+*.color9:       #F37F97
 
-! LINKS
-!URxvt.perl-ext-common:  default,matcher
-!URxvt.url-launcher:     /usr/bin/xdg-open
-!URxvt.matcher.button:   1
+! green
+*.color2:       #5ADECD
+*.color10:      #5ADECD
+
+! yellow
+*.color3:       #F2A272
+*.color11:      #F2A272
+
+! blue
+*.color4:       #8897F4
+*.color12:      #8897F4
+
+! magenta
+*.color5:       #C574DD
+*.color13:      #C574DD
+
+! cyan
+*.color6:       #79E6F3
+*.color14:      #79E6F3
+
+! white
+*.color7:       #AAAAAA
+*.color15:      #AAAAAA
