@@ -1,0 +1,6 @@
+center
+fakefullscreen
+movestack
+noborder
+pertag
+single_border
