@@ -1,0 +1,44 @@
+sw_volume: 36
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: play
+current: 6
+time: 4.120000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Jimi Hendrix - Discography/Are You Experienced/The Jimi Hendrix Experience - Are You Experienced  (03) Hey Joe.mp3
+1:Jimi Hendrix - Discography/Electric Ladyland/Jimi Hendrix -Electric Ladyland (16) Voodoo Child (slight return).mp3
+2:Jimi Hendrix - Discography/Rainbow Bridge Vinyl Rip/Jimi Hendrix - Rainbow Bridge (03) Pali Gap.mp3
+3:Jimi Hendrix - Discography/Rainbow Bridge Vinyl Rip/Jimi Hendrix - Rainbow Bridge (08) Hey Baby (new rising sun).mp3
+4:Jimi Hendrix - Discography/Axis - Bold as Love/The Jimi Hendrix Experience - Axis- Bold As Love (06) Little Wing.mp3
+5:Led Zeppelin - Discography/01. Studio albums/01. Led Zeppelin (1969)/02. Babe I'm Gonna Leave You.mp3
+6:Led Zeppelin - Discography/01. Studio albums/01. Led Zeppelin (1969)/04. Dazed And Confused.mp3
+7:Led Zeppelin - Discography/01. Studio albums/02. Led Zeppelin II (1969)/01. Whole Lotta Love.mp3
+8:Led Zeppelin - Discography/01. Studio albums/02. Led Zeppelin II (1969)/03. The Lemon Song.mp3
+9:Led Zeppelin - Discography/01. Studio albums/03. Led Zeppelin III (1970)/07. Tangerine.mp3
+10:Led Zeppelin - Discography/01. Studio albums/04. Led Zeppelin IV (1971)/01. Black Dog.mp3
+11:Led Zeppelin - Discography/01. Studio albums/04. Led Zeppelin IV (1971)/04. Stairway To Heaven.mp3
+12:Led Zeppelin - Discography/01. Studio albums/04. Led Zeppelin IV (1971)/08. When The Levee Breaks.mp3
+13:Led Zeppelin - Discography/01. Studio albums/06. Physical Graffiti (1975)/CD1/06. Kashmir.mp3
+14:Led Zeppelin - Discography/01. Studio albums/06. Physical Graffiti (1975)/CD2/06. Wanton Song.mp3
+15:The White Stripes/2003 - Elephant/The White Stripes - 10 - Little Acorns.mp3
+16:The White Stripes/2003 - Elephant/The White Stripes - 05 - In The Cold, Cold Night.mp3
+17:The White Stripes/2003 - Elephant/The White Stripes - 01 - Seven Nation Army.mp3
+18:heymoon.mp3
+19:Mazzy Star - Fade into You/01  - Fade Into You.flac
+20:Eric Clapton - The Best Of/02. Cocaine.flac
+21:Eric Clapton - The Best Of/03. Wonderful Tonight.flac
+22:Eric Clapton - The Best Of/15. Sunshine Of Your Love.flac
+23:Eric Clapton - The Best Of/07. Layla.flac
+24:Fleetwood Mac - Before the Beginning 1968-1970/01. Madison Blues (Version 1) [Live] [Remastered].mp3
+25:Fleetwood Mac - Before the Beginning 1968-1970/24. The Green Manalishi (With the Two Prong Crown) (Live) [Remastered].mp3
+26:Nirvana - Greatest Hits/06.Come As You Are.mp3
+27:The Animals - Absolute Animals 1964-1968/01.-House Of The Rising Sun.flac
+28:The Animals - Absolute Animals 1964-1968/15.-Monterey.flac
+playlist_end
