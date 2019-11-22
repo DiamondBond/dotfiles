@@ -4,11 +4,12 @@ XTerm.vt100.locale: true
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.saveLines: 8192
 XTerm.vt100.scrollBar: true
-XTerm.vt100.scrollbar.width: 14
+XTerm.vt100.scrollbar.width: 15
 XTerm.vt100.internalBorder: 5
 
 ! Fonts
-!*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+!XTerm.vt100.faceName: Go Mono
 XTerm*allowBoldFonts: false
 
 ! Clipboard shenanigans

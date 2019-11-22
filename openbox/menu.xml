@@ -112,7 +112,7 @@
 			<menu id="settings-41155" label="session">
 				<item label="info">
 					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=55x15</execute>
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=42x8</execute>
 					</action>
 				</item>
 				<separator/>

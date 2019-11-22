@@ -25,7 +25,7 @@ lxpolkit &
 
 ## Set root window colour
 #hsetroot -solid "#4d5e63" &
-hsetroot -solid "#AAAAAA" &
+hsetroot -solid "#AEAEAE" &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/qtile.png &
 
