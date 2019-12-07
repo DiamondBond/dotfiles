@@ -25,7 +25,7 @@ lxpolkit &
 
 ## Set root window colour
 #hsetroot -solid "#4d5e63" &
-hsetroot -solid "#AEAEAE" &
+#hsetroot -solid "#AEAEAE" &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/qtile.png &
 
@@ -36,7 +36,7 @@ hsetroot -solid "#AEAEAE" &
 ## 4. tint2 panel
 #nitrogen --restore &
 #cbpp-compositor --start &
-#tint2 &
+tint2 &
 #stalonetray &
 
 ## Start nm-applet for systray
@@ -68,6 +68,9 @@ xset b off &
 ## KB Shortcuts for x220
 xbindkeys &
 
+# Merge Xresources
+xrdb "/home/diamond/.Xresources"
+
 ## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
 ## creates symlink in images to wallpaper folder only runs once. Safe to remove.
 ##~/.cbpp-user-setup &
@@ -81,3 +84,7 @@ xbindkeys &
 
 ## 144hz
 #xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
+
+compton --vsync opengl -CGb &
+
+hsetroot -solid "#aeaeae" &

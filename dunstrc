@@ -1,7 +1,7 @@
 [global]
 monitor = 0
 follow = mouse
-geometry = "300x60-7+20"
+geometry = "300x60-10+50"
 indicate_hidden = yes
 shrink = no
 separator_height = 0
@@ -10,7 +10,7 @@ horizontal_padding = 32
 frame_width = 2
 sort = no
 idle_threshold = 120
-font = terminus 9
+font = monaco 9
 line_height = 4
 markup = full
 format = %s\n%b
@@ -36,18 +36,18 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 4
-background = "#000000"
-foreground = "#FFFFFF"
-frame_color = "#000000"
+background = "#FFFFFF"
+foreground = "#000000"
+frame_color = "#FFFFFF"
 
 [urgency_normal]
 timeout = 4
-background = "#000000"
-foreground = "#FFFFFF"
-frame_color = "#000000"
+background = "#FFFFFF"
+foreground = "#000000"
+frame_color = "#FFFFFF"
 
 [urgency_critical]
 timeout = 0
-background = "#000000"
-foreground = "#FFFFFF"
-frame_color = "#000000"
+background = "#FFFFFF"
+foreground = "#000000"
+frame_color = "#FFFFFF"

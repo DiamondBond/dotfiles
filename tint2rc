@@ -22,11 +22,11 @@ border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
 background_color = #FFFFFF 100
-border_color = #FFFFFF 100
+border_color = #000000 100
 background_color_hover = #FFFFFF 100
-border_color_hover = #FFFFFF 100
+border_color_hover = #000000 100
 background_color_pressed = #FFFFFF 100
-border_color_pressed = #FFFFFF 100
+border_color_pressed = #000000 100
 
 # Background 3: Active task
 rounded = 1
@@ -83,10 +83,10 @@ panel_position = top right horizontal
 panel_layer = bottom
 panel_monitor = all
 panel_shrink = 1
-autohide = 0
-autohide_show_timeout = 0
-autohide_hide_timeout = 0
-autohide_height = 0
+#autohide = 0
+#autohide_show_timeout = 0
+#autohide_hide_timeout = 0
+#autohide_height = 0
 strut_policy = follow_size
 panel_window_name = tint2
 disable_transparency = 1
@@ -172,10 +172,10 @@ launcher_item_app = google-chrome.desktop
 # Clock
 time1_format = %I:%M
 #time2_format = %a %d %B
-time1_font = monaco 9
+time1_font = charcoal 9
 time1_timezone = Asia/Colombo
 time2_timezone = Asia/Colombo
-time2_font = monaco 8
+time2_font = charcoal 8
 clock_font_color = #1d1f28 100
 clock_padding = 10 0
 clock_background_id = 2
@@ -223,3 +223,13 @@ tooltip_hide_timeout = 0
 tooltip_padding = 10 10
 #tooltip_background_id = 5
 tooltip_font_color = #EEEEEE 100
+
+#---------------------------------------------
+# PANEL AUTO HIDE
+#---------------------------------------------
+autohide = 1
+autohide_show_timeout = 0.0
+autohide_hide_timeout = 999999
+autohide_height = 1
+strut_policy = minimum
+#reserve_space = 0 # not yet implemented

@@ -36,6 +36,11 @@
 				</item>
 			</menu>
 			<separator/>
+			<item label="doom">
+				<action name="Execute">
+					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
+				</action>
+			</item>
 			<item label="cavestory">
 				<action name="Execute">
 					<execute>/home/diamond/bin/cavestory</execute>
@@ -115,7 +120,11 @@
 						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=42x8</execute>
 					</action>
 				</item>
-				<separator/>
+				<item label="scrot">
+					<action name="Execute">
+						<execute>scrot</execute>
+					</action>
+				</item>
 				<item label="exit">
 					<action name="Exit"/>
 				</item>

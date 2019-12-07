@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -39,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>border</name>
+    <name>diamond</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -54,7 +55,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Terminus</name>
+      <name>Monaco</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -63,7 +64,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Terminus</name>
+      <name>Monaco</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -72,7 +73,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Terminus</name>
+      <name>Monaco</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -90,7 +91,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Terminus</name>
+      <name>Monaco</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -99,7 +100,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Terminus</name>
+      <name>Monaco</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -156,10 +157,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>30</top>
-    <bottom>30</bottom>
-    <left>30</left>
-    <right>30</right>
+    <top>10</top>
+    <bottom>10</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>Floating</position>
@@ -183,6 +184,11 @@
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="S-A-e">
       <action name="Move"/>
+    </keybind>
+    <keybind key="S-A-Return">
+      <action name="Execute">
+        <command>xterm</command>
+      </action>
     </keybind>
     <keybind key="S-A-c">
       <action name="Close"/>
@@ -258,7 +264,7 @@
     <keybind key="S-A-w">
       <action name="ToggleMaximizeFull"/>
     </keybind>
-    <keybind key="S-A-h">
+    <keybind key="S-A-d">
       <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="S-A-s">
@@ -440,7 +446,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title &quot;Process List&quot;</command>
+        <command>xfce4-terminal -e htop --title "Process List"</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
