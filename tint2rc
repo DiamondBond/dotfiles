@@ -16,8 +16,8 @@ background_color_pressed = #1d1f28 0
 border_color_pressed = #EEEEEE 0
 
 # Background 2: Clock, Default task, Iconified task, Systray
-rounded = 0
-border_width = 1
+rounded = 1
+border_width = 0
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
@@ -70,11 +70,11 @@ border_color_pressed = #EEEEEE 100
 #-------------------------------------
 # Panel
 #panel_items = TFS:C
-panel_items = S:C
+panel_items = SC
 panel_size = 100% 4%
 panel_margin = 10 10
 #panel_padding = 0 0 575
-panel_padding = 0 0 2
+panel_padding = 0 0 -5
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
@@ -144,7 +144,7 @@ mouse_scroll_down = toggle_iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 4 4 4
+systray_padding = 8 4 4
 systray_background_id = 2
 systray_sort = ascending
 systray_icon_size = 22
@@ -172,12 +172,12 @@ launcher_item_app = google-chrome.desktop
 # Clock
 time1_format = %I:%M
 #time2_format = %a %d %B
-time1_font = charcoal 9
+time1_font = charcoal 10
 time1_timezone = Asia/Colombo
 time2_timezone = Asia/Colombo
-time2_font = charcoal 8
+time2_font = charcoal 9
 clock_font_color = #1d1f28 100
-clock_padding = 10 0
+clock_padding = 6 4
 clock_background_id = 2
 clock_tooltip = %d / %m / %Y
 clock_tooltip_timezone = Asia/Colombo
@@ -211,10 +211,10 @@ ac_disconnected_cmd =
 # Separator 1
 separator = new
 separator_background_id = -1
-separator_color = #777777 0
+separator_color = #FFFFFF 0
 separator_style = empty
-separator_size = 3
-separator_padding = 1 0
+separator_size = 0
+separator_padding = 0 0
 
 #-------------------------------------
 # Tooltip

@@ -85,6 +85,6 @@ xrdb "/home/diamond/.Xresources"
 ## 144hz
 #xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
 
-compton --vsync opengl -CGb &
+compton --corner-radius 12 --vsync -bCG
 
 hsetroot -solid "#aeaeae" &

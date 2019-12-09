@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="cmd">
+		<item label="term">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
 			</action>
@@ -11,13 +11,18 @@
 				<execute>firefox</execute>
 			</action>
 		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
+			</action>
+		</item>
 		<item label="files">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
 		</item>
 		<separator/>
-		<menu id="root-menu-93530" label="vidya">
+		<menu id="root-menu-93530" label="games">
 			<menu id="root-menu-93530-123156" label="emulation">
 				<item label="n64">
 					<action name="Execute">
@@ -41,16 +46,6 @@
 					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
 				</action>
 			</item>
-			<item label="cavestory">
-				<action name="Execute">
-					<execute>/home/diamond/bin/cavestory</execute>
-				</action>
-			</item>
-			<item label="undertale">
-				<action name="Execute">
-					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
-				</action>
-			</item>
 			<item label="pinball">
 				<action name="Execute">
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
@@ -59,6 +54,16 @@
 			<item label="asteroids">
 				<action name="Execute">
 					<execute>AstroMenace</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="undertale">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
 				</action>
 			</item>
 		</menu>
@@ -76,14 +81,14 @@
 					</action>
 				</item>
 				<separator/>
+				<item label="htop">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/procbar&quot;</execute>
+					</action>
+				</item>
 				<item label="sensors">
 					<action name="Execute">
 						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot; --geometry=62x16</execute>
-					</action>
-				</item>
-				<item label="autotune">
-					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;sudo powertop --auto-tune&quot; --title &quot;auto power tune&quot;</execute>
 					</action>
 				</item>
 			</menu>
@@ -125,6 +130,7 @@
 						<execute>scrot</execute>
 					</action>
 				</item>
+				<separator/>
 				<item label="exit">
 					<action name="Exit"/>
 				</item>
