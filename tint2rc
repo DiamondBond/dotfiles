@@ -144,7 +144,7 @@ mouse_scroll_down = toggle_iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 8 4 4
+systray_padding = 4 4 4
 systray_background_id = 2
 systray_sort = ascending
 systray_icon_size = 22
@@ -177,7 +177,7 @@ time1_timezone = Asia/Colombo
 time2_timezone = Asia/Colombo
 time2_font = charcoal 9
 clock_font_color = #1d1f28 100
-clock_padding = 6 4
+clock_padding = 12 0
 clock_background_id = 2
 clock_tooltip = %d / %m / %Y
 clock_tooltip_timezone = Asia/Colombo
