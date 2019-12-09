@@ -1,90 +1,44 @@
-## Openbox autostart.sh
-## ====================
-## When you login to your CrunchBang++ Openbox session, this autostart script
-## will be executed to set-up your environment and launch any applications
-## you want to run at startup.
-##
-## Note*: some programs, such as 'nm-applet' are run via XDG autostart.
-## Run '/usr/lib/openbox/openbox-xdg-autostart --list' to list any
-## XDG autostarted programs.
-##
-## More information about this can be found at:
-## http://openbox.org/wiki/Help:Autostart
-##
-## If you do something cool with your autostart script and you think others
-## could benefit from your hack, please consider sharing it at:
-## https://www.reddit.com/r/crunchbangplusplus
-##
-## Have fun & happy CrunchBangin'! :)
-
-# dunst
+## notification daemon
 dunst &
 
-## LX PolicyKit
+## policy kit
 lxpolkit &
 
-## Set root window colour
+## set root
 #hsetroot -solid "#4d5e63" &
 #hsetroot -solid "#AEAEAE" &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
-#feh --bg-scale /home/diamond/Pictures/Wallpapers/qtile.png &
+#feh --bg-tile /home/diamond/Pictures/Wallpapers/qtile.png &
+hsetroot -solid "#aeaeae" &
 
-## Group start:
-## 1. nitrogen - restores wallpaper
-## 2. compositor - start
-## 3. sleep - give compositor time to start
-## 4. tint2 panel
-#nitrogen --restore &
-#cbpp-compositor --start &
-tint2 &
+## tray
 #stalonetray &
+tint2 &
 
-## Start nm-applet for systray
+## start nm-applet for systray
 nm-applet &
 
-## Volume keys daemon
+## volume keys daemon
 mate-volume-control-applet &
 
-## Enable power management
+## enable power management
 xfce4-power-manager &
 
-## Start Thunar Daemon
+## start thunar daemon
 thunar --daemon &
 
-## Start xscreensaver
+## start screensaver
 #xscreensaver -no-splash &
 light-locker &
 
-## Start Clipboard manager
-#(sleep 3s && clipit) &
-
-## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
-## Adjust the values according to your preferances.
-#xset r rate 250 25 &
-
-## Turn on/off system beep
+## turn off system beep
 xset b off &
 
-## KB Shortcuts for x220
+## KB shortcuts for x220
 xbindkeys &
 
-# Merge Xresources
+# merge xresources
 xrdb "/home/diamond/.Xresources"
 
-## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
-## creates symlink in images to wallpaper folder only runs once. Safe to remove.
-##~/.cbpp-user-setup &
-
-## cbpp-welcome - post-installation script, will not run in a live session and
-## only runs once. Safe to remove.
-#(sleep 10s && cbpp-welcome --firstrun) &
-
-## Run the conky
-#conky -q &
-
-## 144hz
-#xrandr --output DisplayPort-1 --mode 1920x1080 --rate 143.98
-
-compton --corner-radius 12 --vsync -bCG
-
-hsetroot -solid "#aeaeae" &
+# start compositor
+compton --corner-radius 10 --vsync -bCG
