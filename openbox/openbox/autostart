@@ -1,0 +1,45 @@
+## notification daemon
+dunst &
+
+## policy kit
+lxpolkit &
+
+## set root
+#hsetroot -solid "#4d5e63" &
+#hsetroot -solid "#AEAEAE" &
+#feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
+#feh --bg-tile /home/diamond/Pictures/Wallpapers/qtile.png &
+#hsetroot -solid "#aeaeae" &
+feh --bg-scale /home/diamond/Pictures/Wallpapers/ballooon.jpg &
+
+## tray
+#stalonetray &
+tint2 &
+
+## start nm-applet for systray
+nm-applet &
+
+## volume keys daemon
+mate-volume-control-applet &
+
+## enable power management
+xfce4-power-manager &
+
+## start thunar daemon
+thunar --daemon &
+
+## start screensaver
+#xscreensaver -no-splash &
+light-locker &
+
+## turn off system beep
+xset b off &
+
+## KB shortcuts for x220
+xbindkeys &
+
+# merge xresources
+xrdb "/home/diamond/.Xresources"
+
+# start compositor
+compton --corner-radius 8 -bcG

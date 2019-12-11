@@ -1,0 +1,126 @@
+# Background definitions
+# ID 1
+rounded = 0
+border_width = 0
+background_color = #A2DBCB 100
+border_color = #EEEEEE 0
+
+# ID 2
+rounded = 0
+border_width = 0
+background_color = #A5CCE4 100
+border_color = #BFBFBF 0
+
+# ID 3
+rounded = 0
+border_width = 0
+background_color = #D98282 100
+border_color = #D98282 0
+
+# ID 4
+rounded = 0
+border_width = 0
+background_color = #435866 100
+border_color = #D1D1D1 0
+
+# ID 5
+rounded = 0
+border_width = 0
+background_color = #435866 100
+border_color = #E3E3E3 0
+
+# ID 6
+#rounded = 0
+#border_width = 0
+#background_color = #304050 100
+#border_color = #304050 0
+
+# Panel
+panel_monitor = all
+panel_items = LTSC
+panel_position = bottom center horizontal
+panel_size = 70% 24
+panel_margin = 0 5
+panel_padding = 0 0 0
+panel_dock = 0
+wm_menu = 1
+panel_layer = bottom
+panel_background = 0
+
+# Panel Autohide
+autohide = 1
+autohide_show_timeout = 0.0
+autohide_hide_timeout = 999999
+autohide_height = 1
+strut_policy = minimum
+
+# Taskbar
+taskbar_name = 1
+taskbar_name_padding = 10 10
+taskbar_name_background_id = 0
+taskbar_name_active_background_id = 0
+taskbar_name_font = charcoal 8
+taskbar_name_font_color = #FFFFEA 100
+taskbar_name_active_font_color = #FFFFEA 100
+taskbar_mode = single_desktop
+taskbar_padding = 0 0 0
+taskbar_background_id = 0
+taskbar_active_background_id = 1
+
+# Tasks
+urgent_nb_of_blink = 20
+task_icon = 0
+task_text = 1
+task_centered = 1
+task_maximum_size = 0 0
+task_padding = 8 6
+task_background_id = 4
+task_active_background_id = 2
+task_urgent_background_id = 3
+task_iconified_background_id = 5
+
+# Task Icons
+task_icon_asb = 100 0 0
+task_active_icon_asb = 100 0 0
+task_urgent_icon_asb = 100 0 0
+task_iconified_icon_asb = 80 0 0
+
+# Fonts
+task_font = charcoal 8
+task_font_color = #FFFFEA 100
+task_active_font_color = #FFFFEA 100
+task_urgent_font_color = #FFFFEA 100
+task_iconified_font_color = #FFFFEA 80
+font_shadow = 0
+
+# System Tray
+systray = 1
+systray_padding = 8 0 12
+systray_sort = right2left
+systray_background_id = 1
+systray_icon_size = 22
+systray_icon_asb = 100 0 0
+
+# Clock
+time1_format = %I:%M
+time1_font = charcoal 10
+clock_font_color = #555555 100
+clock_padding = 10 4
+clock_background_id = 1
+clock_lclick_command = gsimplecal
+clock_rclick_command = gsimplecal
+
+# Tooltips
+tooltip = 1
+tooltip_padding = 6 6
+tooltip_show_timeout = 1.0
+tooltip_hide_timeout = 0.0
+tooltip_background_id = 1
+tooltip_font = charcoal 8
+tooltip_font_color = #FFFFEA 100
+
+# Mouse
+mouse_middle = close
+mouse_right = iconify
+mouse_scroll_up = none
+mouse_scroll_down = none

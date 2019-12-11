@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="term">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="web">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-93530" label="games">
+			<menu id="root-menu-93530-123156" label="emulation">
+				<item label="n64">
+					<action name="Execute">
+						<execute>mupen64plus-qt</execute>
+					</action>
+				</item>
+				<item label="gba">
+					<action name="Execute">
+						<execute>mgba-qt</execute>
+					</action>
+				</item>
+				<item label="snes">
+					<action name="Execute">
+						<execute>zsnes</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="doom">
+				<action name="Execute">
+					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
+				</action>
+			</item>
+			<item label="halo">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Halo\ Combat\ Evolved/Halo\ .lnk</execute>
+				</action>
+			</item>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
+			<item label="asteroids">
+				<action name="Execute">
+					<execute>AstroMenace</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="undertale">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
+		<menu id="settings" label="misc">
+			<menu id="settings-99037" label="cpu">
+				<item label="performance">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
+					</action>
+				</item>
+				<item label="powersave">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="htop">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/procbar&quot;</execute>
+					</action>
+				</item>
+				<item label="sensors">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot; --geometry=62x16</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="obConfig" label="config">
+				<item label="autostart">
+					<action name="Execute">
+						<execute>mousepad ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<item label="obconf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="obmenu">
+					<action name="Execute">
+						<execute>obmenu</execute>
+					</action>
+				</item>
+				<item label="obkey">
+					<action name="Execute">
+						<execute>obkey</execute>
+					</action>
+				</item>
+				<item label="lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="settings-41155" label="session">
+				<item label="info">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=42x8</execute>
+					</action>
+				</item>
+				<item label="scrot">
+					<action name="Execute">
+						<execute>scrot</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="exit">
+					<action name="Exit"/>
+				</item>
+				<item label="suspend">
+					<action name="Execute">
+						<execute>systemctl suspend</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+	</menu>
+</openbox_menu>
