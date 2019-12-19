@@ -9,7 +9,14 @@ lxpolkit &
 #hsetroot -solid "#AEAEAE" &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/graychecker.png &
 #feh --bg-tile /home/diamond/Pictures/Wallpapers/qtile.png &
-hsetroot -solid "#aeaeae" &
+#hsetroot -solid "#aeaeae" &
+#feh --bg-scale /home/diamond/Pictures/Wallpapers/ballooon.jpg &
+#hsetroot -solid "#aeaeae" &
+#feh --bg-scale /home/diamond/Pictures/Wallpapers/hut-cold.png
+#feh --bg-scale /home/diamond/Pictures/Wallpapers/wash/beach.jpg &
+#hsetroot -solid "#e0e6e6" &
+hsetroot -solid "#999999" &
+#feh --bg-scale ~/Pictures/WAllpapers/beach-g.jpg
 
 ## tray
 #stalonetray &
@@ -41,4 +48,4 @@ xbindkeys &
 xrdb "/home/diamond/.Xresources"
 
 # start compositor
-compton --corner-radius 10 --vsync -bCG
+compton --corner-radius 4 -bcG

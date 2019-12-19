@@ -6,6 +6,11 @@
 				<execute>xfce4-terminal</execute>
 			</action>
 		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
 		<item label="web">
 			<action name="Execute">
 				<execute>firefox</execute>
@@ -13,12 +18,12 @@
 		</item>
 		<item label="music">
 			<action name="Execute">
-				<execute>xfce4-terminal -e ncmpcpp --geometry=55x15</execute>
+				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
 			</action>
 		</item>
-		<item label="files">
+		<item label="randvid">
 			<action name="Execute">
-				<execute>thunar</execute>
+				<execute>mpv --shuffle ~/Videos/</execute>
 			</action>
 		</item>
 		<separator/>
@@ -44,6 +49,11 @@
 			<item label="doom">
 				<action name="Execute">
 					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
+				</action>
+			</item>
+			<item label="halo">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Halo\ Combat\ Evolved/Halo\ .lnk</execute>
 				</action>
 			</item>
 			<item label="pinball">
@@ -80,19 +90,43 @@
 						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
 					</action>
 				</item>
-				<separator/>
-				<item label="htop">
-					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;/home/diamond/bin/procbar&quot;</execute>
-					</action>
-				</item>
-				<item label="sensors">
-					<action name="Execute">
-						<execute>xfce4-terminal --title &quot;Sensors&quot; -e &quot;watch -n .1 sensors&quot; --geometry=62x16</execute>
-					</action>
-				</item>
 			</menu>
 			<menu id="obConfig" label="config">
+				<menu id="obConfig-472051" label="compton">
+					<item label="enable">
+						<action name="Execute">
+							<execute>compton -bcG</execute>
+						</action>
+					</item>
+					<separator/>
+					<item label="4px rounded">
+						<action name="Execute">
+							<execute>compton --corner-radius 4 -bcG</execute>
+						</action>
+					</item>
+					<item label="6px rounded">
+						<action name="Execute">
+							<execute>compton --corner-radius 6 -bcG</execute>
+						</action>
+					</item>
+					<item label="8px rounded">
+						<action name="Execute">
+							<execute>compton --corner-radius 8 -bcG</execute>
+						</action>
+					</item>
+					<item label="10px rounded">
+						<action name="Execute">
+							<execute>compton --corner-radius 10 -bcG</execute>
+						</action>
+					</item>
+					<separator/>
+					<item label="disable">
+						<action name="Execute">
+							<execute>killall compton</execute>
+						</action>
+					</item>
+				</menu>
+				<separator/>
 				<item label="autostart">
 					<action name="Execute">
 						<execute>mousepad ~/.config/openbox/autostart</execute>
@@ -122,13 +156,20 @@
 			<menu id="settings-41155" label="session">
 				<item label="info">
 					<action name="Execute">
-						<execute>xfce4-terminal -e &quot;/home/diamond/bin/info&quot; --title sysinfo --geometry=42x8</execute>
+						<execute>xfce4-terminal --geometry 42x8 -e &quot;/home/diamond/bin/info&quot;</execute>
 					</action>
 				</item>
 				<item label="scrot">
 					<action name="Execute">
 						<execute>scrot</execute>
 					</action>
+				</item>
+				<separator/>
+				<item label="reconfig">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="restart">
+					<action name="Restart"/>
 				</item>
 				<separator/>
 				<item label="exit">
