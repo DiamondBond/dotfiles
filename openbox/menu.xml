@@ -161,7 +161,7 @@
 				</item>
 				<item label="scrot">
 					<action name="Execute">
-						<execute>scrot</execute>
+						<execute>scrot -d 5</execute>
 					</action>
 				</item>
 				<separator/>

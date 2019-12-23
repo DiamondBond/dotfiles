@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -39,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>A</name>
+    <name>slick</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -54,7 +55,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -63,7 +64,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -72,7 +73,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -81,7 +82,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -90,7 +91,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -99,7 +100,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Monaco</name>
+      <name>Terminus</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -120,17 +121,17 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>α</name>
-      <name>β</name>
-      <name>γ</name>
-      <name>δ</name>
-      <name>ε</name>
-      <name>ζ</name>
-      <name>η</name>
-      <name>θ</name>
-      <name>ι</name>
-      <name>κ</name>
-      <name>λ</name>
+      <name>&#x3B1;</name>
+      <name>&#x3B2;</name>
+      <name>&#x3B3;</name>
+      <name>&#x3B4;</name>
+      <name>&#x3B5;</name>
+      <name>&#x3B6;</name>
+      <name>&#x3B7;</name>
+      <name>&#x3B8;</name>
+      <name>&#x3B9;</name>
+      <name>&#x3BA;</name>
+      <name>&#x3BB;</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -220,7 +221,7 @@
     </keybind>
     <keybind key="S-A-y">
       <action name="Execute">
-        <command>/home/diamond/bin/gimmetime</command>
+        <command>/home/diamond/bin/daysout</command>
       </action>
     </keybind>
     <keybind key="C-A-g">
@@ -446,7 +447,7 @@
     </keybind>
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>xfce4-terminal -e htop --title &quot;Task Manager&quot;</command>
+        <command>xfce4-terminal -e htop --title "Task Manager"</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>htop</name>
@@ -1094,9 +1095,6 @@
         <x>center</x>
         <y>center</y>
       </position>
-    </application>
-    <application class="*">
-      <decor>no</decor>
     </application>
   </applications>
 </openbox_config>

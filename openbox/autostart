@@ -15,7 +15,7 @@ lxpolkit &
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/hut-cold.png
 #feh --bg-scale /home/diamond/Pictures/Wallpapers/wash/beach.jpg &
 #hsetroot -solid "#e0e6e6" &
-hsetroot -solid "#999999" &
+hsetroot -solid "#0a0d10" &
 #feh --bg-scale ~/Pictures/WAllpapers/beach-g.jpg
 
 ## tray
@@ -32,7 +32,7 @@ mate-volume-control-applet &
 xfce4-power-manager &
 
 ## start thunar daemon
-thunar --daemon &
+#thunar --daemon &
 
 ## start screensaver
 #xscreensaver -no-splash &
@@ -48,4 +48,4 @@ xbindkeys &
 xrdb "/home/diamond/.Xresources"
 
 # start compositor
-compton --corner-radius 4 -bcG
+#compton --corner-radius 8 -bcG
