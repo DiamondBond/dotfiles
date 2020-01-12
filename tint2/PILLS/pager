@@ -31,7 +31,7 @@ execp_rclick_command = mpc prev
 execp_mclick_command = mpc toggle
 execp_uwheel_command = mpc play
 execp_dwheel_command = mpc stop
-execp_font = terminus 8
+execp_font = Swis721Greek BT Roman 9
 execp_font_color = #1d1f28 100
 execp_padding = 8 4 8
 execp_background_id = 0
@@ -49,11 +49,12 @@ separator_size = 0
 separator_padding = 0 0
 
 # Panel
-panel_items = TSC
+panel_items = T
 panel_monitor = all
-panel_position = bottom center horizontal
-panel_size = 61.8% 36
-panel_margin = 0 9
+panel_position = top left horizontal
+panel_size = 36 36
+panel_shrink = 0
+panel_margin = 9 9
 panel_padding = 6 10 6 
 panel_dock = 0
 wm_menu = 0
@@ -72,17 +73,17 @@ taskbar_name = 1
 taskbar_mode = single_desktop
 taskbar_name_padding = 8 2 8
 taskbar_background_id = 0
-taskbar_name_font = terminus 8
+taskbar_name_font = Swis721Greek BT Roman 9
 taskbar_name_font_color = #1d1f28 100
 taskbar_name_active_font_color = #1d1f28 100
 taskbar_padding = 0 0 0
-taskbar_sort_order = application
+taskbar_sort_order = lru
 #taskbar_active_background_id = 0
 
 # Tasks
 #urgent_nb_of_blink = 7
-task_icon = 0
-task_text = 1
+task_icon = 1
+task_text = 0
 task_centered = 1
 task_maximum_size = 0 0
 task_padding = 0 0
@@ -92,13 +93,13 @@ task_urgent_background_id = 1
 task_iconified_background_id = 1
 
 # Task Icons
-task_icon_asb = 100 0 0
-task_active_icon_asb = 100 0 0
-task_urgent_icon_asb = 100 0 0
-task_iconified_icon_asb = 100 0 0
+task_icon_asb = 00 0 0
+task_active_icon_asb = 00 0 0
+task_urgent_icon_asb = 00 0 0
+task_iconified_icon_asb = 00 0 0
 
 # Fonts
-task_font = terminus 8
+task_font = Swis721Greek BT Roman 9
 task_font_color = #1d1f28 100
 task_active_font_color = #1d1f28 100
 task_urgent_font_color = #1d1f28 100
@@ -107,7 +108,7 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 4 0 4
+systray_padding = 8 0 8
 systray_sort = ascending
 systray_background_id = 1
 systray_icon_size = 18
@@ -115,10 +116,10 @@ systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %I:%M
-time1_font = terminus 8
+time1_font = Swis721Greek BT Roman 9
 clock_font_color = #1d1f28 100
 clock_tooltip = 
-clock_padding = 4 0 0
+clock_padding = 8 2 8
 clock_background_id = 1
 clock_lclick_command = gsimplecal
 clock_mclick_command = gsimplecal

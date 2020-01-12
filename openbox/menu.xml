@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
-		<item label="term">
+		<item label="console">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
 			</action>
@@ -11,7 +11,7 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="web">
+		<item label="browser">
 			<action name="Execute">
 				<execute>firefox</execute>
 			</action>
@@ -21,12 +21,80 @@
 				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
 			</action>
 		</item>
-		<item label="randvid">
-			<action name="Execute">
-				<execute>mpv --shuffle ~/Videos/</execute>
-			</action>
-		</item>
 		<separator/>
+		<menu id="root-menu-63833" label="apps">
+			<item label="xterm">
+				<action name="Execute">
+					<execute>xterm</execute>
+				</action>
+			</item>
+			<item label="xpdf">
+				<action name="Execute">
+					<execute>xpdf</execute>
+				</action>
+			</item>
+			<item label="paint">
+				<action name="Execute">
+					<execute>kolourpaint</execute>
+				</action>
+			</item>
+			<item label="notes">
+				<action name="Execute">
+					<execute>mousepad</execute>
+				</action>
+			</item>
+			<item label="office">
+				<action name="Execute">
+					<execute>libreoffice</execute>
+				</action>
+			</item>
+			<item label="xaos">
+				<action name="Execute">
+					<execute>xaos</execute>
+				</action>
+			</item>
+			<item label="xclock">
+				<action name="Execute">
+					<execute>xclock -digital</execute>
+				</action>
+			</item>
+			<item label="xfwrite">
+				<action name="Execute">
+					<execute>xfwrite</execute>
+				</action>
+			</item>
+			<item label="xosview">
+				<action name="Execute">
+					<execute>xosview</execute>
+				</action>
+			</item>
+			<item label="xfig">
+				<action name="Execute">
+					<execute>xfig</execute>
+				</action>
+			</item>
+			<item label="redshift">
+				<action name="Execute">
+					<execute>redshift-gtk</execute>
+				</action>
+			</item>
+			<item label="hexchat">
+				<action name="Execute">
+					<execute>hexchat</execute>
+				</action>
+			</item>
+			<item label="telegram">
+				<action name="Execute">
+					<execute>telegram-desktop</execute>
+				</action>
+			</item>
+			<item label="transmission">
+				<action name="Execute">
+					<execute>transmission-gtk</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
 		<menu id="root-menu-93530" label="games">
 			<menu id="root-menu-93530-123156" label="emulation">
 				<item label="n64">
@@ -51,24 +119,24 @@
 					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
 				</action>
 			</item>
-			<item label="halo">
-				<action name="Execute">
-					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Halo\ Combat\ Evolved/Halo\ .lnk</execute>
-				</action>
-			</item>
 			<item label="pinball">
 				<action name="Execute">
 					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
 				</action>
 			</item>
-			<item label="asteroids">
+			<item label="minecraft">
 				<action name="Execute">
-					<execute>AstroMenace</execute>
+					<execute>bash -ic &quot;mc&quot;</execute>
 				</action>
 			</item>
 			<item label="cavestory">
 				<action name="Execute">
 					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="asteroids">
+				<action name="Execute">
+					<execute>AstroMenace</execute>
 				</action>
 			</item>
 			<item label="undertale">
@@ -77,9 +145,52 @@
 				</action>
 			</item>
 		</menu>
-		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
 		<menu id="settings" label="misc">
+			<menu id="settings-112029" label="pape">
+				<item label="a">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#C0B5F9&quot;</execute>
+					</action>
+				</item>
+				<item label="fv">
+					<action name="Execute">
+						<execute>feh --bg-fill /home/diamond/Pictures/Wallpapers/fv.png</execute>
+					</action>
+				</item>
+				<item label="9b">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#9b9b9b&quot;</execute>
+					</action>
+				</item>
+				<item label="dante">
+					<action name="Execute">
+						<execute>feh --bg-fill /home/diamond/Pictures/Wallpapers/dante.jpg</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="settings-5541" label="compton">
+				<item label="kill">
+					<action name="Execute">
+						<execute>killall compton</execute>
+					</action>
+				</item>
+				<item label="8px">
+					<action name="Execute">
+						<execute>compton --corner-radius=8</execute>
+					</action>
+				</item>
+				<item label="4px">
+					<action name="Execute">
+						<execute>compton --corner-radius=4</execute>
+					</action>
+				</item>
+			</menu>
 			<menu id="settings-99037" label="cpu">
+				<item label="monitor">
+					<action name="Execute">
+						<execute>/home/diamond/bin/sensmon</execute>
+					</action>
+				</item>
 				<item label="performance">
 					<action name="Execute">
 						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
@@ -91,94 +202,14 @@
 					</action>
 				</item>
 			</menu>
-			<menu id="obConfig" label="config">
-				<menu id="obConfig-472051" label="compton">
-					<item label="enable">
-						<action name="Execute">
-							<execute>compton -bcG</execute>
-						</action>
-					</item>
-					<separator/>
-					<item label="4px rounded">
-						<action name="Execute">
-							<execute>compton --corner-radius 4 -bcG</execute>
-						</action>
-					</item>
-					<item label="6px rounded">
-						<action name="Execute">
-							<execute>compton --corner-radius 6 -bcG</execute>
-						</action>
-					</item>
-					<item label="8px rounded">
-						<action name="Execute">
-							<execute>compton --corner-radius 8 -bcG</execute>
-						</action>
-					</item>
-					<item label="10px rounded">
-						<action name="Execute">
-							<execute>compton --corner-radius 10 -bcG</execute>
-						</action>
-					</item>
-					<separator/>
-					<item label="disable">
-						<action name="Execute">
-							<execute>killall compton</execute>
-						</action>
-					</item>
-				</menu>
-				<separator/>
-				<item label="autostart">
-					<action name="Execute">
-						<execute>mousepad ~/.config/openbox/autostart</execute>
-					</action>
-				</item>
-				<item label="obconf">
-					<action name="Execute">
-						<execute>obconf</execute>
-					</action>
-				</item>
-				<item label="obmenu">
-					<action name="Execute">
-						<execute>obmenu</execute>
-					</action>
-				</item>
-				<item label="obkey">
-					<action name="Execute">
-						<execute>obkey</execute>
-					</action>
-				</item>
-				<item label="lxappearance">
-					<action name="Execute">
-						<execute>lxappearance</execute>
-					</action>
-				</item>
-			</menu>
 			<menu id="settings-41155" label="session">
 				<item label="info">
 					<action name="Execute">
-						<execute>xfce4-terminal --geometry 42x8 -e &quot;/home/diamond/bin/info&quot;</execute>
+						<execute>xfce4-terminal --title &quot;System Information&quot; --geometry 36x6 -e &quot;/home/diamond/bin/info&quot;</execute>
 					</action>
 				</item>
-				<item label="scrot">
-					<action name="Execute">
-						<execute>scrot -d 5</execute>
-					</action>
-				</item>
-				<separator/>
-				<item label="reconfig">
-					<action name="Reconfigure"/>
-				</item>
-				<item label="restart">
-					<action name="Restart"/>
-				</item>
-				<separator/>
-				<item label="exit">
+				<item label="logout">
 					<action name="Exit"/>
-				</item>
-				<item label="suspend">
-					<action name="Execute">
-						<execute>systemctl suspend</execute>
-					</action>
 				</item>
 			</menu>
 		</menu>

@@ -8,14 +8,20 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #f4f4f4 100
-border_color = #1d1f28 100
+background_color = #13191E 100
+border_color = #35363A 100
 
 # ID 2
 rounded = 0
 border_width = 0
-background_color = #f4f4f4 100
-border_color = #F4F4F4 100
+background_color = #252d33 100
+border_color = #FFFFFF 100
+
+# ID 3
+rounded = 0
+border_width = 0
+background_color = #2b333a 100
+border_color = #ffffff 100
 
 #-------------------------------------
 # Executor 1
@@ -32,9 +38,9 @@ execp_mclick_command = mpc toggle
 execp_uwheel_command = mpc play
 execp_dwheel_command = mpc stop
 execp_font = terminus 8
-execp_font_color = #1d1f28 100
-execp_padding = 8 4 8
-execp_background_id = 0
+execp_font_color = #dddddd 100
+execp_padding = 4 2 4
+execp_background_id = 3
 execp_centered = 0
 execp_icon_w = 0
 execp_icon_h = 0
@@ -49,13 +55,16 @@ separator_size = 0
 separator_padding = 0 0
 
 # Panel
-panel_items = TSC
+panel_items = ETSC
 panel_monitor = all
-panel_position = bottom center horizontal
-panel_size = 61.8% 36
-panel_margin = 0 9
-panel_padding = 6 10 6 
+panel_position = top center horizontal
+#panel_size = 61.8% 24
+#panel_margin = 0 5
+panel_size = 0 22
+panel_margin = 0 0
+panel_padding = 0 0 0
 panel_dock = 0
+panel_shrink = 0
 wm_menu = 0
 panel_layer = bottom
 panel_background_id = 1
@@ -69,26 +78,29 @@ strut_policy = follow_size
 
 # Taskbar
 taskbar_name = 1
-taskbar_mode = single_desktop
-taskbar_name_padding = 8 2 8
-taskbar_background_id = 0
+taskbar_name_padding = 8 2 6
+taskbar_name_background_id = 2
+taskbar_name_active_background_id = 2
 taskbar_name_font = terminus 8
-taskbar_name_font_color = #1d1f28 100
-taskbar_name_active_font_color = #1d1f28 100
-taskbar_padding = 0 0 0
+taskbar_name_font_color = #dddddd 100
+taskbar_name_active_font_color = #dddddd 100
 taskbar_sort_order = application
+taskbar_mode = single_desktop 
+taskbar_padding = 0 0 0
+taskbar_background_id = 0
 #taskbar_active_background_id = 0
 
 # Tasks
-#urgent_nb_of_blink = 7
+urgent_nb_of_blink = 4
+task_align = left
 task_icon = 0
 task_text = 1
 task_centered = 1
 task_maximum_size = 0 0
-task_padding = 0 0
+task_padding = 8 4 8
 task_background_id = 1
-task_active_background_id = 1
-task_urgent_background_id = 1
+task_active_background_id = 0
+task_urgent_background_id = 2
 task_iconified_background_id = 1
 
 # Task Icons
@@ -99,39 +111,37 @@ task_iconified_icon_asb = 100 0 0
 
 # Fonts
 task_font = terminus 8
-task_font_color = #1d1f28 100
-task_active_font_color = #1d1f28 100
-task_urgent_font_color = #1d1f28 100
-task_iconified_font_color = #1d1f28 100
+task_font_color = #dddddd 100
+task_active_font_color = #dddddd 100
+task_urgent_font_color = #dddddd 100
+task_iconified_font_color = #dddddd 100
 font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 4 0 4
+systray_padding = 4 2 4
 systray_sort = ascending
-systray_background_id = 1
-systray_icon_size = 18
+systray_background_id = 2
+systray_icon_size = 20
 systray_icon_asb = 100 0 0
 
 # Clock
-time1_format = %I:%M
+time1_format = %I:%M %P
 time1_font = terminus 8
-clock_font_color = #1d1f28 100
+clock_font_color = #dddddd 100
 clock_tooltip = 
-clock_padding = 4 0 0
-clock_background_id = 1
+clock_padding = 8 4 8
+clock_background_id = 3
 clock_lclick_command = gsimplecal
-clock_mclick_command = gsimplecal
-clock_rclick_command = gsimplecal
 
 # Tooltips
-tooltip = 0
-tooltip_padding = 2 2
+tooltip = 1
+tooltip_padding = 5 5
 tooltip_show_timeout = 0
 tooltip_hide_timeout = 0
-tooltip_background_id = 0
-tooltip_font = terminus 8
-tooltip_font_color = #F4F4F4 100
+tooltip_background_id = 1
+tooltip_font = Charcoal 8
+tooltip_font_color = #dddddd 100
 
 # Mouse
 mouse_middle = close
@@ -144,9 +154,9 @@ battery = 0
 battery_low_status = 20
 battery_low_cmd = notify-send "battery low"
 battery_hide = 90
-bat1_font = terminus 8
-bat2_font = terminus 8
-battery_font_color = #F4F4F4 100
+bat1_font = Charcoal 8
+bat2_font = Charcoal 8
+battery_font_color = #dddddd 100
 battery_padding = 0 0
 battery_background_id = 0
 

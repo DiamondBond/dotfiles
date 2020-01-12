@@ -1,0 +1,2 @@
+<application class="*"> <decor>no</decor> </application>
+

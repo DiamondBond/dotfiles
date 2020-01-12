@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>slick</name>
+    <name>as</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -55,8 +55,8 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -64,8 +64,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -73,8 +73,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -82,8 +82,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -91,8 +91,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -100,8 +100,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Terminus</name>
-      <size>8</size>
+      <name>Swis721Greek BT</name>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -158,7 +158,7 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>35</top>
+    <top>10</top>
     <bottom>10</bottom>
     <left>10</left>
     <right>10</right>
@@ -166,10 +166,10 @@
   <dock>
     <position>Floating</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
-    <floatingX>0</floatingX>
-    <floatingY>0</floatingY>
+    <floatingX>551</floatingX>
+    <floatingY>723</floatingY>
     <noStrut>yes</noStrut>
-    <stacking>Below</stacking>
+    <stacking>Normal</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -185,6 +185,16 @@
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="S-A-e">
       <action name="Move"/>
+    </keybind>
+    <keybind key="A-F1">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="S-A-f">
+      <action name="Execute">
+        <command>/home/diamond/bin/cookie</command>
+      </action>
     </keybind>
     <keybind key="S-A-Return">
       <action name="Execute">
@@ -202,6 +212,11 @@
     <keybind key="A-p">
       <action name="Execute">
         <command>dmenu_run</command>
+      </action>
+    </keybind>
+    <keybind key="S-A-p">
+      <action name="Execute">
+        <command>scrot</command>
       </action>
     </keybind>
     <keybind key="S-A-a">
@@ -263,7 +278,7 @@
       <action name="Resize"/>
     </keybind>
     <keybind key="S-A-w">
-      <action name="ToggleMaximizeFull"/>
+      <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="S-A-d">
       <action name="ToggleDecorations"/>
@@ -272,7 +287,7 @@
       <action name="ToggleShade"/>
     </keybind>
     <keybind key="A-grave">
-      <action name="Iconify"/>
+      <action name="RaiseLower"/>
     </keybind>
     <keybind key="A-1">
       <action name="GoToDesktop">
@@ -312,6 +327,11 @@
     <keybind key="A-8">
       <action name="GoToDesktop">
         <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="A-9">
+      <action name="GoToDesktop">
+        <to>9</to>
       </action>
     </keybind>
     <keybind key="S-A-exclam">
@@ -362,6 +382,12 @@
         <follow>no</follow>
       </action>
     </keybind>
+    <keybind key="S-A-parenleft">
+      <action name="SendToDesktop">
+        <desktop>9</desktop>
+        <follow>no</follow>
+      </action>
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -369,9 +395,7 @@
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
+      <action name="Iconify"/>
     </keybind>
     <keybind key="A-space">
       <action name="Execute">
@@ -1095,6 +1119,9 @@
         <x>center</x>
         <y>center</y>
       </position>
+    </application>
+    <application name="xfce4-terminal">
+      <decor>yes</decor>
     </application>
   </applications>
 </openbox_config>
