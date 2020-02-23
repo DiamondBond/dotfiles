@@ -1,0 +1,1 @@
+sudo apt purge popularity-contest avahi-daemon snapd whoopsie
