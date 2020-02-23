@@ -1,16 +1,18 @@
 [global]
 monitor = 0
 follow = mouse
-geometry = "300x60-10-10"
+geometry = "300x300-5+41"
 indicate_hidden = yes
 shrink = no
 separator_height = 0
-padding = 32
-horizontal_padding = 32
-frame_width = 2
+padding = 15
+horizontal_padding = 10
+frame_width = 0
+frame_color = "#000000"
 sort = no
 idle_threshold = 120
-font = terminus 9
+#font = Swis721Greek BT Roman 9
+font = terminus 8
 line_height = 4
 markup = full
 format = %s\n%b
@@ -35,19 +37,15 @@ close_all = ctrl+shift+space
 context = ctrl+shift+period
 
 [urgency_low]
-timeout = 4
-background = "#F4F4F4"
-foreground = "#000000"
-frame_color = "#F4F4F4"
-
+	background = "#071D22"
+	foreground = "#ffffff"
+	timeout = 7
+	#icon = /path/to/icon
 [urgency_normal]
-timeout = 4
-background = "#F4F4F4"
-foreground = "#000000"
-frame_color = "#F4F4F4"
-
+	background = "#071D22"
+	foreground = "#ffffff"
+	timeout = 10
 [urgency_critical]
-timeout = 0
-background = "#F4F4F4"
-foreground = "#000000"
-frame_color = "#F4F4F4"
+	background = "#071D22"
+	foreground = "#ffffff"
+	timeout = 0
