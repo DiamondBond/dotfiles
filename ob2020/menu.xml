@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="console">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item label="browser">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-63833" label="apps">
+			<item label="cat">
+				<action name="Execute">
+					<execute>oneko</execute>
+				</action>
+			</item>
+			<item label="xterm">
+				<action name="Execute">
+					<execute>xterm</execute>
+				</action>
+			</item>
+			<item label="paint">
+				<action name="Execute">
+					<execute>kolourpaint</execute>
+				</action>
+			</item>
+			<item label="notes">
+				<action name="Execute">
+					<execute>mousepad</execute>
+				</action>
+			</item>
+			<item label="office">
+				<action name="Execute">
+					<execute>libreoffice</execute>
+				</action>
+			</item>
+			<item label="xaos">
+				<action name="Execute">
+					<execute>xaos</execute>
+				</action>
+			</item>
+			<item label="xosview">
+				<action name="Execute">
+					<execute>xosview</execute>
+				</action>
+			</item>
+			<item label="redshift">
+				<action name="Execute">
+					<execute>redshift-gtk</execute>
+				</action>
+			</item>
+			<item label="hexchat">
+				<action name="Execute">
+					<execute>hexchat</execute>
+				</action>
+			</item>
+			<item label="telegram">
+				<action name="Execute">
+					<execute>telegram-desktop</execute>
+				</action>
+			</item>
+			<item label="transmission">
+				<action name="Execute">
+					<execute>transmission-gtk</execute>
+				</action>
+			</item>
+		</menu>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
+		<menu id="root-menu-93530" label="games">
+			<menu id="root-menu-93530-123156" label="emulation">
+				<item label="n64">
+					<action name="Execute">
+						<execute>mupen64plus-qt</execute>
+					</action>
+				</item>
+				<item label="gba">
+					<action name="Execute">
+						<execute>mgba-qt</execute>
+					</action>
+				</item>
+				<item label="snes">
+					<action name="Execute">
+						<execute>zsnes</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="doom">
+				<action name="Execute">
+					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
+				</action>
+			</item>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
+			<item label="minecraft">
+				<action name="Execute">
+					<execute>bash -ic &quot;mc&quot;</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="asteroids">
+				<action name="Execute">
+					<execute>AstroMenace</execute>
+				</action>
+			</item>
+			<item label="undertale">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/GOG.com/Undertale/Undertale.lnk</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="settings" label="misc">
+			<menu id="settings-112029" label="pape">
+				<item label="a">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#aaaaaa&quot;</execute>
+					</action>
+				</item>
+				<item label="patt">
+					<action name="Execute">
+						<execute>feh --bg-tile -z /home/diamond/Pictures/patterns/</execute>
+					</action>
+				</item>
+				<separator/>
+				<separator/>
+				<item label="9b">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#9b9b9b&quot;</execute>
+					</action>
+				</item>
+				<item label="3d">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#3d3d3d&quot;</execute>
+					</action>
+				</item>
+				<item label="dp">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#62607F&quot;</execute>
+					</action>
+				</item>
+				<item label="lp">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#C0B5F9&quot;</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="g0">
+					<action name="Execute">
+						<execute>feh --bg-fill ~/.background.png</execute>
+					</action>
+				</item>
+				<item label="g1">
+					<action name="Execute">
+						<execute>feh --bg-fill ~/.background2.png</execute>
+					</action>
+				</item>
+				<item label="apt">
+					<action name="Execute">
+						<execute>feh --bg-fill /home/diamond/Pictures/Wallpapers/apt.jpg</execute>
+					</action>
+				</item>
+				<item label="fog">
+					<action name="Execute">
+						<execute>feh --bg-fill ~/.wallpaper.jpg</execute>
+					</action>
+				</item>
+				<item label="Lpeach">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#FFD6BA&quot;</execute>
+					</action>
+				</item>
+				<item label="peach">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#D9AFA3&quot;</execute>
+					</action>
+				</item>
+				<item label="flower">
+					<action name="Execute">
+						<execute>feh --bg-tile /home/diamond/Pictures/Wallpapers/purp-tile.gif</execute>
+					</action>
+				</item>
+				<item label="dante">
+					<action name="Execute">
+						<execute>feh --bg-fill /home/diamond/Pictures/Wallpapers/dante.jpg</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="settings-99037" label="cpu">
+				<item label="monitor">
+					<action name="Execute">
+						<execute>/home/diamond/bin/sensmon</execute>
+					</action>
+				</item>
+				<item label="performance">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot;</execute>
+					</action>
+				</item>
+				<item label="powersave">
+					<action name="Execute">
+						<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot;</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="settings-41155" label="session">
+				<item label="info">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;System Information&quot; --geometry 36x7 -e &quot;/home/diamond/bin/info&quot;</execute>
+					</action>
+				</item>
+				<item label="logout">
+					<action name="Exit"/>
+				</item>
+			</menu>
+			<item label="scrot">
+				<action name="Execute">
+					<execute>scrot -d 3</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

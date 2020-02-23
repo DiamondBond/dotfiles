@@ -1,0 +1,52 @@
+## set root
+#hsetroot -solid "#406080"
+#hsetroot -solid "#3d3d3d"
+#hsetroot -solid "#9b9b9b"
+#hsetroot -solid "#D9AFA3"
+hsetroot -solid "#FFD6BA"
+#hsetroot -solid "#666699"
+#hsetroot -solid "#EEF2FF"
+#feh --bg-fill ~/.wallpaper.jpg
+#feh --bg-tile ~/.wallpaper.gif
+
+## notification daemon
+dunst &
+
+## policy kit
+lxpolkit &
+
+## tray
+#stalonetray &
+tint2 &
+#/home/diamond/bin/startpanel &
+
+## start nm-applet for systray
+nm-applet &
+
+## volume keys daemon
+mate-volume-control-applet &
+
+## enable power management
+xfce4-power-manager &
+
+## start thunar daemon
+#thunar --daemon &
+
+## start screensaver
+#xscreensaver -no-splash &
+light-locker &
+
+## turn off system beep
+#xset b off & #handled by ~/.xsession now
+
+## KB shortcuts for x220
+xbindkeys &
+
+# merge xresources
+#xrdb "/home/diamond/.Xresources"
+
+# start compositor
+#compton --corner-radius 8
+
+# workspace N=8
+#wmctrl -n 8
