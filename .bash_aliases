@@ -43,3 +43,4 @@ alias soff='mpc single off'
 alias doas="sudo"
 alias pkg="apt"
 alias emanuel="bash -ic '/home/diamond/.emanuel.sh'"
+alias music="ncmpcpp"
