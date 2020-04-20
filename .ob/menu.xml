@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="terminal">
+			<action name="Execute">
+				<execute>xfce4-terminal</execute>
+			</action>
+		</item>
+		<item label="firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
+			</action>
+		</item>
+		<item label="files">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<!--<menu id="help" label="Help" execute="cbpp-help-pipemenu" />-->
+		<separator/>
+		<menu id="root-menu-93530" label="games">
+			<item label="doom">
+				<action name="Execute">
+					<execute>gzdoom /home/diamond/.config/gzdoom/brutalv21.pk3</execute>
+				</action>
+			</item>
+			<item label="pinball">
+				<action name="Execute">
+					<execute>env WINEPREFIX=&quot;/home/diamond/.wine&quot; wine-stable C:\\windows\\command\\start.exe /Unix /home/diamond/.wine/dosdevices/c:/users/diamond/Start\ Menu/Programs/Games/Pinball.lnk</execute>
+				</action>
+			</item>
+			<item label="cavestory">
+				<action name="Execute">
+					<execute>/home/diamond/bin/cavestory</execute>
+				</action>
+			</item>
+			<item label="minecraft">
+				<action name="Execute">
+					<execute>bash -ic &quot;mc&quot;</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-73227" label="system">
+			<item label="performance">
+				<action name="Execute">
+					<execute>xfce4-terminal -e &quot;/home/diamond/bin/maxperf&quot; --title &quot;Switching to Performance Mode...&quot;</execute>
+				</action>
+			</item>
+			<item label="powersave">
+				<action name="Execute">
+					<execute>xfce4-terminal -e &quot;/home/diamond/bin/minperf&quot; --title &quot;Switching to Powersaving Mode...&quot;</execute>
+				</action>
+			</item>
+			<item label="toggle__bar">
+				<action name="Execute">
+					<execute>/home/diamond/bin/toggle_clock</execute>
+				</action>
+			</item>
+			<item label="toggle__tray">
+				<action name="Execute">
+					<execute>/home/diamond/bin/toggle_tray</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="settings" label="session">
+			<item label="info">
+				<action name="Execute">
+					<execute>xfce4-terminal --title &quot;System Information&quot; --geometry 36x7 -e &quot;/home/diamond/bin/sysinfowait&quot;</execute>
+				</action>
+			</item>
+			<item label="exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

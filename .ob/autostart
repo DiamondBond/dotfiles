@@ -1,0 +1,63 @@
+## set root
+#hsetroot -solid "#406080"
+#hsetroot -solid "#3d3d3d"
+#hsetroot -solid "#D9AFA3"
+#hsetroot -solid "#22AA99"
+#hsetroot -solid "#666699"
+#hsetroot -solid "#FFD6BA"
+#feh --bg-fill ~/.wallpaper.jpg
+#feh --bg-tile /home/diamond/Pictures/Wallpapers/zen.jpg
+#feh --bg-scale ~/Pictures/Wallpapers/ballooon.jpg
+#hsetroot -solid "#bbbbbb"
+hsetroot -solid "#808080"
+
+## KB shortcuts for x220
+xbindkeys &
+
+## notification daemon
+dunst &
+
+## policy kit
+lxpolkit &
+
+## tray
+#stalonetray &
+#xfce4-panel &
+#xfdesktop &
+#tint2 &
+#/home/diamond/bin/startpanel &
+#/home/diamond/.config/tint2/ben/start.sh
+#/home/diamond/go/bin/melonbar &
+/home/diamond/.config/polybar/launch.sh
+
+## start nm-applet for systray
+nm-applet &
+
+## volume keys daemon
+mate-volume-control-applet &
+
+## enable power management
+xfce4-power-manager &
+
+#/home/diamond/bin/clock.sh
+
+## start thunar daemon
+#thunar --daemon &
+
+## start screensaver
+#xscreensaver -no-splash &
+#light-locker &
+
+## turn off system beep
+#xset b off & #handled by ~/.xsession now
+
+# merge xresources
+#xrdb "/home/diamond/.Xresources"
+
+# start compositor
+#compton --corner-radius 8
+#compton -b --backend xrender -cC -l -18 -t -18 -o 0.1
+#picom &
+
+# workspace N=8
+#wmctrl -n 8
