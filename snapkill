@@ -1,0 +1,127 @@
+#!/bin/bash
+#
+# SNAPKILL
+# EZ Snap System Remover
+# Version 1
+#
+# snapkill -- Revision: 1 -- by eznix (https://sourceforge.net/projects/ezos/)
+# (GNU/General Public License version 3.0)
+#
+# ---------------------------------------
+# Define Functions:
+# ---------------------------------------
+#
+# Snap service removal script segment taken from:
+# http://landofnightandday.blogspot.com/2018/06/disable-snap-core-service-on-ubuntu-1804.html
+#
+DISSNAP () { 
+clear
+echo " "
+snap_services=$(systemctl list-unit-files | grep snap|grep enabled|cut -d ' ' -f 1)
+for snap_service in $snap_services; do
+cmd="sudo systemctl disable $snap_service"
+echo $cmd
+$cmd
+sleep 1
+done
+clear
+echo " "
+echo "Disabled Snap Services"
+sleep 3
+clear
+}
+#
+#
+PURGESNAP () { 
+clear
+echo " "
+snap remove --purge $(snap list | awk '{print $1}' | egrep -v "Name|core")
+apt-get -yy autoremove --purge snapd 
+apt-get -yy autoremove --purge gnome-software-plugin-snap plasma-discover-backend-snap plasma-discover-snap-backend
+clear
+echo " "
+echo "Purged Snaps and Snapd"
+sleep 3
+clear
+}
+#
+#
+DELDIRS () {
+clear
+echo " "
+rm -rf /var/cache/snapd/
+rm -rf /var/snap/
+rm -rf /snap/
+clear
+echo " "
+echo "Removed Snap Folders"
+sleep 3
+clear
+}
+#
+#
+SYNAPTIC () { 
+clear
+echo " "
+apt-get -yy install synaptic
+apt-get clean
+apt-get autoclean
+clear
+echo " "
+echo "Installed Synaptic"
+sleep 3
+clear
+}
+#
+#
+# ---------------------------
+# Main Menu
+# ---------------------------
+#
+mainmenu () { while true
+do
+clear
+echo "--------------------------"
+echo " SNAPKILL "
+echo " EZ Snap System Remover "
+echo "--------------------------"
+echo ""
+echo " (a) Disable Snapd Services "
+echo " (b) Purge Snaps and Snapd "
+echo " (c) Remove Snap Related Folders "
+echo " (d) Install Synaptic "
+echo ""
+echo " (x) Exit "
+echo
+read -p "Please enter your choice: " choice
+case $choice in
+  a|A) DISSNAP;;
+  b|B) PURGESNAP;;
+  c|C) DELDIRS;;
+  d|D) SYNAPTIC;;
+  x|X) exit;;
+  *) echo "invalid answer, please try again";;
+#
+esac
+done
+}
+#
+# Begin main program:
+#
+mainmenu
+#
+done
+#
+# Disclaimer:
+#
+# THIS SOFTWARE IS PROVIDED BY EZNIX “AS IS” AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL EZNIX BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+#
