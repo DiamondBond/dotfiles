@@ -1,0 +1,162 @@
+! Misc QOL
+!XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 8192
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 14
+XTerm.vt100.internalBorder: 7
+XTerm*allowSendEvents: true
+
+! Fonts
+*VT100.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+!*VT100.font: "mono:pixelsize=12:antialias=true:autohint=true"
+!XTerm.vt100.faceName: Go Mono 14
+XTerm*allowBoldFonts: false
+
+! Clipboard shenanigans
+XTerm*selectToClipboard: true
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+*VT100*translations: #override Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+XTerm*printerCommand: xterm -T History -e sh -c 'less -r <&3' 3<&0
+
+! Colors
+! #4D5E63
+!*.foreground:   #ffffff
+!*.background:   #000000
+!*.cursorColor:  #999999
+
+! black
+!*.color0:       #282A36
+!*.color8:       #282A36
+
+! red
+!*.color1:       #F37F97
+!*.color9:       #F37F97
+
+! green
+!*.color2:       #5ADECD
+!*.color10:      #5ADECD
+
+! yellow
+!*.color3:       #F2A272
+!*.color11:      #F2A272
+
+! blue
+!*.color4:       #8897F4
+!*.color12:      #8897F4
+
+! magenta
+!*.color5:       #C574DD
+!*.color13:      #C574DD
+
+! cyan
+!*.color6:       #79E6F3
+!*.color14:      #79E6F3
+
+! white
+!*.color7:       #AAAAAA
+!*.color15:      #AAAAAA
+
+!*.foreground: 	#E8DFD6
+!*.background: 	#021B21
+!*.cursorColor:  #2E3340
+!*.color0:       #032C36
+!*.color8:       #065F73
+!*.color1:       #C2454E
+!*.color9:       #EF5847
+!*.color2:       #7CBF9E
+!*.color10:      #A2D9B1
+!*.color3:       #8A7A63
+!*.color11:      #BEB090
+!*.color4:       #2E3340
+!*.color12:      #61778D
+!*.color5:       #FF5879
+!*.color13:      #FF99A1
+!*.color6:       #44B5B1
+!*.color14:      #9ED9D8
+!*.color7:       #F2F1B9
+!*.color15:      #F6F6C9
+
+*background: #ffffff
+*foreground: #000000
+*cursorColor: #000000
+
+!black
+*color0: #ffffff
+*color8: #c0c0c0
+
+!red
+*color1: #A5001F
+*color9: #A5001F
+
+!green
+*color2: #00522F
+*color10: #00522F
+
+!yellow
+*color3: #942C00
+*color11: #942C00
+
+!blue
+*color4: #000a78
+*color12: #000a78
+
+!magenta
+*color5: #820069
+*color13: #820069
+
+!cyan
+*color6: #005475
+*color14: #005475
+
+!white
+*color7: #000000
+*color15: #000000
+
+
+!URxvt
+
+URxvt.scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+URxvt.font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+URxvt*cursorUnderline: true
+URxvt*cursorBlink: true
+!URxvt.font: xft:monaco:size=9
+!URxvt.letterSpace: -1
+!URxvt.lineSpace: -1
+URxvt.internalBorder: 10
+!URxvt.perl-ext-common:  ...,clipboard,...
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+!URxvt.perl-ext-common: ...,tabbed,...
+URxvt.perl-ext-common: default,matcher
+URxvt.tabbed.tabbar-fg: 8
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 6
+URxvt.tabbed.tab-bg: 0
+
+XTerm*metaSendsEscape: true
+URxvt.metaSendsEscape: true
+
+!urxvt*depth: 32
+!urxvt*background: rgba:0020/0270/0330/c800
+!urxvt*transparent: true
+!urxvt*shading: 10
