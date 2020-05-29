@@ -118,7 +118,7 @@ PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 # set PS1
 #export PS1=" % "
-export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] > '
+#export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] \w '
 
 # git config --global core.editor "vim"
 export GIT_EDITOR=vim
@@ -183,4 +183,34 @@ tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | s
 #echo
 
 
+export PATH=/home/diamond/.nimble/bin:$PATH
+#export TERM=xterm-256color
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+#(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+#cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+#source ~/.cache/wal/colors-tty.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/diamond/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/diamond/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/diamond/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/diamond/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] \w '
 
