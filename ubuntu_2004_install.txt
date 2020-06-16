@@ -28,3 +28,4 @@ sudo apt install mupen64plus-qt mgba-qt zsnes
 # dwm deps
 sudo apt install libx11-dev libxcb1-dev libxft-dev x11proto-xinerama-dev libxinerama-dev
 libxcb-xinerama0-dev libdmx-dev libxinerama-dev
+sudo apt install xbindkeys dunst lxpolkit stalonetray
