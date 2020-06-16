@@ -24,3 +24,7 @@ sudo apt install wine64 wine32 winbind winetricks wine-binfmt dosbox exe-thumbna
 
 # install emulators
 sudo apt install mupen64plus-qt mgba-qt zsnes
+
+# dwm deps
+sudo apt install libx11-dev libxcb1-dev libxft-dev x11proto-xinerama-dev libxinerama-dev
+libxcb-xinerama0-dev libdmx-dev libxinerama-dev
