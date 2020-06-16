@@ -9,10 +9,15 @@ libmpfr-dev libmpc-dev libgmp-dev e2fsprogs qemu-system-i386 qemu-utils vde2 xbi
 mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-utils vulkan-validationlayers
 ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly
 gstreamer1.0-vaapi fluid-soundfont-gm timidity fluid-soundfont-gs fluidsynth freepats pmidi
-timidity-daemon gpick
+timidity-daemon gpick wkhtmltopdf tor torbrowser-launcher audacity ssh
 
+# remove snap
 sudo apt purge --autoremove snapd
+rm -rf ~/snap
+sudo rm -rf /snap
+sudo rm -rf /var/snap
+sudo rm -rf /var/lib/snapd
 
+# install wine
 dpkg --add-architecture i386
-sudo apt install wine64 wine32
-
+sudo apt install wine64 wine32 winbind winetricks wine-binfmt dosbox exe-thumbnailer libpam-winbind
