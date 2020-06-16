@@ -21,3 +21,6 @@ sudo rm -rf /var/lib/snapd
 # install wine
 dpkg --add-architecture i386
 sudo apt install wine64 wine32 winbind winetricks wine-binfmt dosbox exe-thumbnailer libpam-winbind
+
+# install emulators
+sudo apt install mupen64plus-qt mgba-qt zsnes
