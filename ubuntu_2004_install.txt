@@ -1,15 +1,4 @@
-sudo apt install build-essential vim-gtk tmux ubuntu-restricted-extras hexchat telegram-desktop
-scrcpy bash-completion slop xdotool gparted kdenlive gimp inkscape software-properties-common mpv
-mpc mpd ncmpcpp nomacs sxiv screenfetch scrot neofetch cowsay fortune fortunes cowsay-off sl
-cmatrix git zathura zathura-djvu zathura-ps zathura-cb mupdf mupdf-tools curl wget
-adwaita-icon-theme adwaita-icon-theme-full binfmt-support gnome-icon-theme fonts-dejavu ntfs-3g
-traceroute tlp tlp-rdw acpi-call-dkms tp-smapi-dkms menu smartmontools linux-tools-generic
-powertop cpufrequtils htop pavucontrol galculator gmrun synaptic intel-microcode cmake
-libmpfr-dev libmpc-dev libgmp-dev e2fsprogs qemu-system-i386 qemu-utils vde2 xbindkeys
-mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-utils vulkan-validationlayers
-ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly
-gstreamer1.0-vaapi fluid-soundfont-gm timidity fluid-soundfont-gs fluidsynth freepats pmidi
-timidity-daemon gpick wkhtmltopdf tor torbrowser-launcher audacity ssh
+sudo apt install build-essential vim-gtk tmux ubuntu-restricted-extras hexchat telegram-desktop scrcpy bash-completion slop xdotool gparted kdenlive gimp inkscape software-properties-common mpv mpc mpd ncmpcpp nomacs sxiv screenfetch scrot neofetch cowsay fortune fortunes cowsay-off sl cmatrix git zathura zathura-djvu zathura-ps zathura-cb mupdf mupdf-tools curl wget adwaita-icon-theme adwaita-icon-theme-full binfmt-support gnome-icon-theme fonts-dejavu ntfs-3g traceroute tlp tlp-rdw acpi-call-dkms tp-smapi-dkms menu smartmontools linux-tools-generic powertop cpufrequtils htop pavucontrol galculator gmrun synaptic intel-microcode cmake libmpfr-dev libmpc-dev libgmp-dev e2fsprogs qemu-system-i386 qemu-utils vde2 xbindkeys mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-utils vulkan-validationlayers ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi fluid-soundfont-gm timidity fluid-soundfont-gs fluidsynth freepats pmidi timidity-daemon gpick wkhtmltopdf tor torbrowser-launcher audacity ssh lm-sensors wmctrl steam-installer kolourpaint
 
 # remove snap
 sudo apt purge --autoremove snapd
