@@ -1,0 +1,25 @@
+[Added Associations]
+application/epub+zip=org.pwmt.zathura.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+image/gif=nomacs.desktop;
+image/jpeg=nomacs.desktop;
+image/png=nomacs.desktop;
+text/plain=mousepad.desktop;
+video/mp4=mpv.desktop;
+video/x-matroska=mpv.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-TY4PM0.desktop;
+message/rfc822=userapp-Thunderbird-TY4PM0.desktop;
+application/x-bittorrent=transmission-qt.desktop;
+
+[Default Applications]
+application/epub+zip=org.pwmt.zathura.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+image/gif=nomacs.desktop;
+image/jpeg=nomacs.desktop;
+image/png=nomacs.desktop;
+text/plain=mousepad.desktop;
+video/mp4=mpv.desktop;
+video/x-matroska=mpv.desktop;
+x-scheme-handler/freetube=FreeTube.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-TY4PM0.desktop
+message/rfc822=userapp-Thunderbird-TY4PM0.desktop

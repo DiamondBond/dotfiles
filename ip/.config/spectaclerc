@@ -1,0 +1,14 @@
+[$Version]
+update_info=spectacle_newConfig.upd:spectacle-new-config
+
+[GuiConfig]
+window-position=50,26
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/rss.png,file:$HOME/rss.png
+Recent URLs[$e]=file:$HOME/Pictures/
+detailViewIconSize=0
+
+[Save]
+lastSaveAsLocation=file:///home/diamond/rss.png
+lastSaveLocation=file:///home/diamond/Pictures/Screenshot_20200623_215657.png

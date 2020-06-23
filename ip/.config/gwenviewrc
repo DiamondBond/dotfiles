@@ -1,0 +1,22 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[MainWindow]
+Height 1080=480
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAvkAAAG6AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=761
+
+[Recent Files]
+File1[$e]=/run/media/diamond/Data/Pictures/Screenshots/desktop.png
+File2[$e]=/run/media/diamond/Data/Pictures/Screenshots/Screenshot_20200620_203741.png
+File3[$e]=$HOME/Pictures/Screenshots/a.png
+File4[$e]=$HOME/git/dinomaid/img/dinorun.gif
+Name1[$e]=desktop.png
+Name2[$e]=Screenshot_20200620_203741.png
+Name3[$e]=a.png
+Name4[$e]=dinorun.gif
+
+[SideBar]
+SideBarSplitterSizes=242,516

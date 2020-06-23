@@ -1,0 +1,16 @@
+[Show]
+CreateK3bAudioProject=false
+CreateK3bDataProject=false
+CreateK3bVcdProject=false
+KGetDownload=false
+WriteCdImage=false
+compressfileitemaction=true
+extractfileitemaction=true
+installFont=true
+kactivitymanagerd_fileitem_linking_plugin=false
+kdeconnectfileitemaction=false
+openTerminalHere=true
+runInKonsole=true
+sharefileitemaction=false
+slideshow=false
+tagsfileitemaction=true

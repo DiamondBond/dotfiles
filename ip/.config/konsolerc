@@ -1,0 +1,19 @@
+[Desktop Entry]
+DefaultProfile=Ark.profile
+
+[Favorite Profiles]
+Favorites=Ark.profile
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAHCAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+ExpandTabWidth=true
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/diamond/.konsole.css

@@ -1,0 +1,8 @@
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[KFileDialog Settings]
+Recent Files[$e]=nice.jpg,file:$HOME/Pictures/Wallpapers/nice.jpg
+Recent URLs[$e]=file:$HOME/Pictures/Wallpapers/
+detailViewIconSize=0

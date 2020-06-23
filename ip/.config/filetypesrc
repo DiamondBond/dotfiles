@@ -1,0 +1,9 @@
+[EmbedSettings]
+embed-application/epub+zip=false
+embed-application/pdf=false
+embed-image/gif=false
+embed-image/jpeg=false
+embed-image/png=false
+embed-text/plain=false
+embed-video/mp4=false
+embed-video/x-matroska=false

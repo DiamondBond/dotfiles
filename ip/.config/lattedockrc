@@ -1,0 +1,25 @@
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[PlasmaThemeExtended]
+outlineWidth=1
+
+[ScreenConnectors]
+10=eDP1
+
+[UniversalSettings]
+badges3DStyle=false
+canDisableBorders=false
+currentLayout=My Layout
+downloadWindowSize=800,550
+lastNonAssignedLayout=My Layout
+launchers=applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:thunderbird.desktop,applications:discord.desktop,applications:telegramdesktop.desktop,applications:org.kde.elisa.desktop,applications:sublime_text.desktop,applications:org.kde.konsole.desktop,applications:org.zealdocs.Zeal.desktop,applications:libreoffice-writer.desktop,applications:mousepad.desktop
+layoutsColumnWidths=
+layoutsWindowSize=700,450
+memoryUsage=0
+metaPressAndHoldEnabled=true
+mouseSensitivity=2
+screenTrackerInterval=2500
+showInfoWindow=true
+version=2

@@ -1,0 +1,73 @@
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[KFileDialog Settings]
+Recent Files[$e]=nice.jpg,file:$HOME/Pictures/Wallpapers/nice.jpg
+Recent URLs[$e]=file:$HOME/Pictures/Wallpapers/
+detailViewIconSize=0
+
+[KPropertiesDialog]
+Height 1080=451
+Width 1920=410
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_systemsettings.desktop,4 services_kcm_sddm.desktop,3 services_discord.desktop,1 services_org.kde.elisa.desktop,3 services_telegramdesktop.desktop,2 services_transmission-qt.desktop,1 services_gvim.desktop,2 services_emacs.desktop,1 services_libreoffice-writer.desktop,2 services_megaglest.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_mupen64plus-qt.desktop,2 services_sublime_text.desktop,1 services_kcm_energyinfo.desktop,1 services_org.gnome.Cheese.desktop,1 services_com.github.mdh34.hackup.desktop,1 services_kcm_fileindexermonitor.desktop,1 services_msm_keyboard.desktop,2 services_mousepad.desktop,12 services_org.manjaro.pamac.manager.desktop,1 services_gparted.desktop,3 services_hellodecorationconfig.desktop,1 services_kwincompositing.desktop,4 services_grub-customizer.desktop,1 services_freetube-bin.desktop,1 services_msm_kernel.desktop,6 services_khotkeys.desktop,2 services_io.github.Hexchat.desktop,1 services_thunderbird.desktop,1 services_gnome-system-monitor-kde.desktop,1 services_exec::evolution -c calendar,1 services_appimagekit_01e6aba9f4de05aad4617f5df72ab2f8-Joplin.desktop,4 services_com.github.rssguard.desktop,1 services_joplin.desktop,1 services_org.kde.latte-dock.desktop,1 services_mpv.desktop,1 services_org.kde.marble-qt.desktop,10 services_org.cunidev.gestures.desktop,1 services_org.zealdocs.Zeal.desktop,4 services_kcm_kwin_effects.desktop,1 services_keys.desktop,3 services_kwintabbox.desktop,1 services_google-chrome.desktop,1 services_org.kde.konversation.desktop
+pluginWhiteList=services
+
+[PlasmaViews][Panel 1][Defaults]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1024]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1152]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1200]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1280]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1366]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1440]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1600]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1680]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1900]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1916]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1920]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal2048]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal800]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal864]
+thickness=45
+
+[PlasmaViews][Panel 22][Defaults]
+thickness=26
+
+[PlasmaViews][Panel 22][Horizontal1920]
+thickness=26
+
+[ScreenConnectors]
+0=eDP1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js

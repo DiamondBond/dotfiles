@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Anaconda
+Version=2.0
+Type=Application
+Exec=/home/diamond/anaconda3/bin/anaconda-navigator
+Icon=/home/diamond/anaconda3/lib/python3.7/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Comment=Open Anaconda Navigator
+Terminal=false

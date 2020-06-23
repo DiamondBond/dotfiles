@@ -1,0 +1,22 @@
+[BackendChooseDialog]
+Height 1080=420
+Width 1920=500
+
+[Cantor]
+DefaultBackend=Python
+
+[KFileDialog Settings]
+Recent Files[$e]=Untitled.ipynb,file:$HOME/Documents/Notebooks/linear_algebra.ipynb,file:$HOME/Untitled.ipynb
+Recent URLs[$e]=file:$HOME/Documents/Notebooks/
+detailViewIconSize=0
+
+[MainWindow]
+Height 1080=599
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAEAAAC+AAACGvwCAAAAAfwAAAAmAAACGgAAALEA////+gAAAAECAAAAAvsAAAAIAEgAZQBsAHAAAAAAAP////8AAAB5AQAAA/sAAAAgAFYAYQByAGkAYQBiAGwAZQAgAE0AYQBuAGEAZwBlAHIBAAAAAP////8AAACxAQAAAwAAAloAAAIaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgB0AGUAeAB0AEUAZABpAHQAVABvAG8AbABCAGEAcgEAAAKh/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=793
+
+[Recent Files]
+File1[$e]=$HOME/Untitled.ipynb
+Name1[$e]=Untitled.ipynb
