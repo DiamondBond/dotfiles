@@ -20,16 +20,10 @@
 (setq auto-save-default nil)
 (global-prettify-symbols-mode t)
 (setq scroll-conservatively 100)
-
-;; Brackets
-(show-paren-mode 1)
-(setq electric-pair-pairs '(
-                            (?\{ . ?\})
-                            (?\( . ?\))
-                            (?\[ . ?\])
-                            (?\" . ?\")
-                            ))
-(electric-pair-mode t)
+(transient-mark-mode 1)
+;;(load-theme 'leuven)
+;;(add-to-list 'exec-path "/home/user/bin")
+;;(pdf-tools-install)
 
 ;; Easier resize bindings
 (global-set-key (kbd "s-C-<left>") 'shrink-window-horizontally)
@@ -44,10 +38,6 @@
 (setq-default electric-indent-inhibit t)
 (setq-default indent-tabs-mode t)
 (setq backward-delete-char-untabify-method 'nil)
-
-;;(load-theme 'leuven)
-;;(add-to-list 'exec-path "/home/user/bin")
-;;(pdf-tools-install)
 
 ;; Eshell Prompt
 (setq eshell-prompt-regexp "^[^αλ\n]*[αλ] ")
@@ -72,10 +62,25 @@
   (if (not (get-buffer "*eshell*"))
       (progn
         (split-window-sensibly (selected-window))
-        (other-window 1)
+        (other-window 0)
         (eshell))
     (switch-to-buffer-other-window "*eshell*")))
 (global-set-key (kbd "<C-s-return>") 'eshell-other-window)
+
+;; Brackets
+(show-paren-mode 1)
+(setq electric-pair-pairs '(
+                            (?\{ . ?\})
+                            (?\( . ?\))
+                            (?\[ . ?\])
+                            (?\" . ?\")
+                            ))
+(electric-pair-mode t)
+
+;; Aliases
+(defalias 'open 'find-file-other-window)
+(defalias 'clean 'eshell/clear-scrollback)
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; F12 toggles line numbers
 (global-set-key (kbd "<f12>") 'linum-mode)
@@ -86,11 +91,6 @@
   (message nil))
 (setq initial-scratch-message "")
 
-;; Aliases
-(defalias 'open 'find-file-other-window)
-(defalias 'clean 'eshell/clear-scrollback)
-(defalias 'yes-or-no-p 'y-or-n-p)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -100,7 +100,7 @@
  '(custom-safe-themes
    (quote
 	("dcdd1471fde79899ae47152d090e3551b889edf4b46f00df36d653adc2bf550d" default)))
- '(package-selected-packages (quote (dracula-theme org pdf-tools evil))))
+ '(package-selected-packages (quote (exwm dracula-theme org pdf-tools evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
