@@ -100,7 +100,7 @@
  '(custom-safe-themes
    (quote
 	("dcdd1471fde79899ae47152d090e3551b889edf4b46f00df36d653adc2bf550d" default)))
- '(package-selected-packages (quote (exwm dracula-theme org pdf-tools evil))))
+ '(package-selected-packages (quote (evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
