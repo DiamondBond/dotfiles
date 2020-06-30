@@ -3,11 +3,34 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-;; M-x package-install; evil, 
-
-;; EVIL
+;; EVIL ;; M-x package-install evil
 (require 'evil)
 (evil-mode 1)
+
+;; Startup
+(if (display-graphic-p)
+    (progn
+      (setq initial-frame-alist
+            '(
+              (tool-bar-lines . 0)
+              (width . 95) ; chars
+              (height . 42) ; lines
+              (left . 50)
+              (top . 50)))
+      (setq default-frame-alist
+            '(
+              (tool-bar-lines . 0)
+              (width . 95)
+              (height . 42)
+			  (left . 50)
+			  (top . 50))))
+  (progn
+    (setq initial-frame-alist '( (tool-bar-lines . 0)))
+    (setq default-frame-alist '( (tool-bar-lines . 0)))))
+(setq inhibit-startup-message t)
+(defun display-startup-echo-area-message ()
+  (message nil))
+(setq initial-scratch-message "")
 
 ;; Misc
 (tool-bar-mode -1)
@@ -21,15 +44,12 @@
 (global-prettify-symbols-mode t)
 (setq scroll-conservatively 100)
 (transient-mark-mode 1)
-;;(load-theme 'leuven)
-;;(add-to-list 'exec-path "/home/user/bin")
-;;(pdf-tools-install)
+(setq org-startup-with-inline-images t)
 
-;; Easier resize bindings
-(global-set-key (kbd "s-C-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "s-C-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "s-C-<down>") 'shrink-window)
-(global-set-key (kbd "s-C-<up>") 'enlarge-window)
+;; Aliases
+(defalias 'open 'find-file-other-window)
+(defalias 'clean 'eshell/clear-scrollback)
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Indentation
 (setq-default tab-width 4)
@@ -38,6 +58,16 @@
 (setq-default electric-indent-inhibit t)
 (setq-default indent-tabs-mode t)
 (setq backward-delete-char-untabify-method 'nil)
+
+;; Bracket completion
+(show-paren-mode 1)
+(setq electric-pair-pairs '(
+                            (?\{ . ?\})
+                            (?\( . ?\))
+                            (?\[ . ?\])
+                            (?\" . ?\")
+                            ))
+(electric-pair-mode t)
 
 ;; Eshell Prompt
 (setq eshell-prompt-regexp "^[^αλ\n]*[αλ] ")
@@ -67,43 +97,27 @@
     (switch-to-buffer-other-window "*eshell*")))
 (global-set-key (kbd "<C-s-return>") 'eshell-other-window)
 
-;; Brackets
-(show-paren-mode 1)
-(setq electric-pair-pairs '(
-                            (?\{ . ?\})
-                            (?\( . ?\))
-                            (?\[ . ?\])
-                            (?\" . ?\")
-                            ))
-(electric-pair-mode t)
+;; Easier resize bindings
+(global-set-key (kbd "s-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "s-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-C-<down>") 'shrink-window)
+(global-set-key (kbd "s-C-<up>") 'enlarge-window)
 
-;; Aliases
-(defalias 'open 'find-file-other-window)
-(defalias 'clean 'eshell/clear-scrollback)
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-;; F12 toggles line numbers
+;; Toggles
+(global-set-key (kbd "<f5>") 'menu-bar-mode)
+(global-set-key (kbd "<f7>") 'scroll-bar-mode)
 (global-set-key (kbd "<f12>") 'linum-mode)
+(global-set-key (kbd "C-<f1>")
+                (lambda () (interactive)
+                  (load-theme 'modus-operandi t)))
+(global-set-key (kbd "C-<f2>")
+                (lambda () (interactive)
+                  (load-theme 'modus-vivendi t)))
+(global-set-key (kbd "C-<f10>") 'disable-theme)
 
-;; Startup
-(setq inhibit-startup-message t)
-(defun display-startup-echo-area-message ()
-  (message nil))
-(setq initial-scratch-message "")
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes nil)
- '(custom-safe-themes
-   (quote
-	("dcdd1471fde79899ae47152d090e3551b889edf4b46f00df36d653adc2bf550d" default)))
- '(package-selected-packages (quote (evil))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; Org
+(org-babel-do-load-languages 'org-babel-load-languages
+    '(
+        (shell . t)
+    )
+)
