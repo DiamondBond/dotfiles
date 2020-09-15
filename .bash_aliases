@@ -40,8 +40,7 @@ alias p="python3"
 #alias deusex='cd ~/games/Deus_Ex/System; wine DeusEx.exe'
 #alias hl='cd ~/games/Half-Life/; wine hl.exe'
 alias brutaldoom='flatpak run org.zdoom.GZDoom -file brutalv21.pk3'
-#alias mc='java -jar ~/games/mc.jar'
-alias mc='java -jar ~/bin/mc.jar'
+alias mc='java -jar ~/games/mc.jar'
 
 # Emacs
 #alias em="/usr/bin/emacs -nw"
