@@ -1,0 +1,38 @@
+## set root
+#hsetroot -solid "#C0B5F9"
+#hsetroot -solid "#808080"
+hsetroot -solid "#efeae9"
+
+## notification daemon
+dunst &
+
+## policy kit
+lxpolkit &
+
+## tray
+#stalonetray &
+tint2 &
+
+## start nm-applet for systray
+nm-applet &
+
+## volume keys
+xbindkeys &
+
+## enable power management
+xfce4-power-manager &
+
+## start screensaver
+light-locker &
+
+## turn off system beep
+xset b off &
+
+# mpd
+#mpd &
+
+# emacs
+emacs --daemon
+
+# merge xresources
+xrdb "/home/diamond/.Xresources"

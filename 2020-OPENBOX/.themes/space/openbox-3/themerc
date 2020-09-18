@@ -1,0 +1,51 @@
+# menu
+menu.items.bg: Flat
+menu.items.bg.color: #fbf8ef
+menu.items.text.color: #5f5f87
+menu.items.active.bg: Flat
+menu.items.active.bg.color: #e4e4e4
+menu.items.active.text.color: #121212
+menu.title.bg: Flat
+menu.title.bg.color: white
+menu.title.text.color: black
+menu.title.text.justify: left
+menu.border.width: 1
+menu.border.color: black
+menu.separator.color: #fbf8ef
+menu.overlap.x: -3
+
+# osd
+osd.label.text.color: #121212
+osd.border.width: 1
+
+# windows
+border.width: 1
+*.border.color: #b3b9be
+window.client.padding.width: 0
+window.handle.width: 0
+
+# titlebars
+padding.height: 4
+padding.width: 4
+
+# active window
+window.*.*.bg: Flat Solid
+window.active.*.*.bg.color: #d3d3e7
+window.*.*.*.image.color: #121212
+window.*.label.text.color: #5f5f87
+window.label.text.justify: center
+
+# inactive window
+window.inactive.*.*.bg.color: #e7e5eb
+
+# handle
+window.active.handle.bg: Flat
+window.active.handle.bg.color: white
+window.inactive.handle.bg: Flat
+window.inactive.handle.bg.color: white
+
+# grip
+window.active.grip.bg: Flat
+window.active.grip.bg.color: white
+window.inactive.grip.bg: Flat
+window.inactive.grip.bg.color: white

@@ -1,0 +1,45 @@
+# Window geometry
+padding.width: 1
+border.width: 1
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 0
+window.label.text.justify: center
+
+# Active window
+#window.active.title.separator.color: #F4F4F4
+window.active.title.bg: flat
+window.active.title.bg.color: #F4F4F4
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #303030
+window.active.button.*.bg: Parentrelative
+window.active.button.*.image.color: #303030
+window.active.button.hover.image.color: #303030
+window.active.button.pressed.bg: Parentrelative
+window.active.button.pressed.image.color: #303030
+
+# Inactive window
+#window.inactive.title.separator.color: #F4F4F4
+window.inactive.title.bg: flat
+window.inactive.title.bg.color: #F4F4F4
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #303030
+window.inactive.button.*.bg: Parentrelative
+window.inactive.button.*.image.color: #303030
+
+# Menu settings
+menu.border.color: #303030
+menu.border.width: 1
+menu.title.bg: flat
+menu.title.bg.color: #F4F4F4
+menu.title.text.color: #303030
+menu.items.bg: flat 
+menu.items.bg.color: #F4F4F4
+menu.items.text.color: #303030
+menu.items.active.bg: flat
+menu.items.active.text.color: #F0F8FF
+menu.separator.color: #303030
+
+# Titlebars
+padding.height: 4
+padding.width: 4
