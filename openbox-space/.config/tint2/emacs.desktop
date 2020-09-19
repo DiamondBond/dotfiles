@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/diamond/bin/autostart
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_US]=emacs
+Comment[en_US]=start emacs server
+X-GNOME-Autostart-Delay=0
