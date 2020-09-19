@@ -1,9 +1,9 @@
 # menu
 menu.items.bg: Flat
-menu.items.bg.color: #fbf8ef
+menu.items.bg.color: #e7e5eb
 menu.items.text.color: #5f5f87
 menu.items.active.bg: Flat
-menu.items.active.bg.color: #e4e4e4
+menu.items.active.bg.color: #afafd7
 menu.items.active.text.color: #121212
 menu.title.bg: Flat
 menu.title.bg.color: white
@@ -11,7 +11,7 @@ menu.title.text.color: black
 menu.title.text.justify: left
 menu.border.width: 1
 menu.border.color: #b3b9be
-menu.separator.color: #fbf8ef
+menu.separator.color: #e7e5eb
 menu.overlap.x: -3
 
 # osd
@@ -25,8 +25,8 @@ window.client.padding.width: 0
 window.handle.width: 0
 
 # titlebars
-padding.height: 4
-padding.width: 4
+padding.height: 3
+padding.width: 3
 
 # active window
 window.*.*.bg: Flat Solid

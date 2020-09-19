@@ -7,18 +7,18 @@
 }
 
 inputbar {
-  border: 0 0 1px 0;
+  border: 1px 1px 1px 1px;
   children: [prompt,entry];
 }
 
 prompt {
   padding: 4px;
-  border: 0 1px 0 0;
+  border: 0px 1px 0px 0px;
 }
 
 textbox {
   background-color: #e7e5eb;
-  border: 0 0 1px 0;
+  border: 1px 1px 1px 1px;
   border-color: #b3b9be;
   padding: 2px 4px;
 }
@@ -34,7 +34,7 @@ listview {
 }
 
 element {
-  border: 0 0 1px 0;
+  border: 1px 1px 1px 1px;
   padding: 4px;
 }
 
