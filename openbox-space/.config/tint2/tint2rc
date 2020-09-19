@@ -112,8 +112,8 @@ task_iconified_icon_asb = 100 0 0
 # Fonts
 task_font = Charcoal 8
 task_font_color = #5f5f87 100
-task_active_font_color = #121212 100
-task_urgent_font_color = #000000 100
+task_active_font_color = #5f5f87 100
+task_urgent_font_color = #121212 100
 task_iconified_font_color = #5f5f87 100
 font_shadow = 0
 
