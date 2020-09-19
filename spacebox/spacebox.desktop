@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Spacebox
+Exec=/home/diamond/.xsession
+Icon=twm
+Type=Application
