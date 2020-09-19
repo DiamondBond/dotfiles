@@ -1,6 +1,6 @@
 # menu
 menu.items.bg: Flat
-menu.items.bg.color: #e7e5eb
+menu.items.bg.color: #d3d3e7
 menu.items.text.color: #5f5f87
 menu.items.active.bg: Flat
 menu.items.active.bg.color: #afafd7

@@ -43,7 +43,7 @@ execp_rclick_command = mpc prev
 execp_mclick_command = mpc toggle
 execp_uwheel_command = mpc play
 execp_dwheel_command = mpc stop
-execp_font = Charcoal 8
+execp_font = charcoal 8
 execp_font_color = #ffffff 100
 execp_padding = 8 4 8
 execp_background_id = 0
@@ -64,7 +64,7 @@ separator_padding = 0 0
 panel_items = TSC
 panel_monitor = all
 panel_position = top center horizontal
-panel_size = 0 22
+panel_size = 0 20
 panel_margin = 0 0
 panel_padding = 0 0 0
 panel_dock = 0
@@ -89,7 +89,7 @@ taskbar_name_font_color = #5f5f87 100
 taskbar_name_active_font_color = #5f5f87 100
 taskbar_padding = 0 0 0
 taskbar_sort_order = none
-taskbar_active_background_id = 3
+taskbar_active_background_id = 1
 
 # Tasks
 #urgent_nb_of_blink = 7
@@ -101,7 +101,7 @@ task_padding = 8 8
 task_background_id = 1
 task_active_background_id = 2
 task_urgent_background_id = 3
-task_iconified_background_id = 3
+task_iconified_background_id = 1
 
 # Task Icons
 task_icon_asb = 100 0 0
@@ -131,7 +131,7 @@ time1_font = Charcoal 8
 clock_font_color = #5f5f87 100
 clock_tooltip = %a %d, %I:%M %P
 clock_padding = 4 4 4
-clock_background_id = 3
+clock_background_id = 1
 clock_lclick_command = gsimplecal
 clock_mclick_command = gsimplecal
 clock_rclick_command = gsimplecal

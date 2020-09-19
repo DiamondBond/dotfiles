@@ -6,12 +6,12 @@
 				<execute>emacsclient -c -a 'emacs'</execute>
 			</action>
 		</item>
-		<item label="browser">
+		<item label="web">
 			<action name="Execute">
 				<execute>firefox</execute>
 			</action>
 		</item>
-		<item label="console">
+		<item label="term">
 			<action name="Execute">
 				<execute>xfce4-terminal</execute>
 			</action>
@@ -26,11 +26,6 @@
 				<execute>emacsclient -c -a 'emacs' -e '(elfeed)'</execute>
 			</action>
 		</item>
-		<item label="music">
-			<action name="Execute">
-				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
-			</action>
-		</item>
 		<separator/>
 		<menu id="root-menu-63833" label="apps">
 			<item label="xterm">
@@ -43,21 +38,38 @@
 					<execute>zathura</execute>
 				</action>
 			</item>
-			<item label="paint">
-				<action name="Execute">
-					<execute>kolourpaint</execute>
-				</action>
-			</item>
 			<item label="office">
 				<action name="Execute">
 					<execute>libreoffice</execute>
 				</action>
 			</item>
+			<separator/>
 			<item label="xaos">
 				<action name="Execute">
 					<execute>xaos</execute>
 				</action>
 			</item>
+			<item label="paint">
+				<action name="Execute">
+					<execute>kolourpaint</execute>
+				</action>
+			</item>
+			<item label="spotify">
+				<action name="Execute">
+					<execute>env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify</execute>
+				</action>
+			</item>
+		<item label="music">
+			<action name="Execute">
+				<execute>xfce4-terminal --geometry 55x15 -e ncmpcpp</execute>
+			</action>
+		</item>
+			<item label="mixer">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<separator/>
 			<item label="hexchat">
 				<action name="Execute">
 					<execute>hexchat</execute>
@@ -81,19 +93,25 @@
 		</menu>
 		<menu id="settings" label="misc">
 			<menu id="settings-112029" label="pape">
-				<item label="a">
+				<item label="s">
 					<action name="Execute">
-						<execute>hsetroot -solid &quot;#C0B5F9&quot;</execute>
+						<execute>hsetroot -solid &quot;#e7e5eb&quot;</execute>
+					</action>
+				</item>
+				<item label="x">
+					<action name="Execute">
+						<execute>feh --bg-tile /home/diamond/Pictures/Wallpapers/tiles-and-such/Personal/1.png</execute>
+					</action>
+				</item>
+						<separator/>
+				<item label="bf">
+					<action name="Execute">
+						<execute>hsetroot -solid &quot;#bfbfbf&quot;</execute>
 					</action>
 				</item>
 				<item label="80">
 					<action name="Execute">
 						<execute>hsetroot -solid &quot;#808080&quot;</execute>
-					</action>
-				</item>
-				<item label="9b">
-					<action name="Execute">
-						<execute>hsetroot -solid &quot;#9b9b9b&quot;</execute>
 					</action>
 				</item>
 			</menu>
@@ -118,6 +136,11 @@
 				<item label="info">
 					<action name="Execute">
 						<execute>xfce4-terminal --title &quot;System Information&quot; --geometry 36x6 -e &quot;/home/diamond/bin/sysinfo&quot;</execute>
+					</action>
+				</item>
+				<item label="fetch">
+					<action name="Execute">
+						<execute>xfce4-terminal --title &quot;fetch&quot; --geometry 73x20 -e &quot;/home/diamond/bin/fetchinfo&quot;</execute>
 					</action>
 				</item>
 				<item label="logout">

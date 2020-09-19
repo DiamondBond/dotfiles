@@ -1,7 +1,7 @@
 [global]
 monitor = 0
 follow = mouse
-geometry = "250x250-05+27"
+geometry = "250x250-05+25"
 indicate_hidden = yes
 shrink = no
 separator_height = 0
@@ -46,10 +46,10 @@ foreground = "#121212"
 
 [urgency_normal]
 timeout = 6
-background = "#e7e5eb"
+background = "#d3d3e7"
 foreground = "#121212"
 
 [urgency_critical]
 timeout = 0
-background = "#e7e5eb"
+background = "#afafd7"
 foreground = "#121212"
