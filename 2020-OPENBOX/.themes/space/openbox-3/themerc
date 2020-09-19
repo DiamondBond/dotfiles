@@ -10,7 +10,7 @@ menu.title.bg.color: white
 menu.title.text.color: black
 menu.title.text.justify: left
 menu.border.width: 1
-menu.border.color: black
+menu.border.color: #b3b9be
 menu.separator.color: #fbf8ef
 menu.overlap.x: -3
 
@@ -30,7 +30,8 @@ padding.width: 4
 
 # active window
 window.*.*.bg: Flat Solid
-window.active.*.*.bg.color: #d3d3e7
+window.active.*.*.bg.color: #AFAFD7
+#d3d3e7
 window.*.*.*.image.color: #121212
 window.*.label.text.color: #5f5f87
 window.label.text.justify: center

@@ -274,6 +274,11 @@
         <command>thunar</command>
       </action>
     </keybind>
+    <keybind key="W-g">
+      <action name="Execute">
+        <command>galculator</command>
+      </action>
+    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>/home/diamond/bin/grow</command>

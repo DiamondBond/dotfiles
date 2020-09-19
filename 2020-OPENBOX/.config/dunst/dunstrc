@@ -46,10 +46,10 @@ foreground = "#121212"
 
 [urgency_normal]
 timeout = 6
-background = "#d3d3e7"
-foreground = "#000000"
+background = "#e7e5eb"
+foreground = "#121212"
 
 [urgency_critical]
 timeout = 0
-background = "#afafd6"
-foreground = "#000000"
+background = "#e7e5eb"
+foreground = "#121212"
