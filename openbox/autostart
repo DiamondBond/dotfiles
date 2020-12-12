@@ -1,0 +1,44 @@
+## wallpaper
+#feh --bg-tile /home/diamond/Pictures/Wallpapers/tiles-and-such/Personal/1.png
+hsetroot -solid "#bfbfbf" &
+
+# xresources
+xrdb "/home/diamond/.Xresources" &
+
+## polkit
+lxpolkit &
+
+## tray
+tint2 &
+
+## networking
+nm-applet &
+
+## notifications
+dunst &
+
+## volume keys
+xbindkeys &
+
+## power manager
+xfce4-power-manager &
+
+## screensaver
+light-locker &
+
+## sysbeep
+xset b off &
+
+# mpd
+mpd &
+
+# emacs
+emacs --daemon &
+
+# compositor
+picom &
+
+# gestures
+/usr/bin/libinput-gestures &
+
+
