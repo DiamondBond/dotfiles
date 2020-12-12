@@ -1,7 +1,7 @@
 [global]
 monitor = 0
 follow = mouse
-geometry = "250x250-05+23"
+geometry = "250x250-05+05"
 indicate_hidden = yes
 shrink = no
 separator_height = 0
@@ -14,7 +14,7 @@ idle_threshold = 120
 #font = comic sans ms regular 9
 #font = Liberation Mono 9
 #font = Swis721Greek BT Roman 9
-font = Product Sans Regular 10
+font = Charcoal 9
 #font = Go Mono 9
 line_height = 4
 markup = full
@@ -41,15 +41,15 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 3
-background = "#ffffff"
+background = "#f4f4f4"
 foreground = "#000000"
 
 [urgency_normal]
 timeout = 6
-background = "#ffffff"
+background = "#f4f4f4"
 foreground = "#000000"
 
 [urgency_critical]
 timeout = 0
-background = "#ffffff"
+background = "#f4f4f4"
 foreground = "#000000"
