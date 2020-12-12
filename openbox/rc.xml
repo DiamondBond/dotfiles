@@ -579,8 +579,13 @@
     <keybind key="S-W-Left">
       <action name="MoveToEdgeWest"/>
     </keybind>
-    <keybind key="W-c">
+    <keybind key="S-W-c">
       <action name="MoveToCenter"/>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>/home/diamond/bin/windowcenter</command>
+      </action>
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
