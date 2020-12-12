@@ -39,9 +39,9 @@ border_color = #1d1f28 100
 panel_items = TSC
 panel_monitor = all
 panel_position = bottom center horizontal
-panel_size = 61.8% 38
-panel_margin = 0 9
-panel_padding = 6 10 6
+panel_size = 61.8% 36
+panel_margin = 0 6
+panel_padding = 6 0 6
 panel_dock = 0
 wm_menu = 0
 panel_layer = bottom
@@ -103,7 +103,7 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 8 0 8
+systray_padding = 6 0 6
 systray_sort = ascending
 systray_background_id = 0
 systray_icon_size = 20
