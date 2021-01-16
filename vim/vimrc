@@ -1,6 +1,9 @@
 " Set compatibility to Vim only.
 set nocompatible
 
+" Line numbers
+"set number
+
 " Helps force plug-ins to load correctly when it is turned back on below.
 filetype off
 
@@ -15,20 +18,20 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-"try
-"    colorscheme desert
-"catch
-"endtry
-
-"set background=dark
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
+"    set guioptions+=m
 endif
+
+" Alloq color schemes to do bright colors without forcing bold
+set t_Co=16
+
+" no visual bell
+set t_vb=
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -70,6 +73,12 @@ set hidden
 set ttyfast
 "set foldcolumn=1
 
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
+
+
 " Set status line display
 "set laststatus=2
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
@@ -96,27 +105,13 @@ endif
 " NERDTreeToggle
 map <C-n> :NERDTreeToggle<CR>
 
-" Theme
-"colorscheme default
-set laststatus=2
-hi StatusLine ctermfg=0 ctermbg=1 cterm=NONE
-"hi StatusLineNC ctermfg=blue ctermbg=red cterm=NONE
-hi User1 ctermfg=0 ctermbg=2
-hi User2 ctermfg=NONE ctermbg=NONE
-hi User3 ctermfg=0 ctermbg=2
-hi User4 ctermfg=0 ctermbg=3
-set statusline=\                    "
-set statusline+=%t                  "
-set statusline+=\ %1*\              "
-set statusline+=%y                  "
-set statusline+=\ %2*\              "
-set statusline+=%=                  "
-set statusline+=\ %3*\              "
-set statusline+=line                "
-set statusline+=\                   "
-set statusline+=%l                  "
-set statusline+=\ %4*\              "
-set statusline+=of                  "
-set statusline+=\                   "
-set statusline+=%L                  "
-set statusline+=\                   "
+" Tab Nav
+map <C-t>t :tabnew<cr>
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
+map <F12> :set invnumber<cr>
+
+noremap <C-p> :GFiles<CR>
+
