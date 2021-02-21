@@ -24,6 +24,7 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
+"    set guioptions+=m
 endif
 
 " Alloq color schemes to do bright colors without forcing bold
@@ -113,3 +114,4 @@ map <C-t><right> :tabn<cr>
 map <F12> :set invnumber<cr>
 
 noremap <C-p> :GFiles<CR>
+
