@@ -1,100 +1,15 @@
+@import url('/home/diamond/.local/share/gnome-shell/extensions/no-title-bar@jonaspoehler.de/stylesheet.css');
+@import url('/home/diamond/.local/share/gnome-shell/extensions/no-title-bar@jonaspoehler.de/stylesheet-tiled.css');
 /***** scrollbar slider - cinnamon-settings-generated - do not edit *****/
+scrollbar slider {
+	min-width: 5px;
+	min-height: 5px;}
+
+/* terminal padding */
 VteTerminal,
 TerminalScreen,
 vte-terminal {
     padding: 05px 05px 05px 05px;
     -VteTerminal-inner-border: 05px 05px 05px 05px;
 }
-
-/* decoration, window, window.background { */
-/*     border-radius: 3px; */
-/*     padding-bottom: 3px; */
-/*     background: #fff */
-/* } */
-scrollbar slider {
-	min-width: 5px;
-	min-height: 5px;}
-
-/*** TERMINAL ***/
-
-terminal-screen-container box {
-	padding: 08px;
-}
-
-terminal-window {
-	background-color: #ffffff;
-	border-radius: 0 0 8px 8px;
-}
-
-terminal-window decoration {
-	border-radius: 8px;
-}
-
-/* VteTerminal, */
-/* TerminalScreen, */
-/* vte-terminal { */
-/*     padding: 08px 08px 08px 08px; */
-/*     -VteTerminal-inner-border: 08px 08px 08px 08px; */
-/* } */
-
-/*** NAUTILUS ***/
-
-window decoration {
-	border-radius: 8px;
-}
-
-window {
-	border-radius: 0 0 8px 8px;
-}
-
-window.nautilus-window grid paned box placessidebar viewport list {
-	background-color: rgba(180, 180, 180, 0.05);
-	border-radius: 0 0 8px 8px;
-}
-
-window.nautilus-window grid paned overlay notebook stack, window.nautilus-window grid paned overlay notebook, window.nautilus-window grid paned overlay scrolledwindow treeview {
-	border-radius: 0 0 8px 8px;
-}
-
-window.nautilus-window grid paned box placessidebar {
-	background-color: rgba(0,0,0,0);
-	border-radius: 8px;
-}
-
-/*** SETTINGS ***/
-
-leaflet box scrolledwindow, leaflet box scrolledwindow viewport stack list {
-	border-radius: 0 0 0 8px;
-}
-
-leaflet box scrolledwindow viewport stack list {
-	background-color: rgba(255, 255, 255, 0.0);
-}
-
-leaflet stack {
-	border-radius: 0 0 8px 0;
-}
-
-/*** TWEAKS ***/
-
-list.tweak-categories {
-	border-radius: 0 0 0 8px;
-}
-
-/*** EVINCE ***/
-
-evview, iconview {
-	border-radius: 0 0 8px 8px;
-}
-
-/*** APOSTROPHE ***/
-
-.apostrophe-window.focus {
-	border-radius: 8px;
-}
-
-/*** SIDEBAR LIST ***/
-
-list.sidebar {
-	border-radius: 0 0 0 8px;
-}
+@import 'colors.css';
