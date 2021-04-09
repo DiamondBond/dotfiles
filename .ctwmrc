@@ -781,6 +781,7 @@ menu "session" {
 menu "windowmenu" {
     "Identify"				f.identify
     "Iconify"				f.iconify
+    "Resize"				f.resize
     "Squeeze"				f.squeeze
     "Expand"                            f.menu "zoom"
     "Toggle autoraise"			f.autoraise
