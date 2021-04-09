@@ -46,8 +46,29 @@ DontPaintRootWindow
 # the corresponding key, ignoring case.
 IgnoreCaseInMenuSelection
 
+## Remember if window was iconified when restarting window manager
+RestartPreviousState
+
+## Raise window when one click on it
+RaiseOnClick
+
+## Use Button 1 to raise a window
+RaiseOnClickButton 1
+
+## Automticcally raise window when cursor enters the window
+#AutoRaise 
+
+## if Autoraise, wait N ms before raising it
+#RaiseDelay 250
+
+## Transient windows get focus automatically when created
+AutoFocusToTransients
+
 # Dynamic Focus
 #SloppyFocus
+
+# Don't use pointer-driven keyboard focus, but click to focus
+ClickToFocus
 
 # Raise windows by clicking (LMB) on them
 RaiseOnClick
@@ -460,10 +481,10 @@ Button3 = : frame : f.resize
 
 # Windows
 Button1 = m 	 : window : f.function "move-or-raise"
-Button1 = s 	 : window : f.raiselower
+#Button1 = s 	 : window : f.raiselower
 Button1 = m | l  : window : f.menu "zoom"
 Button1 = m | c  : window : f.iconify	
-Button2 = m 	 : window : f.squeeze
+Button2 = m 	 : window : f.raiselower
 Button2 = s	 : window : f.identify 
 Button3 = m      : window : f.function "resize-or-lower"
 Button3 = s  	 : window : f.menu "windowmenu"
@@ -481,6 +502,10 @@ Button1 =   : title : f.function "move-or-raise"
 Button2 =   : title : f.raiselower
 Button3 =   : title : f.menu "windowmenu"
 
+# Squeeze window with mouse wheel
+Button4 =      : title          : f.squeeze
+Button5 =      : title          : f.squeeze
+
 # Titlebar Buttons
 #LeftTitleButton  ":menu"    = f.menu "windowmenu"
 #LeftTitleButton  ":dot"     = f.squeeze
@@ -495,7 +520,7 @@ NoDefaults
 #   Built-in options:
 #   :dot, :xlogo, :iconify, :resize, :question, :delete, :menu
 LeftTitleButton  ":menu"    = f.menu "windowmenu"
-LeftTitleButton ":dot"   = f.squeeze
+#RightTitleButton ":dot"   = f.squeeze
 RightTitleButton ".minimize.xbm" = f.iconify
 RightTitleButton ".vertmax.xbm"  = f.fullzoom
 RightTitleButton ".resiz2.xbm"   = f.menu "kill"
@@ -570,6 +595,7 @@ RightTitleButton ".resiz2.xbm"   = f.menu "kill"
 "Return" = mod1 | s   : all: f.exec "xterm &"
 
 "c" = mod4  : all: f.exec "/home/diamond/bin/windowcenter &"
+"XF86Launch1" =   : all: f.exec "/home/diamond/bin/toggle_tray &"
 
 # Launcher
 "p" = mod1 	   : all: f.exec "dmenu_run &"
