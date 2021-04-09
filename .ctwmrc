@@ -1,0 +1,801 @@
+#################################
+#
+# GENERAL
+#
+##################################
+dnl Capitalised version of the window managers name, for use in Menus
+define(TWM_NAME, translit(TWM_TYPE, [cvt], [CVT]))dnl
+
+# No default titlebuttons and bindings
+NoDefaults
+
+# Use no titles on windows whatsoever.
+#NoTitle
+
+# Ignore the follwoing EWMH hints
+EWMHIgnore
+{
+    # Window states
+    "STATE_MAXIMIZED_VERT"
+    "STATE_MAXIMIZED_HORZ"
+    "STATE_FULLSCREEN"
+    "STATE_SHADED"
+    "STATE_ABOVE"
+    "STATE_BELOW"
+}
+
+# Temporary child windows also get decorations.
+DecorateTransients              
+
+# Permit X events to update server
+NoGrabServer 
+
+# Honour window's own idea of placement when opening
+UsePPosition "on"              
+
+# Move cursor to middle of window when unhiding.
+WarpCursor	      
+
+# Keep things on the physical screen.
+DontMoveOff	      
+
+# Prevent ctwm from resetting backgrounds
+DontPaintRootWindow
+
+# Go directly to the menu entry if the user taps 
+# the corresponding key, ignoring case.
+IgnoreCaseInMenuSelection
+
+# Dynamic Focus
+#SloppyFocus
+
+# Raise windows by clicking (LMB) on them
+RaiseOnClick
+RaiseOnClickButton 1
+
+# Show window contents while moving or resizing
+OpaqueMove
+OpaqueResize
+
+# Size of windows (in percentage of the screen estate) where ctwm
+# will show windows' contents while moving or resizing. 
+# If any above, show grid
+OpaqueMoveThreshold 70
+OpaqueResizeThreshold 50
+
+# When moving around windows, if we pass another window by this many
+# pixels, moving is resumed.
+MovePackResistance 20
+
+# Start resizing right away, even without crossing a border.
+AutoRelativeResize
+
+# Transient windows get focus automatically when created
+AutoFocusToTransients
+
+# Try not to overlap existing windows when mapping a new window.
+PackNewWindows
+
+# Place new windows wherever. Not very random, however.
+RandomPlacement "on"
+
+# Don't show icon managers or workspaces in windows or icon menus.
+ShortAllWindowsMenus
+
+# But let the menus stay up on screen.
+StayUpMenus
+
+# Allow resizing of windows extending over the edge of the screen
+AutoRelativeResize
+
+#################################
+#
+#
+# APPEARANCE
+#
+##################################
+# Reduce titlebar thickness  
+BorderWidth 0
+ClientBorderWidth 0
+
+# Padding
+FramePadding 1
+NoMenuShadows
+
+# Colors
+define(`color1',`#2c3645')
+define(`color2',`#fcfcfc')
+define(`color3',`#111111')
+define(`color4',`#989898')
+define(`color5',`#576769')
+
+Color
+{
+    DefaultBackground "color1"
+    DefaultForeground "color2"
+
+    # Border of focused windows
+    BorderColor "color1"
+
+    # Border of unfocused windows
+    # If we define both of these to 
+    #the same colour, we get a solid
+    # border. Otherwise stippled.
+    BorderTileBackground "color4"
+    BorderTileForeground "color4"
+	
+    # Titlebars
+    TitleBackground      "color2"
+    TitleForeground      "color1"
+    
+    # IconManager
+    IconManagerBackground "color1"
+    IconManagerForeground "color2"
+    IconManagerHighlight "color5"
+
+    # Menus
+    MenuTitleBackground "color2"
+    MenuTitleForeground "color1"
+    MenuBackground "color1"
+    MenuForeground "color2"
+    #MenuBorderColor "color4"
+    
+    # Icons
+    #IconBackground "color1"
+    #IconForeground "color2"
+    #IconBorderColor "color3"
+	
+    # WorkSpaceManager 	
+    MapWindowBackground "color2"
+    MapWindowForeground "color1"
+    MapWindowCurrentWorkSpace { "rgb:c/c/c" "color4" "color2" }
+}
+
+# Avoid 'technicolor effect' on decorations
+SaveColor
+{
+    BorderColor
+    BorderTileBackground
+    BorderTileForeground
+    TitleBackground
+    TitleForeground
+}
+
+# Pointer glyphs 
+Cursors
+{   
+    Frame    "top_left_arrow"
+    Title    "top_left_arrow"
+    Icon     "top_left_arrow"
+    IconMgr  "top_left_arrow"
+    Move     "fleur"
+    Resize   "fleur"
+    Menu     "sb_left_arrow"
+    Button   "hand2"
+    Wait     "watch"
+    Select   "dot"   
+    Destroy  "pirate"
+}
+
+# Fonts
+define(`font_8',`-*-helvetica-medium-r-normal--*-80-*-*-*-*-*-*')
+define(`font_6',`-*-helvetica-medium-r-normal--*-60-*-*-*-*-*-*')
+
+ResizeFont		"font_8"
+TitleFont               "font_8"
+MenuFont                "font_8"
+MenuTitleFont           "font_8"
+IconFont                "font_8"
+IconManagerFont         "font_8"
+WorkSpaceFont	        "font_6"	
+
+# Titlebars
+# Pixmaps {
+#     TitleHighlight	"title2"
+#     LeftTitleButton 	":menu"
+#     LeftTitleButton 	":dot"
+#     RightTitleButton	":iconify"
+#     RightTitleButton 	":maximize"
+#     RightTitleButton 	":resize"
+# }
+
+#################################
+#
+# Functions
+#
+##################################
+# Threshold in pixel for f.move to activate
+MoveDelta 3
+
+# Define some useful functions for motion-based actions.
+Function "move-or-lower"     { f.movepack f.deltastop f.lower   }
+Function "move-or-raise"     { f.movepack f.deltastop f.raise   }
+Function "resize-or-lower"   { f.resize f.deltastop f.lower }
+
+# For multiple workspaces these l macros define multiple functions...
+define(`forloop',
+       `pushdef(`$1', `$2')_forloop(`$1', `$2', `$3', `$4')popdef(`$1')')
+define(`_forloop',
+       `$4`'ifelse($1, `$3', ,
+       `define(`$1', incr($1))_forloop(`$1', `$2', `$3', `$4')')')
+
+forloop(`N', 1, 9,
+  `Function "move-to-workspace-N" {
+      f.addtoworkspace	"N"
+      forloop(`I', 1, 9, `ifelse(N, I, , `  f.removefromworkspace  "I"')')
+   }')
+
+forloop(`N', 1, 9,
+  `Function "move-and-goto-workspace-N" {
+      f.addtoworkspace "N"
+      forloop(`I', 1, 9, `ifelse(N, I, , `  f.removefromworkspace  "I"')')
+      f.gotoworkspace "N"
+   }')
+
+
+#################################
+#
+# WORKSPACE MANAGER
+#
+##################################
+# Always show WorksSpace Manager
+ShowWorkSpaceManager
+
+# Set up 4 workspaces
+WorkSpaces
+{
+#    N          MC        MTC       BC       FC    RX 
+    "1"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg1.xpm"}
+    "2"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg2.xpm"}
+    "3"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg3.xpm"}
+    "4"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg4.xpm"}
+    # "5"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg5.xpm"}
+    # "6"    { "#576769" "#c0c0c0" "#576769" "#696969"} # "xpm:bg/bg6.xpm"}
+}
+
+# When changing workspace, restore the focus to the window in this
+# workspace which last had it.
+SaveWorkspaceFocus
+
+# Allow moving windows from WSm 
+ReallyMoveInWorkspaceManager
+
+# Placement
+#define(WRegion, translit(eval(WIDTH/3)*eval(HEIGHT/2)+eval(WIDTH-WIDTH/3)-0, *, x))
+#WorkSpaceManagerGeometry "WRegion" SOUTH WEST  4 1 
+WorkSpaceManagerGeometry  "480x80+0-0"  4
+# 720 / 6 = 120
+
+# Show little windows...
+StartInMapState
+
+# Uncomment if you want reverse colours to mark current workspace.
+ReverseCurrentWorkSpace
+
+# Buttons
+WMgrButtonStyle style3	
+WMgrButtonShadowDepth 0
+WMgrHorizButtonIndent 0
+WMgrVertButtonIndent 0
+
+# Don't show windows that occupies all workspaces
+NoShowOccupyAll
+
+#################################
+#
+# ICON MANAGER
+#
+##################################
+# Always show IconManager
+ShowIconManager
+# No icons, just make the windows disappear.
+IconifyByUnmapping
+# Placement
+IconManagerGeometry "160x512-0-0"
+# Sort alphabetically
+SortIconManager
+# Ignore case
+NoCaseSensitive
+# Truncate window titles larger than 78 columns     
+MaxIconTitleWidth 78 
+# Number of outlines to be drawn when (de-)iconnifying a window
+Zoom 0
+
+## ICONS
+# Where to place iconified clientS 
+ IconRegionAlignement "top"
+ IconRegionJustification "left"
+ IconRegion   "96x512+0+0" North West 65 65 
+ PixmapDirectory "/home/diamond/Pictures/pixmaps"
+ Override any client-supplied iconS
+ ForceIcons
+
+#################################
+#
+# WINDOW-LISTS
+#
+##################################
+NoTitle
+{   
+    "WorkSpaceManager"
+    "TWM Icon Manager"
+    "stalonetray"
+    "xbiff"
+    "xsm"
+    "xclock"
+    "xload"
+    "xmessage"
+    "xlogo"
+    "xterm"
+    "xman"
+    "xv"
+    "xneko"
+    "xosview"
+}
+
+NoBorder
+{
+    "WorkSpaceManager"
+    "TWM Icon Manager"
+    "stalonetray"
+    "xbiff"
+    "xsm"
+#    "xclock"
+#    "xload"
+    "xlogo" 
+    "xman"
+    "xneko"
+    "xosview"
+}
+
+IconManagerDontShow
+{
+    "WorkSpaceManager"
+    "stalonetray"
+    "xclock"
+    "xlogo"
+    "xbiff"
+    "xsm"
+    "xman"
+    "xmessage"
+    "xneko"
+    "xload"
+    "xosview"
+}
+
+IconMenuDontShow
+{
+    "WorkSpaceManager"
+    "xclock"
+    "xlogo"
+    "xbiff"
+    "xsm"
+    "xman"
+    "xmessage"
+    "xneko"
+    "xload"
+    "xosview"
+}
+
+# Exclude these windows from the warp ring
+WindowRingExclude
+{
+    "WorkSpaceManager"
+    "TWM Icon Manager"
+    "stalonetray"
+    "xclock"
+    "xlogo"
+    "xbiff"
+    "xsm"
+    "xman"
+    "xneko"
+    "xload"
+    "xosview"
+}
+
+# Put these windows on all workspaces.
+OccupyAll
+{
+    "WorkSpaceManager"
+    "TWM Icon Manager"
+    "stalonetray"
+    "xlogo"
+    "xclock"
+    "xload"
+    "xneko"
+    "xclipboard"
+    "xbiff"
+    "xsm"
+    "xosview"
+}
+
+
+StartIconified {
+   "Download"
+   "Save file"
+}
+
+# Do not display icon name
+NoIconTitle
+{
+# "xterm"
+}
+
+#################################
+#
+# WINDOW-RING
+#
+##################################
+# This variable specifies a list of windows 
+# along which the f.warpring function cycles. 
+# If no argument is given, all the windows are in the ring.
+
+WindowRing {
+#        "AppsClassName"
+}
+# f.wrapring warps only to windows visible in the current space
+WarpRingOnScreen
+
+# Don't raise windows when pointer is wraped to them
+NoRaiseOnWarp
+
+# Deiconify any iconified windows it encounters.
+#WarpUnmapped
+
+
+#################################
+#
+# MOUSE BINDINGS
+#
+##################################
+# X root
+Button1 = : root : f.menu "apps"
+Button2 = : root : f.refresh
+Button3 = : root : f.menu "wm-ops"
+
+# Frames
+Button1 = : frame : f.raise
+#Button2 = : frame : f.resize
+Button3 = : frame : f.resize
+
+# Windows
+Button1 = m 	 : window : f.function "move-or-raise"
+Button1 = s 	 : window : f.raiselower
+Button1 = m | l  : window : f.menu "zoom"
+Button1 = m | c  : window : f.iconify	
+Button2 = m 	 : window : f.squeeze
+Button2 = s	 : window : f.identify 
+Button3 = m      : window : f.function "resize-or-lower"
+Button3 = s  	 : window : f.menu "windowmenu"
+Button3 = m | l  : window : f.menu "kill"
+Button3 = m | c  : window : f.fullzoom
+
+# Iconmgr
+Button1 = : iconmgr : f.iconify
+Button2 = : iconmgr : f.identify
+Button3 = : iconmgr : f.menu "iconmgrmenu"
+
+# Titlebar
+Button1 =   : title : f.function "move-or-raise"
+#Button1 = m : title : f.movepack
+Button2 =   : title : f.raiselower
+Button3 =   : title : f.menu "windowmenu"
+
+# Titlebar Buttons
+#LeftTitleButton  ":menu"    = f.menu "windowmenu"
+#LeftTitleButton  ":dot"     = f.squeeze
+#RightTitleButton ":iconify" = f.iconify
+#RightTitleButton "vertmax"  = f.zoom
+#RightTitleButton ":resize"  = f.resize
+
+# Turn off default iconify and resize button
+NoDefaults
+# Custom Titlebuttons
+#   Bitmaps are stored in /usr/include/X11/bitmaps
+#   Built-in options:
+#   :dot, :xlogo, :iconify, :resize, :question, :delete, :menu
+LeftTitleButton  ":menu"    = f.menu "windowmenu"
+LeftTitleButton ":dot"   = f.squeeze
+RightTitleButton ".minimize.xbm" = f.iconify
+RightTitleButton ".vertmax.xbm"  = f.fullzoom
+RightTitleButton ".resiz2.xbm"   = f.menu "kill"
+
+##################################
+#
+# KEYBOARD BINDINGS
+#
+##################################
+# Switch to workspace N
+"1" = mod1 : all : f.gotoworkspace "1"
+"2" = mod1 : all : f.gotoworkspace "2"
+"3" = mod1 : all : f.gotoworkspace "3"
+"4" = mod1 : all : f.gotoworkspace "4"
+
+"Right" = s : all : f.nextworkspace
+"Left"  = s : all : f.prevworkspace
+
+# Send window to workspace  N
+"1" = mod1 | s : all : f.function "move-to-workspace-1"
+"2" = mod1 | s : all : f.function "move-to-workspace-2"
+"3" = mod1 | s : all : f.function "move-to-workspace-3"
+"4" = mod1 | s : all : f.function "move-to-workspace-4"
+
+# Send window to workspace  N & follow
+"1" = mod1 | s | c : all : f.function "move-and-goto-workspace-1"
+"2" = mod1 | s | c : all : f.function "move-and-goto-workspace-2"
+"3" = mod1 | s | c : all : f.function "move-and-goto-workspace-3"
+"4" = mod1 | s | c : all : f.function "move-and-goto-workspace-4"
+
+# Occupy all workspaces
+"f" = mod1 : all : f.occupyall
+
+# Move windows 20 pixel with alt + vi-like binds or arrow keys.
+"Up"    = mod1 : all : f.jumpup "20"
+"Left"  = mod1 : all : f.jumpleft "20"
+"Right" = mod1 : all : f.jumpright "20"
+"Down"  = mod1 : all : f.jumpdown "20"
+
+"k" 	= mod1 : all : f.jumpup "20"
+"j" 	= mod1 : all : f.jumpdown "20"
+"l" 	= mod1 : all : f.jumpright "20"
+"h" 	= mod1 : all : f.jumpleft "20"
+
+# Resize windows 10 pixel with alt + vi-like binds or arrow keys.
+"Right" = mod1 | c : all : f.changesize "right +10"
+"Left"  = mod1 | c : all : f.changesize "right -10"
+"Down"  = mod1 | c : all : f.changesize "bottom +10"
+"Up"    = mod1 | c : all : f.changesize "bottom -10"
+
+"l" 	= mod1 | c : all : f.changesize "right +10"
+"h" 	= mod1 | c : all : f.changesize "right -10"
+"j" 	= mod1 | c : all : f.changesize "bottom +10"
+"k" 	= mod1 | c : all : f.changesize "bottom -10"
+
+# Maximize windows
+"b" 	= mod1 	   : all: f.zoom
+"v" 	= mod1     : all: f.hzoom
+"m" 	= mod1     : all: f.fullzoom
+"w" 	= mod1 | s : all: f.fullzoom
+# "e" 	= mod1 | s : all: f.move
+# "r" 	= mod1 | c : all: f.resize
+"s" 	= mod1 | s : all: f.squeeze
+ 
+# Kill a window.
+"c" 	= mod1 | s 	   : all: f.delete
+ 
+# rofi
+"F1" 	= mod1 	   : all: f.menu "apps"
+ 
+# Spawn a terminal
+"Return" = mod1 | s   : all: f.exec "xterm &"
+
+"c" = mod4  : all: f.exec "/home/diamond/bin/windowcenter &"
+
+# Launcher
+"p" = mod1 	   : all: f.exec "dmenu_run &"
+
+# File Manager
+"f" = mod1 	   : all: f.exec "thunar &"
+
+# Browser
+"u" = mod1 	   :all: f.exec "firefox &"  
+
+# Restart the wm.
+"r" = mod1	   :all: f.restart
+
+# Show status
+"f" = mod1	s | c   :all: f.exec "sh $HOME/bin/statf &" 
+
+# Dump root window
+#"Print" = mod1	  : all: f.exec "scrot &"
+
+# Alt(S)+Tab cyclewarp windows
+"Tab" = mod1	 : all : f.warpring "next"
+"Tab" = mod1 | s : all : f.warpring "prev"
+
+# IconMgr
+"Left"  =        : iconmgr : f.backiconmgr
+"Right" =        : iconmgr : f.forwiconmgr
+"Up"    =        : iconmgr : f.upiconmgr
+"Down"  =        : iconmgr : f.downiconmgr
+"Up"    = s      : iconmgr : f.nexticonmgr
+"Down"  = s      : iconmgr : f.previconmgr
+"Tab"   =        : iconmgr : f.focus
+"Tab"   = s      : iconmgr : f.raiselower
+"Tab"   = mod5   : all     : f.nexticonmgr
+
+##################################
+#
+# MENUS
+#
+##################################
+
+menu "apps"
+{
+	"  Programs "			f.title
+	""			        f.separator
+	"Run"				f.exec "dmenu_run &"
+        "Pin"		        f.pin
+        ""			        f.separator
+	"XTerm"				f.exec "xterm &"
+	"Emacs"				f.exec "emacsclient -c -n -a 'emacs' &"
+	"Firefox"				f.exec "firefox &"
+	"Chromium"				f.exec "chromium &"
+	"Code"				f.exec "code &"
+	"Discord"				f.exec "discord &"
+	"Telegram"				f.exec "telegram-desktop &"
+        ""			        f.separator
+	""				f.separator
+	"Editors"			f.menu "editors"
+	"Terminals" 			f.menu "terminals"
+	"Files"				f.menu "fms"
+	"Network"			f.menu "network"
+	"Graphics"			f.menu "graphics"
+	"Multimedia"			f.menu "media"
+	"Office"			f.menu "office"
+	"Utils"				f.menu "utils"
+}
+
+menu "terminals"
+{
+	"  Terminals  "			f.title
+	"Console"				f.exec "xfce4-terminal &"
+	"XTerm"				f.exec "xterm &"
+}
+
+
+menu "editors"
+{
+	"  Editors  "			f.title
+	"vim"				f.exec "xterm -e vim &"
+	"emacs"			f.exec "emacsclient -c -n -a 'emacs' &"
+	"code"				f.exec "code &"
+}
+
+menu "fms"
+{
+	"  File Managers  "		f.title
+	"nnn"				f.exec "xterm -e nnn &"
+	"fsv"				f.exec "fsv2 &"
+	"thunar"			f.exec "pcmanfm &"
+}
+
+menu "network"
+{
+	"  Network  "			f.title
+	"firefox"				f.exec "firefox &"
+	"chromium"			f.exec "chromium &"
+	"qutebrowser"			f.exec "qutebrowser &"
+	"netsurf"			f.exec "netsurf &"
+}
+	
+menu "graphics"
+{
+	"  Graphics  "			f.title
+	"paint"				f.exec "kolourpaint &"
+	"gimp"				f.exec "gimp &"
+	"inkscape"				f.exec "inkscape &"
+}
+
+
+
+menu "media"
+{
+	" Multimedia"  			f.title
+	"mpv"			f.exec "mpv &"
+	"spotify"			f.exec "/home/diamond/bin/startspotify.sh &"
+}
+
+menu "office"
+{
+	"  Office  "			f.title
+	"loffice"				f.exec "libreofice &"
+	"xpdf"				f.exec "xpdf &"
+	"zathura"			f.exec "zathura &"
+	"gv"				f.exec "gv &"
+	"abiword"			f.exec "abiword &"
+}
+
+menu "utils"
+{
+	"  Utils  "			f.title
+	"tray"				f.exec "/home/diamond/bin/toggle_tray &" 
+	"compositor"				f.exec "/home/diamond/bin/toggle_compositing &" 
+	"xclock"			f.exec "xclock &"
+	"catclock"			f.exec "catclock &"
+	"xcalc"				f.exec "xcalc &"
+	"xclipboard"			f.exec "xclipboard"
+	"xconsole"			f.exec "xconsole &"
+	"top"			    	f.exec "xterm -e top &"	
+	"xev"				f.exec "xev &"
+	"xkill"				f.exec "xkill &"
+	"xload"				f.exec "xload &"
+	"htop"				f.exec "xterm -e htop &"
+	"xsm"				f.exec "xsm &"
+	"ncdu"				f.exec "xterm -e ncdu $HOME &"
+	"nmtui"				f.exec "xterm -e nmtui -i fpx0 &" 
+}
+
+menu "wm-ops" {
+    "CTWM"				f.title
+    ""                  		f.separator
+	"Console"				f.exec "xterm &" 
+    ""                  		f.separator
+    "Pin"				f.pin
+    ""                  		f.separator
+    "Version"               	        f.version
+    "Sort icons"			f.sorticonmgr
+    "Hide icon mgr"			f.hideiconmgr
+    "Show icon mgr"			f.showiconmgr
+    "Hide pager"			f.hideworkspacemgr
+    "Show pager"			f.showworkspacemgr
+    "Prev Workspace"    		f.prevworkspace
+    "Next Workspace"    		f.nextworkspace
+    ""                  		f.separator
+    "Session"             		f.menu "session"
+}
+
+menu "session" {
+
+	"Lock"     			f.exec "xflock4 &"
+    ""					f.separator
+	"Refresh"			f.refresh
+	"Restart"			f.restart
+    ""					f.separator
+        "Exit"				f.quit
+}
+
+menu "windowmenu" {
+    "Identify"				f.identify
+    "Iconify"				f.iconify
+    "Squeeze"				f.squeeze
+    "Expand"                            f.menu "zoom"
+    "Toggle autoraise"			f.autoraise
+    "Lower"		           	f.lower  
+    "Occupy ..."			f.occupy
+    "Occupy All"			f.occupyall
+    "Vanish"				f.iconify
+    ""					f.separator
+    "Kill"				f.menu "kill"
+}
+
+menu "zoom" {
+    "Pin"				f.pin
+    ""					f.separator
+    "Full"				f.fullzoom
+    "Horizontal"			f.horizoom
+    "Vertical"				f.zoom
+    "Left"				f.leftzoom
+    "Top"				f.topzoom
+    "Right"				f.rightzoom
+    "Bottom"				f.bottomzoom
+}
+
+menu "kill" {
+    "Kill Window"			f.destroy
+    "Dismiss"				f.delete
+}
+
+
+menu "iconmenu" {
+    "Actions"				f.title
+    ""					f.separator
+    "Restore"				f.iconify
+    "Move"				f.move
+    "Occupy ..."			f.occupy
+    "Occupy All"			f.occupyall
+    ""					f.separator
+    "Send Delete"			f.delete
+    "Kill Window"			f.destroy
+}
+
+menu "iconmgrmenu" {
+    "Actions"				f.title
+    ""					f.separator
+    "Restore"				f.iconify
+    "Occupy ..."			f.occupy
+    "Occupy All"			f.occupyall
+    ""					f.separator
+    "Send Delete"			f.delete
+    "Kill Window"			f.destroy
+}
