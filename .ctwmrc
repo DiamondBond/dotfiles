@@ -202,6 +202,14 @@ Cursors
 define(`font_8',`-*-helvetica-medium-r-normal--*-80-*-*-*-*-*-*')
 define(`font_6',`-*-helvetica-medium-r-normal--*-60-*-*-*-*-*-*')
 
+# -*-fixed-medium-*-*-*-24-*-*-*-*-*-*-1
+# # Fonts
+# TitleFont       "-*-helvetica-bold-r-normal-*-17-*-*-*-*-*-iso10646-1"
+# ResizeFont      "-*-helvetica-bold-r-normal-*-17-*-*-*-*-*-iso10646-1"
+# MenuFont        "-*-helvetica-bold-r-normal-*-17-*-*-*-*-*-iso10646-1"
+# IconFont        "-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-iso10646-1"
+# IconManagerFont "-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-iso10646-1"
+
 ResizeFont		"font_8"
 TitleFont               "font_8"
 MenuFont                "font_8"
