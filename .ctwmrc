@@ -471,8 +471,15 @@ NoRaiseOnWarp
 ##################################
 # X root
 Button1 = : root : f.menu "apps"
-Button2 = : root : f.refresh
+Button2 = : root : f.menu "TwmAllWindows"
 Button3 = : root : f.menu "wm-ops"
+Button4 =      : root          : f.prevworkspace
+Button5 =      : root          : f.nextworkspace
+
+# Cltr+Mouse Buttons on the root window open secondary menus
+Button1 =  c : root : f.menu "TwmWorkspaces"
+Button2 =  c : root : f.refresh
+Button3 =  c : root : f.menu "wm-ops"
 
 # Frames
 Button1 = : frame : f.raise
@@ -523,7 +530,7 @@ LeftTitleButton  ":menu"    = f.menu "windowmenu"
 #RightTitleButton ":dot"   = f.squeeze
 RightTitleButton ".minimize.xbm" = f.iconify
 RightTitleButton ".vertmax.xbm"  = f.fullzoom
-RightTitleButton ".resiz2.xbm"   = f.menu "kill"
+RightTitleButton ".resiz2.xbm"   = f.delete
 
 ##################################
 #
