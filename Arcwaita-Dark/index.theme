@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Arcwaita-Dark
+Comment=Arc but for compliance with Adwaita-Dark.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Arcwaita-Dark
+MetacityTheme=Arcwaita-Dark
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=menu:minimize,maximize,close
