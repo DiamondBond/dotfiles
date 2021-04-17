@@ -1,0 +1,18 @@
+[global]
+shrink = yes
+geometry = "720x720-0+0"
+browser = firefox
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+context = ctrl+shift+period
+
+[urgency_low]
+timeout = 3
+
+[urgency_normal]
+timeout = 6
+
+[urgency_critical]
+timeout = 0
