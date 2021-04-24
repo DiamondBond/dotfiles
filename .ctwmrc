@@ -117,7 +117,7 @@ AutoRelativeResize
 ##################################
 # Reduce titlebar thickness  
 BorderWidth 0
-ClientBorderWidth 0
+#ClientBorderWidth 0
 
 # Padding
 FramePadding 1
@@ -169,7 +169,7 @@ Color
     # WorkSpaceManager 	
     MapWindowBackground "color2"
     MapWindowForeground "color1"
-    MapWindowCurrentWorkSpace { "rgb:c/c/c" "color4" "color2" }
+    #MapWindowCurrentWorkSpace "rgb:c/c/c" "color4" "color2"
 }
 
 # Avoid 'technicolor effect' on decorations
@@ -213,8 +213,8 @@ define(`font_6',`-*-helvetica-medium-r-normal--*-60-*-*-*-*-*-*')
 ResizeFont		"font_8"
 TitleFont               "font_8"
 MenuFont                "font_8"
-MenuTitleFont           "font_8"
-IconFont                "font_8"
+#MenuTitleFont           "font_8"
+#IconFont                "font_8"
 IconManagerFont         "font_8"
 WorkSpaceFont	        "font_6"	
 
@@ -302,7 +302,7 @@ StartInMapState
 ReverseCurrentWorkSpace
 
 # Buttons
-WMgrButtonStyle style3	
+#WMgrButtonStyle 3
 WMgrButtonShadowDepth 0
 WMgrHorizButtonIndent 0
 WMgrVertButtonIndent 0
@@ -336,7 +336,7 @@ Zoom 0
  IconRegionJustification "left"
  IconRegion   "96x512+0+0" North West 65 65 
  PixmapDirectory "/home/diamond/Pictures/pixmaps"
- Override any client-supplied iconS
+ #Override any client-supplied iconS
  ForceIcons
 
 #################################
@@ -369,8 +369,8 @@ NoBorder
     "stalonetray"
     "xbiff"
     "xsm"
-#    "xclock"
-#    "xload"
+    #"xclock"
+    #"xload"
     "xlogo" 
     "xman"
     "xneko"
@@ -505,7 +505,9 @@ Button3 = m      : window : f.function "resize-or-lower"
 Button3 = s  	 : window : f.menu "windowmenu"
 Button3 = m | l  : window : f.menu "kill"
 Button3 = m | c  : window : f.fullzoom
-
+Button8 =  : window : f.function "resize-or-lower"
+Button9 =  : window : f.function "move-or-raise"
+ 
 # Iconmgr
 Button1 = : iconmgr : f.iconify
 Button2 = : iconmgr : f.identify
@@ -535,7 +537,7 @@ NoDefaults
 #   Built-in options:
 #   :dot, :xlogo, :iconify, :resize, :question, :delete, :menu
 LeftTitleButton  ":menu"    = f.menu "windowmenu"
-#RightTitleButton ":dot"   = f.squeeze
+LeftTitleButton ":dot"   = f.squeeze
 RightTitleButton ".minimize.xbm" = f.iconify
 RightTitleButton ".vertmax.xbm"  = f.fullzoom
 RightTitleButton ".resiz2.xbm"   = f.delete
@@ -596,8 +598,8 @@ RightTitleButton ".resiz2.xbm"   = f.delete
 "v" 	= mod1     : all: f.hzoom
 "m" 	= mod1     : all: f.fullzoom
 "w" 	= mod1 | s : all: f.fullzoom
-# "e" 	= mod1 | s : all: f.move
-# "r" 	= mod1 | c : all: f.resize
+ "e" 	= mod1 | s : all: f.function "move-or-raise"
+#"r" 	= mod1 | s : all: f.resize
 "s" 	= mod1 | s : all: f.squeeze
  
 # Kill a window.
@@ -610,7 +612,7 @@ RightTitleButton ".resiz2.xbm"   = f.delete
 "Return" = mod1 | s   : all: f.exec "xterm &"
 
 "c" = mod4  : all: f.exec "/home/diamond/bin/windowcenter &"
-"XF86Launch1" =   : all: f.exec "/home/diamond/bin/toggle_tray &"
+"g" = mod1 | s  : all: f.exec "/home/diamond/bin/toggle_tray &"
 
 # Launcher
 "p" = mod1 	   : all: f.exec "dmenu_run &"
@@ -662,14 +664,12 @@ menu "apps"
 	"Emacs"				f.exec "emacsclient -c -n -a 'emacs' &"
 	"Firefox"				f.exec "firefox &"
 	"Chromium"				f.exec "chromium &"
-	"Code"				f.exec "code &"
-	"Discord"				f.exec "discord &"
-	"Telegram"				f.exec "telegram-desktop &"
         ""			        f.separator
 	""				f.separator
 	"Editors"			f.menu "editors"
 	"Terminals" 			f.menu "terminals"
 	"Files"				f.menu "fms"
+	"Comm"			f.menu "chat"
 	"Network"			f.menu "network"
 	"Graphics"			f.menu "graphics"
 	"Multimedia"			f.menu "media"
@@ -709,7 +709,14 @@ menu "network"
 	"qutebrowser"			f.exec "qutebrowser &"
 	"netsurf"			f.exec "netsurf &"
 }
-	
+
+menu "chat"
+{
+	"Discord"				f.exec "discord &"
+	"Telegram"				f.exec "telegram-desktop &"
+    "HexChat"               f.exec "hexchat &"
+}
+
 menu "graphics"
 {
 	"  Graphics  "			f.title
@@ -742,6 +749,7 @@ menu "utils"
 	"  Utils  "			f.title
 	"tray"				f.exec "/home/diamond/bin/toggle_tray &" 
 	"compositor"				f.exec "/home/diamond/bin/toggle_compositing &" 
+	"start_avd"				f.exec "/home/diamond/bin/startavd &" 
 	"xclock"			f.exec "xclock &"
 	"catclock"			f.exec "catclock &"
 	"xcalc"				f.exec "xcalc &"
@@ -759,8 +767,6 @@ menu "utils"
 
 menu "wm-ops" {
     "CTWM"				f.title
-    ""                  		f.separator
-	"Console"				f.exec "xterm &" 
     ""                  		f.separator
     "Pin"				f.pin
     ""                  		f.separator
@@ -796,7 +802,7 @@ menu "windowmenu" {
     "Lower"		           	f.lower  
     "Occupy ..."			f.occupy
     "Occupy All"			f.occupyall
-    "Vanish"				f.iconify
+    "Vanish"				f.vanish
     ""					f.separator
     "Kill"				f.menu "kill"
 }

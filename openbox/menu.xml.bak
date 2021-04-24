@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+  <menu id="root-menu" label="Openbox 3">
+    <item label="emacs">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs'</execute>
+      </action>
+    </item>
+    <item label="term">
+      <action name="Execute">
+        <execute>xfce4-terminal</execute>
+      </action>
+    </item>
+    <item label="web">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </item>
+    <item label="files">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </item>
+    <item label="notes">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs' -e
+        '(notes-edit)'</execute>
+      </action>
+    </item>
+    <separator />
+    <menu id="root-menu-63833" label="apps">
+      <item label="xterm">
+        <action name="Execute">
+          <execute>xterm</execute>
+        </action>
+      </item>
+      <item label="zathura">
+        <action name="Execute">
+          <execute>zathura</execute>
+        </action>
+      </item>
+      <item label="office">
+        <action name="Execute">
+          <execute>libreoffice</execute>
+        </action>
+      </item>
+      <item label="vbox">
+        <action name="Execute">
+          <command>VirtualBox</command>
+        </action>
+      </item>
+      <separator />
+      <item label="xaos">
+        <action name="Execute">
+          <execute>xaos</execute>
+        </action>
+      </item>
+      <item label="paint">
+        <action name="Execute">
+          <execute>kolourpaint</execute>
+        </action>
+      </item>
+      <item label="spotify">
+        <action name="Execute">
+          <execute>env LD_PRELOAD=/usr/local/lib/spotify-adblock.so
+          spotify</execute>
+        </action>
+      </item>
+      <item label="music">
+        <action name="Execute">
+          <execute>xfce4-terminal --geometry 55x15 -e
+          ncmpcpp</execute>
+        </action>
+      </item>
+      <item label="mixer">
+        <action name="Execute">
+          <execute>pavucontrol</execute>
+        </action>
+      </item>
+      <separator />
+      <item label="steam">
+        <action name="Execute">
+          <command>steam steam://open/games</command>
+        </action>
+      </item>
+      <item label="hexchat">
+        <action name="Execute">
+          <execute>hexchat</execute>
+        </action>
+      </item>
+      <item label="telegram">
+        <action name="Execute">
+          <execute>telegram-desktop</execute>
+        </action>
+      </item>
+      <item label="discord">
+        <action name="Execute">
+          <execute>discord</execute>
+        </action>
+      </item>
+      <item label="transmission">
+        <action name="Execute">
+          <execute>transmission-gtk</execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="settings" label="session">
+      <item label="info">
+        <action name="Execute">
+          <execute>xfce4-terminal --title "System Information"
+          --geometry 36x6 -e "/home/diamond/bin/sysinfo"</execute>
+        </action>
+      </item>
+      <item label="vsync">
+        <action name="Execute">
+          <command>/home/diamond/bin/toggle_compositing</command>
+        </action>
+      </item>
+      <separator />
+      <item label="recfg">
+        <action name="Reconfigure" />
+      </item>
+      <item label="restart">
+        <action name="Restart" />
+      </item>
+      <separator />
+      <item label="logout">
+        <action name="Exit" />
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>

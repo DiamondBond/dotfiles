@@ -1,0 +1,55 @@
+#Window geometry
+padding.width: 1
+border.width: 1
+window.border.color: #000000
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 0
+window.label.text.justify: left
+
+#titlebars
+padding.height: 4
+padding.width: 4
+
+# Active window
+window.active.title.separator.color: #040404
+window.active.title.bg: solid
+window.active.title.bg.color: #000000
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ffffff
+window.active.button.*.bg: Parentrelative
+window.active.button.*.image.color: #ffffff
+window.active.button.hover.image.color: #ffffff
+window.active.button.pressed.bg: Parentrelative
+window.active.button.pressed.image.color: #ffffff
+
+# Inactive window
+window.inactive.title.separator.color: #040404
+window.inactive.title.bg: solid
+window.inactive.title.bg.color: #353535
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #eeeeee
+window.inactive.button.*.bg: Parentrelative
+window.inactive.button.*.image.color: #eeeeee
+
+# active
+window.active.title.separator.color: #040404
+window.active.title.bg: solid
+window.active.title.bg.color: #1E1E1E
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #eeeeee
+window.active.button.*.bg: Parentrelative
+window.active.button.*.image.color: #eeeeee
+
+# Menu settings
+menu.border.color: #000000
+menu.border.width: 10
+menu.title.bg: flat solid border
+menu.title.bg.color: #000000
+menu.title.text.color: #ffffff
+menu.items.bg: solid 
+menu.items.active.bg.color: #353535
+menu.items.text.color: #ffffff
+menu.items.active.bg: flat solid border
+menu.items.active.text.color: #F0F8FF
+menu.separator.color: #303030

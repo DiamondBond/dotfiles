@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+  <menu id="root-menu" label="Openbox 3">
+    <item label="term">
+      <action name="Execute">
+        <execute>xfce4-terminal</execute>
+      </action>
+    </item>
+    <item label="files">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </item>
+    <item label="web">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </item>
+    <item label="emacs">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs'</execute>
+      </action>
+    </item>
+    <item label="notes">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs' -e
+        '(notes-edit)'</execute>
+      </action>
+    </item>
+    <item label="apps">
+      <action name="Execute">
+        <execute>/home/diamond/bin/apps.sh</execute>
+      </action>
+    </item>
+    <menu id="settings" label="misc">
+      <item label="info">
+        <action name="Execute">
+          <execute>xfce4-terminal --title "System Information"
+          --geometry 36x6 -e "/home/diamond/bin/sysinfo"</execute>
+        </action>
+      </item>
+      <item label="vsync">
+        <action name="Execute">
+          <command>/home/diamond/bin/toggle_compositing</command>
+        </action>
+      </item>
+      <item label="recfg">
+        <action name="Reconfigure" />
+      </item>
+      <item label="restart">
+        <action name="Restart" />
+      </item>
+      <item label="exit">
+        <action name="Exit" />
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>

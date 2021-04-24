@@ -114,4 +114,3 @@ map <C-t><right> :tabn<cr>
 map <F12> :set invnumber<cr>
 
 noremap <C-p> :GFiles<CR>
-

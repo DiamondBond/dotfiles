@@ -103,6 +103,25 @@ URxvt.metaSendsEscape: true
 !urxvt*transparent: true
 !urxvt*shading: 10
 
+! *background:           #ffffff
+! *foreground:           #000000
+
+! *color0:               #000000
+! *color1:               #880000
+! *color2:               #005500
+! *color3:               #663311
+! *color4:               #004488
+! *color5:               #770077
+! *color6:               #007777
+! *color7:               #eeeecc
+! *color8:               #eaeaea
+! *color9:               #ffeaea
+! *color10:              #eaffea
+! *color11:              #eeee9e
+! *color12:              #cceeff
+! *color13:              #ffeaff
+! *color14:              #eaffff
+! *color15:              #ffffea
 
 URxvt*intensityStyles: XTerm*boldColors
 false:      false
@@ -110,48 +129,9 @@ false:      false
 
 ! awe light
 ! #4D5E63
-! *.foreground:   #000000
-! *.background:   #ffffff
-! *.cursorColor:  #000000
-
-! ! black
-! *.color0:       #282A36
-! *.color8:       #282A36
-
-! ! red
-! *.color1:       #F37F97
-! *.color9:       #F37F97
-
-! ! green
-! *.color2:       #5ADECD
-! *.color10:      #5ADECD
-
-! ! yellow
-! *.color3:       #F2A272
-! *.color11:      #F2A272
-
-! ! blue
-! *.color4:       #8897F4
-! *.color12:      #8897F4
-
-! ! magenta
-! *.color5:       #C574DD
-! *.color13:      #C574DD
-
-! ! cyan
-! *.color6:       #79E6F3
-! *.color14:      #79E6F3
-
-! ! white
-! *.color7:       #AAAAAA
-! *.color15:      #AAAAAA
-
-
-! Colors
-! #4D5E63
-*.foreground:   #ffffff
-*.background:   #000000
-*.cursorColor:  #999999
+*.foreground:   #000000
+*.background:   #ffffff
+*.cursorColor:  #000000
 
 ! black
 *.color0:       #282A36
@@ -185,23 +165,4 @@ false:      false
 *.color7:       #AAAAAA
 *.color15:      #AAAAAA
 
-!*.foreground: 	#E8DFD6
-!*.background: 	#021B21
-!*.cursorColor:  #2E3340
-!*.color0:       #032C36
-!*.color8:       #065F73
-!*.color1:       #C2454E
-!*.color9:       #EF5847
-!*.color2:       #7CBF9E
-!*.color10:      #A2D9B1
-!*.color3:       #8A7A63
-!*.color11:      #BEB090
-!*.color4:       #2E3340
-!*.color12:      #61778D
-!*.color5:       #FF5879
-!*.color13:      #FF99A1
-!*.color6:       #44B5B1
-!*.color14:      #9ED9D8
-!*.color7:       #F2F1B9
-!*.color15:      #F6F6C9
 

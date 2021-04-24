@@ -1,0 +1,14 @@
+QWidget, QTabWidget::pane, QTabWidget::tab-bar {
+    background-color: #2F343F
+}
+
+QTabBar::tab {
+    color: #eeeeee;
+    background-color: #1C1F26;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color: #2F343F;
+    color: #eeeeee;
+
+} 
