@@ -1,0 +1,32 @@
+*{
+    background: rgba ( 0, 0, 0, 0% );
+    background-color: @background;
+    color: #000;
+}
+
+#window {
+    background-color: rgba (244,244,244, 0.90);
+    border-radius: 10;
+    width: 840;
+    height: 420;
+    padding: 42 42;
+}
+
+#inputbar {
+    children:   [ textbox-prompt-colon,entry,case-indicator ];
+}
+
+#textbox-prompt-colon {
+    expand:     false;
+    str:        "λ";
+    margin:     0px 0.2em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
+#element.selected.normal {
+    background-color: rgba (0, 0, 0, 30%);
+}
+
+#element.selected.active {
+    background-color: rgba (0, 0, 0, 30%);
+}
