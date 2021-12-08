@@ -239,16 +239,16 @@
         <command>lxrandr</command>
       </action>
     </keybind>
-    <keybind key="C-A-t">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-      </action>
-    </keybind>
-    <keybind key="A-e">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-A-t"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>xfce4-terminal</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="A-e"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>thunar</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-g">
       <action name="Execute">
         <command>galculator</command>
@@ -479,18 +479,18 @@
         </startupnotify>
       </action>
     </keybind>
-    <!-- <keybind key="C-A-Delete"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>xfce4-terminal -e htop -\-title "Task Manager"</command> -->
-    <!--     <startupnotify> -->
-    <!--       <enabled>yes</enabled> -->
-    <!--       <name>htop</name> -->
-    <!--     </startupnotify> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="C-A-Delete">
+      <action name="Execute">
+        <command>qterminal -e htop --title "Task Manager"</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>htop</name>
+        </startupnotify>
+      </action>
+    </keybind>
     <keybind key="C-A-p">
       <action name="Execute">
-        <command>pavucontrol</command>
+        <command>pavucontrol-qt</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Volume</name>

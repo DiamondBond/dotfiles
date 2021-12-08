@@ -1,0 +1,132 @@
+## wallpaper
+#feh --bg-fill ~/pictures/wallpapers/r/nduigxa.jpg &
+#feh --bg-fill ~/Pictures/Wallpapers/colorsplash.png &
+#hsetroot -solid "#bfbfbf" &
+#feh --bg-fill ~/Pictures/Wallpapers/dark.jpg &
+feh --bg-tile ~/Pictures/Wallpapers/tHqGgP1.jpg &
+
+# X11
+xrdb ~/.Xresources &
+xrandr --output eDP-1 --set "scaling mode" "Full" &
+xset b off &
+xset m 0/10 1 &
+setxkbmap -option ctrl:nocaps &
+
+if pgrep 'polkit-gnome-authentication-agent-1' > /dev/null
+then
+    echo "polkit-gnome-authentication running, everything is fine"
+else
+    echo "launching polkit-gnome-authentication"
+    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+fi
+
+if pgrep 'xfsettingsd' > /dev/null
+then
+    echo "xfsettingsd running, everything is fine"
+else
+    echo "launching xfsettingsd"
+    xfsettingsd &
+fi
+
+if pgrep 'dunst' > /dev/null
+then
+    echo "dunst running, everything is fine"
+else
+    echo "launching dunst"
+    dunst &
+fi
+
+if pgrep 'light-locker' > /dev/null
+then
+    echo "light-locker running, everything is fine"
+else
+    echo "launching light-locker"
+    light-locker &
+fi
+
+# if pgrep 'pasystray' > /dev/null
+# then
+#     echo "pasystray running, everything is fine"
+# else
+#     echo "launching pasystray"
+#     pasystray &
+# fi
+
+if pgrep 'nm-applet' > /dev/null
+then
+    echo "nm-applet running, everything is fine"
+else
+    echo "launching nm-applet"
+    nm-applet &
+fi
+
+if pgrep 'xfce4-power-manager' > /dev/null
+then
+    echo "xfce4-power-manager running, everything is fine"
+else
+    echo "launching xfce4-power-manager"
+    xfce4-power-manager &
+fi
+
+# if pgrep 'cbatticon' > /dev/null
+# then
+#     echo "cbatticon running, everything is fine"
+# else
+#     echo "launching cbatticon"
+#     cbatticon &
+# fi
+
+ if pgrep 'tint2' > /dev/null
+ then
+     echo "tint2 running, everything is fine"
+ else
+     echo "launching tint2"
+     tint2 &
+ fi
+
+if pgrep 'xbindkeys' > /dev/null
+then
+    echo "xbindkeys running, everything is fine"
+else
+    echo "launching xbindkeys"
+    xbindkeys &
+fi
+
+if pgrep 'emacs' > /dev/null
+then
+    echo "emacs running, everything is fine"
+else
+    echo "launching emacs"
+    emacs --daemon &
+fi
+
+if pgrep 'mpd' > /dev/null
+then
+    echo "mpd running, everything is fine"
+else
+    echo "launching mpd"
+    mpd &
+fi
+
+if pgrep 'libinput-gestures' > /dev/null
+then
+    echo "libinput-gestures running, everything is fine"
+else
+    echo "launching libinput-gestures"
+    libinput-gestures &
+fi
+
+if pgrep 'dropbox' > /dev/null
+then
+    echo "dropbox running, everything is fine"
+else
+    echo "launching dropbox"
+    dropbox start -i &
+fi
+
+pcmanfm --desktop &
+
+# start picom & register its state for user scripts
+TOGGLE=/tmp/toggle_compositing
+touch $TOGGLE
+picom &

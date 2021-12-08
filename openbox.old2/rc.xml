@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>x14</name>
+    <name>anon</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -83,9 +83,9 @@
     </font>
     <font place="MenuItem">
       <name>Inter</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -103,7 +103,7 @@
       <name>Inter</name>
       <size>10</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -118,19 +118,19 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>&#x3B1;</name>
-      <name>&#x3B2;</name>
-      <name>&#x3B3;</name>
-      <name>&#x3B4;</name>
-      <name>&#x3B5;</name>
-      <name>&#x3B6;</name>
-      <name>&#x3B7;</name>
-      <name>&#x3B8;</name>
-      <name>&#x3B9;</name>
-      <name>&#x3BA;</name>
+      <name>one</name>
+      <name>two</name>
+      <name>three</name>
+      <name>four</name>
+      <name>five</name>
+      <name>six</name>
+      <name>seven</name>
+      <name>eight</name>
+      <name>nine</name>
+      <name>ten</name>
       <name>&#x3BB;</name>
     </names>
     <popupTime>0</popupTime>
@@ -164,7 +164,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>BottomLeft</position>
+    <position>Floating</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>551</floatingX>
     <floatingY>723</floatingY>
@@ -204,14 +204,14 @@
     <keybind key="S-A-c">
       <action name="Close"/>
     </keybind>
-    <!-- <keybind key="W-u"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>/home/diamond/bin/ui.sh</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="W-u">
+      <action name="Execute">
+        <command>/home/diamond/bin/ui.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>/home/diamond/bin/launcher.sh</command>
+        <command>/home/diamond/bin/apps.sh</command>
       </action>
     </keybind>
     <keybind key="S-A-p">
@@ -219,11 +219,11 @@
         <command>scrot</command>
       </action>
     </keybind>
-    <!-- <keybind key="C-A-n"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>/home/diamond/bin/np</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="C-A-n">
+      <action name="Execute">
+        <command>/home/diamond/bin/np</command>
+      </action>
+    </keybind>
     <keybind key="C-A-b">
       <action name="Execute">
         <command>/home/diamond/bin/procbar</command>
@@ -479,15 +479,16 @@
         </startupnotify>
       </action>
     </keybind>
-    <!-- <keybind key="C-A-Delete"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>xfce4-terminal -e htop -\-title "Task Manager"</command> -->
-    <!--     <startupnotify> -->
-    <!--       <enabled>yes</enabled> -->
-    <!--       <name>htop</name> -->
-    <!--     </startupnotify> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="C-A-Delete">
+      <action name="Execute">
+        <command>xfce4-terminal -e htop --title "Task
+        Manager"</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>htop</name>
+        </startupnotify>
+      </action>
+    </keybind>
     <keybind key="C-A-p">
       <action name="Execute">
         <command>pavucontrol</command>
@@ -596,7 +597,7 @@
     </keybind>
     <keybind key="S-A-g">
       <action name="execute">
-        <command>/home/diamond/bin/toggle_tint2_panel</command>
+        <command>/home/diamond/bin/toggle_panel</command>
       </action>
     </keybind>
     <keybind key="S-A-v">
@@ -612,11 +613,11 @@
     <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
-    <!-- <keybind key="A-F2"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>gmrun</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>gmrun</command>
+      </action>
+    </keybind>
     <keybind key="W-h">
       <action name="DirectionalFocusWest">
         <raise>yes</raise>

@@ -20,16 +20,21 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         <execute>thunar</execute>
       </action>
     </item>
-    <item label="firefox">
+    <item label="----------">
+      <action name="" />
+    </item>
+    <item label="web">
       <action name="Execute">
         <execute>firefox</execute>
       </action>
     </item>
-    <menu id="applications" label="apps">
     <item label="chromium">
       <action name="Execute">
         <execute>chromium</execute>
       </action>
+    </item>
+    <item label="----------">
+      <action name="" />
     </item>
     <item label="vscode">
       <action name="Execute">
@@ -41,14 +46,18 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         <execute>emacsclient -c -n -a 'emacs'</execute>
       </action>
     </item>
-    <item label="discord">
-      <action name="Execute">
-        <execute>discord</execute>
-      </action>
+    <item label="----------">
+      <action name="" />
     </item>
     <item label="mixer">
       <action name="Execute">
-        <execute>pavucontrol-qt</execute>
+        <execute>pavucontrol</execute>
+      </action>
+    </item>
+    <item label="local">
+      <action name="Execute">
+        <execute>xfce4-terminal -e ncmpcpp --geometry=55x15
+        --title=Music</execute>
       </action>
     </item>
     <item label="spotify">
@@ -57,26 +66,23 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         spotify</execute>
       </action>
     </item>
-	</menu>
-    <menu id="settings" label="settings">
+    <item label="----------">
+      <action name="" />
+    </item>
+    <menu id="settings" label="x">
       <item label="info">
         <action name="Execute">
           <execute>xterm -e /home/diamond/bin/sysinfo</execute>
         </action>
       </item>
-	  <item label="desktop">
+      <item label="desktop">
         <action name="Execute">
-          <execute>pcmanfm-qt --desktop-pref Advanced</execute>
+          <execute>/home/diamond/bin/desktopstate.sh</execute>
         </action>
       </item>
       <item label="compositor">
         <action name="Execute">
           <execute>/home/diamond/bin/toggle_compositing</execute>
-        </action>
-      </item>
-	  <item label="powersave">
-        <action name="Execute">
-          <execute>xterm -e "sudo powertop --auto-tune"</execute>
         </action>
       </item>
       <item label="----------">
@@ -88,9 +94,9 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
       <item label="reinitialize">
         <action name="Restart" />
       </item>
-      <!-- <item label="-\-\-\-\-\-\-\-\-\-"> -->
-      <!--   <action name="" /> -->
-      <!-- </item> -->
+      <item label="----------">
+        <action name="" />
+      </item>
       <item label="exit">
         <action name="Execute">
           <execute>/home/diamond/bin/power.sh</execute>
