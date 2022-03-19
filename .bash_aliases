@@ -126,6 +126,7 @@ alias showfailed="systemctl list-units --failed"
 alias savemepower='sudo powertop --auto-tune'
 
 alias clean_xsession='>~/.xsession-errors'
+alias journalsize='du /var/log/journal -h'
 
 alias youtube-dl='yt-dlp'
 
