@@ -1,0 +1,4 @@
+#!/bin/bash
+echo '' > mpd.db
+echo '' > mpd.log
+echo '' > mpdstate
