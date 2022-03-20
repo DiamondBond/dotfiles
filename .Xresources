@@ -69,4 +69,6 @@ Xft.autohint: 0
 Xft.rgba: rgb
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+! Cursor
+Xcursor.theme: Adwaita
 Xcursor.size: 16
