@@ -1,3 +1,5 @@
 configuration {
-	show-icons: true;
+ show-icons: true;
+ modi: "window,drun,combi";
+ combi-modi: "window,drun";
 }
