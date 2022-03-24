@@ -7,7 +7,8 @@ hsetroot -solid dimgray &
 xrdb /home/diamond/.Xresources &
 sh -c /home/diamond/bin/startcompositor &
 dunst &
-xss-lock slock &
+tint2 &
+light-locker &
 xfce4-power-manager &
 libinput-gestures &
 nm-applet &
