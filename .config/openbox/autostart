@@ -1,14 +1,17 @@
-#
-# These things are run when an Openbox X Session is started.
-# You may place a similar script in $HOME/.config/openbox/autostart
-# to run user-specific things.
-#
-
-# Set the wallpaper
-#hsetroot -full /home/ken/wallpaper.jpg &
-
-# A panel for good times
-#tint2 &
-
-# Start compositor
-picom &
+xset b off &
+xset -dpms &
+xset s off &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+sh -c /home/diamond/bin/disable_touchscreen.sh &
+hsetroot -solid dimgray &
+xrdb /home/diamond/.Xresources &
+sh -c /home/diamond/bin/startcompositor &
+dunst &
+xss-lock slock &
+xfce4-power-manager &
+libinput-gestures &
+nm-applet &
+blueman-applet &
+/home/diamond/git/matebook-applet/matebook-applet &
+emacs --daemon &
+dropbox start -i &

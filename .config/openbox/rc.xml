@@ -403,18 +403,32 @@
     </keybind>
     <keybind key="A-space">
       <action name="Execute">
-        <command>rofi -combi-modi window,drun -show combi -modi
-        combi</command>
+        <command>rofi -combi-modi window,drun -show combi -modi combi</command>
+      </action>
+    </keybind>
+    <keybind key="A-S-p">
+      <action name="Execute">
+        <command>dmenu_run</command>
+      </action>
+    </keybind>
+    <keybind key="C-space">
+      <action name="Execute">
+        <command>dunstctl close-all</command>
       </action>
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>xfce4-screenshooter</command>
+        <command>xfce4-screenshooter -f</command>
+      </action>
+    </keybind>
+    <keybind key="S-Print">
+      <action name="Execute">
+        <command>xfce4-screenshooter -r</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot ~/</command>
+        <command>xfce4-screenshooter -w</command>
       </action>
     </keybind>
     <keybind key="A-Tab">
