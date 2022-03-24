@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+  <menu id="root-menu" label="Openbox 3">
+    <item label="run">
+      <action name="Execute">
+        <execute>rofi -combi-modi window,drun -show combi
+        -modi</execute>
+      </action>
+    </item>
+    <item label="term">
+      <action name="Execute">
+        <execute>xfce4-terminal</execute>
+      </action>
+    </item>
+    <item label="files">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </item>
+    <item label="firefox">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </item>
+    <menu id="applications" label="apps">
+    <item label="chromium">
+      <action name="Execute">
+        <execute>chromium</execute>
+      </action>
+    </item>
+    <item label="vscode">
+      <action name="Execute">
+        <execute>code</execute>
+      </action>
+    </item>
+    <item label="emacs">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs'</execute>
+      </action>
+    </item>
+    <item label="discord">
+      <action name="Execute">
+        <execute>discord</execute>
+      </action>
+    </item>
+    <item label="mixer">
+      <action name="Execute">
+        <execute>pavucontrol</execute>
+      </action>
+    </item>
+    <item label="spotify">
+      <action name="Execute">
+        <execute>env LD_PRELOAD=/usr/local/lib/spotify-adblock.so
+        spotify</execute>
+      </action>
+    </item>
+	</menu>
+    <menu id="settings" label="settings">
+      <item label="info">
+        <action name="Execute">
+          <execute>xterm -e /home/diamond/bin/sysinfo</execute>
+        </action>
+      </item>
+      <item label="compositor">
+        <action name="Execute">
+          <execute>/home/diamond/bin/toggle_compositing</execute>
+        </action>
+      </item>
+	  <item label="powersave">
+        <action name="Execute">
+          <execute>xterm -e "sudo powertop --auto-tune"</execute>
+        </action>
+      </item>
+      <item label="----------">
+        <action name="" />
+      </item>
+      <item label="reconfigure">
+        <action name="Reconfigure" />
+      </item>
+      <item label="reinitialize">
+        <action name="Restart" />
+      </item>
+      <!-- <item label="-\-\-\-\-\-\-\-\-\-"> -->
+      <!--   <action name="" /> -->
+      <!-- </item> -->
+      <item label="exit">
+        <action name="Execute">
+          <execute>/home/diamond/bin/power.sh</execute>
+        </action>
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>
