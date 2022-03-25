@@ -2,7 +2,7 @@
 width = 300
 height = 300
 origin = top-right
-offset = 5x5
+offset = 5x25
 monitor = 0
 follow = mouse
 indicate_hidden = yes
@@ -11,7 +11,7 @@ separator_height = 0
 padding = 5
 horizontal_padding = 10
 frame_width = 1
-frame_color = "#000000"
+frame_color = "#005577"
 sort = no
 idle_threshold = 120
 font = Monospace 10
@@ -36,15 +36,15 @@ class = Dunst
 
 [urgency_low]
 timeout = 3
-background = "#ffffff"
-foreground = "#000000"
+background = "#222222"
+foreground = "#bbbbbb"
 
 [urgency_normal]
 timeout = 6
-background = "#ffffff"
-foreground = "#000000"
+background = "#222222"
+foreground = "#bbbbbb"
 
 [urgency_critical]
 timeout = 0
-background = "#ffffff"
-foreground = "#000000"
+background = "#222222"
+foreground = "#bbbbbb"
