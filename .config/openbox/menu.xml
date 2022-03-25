@@ -41,20 +41,25 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         <execute>emacsclient -c -n -a 'emacs'</execute>
       </action>
     </item>
+    <item label="telegram">
+      <action name="Execute">
+        <execute>telegram-desktop</execute>
+      </action>
+    </item>
     <item label="discord">
       <action name="Execute">
         <execute>discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy</execute>
-      </action>
-    </item>
-    <item label="mixer">
-      <action name="Execute">
-        <execute>pavucontrol</execute>
       </action>
     </item>
     <item label="spotify">
       <action name="Execute">
         <execute>env LD_PRELOAD=/usr/local/lib/spotify-adblock.so
         spotify</execute>
+      </action>
+    </item>
+    <item label="mixer">
+      <action name="Execute">
+        <execute>pavucontrol</execute>
       </action>
     </item>
 	</menu>
@@ -87,9 +92,10 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
       <!--   <action name="" /> -->
       <!-- </item> -->
       <item label="exit">
-        <action name="Execute">
-          <execute>/home/diamond/bin/power.sh</execute>
-        </action>
+        <action name="Exit" />
+        <!-- <action name="Execute"> -->
+        <!--   <execute>/home/diamond/bin/power.sh</execute> -->
+        <!-- </action> -->
       </item>
     </menu>
   </menu>

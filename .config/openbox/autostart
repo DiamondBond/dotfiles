@@ -6,8 +6,8 @@ sh -c /home/diamond/bin/disable_touchscreen.sh &
 hsetroot -solid dimgray &
 xrdb /home/diamond/.Xresources &
 sh -c /home/diamond/bin/startcompositor &
+xbindkeys &
 dunst &
-tint2 &
 light-locker &
 xfce4-power-manager &
 libinput-gestures &
@@ -16,3 +16,10 @@ blueman-applet &
 /home/diamond/git/matebook-applet/matebook-applet &
 emacs --daemon &
 dropbox start -i &
+
+# XFCE
+#xfdesktop &
+#xfce4-panel &
+
+# Panel
+tint2 &
