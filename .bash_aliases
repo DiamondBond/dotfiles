@@ -8,7 +8,7 @@ alias getandroidip="adb shell ip route | awk '{print $9}'"
 #alias m='mousepad '
 alias gstat='git status'
 alias gpull='git pull'
-alias gpush='git push origin main'
+alias gpush='git push'
 alias gb='git branch'
 alias gadd='git add -A'
 alias gcom='git commit'
@@ -130,4 +130,11 @@ alias journalsize='du /var/log/journal -h'
 
 alias youtube-dl='yt-dlp'
 
+alias update='yay && flatpak update'
+
 #alias fixgrub='sudo grub-editenv create'
+#alias caffeine='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
+
+alias adw-update="cd ~/git/adw-gtk3 && git fetch origin && git reset --hard origin/main && git clean -fd && meson build && sudo ninja -C build install"
+
+alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'

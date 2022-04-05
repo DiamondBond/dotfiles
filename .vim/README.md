@@ -1,1 +1,0 @@
-run :PlugInstall inside VIM

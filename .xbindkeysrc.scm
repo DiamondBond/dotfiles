@@ -2,5 +2,5 @@
   (xbindkey '("XF86AudioLowerVolume") "sh /home/diamond/bin/changeVolume -5%")
   (xbindkey '("XF86AudioMute") "sh /home/diamond/bin/toggleVolume")
   (xbindkey '("XF86AudioMicMute") "sh /home/diamond/bin/toggleMic")
-  (xbindkey '("XF86MonBrightnessUp") "sh /home/diamond/bin/changeBrightness 5%+")
-  (xbindkey '("XF86MonBrightnessDown") "sh /home/diamond/bin/changeBrightness 5%-")
+  ;;(xbindkey '("XF86MonBrightnessUp") "sh /home/diamond/bin/changeBrightness 5%+")
+  ;;(xbindkey '("XF86MonBrightnessDown") "sh /home/diamond/bin/changeBrightness 5%-")

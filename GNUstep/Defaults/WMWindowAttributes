@@ -1,0 +1,42 @@
+{
+  firefox.Firefox = {
+    AlwaysUserIcon = Yes;
+    Icon = Mozilla.png;
+  };
+  hexchat.Hexchat = {
+    NoAppIcon = Yes;
+    AlwaysUserIcon = No;
+  };
+  VirtualBoxVM.VirtualBoxVM = {
+    AlwaysUserIcon = No;
+    IgnoreDecorationChanges = Yes;
+  };
+  emacs.Emacs = {
+    NoAppIcon = Yes;
+    AlwaysUserIcon = No;
+  };
+  xterm.XTerm = {
+    AlwaysUserIcon = Yes;
+    Icon = GNUterm.tiff;
+  };
+  chromium.Chromium = {
+    AlwaysUserIcon = Yes;
+    EmulateAppIcon = Yes;
+    Icon = Chromium.png;
+  };
+  "polkit-gnome-authentication-agent-1.Polkit-gnome-authentication-agent-1" = {
+    NoAppIcon = Yes;
+    AlwaysUserIcon = No;
+  };
+  thunar.Thunar = {
+    Icon = Drawer.tiff;
+  };
+  "xfce4-terminal.Xfce4-terminal" = {
+    AlwaysUserIcon = Yes;
+    Icon = sgiterm.tiff;
+  };
+  "telegram-desktop.TelegramDesktop" = {
+    NoAppIcon = Yes;
+    AlwaysUserIcon = No;
+  };
+}

@@ -1,0 +1,15 @@
+(
+  "xdotool click 3",
+  "bash -ic nfsmw",
+  xsnow,
+  xedit,
+  gvim,
+  "bash -ic bdoom",
+  wmCalClock,
+  wmsystemtray,
+  scrot,
+  "sleep 1; scrot",
+  xterm,
+  wmcalclock,
+  "emacsclient -c -n -a 'emacs'"
+)

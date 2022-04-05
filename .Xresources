@@ -1,5 +1,5 @@
 ! XTERM
-!XTerm.termName: xterm-256color
+XTerm.termName: xterm-256color
 XTerm.vt100.locale: true
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.saveLines: 8192

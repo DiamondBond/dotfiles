@@ -1,0 +1,185 @@
+(
+  Applications,
+  (
+    Info,
+    ("Info Panel", INFO_PANEL),
+    (Legal, LEGAL_PANEL),
+    ("System Console", EXEC, "xterm -e journalctl -xe"),
+    ("System Load", EXEC, xload),
+    ("Process List", EXEC, "xfce4-terminal -e htop")
+  ),
+  (Run..., EXEC, "%a(Run,Type command to run:)"),
+  (Firefox, EXEC, firefox),
+  (Chromium, EXEC, chromium),
+  (Terminal, EXEC, "xfce4-terminal"),
+  (Emacs, EXEC, "emacsclient -c -n -a 'emacs'"),
+  (Files, EXEC, thunar),
+  (Mixer, EXEC, pavucontrol),
+  (Workspaces, WORKSPACE_MENU),
+  (
+    Applications,
+    (Chrome, EXEC, "google-chrome-stable"),
+    (Discord, EXEC, discord),
+    (Spotify, EXEC, "/home/diamond/bin/launchspotify.sh"),
+    (Email, EXEC, thunderbird),
+    (Hexchat, EXEC, hexchat),
+    (Telegram, EXEC, "telegram-desktop"),
+    (Transmission, EXEC, "transmission-gtk"),
+    (Paint, EXEC, kolourpaint),
+    (
+      Editors,
+      (Emacs, EXEC, "emacsclient -c -n -a 'emacs'"),
+      (VIM, EXEC, "xterm -e vim"),
+      (VSCode, EXEC, code)
+    )
+  ),
+  (
+    Utils,
+    (Calculator, EXEC, galculator),
+    (
+      "Window Properties",
+      SHEXEC,
+      "xprop | xmessage -center -title 'xprop' -file -"
+    ),
+    ("Toggle Compositor", EXEC, "/home/diamond/bin/toggle_compositing"),
+    ("Font Chooser", EXEC, xfontsel),
+    (Magnify, EXEC, wmagnify),
+    (Colorpicker, EXEC, gpick),
+    ("Kill X Application", EXEC, xkill),
+    (Snow, EXEC, xsnow)
+  ),
+  (
+    Commands,
+    ("Hide Others", HIDE_OTHERS),
+    ("Show All", SHOW_ALL),
+    ("Arrange Icons", ARRANGE_ICONS),
+    (Refresh, REFRESH),
+    (Lock, EXEC, slock)
+  ),
+  (
+    Appearance,
+    (
+      Themes,
+      OPEN_MENU,
+      "-noext /usr/share/WindowMaker/Themes $HOME/GNUstep/Library/WindowMaker/Themes WITH setstyle"
+    ),
+    (
+      Styles,
+      OPEN_MENU,
+      "-noext /usr/share/WindowMaker/Styles $HOME/GNUstep/Library/WindowMaker/Styles WITH setstyle"
+    ),
+    (
+      "Icon Sets",
+      OPEN_MENU,
+      "-noext /usr/share/WindowMaker/IconSets $HOME/GNUstep/Library/WindowMaker/IconSets WITH seticons"
+    ),
+    (
+      Background,
+      (
+        Solid,
+        (Black, EXEC, "wdwrite WindowMaker WorkspaceBack '(solid, black)'"),
+        (
+          Blue,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#505075\")'"
+        ),
+        (
+          Indigo,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#243e6c\")'"
+        ),
+        (
+          Bluemarine,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#224477\")'"
+        ),
+        (
+          Purple,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#554466\")'"
+        ),
+        (
+          Wheat,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, wheat4)'"
+        ),
+        (
+          "Dark Gray",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#333340\")'"
+        ),
+        (
+          Wine,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(solid, \"#400020\")'"
+        )
+      ),
+      (
+        Gradient,
+        (
+          Sunset,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(mvgradient, deepskyblue4, black, deepskyblue4, tomato4)'"
+        ),
+        (
+          Sky,
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, blue4, white)'"
+        ),
+        (
+          "Blue Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#7080a5\", \"#101020\")'"
+        ),
+        (
+          "Indigo Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#746ebc\", \"#242e4c\")'"
+        ),
+        (
+          "Purple Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#654c66\", \"#151426\")'"
+        ),
+        (
+          "Wheat Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#a09060\", \"#302010\")'"
+        ),
+        (
+          "Grey Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#636380\", \"#131318\")'"
+        ),
+        (
+          "Wine Shades",
+          EXEC,
+          "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#600040\", \"#180010\")'"
+        )
+      ),
+      (
+        Images,
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/Backgrounds $HOME/GNUstep/Library/WindowMaker/Backgrounds WITH wmsetbg -u -t"
+      )
+    ),
+    (
+      "Save Theme",
+      SHEXEC,
+      "getstyle -t $HOME/GNUstep/Library/WindowMaker/Themes/\"%a(Theme name)\""
+    ),
+    (
+      "Save IconSet",
+      SHEXEC,
+      "geticonset $HOME/GNUstep/Library/WindowMaker/IconSets/\"%a(IconSet name)\""
+    ),
+    ("Preferences Utility", EXEC, "/usr/bin/WPrefs")
+  ),
+  (
+    Session,
+    ("Save Session", SAVE_SESSION),
+    ("Clear Session", CLEAR_SESSION),
+    ("Restart Session", RESTART),
+    (Exit, EXIT)
+  )
+)

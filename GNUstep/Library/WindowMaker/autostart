@@ -1,0 +1,148 @@
+#!/bin/sh
+### 
+# Always exec
+###
+# xrdb ~/.Xresources &
+# xrandr --output eDP-1 --set "scaling mode" "Full" &
+# xset b off &
+# xset m 0/10 1 &
+# setxkbmap -option ctrl:nocaps &
+# #feh --bg-fill ~/GNUstep/Library/WindowMaker/Backgrounds/The-Beach.jpg &
+# X11 stuff
+#xrandr --output eDP-1 --set "scaling mode" "Full" &
+xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable &
+xset b off &
+#setxkbmap -option ctrl:nocaps &
+xrdb /home/diamond/.Xresources &
+### 
+# Daemons
+###
+if pgrep 'polkit-gnome-authentication-agent-1' > /dev/null
+then
+    echo "polkit-gnome-authentication running"
+else
+    echo "launching polkit-gnome-authentication"
+    #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+    /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+fi
+if pgrep 'xfsettingsd' > /dev/null
+then
+    echo "xfsettingsd running"
+else
+    echo "launching xfsettingsd"
+    xfsettingsd &
+fi
+
+if pgrep 'picom' > /dev/null
+then
+    echo "picom running"
+else
+    echo "launching picom"
+    dunst &
+fi
+
+if pgrep 'dunst' > /dev/null
+then
+    echo "dunst running"
+else
+    echo "launching dunst"
+    dunst &
+fi
+
+if pgrep 'light-locker' > /dev/null
+then
+    echo "light-locker running"
+else
+    echo "launching light-locker"
+    light-locker &
+fi
+if pgrep 'volumeicon' > /dev/null
+then
+    echo "volumeicon running"
+else
+    echo "launching volumeicon"
+    volumeicon &
+fi
+if pgrep 'nm-applet' > /dev/null
+then
+    echo "nm-applet running"
+else
+    echo "launching nm-applet"
+    nm-applet &
+fi
+if pgrep 'xfce4-power-manager' > /dev/null
+then
+    echo "xfce4-power-manager running"
+else
+    echo "launching xfce4-power-manager"
+    xfce4-power-manager &
+fi
+# if pgrep 'cbatticon' > /dev/null
+# then
+#     echo "cbatticon running"
+# else
+#     echo "launching cbatticon"
+#     cbatticon &
+# fi
+if pgrep 'xbindkeys' > /dev/null
+then
+    echo "xbindkeys running"
+else
+    echo "launching xbindkeys"
+    xbindkeys &
+fi
+if pgrep 'emacs' > /dev/null
+then
+    echo "emacs running"
+else
+    echo "launching emacs"
+    emacs --daemon &
+fi
+if pgrep 'mpd' > /dev/null
+then
+    echo "mpd running"
+else
+    echo "launching mpd"
+    mpd /home/diamond/.mpd/mpd.conf &
+fi
+if pgrep 'libinput-gestures' > /dev/null
+then
+    echo "libinput-gestures running"
+else
+    echo "launching libinput-gestures"
+    libinput-gestures &
+fi
+if pgrep 'dropbox' > /dev/null
+then
+    echo "dropbox running"
+else
+    echo "launching dropbox"
+    dropbox start -i &
+fi
+if pgrep 'wmCalClock' > /dev/null
+then
+    echo "wmCalClock running"
+else
+    echo "launching wmCalClock"
+    wmCalClock &
+fi
+if pgrep 'wmcpu' > /dev/null
+then
+    echo "wmcpu running"
+else
+    echo "launching wmcpu"
+    wmcpu &
+fi
+if pgrep 'wmsystemtray' > /dev/null
+then
+    echo "wmsystemtray running"
+else
+    echo "launching wmsystemtray"
+    wmsystemtray &
+fi
+###
+# End
+###
+#notify-send "GNUSTEP WindowMaker initialization complete." &
+#xset m 20/10 4
+
