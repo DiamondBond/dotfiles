@@ -1,0 +1,59 @@
+Dropbox	com.dropbox.Client	145.4.4921	stable	system
+ungoogled-chromium	com.github.Eloston.UngoogledChromium	100.0.4896.60	stable	system
+Codecs	com.github.Eloston.UngoogledChromium.Codecs		stable	system
+Google Chrome	com.google.Chrome	100.0.4896.60-1	stable	system
+OBS Studio	com.obsproject.Studio	27.2.4	stable	system
+Spotify	com.spotify.Client	1.1.80.699.gc3dac750	stable	system
+Bottles	com.usebottles.bottles	2022.3.28-trento-1	stable	system
+Steam	com.valvesoftware.Steam	1.0.0.74	stable	system
+Visual Studio Code	com.visualstudio.code	1.60.2	stable	system
+Element	im.riot.Riot	1.10.8	stable	system
+mGBA	io.mgba.mGBA	0.9.3	stable	system
+Blender	org.blender.Blender	3.1.2	stable	system
+Codecs	org.blender.Blender.Codecs		stable	system
+DeSmuME	org.desmume.DeSmuME	0.9.11	stable	system
+FileZilla	org.filezillaproject.Filezilla	3.58.0	stable	system
+TAP-plugins	org.freedesktop.LinuxAudio.Plugins.TAP	1.0.1	21.08	system
+SWH	org.freedesktop.LinuxAudio.Plugins.swh	0.4.17	21.08	system
+Freedesktop Platform	org.freedesktop.Platform	21.08.12	21.08	system
+i386	org.freedesktop.Platform.Compat.i386		21.08	system
+Mesa	org.freedesktop.Platform.GL.default	21.1.8	20.08	system
+Mesa	org.freedesktop.Platform.GL.default	21.3.8	21.08	system
+default	org.freedesktop.Platform.GL32.default		21.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
+i386	org.freedesktop.Platform.VAAPI.Intel.i386		21.08	system
+ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		21.08	system
+i386	org.freedesktop.Platform.ffmpeg_full.i386		21.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
+Freedesktop SDK	org.freedesktop.Sdk	21.08.12	21.08	system
+GNU Image Manipulation Program	org.gimp.GIMP	2.10.30	stable	system
+Extensions	org.gnome.Extensions	42.0	stable	system
+GNOME Application Platform version 41	org.gnome.Platform		41	system
+GNOME Application Platform version 42	org.gnome.Platform		42	system
+i386	org.gnome.Platform.Compat.i386		42	system
+Inkscape	org.inkscape.Inkscape	1.1.2	stable	system
+Adwaita theme	org.kde.KStyle.Adwaita		5.15	system
+Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	system
+Adwaita theme	org.kde.KStyle.Adwaita		6.2	system
+KDE Application Platform	org.kde.Platform		5.15	system
+KDE Application Platform	org.kde.Platform		5.15-21.08	system
+KDE Application Platform	org.kde.Platform		6.2	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		6.2	system
+QtSNI	org.kde.PlatformTheme.QtSNI		5.15	system
+QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		6.2	system
+Kdenlive	org.kde.kdenlive	21.12.3	stable	system
+Krita	org.kde.krita	5.0.2	stable	system
+Kiwix	org.kiwix.desktop	2.2.1	stable	system
+qutebrowser	org.qutebrowser.qutebrowser	2.5.0	stable	system
+Telegram Desktop	org.telegram.desktop	3.6.1	stable	system
+Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.36.0	stable	system
+DXVK	org.winehq.Wine.DLLs.dxvk	1.10.1	stable-21.08	system
+Gecko	org.winehq.Wine.gecko		stable-21.08	system
+Mono	org.winehq.Wine.mono		stable-21.08	system
+Zoom	us.zoom.Zoom	5.9.6.2225	stable	system
