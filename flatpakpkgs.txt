@@ -36,7 +36,6 @@ Inkscape	org.inkscape.Inkscape	1.1.2	stable	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	system
 Adwaita theme	org.kde.KStyle.Adwaita		6.2	system
-KDE Application Platform	org.kde.Platform		5.15	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	system
 KDE Application Platform	org.kde.Platform		6.2	system
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15	system
@@ -49,7 +48,6 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		6.2	system
 Kdenlive	org.kde.kdenlive	21.12.3	stable	system
 Krita	org.kde.krita	5.0.2	stable	system
-Kiwix	org.kiwix.desktop	2.2.1	stable	system
 qutebrowser	org.qutebrowser.qutebrowser	2.5.0	stable	system
 Telegram Desktop	org.telegram.desktop	3.6.1	stable	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.36.0	stable	system
