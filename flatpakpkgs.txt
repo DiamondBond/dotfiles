@@ -32,11 +32,8 @@ GNU Image Manipulation Program	org.gimp.GIMP	2.10.30	stable	flathub	system
 Extensions	org.gnome.Extensions	42.0	stable	flathub	system
 GNOME Application Platform version 41	org.gnome.Platform		41	flathub	system
 GNOME Application Platform version 42	org.gnome.Platform		42	flathub	system
-i386	org.gnome.Platform.Compat.i386		42	flathub	system
-Breeze GTK theme	org.gtk.Gtk3theme.Breeze		3.22	flathub	system
 Inkscape	org.inkscape.Inkscape	1.1.2	stable	flathub	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	flathub	system
-KDE Application Platform	org.kde.Platform		6.2	flathub	system
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15	flathub	system
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	flathub	system
 KDE Software Development Kit	org.kde.Sdk		5.15	flathub	system
@@ -46,9 +43,6 @@ NeoChat	org.kde.neochat	22.02	stable	flathub	system
 qutebrowser	org.qutebrowser.qutebrowser	2.5.0	stable	flathub	system
 Telegram Desktop	org.telegram.desktop	3.6.1	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.36.0	stable	flathub	system
-DXVK	org.winehq.Wine.DLLs.dxvk	1.10.1	stable-21.08	flathub	system
-Gecko	org.winehq.Wine.gecko		stable-21.08	flathub	system
-Mono	org.winehq.Wine.mono		stable-21.08	flathub	system
 flatpak-wine71	org.winehq.flatpak-wine71		7.1-20220129	flatpak-wine71-origin	user
 Cawbird	uk.co.ibboard.cawbird	1.5	stable	flathub	system
 Zoom	us.zoom.Zoom	5.9.6.2225	stable	flathub	system
