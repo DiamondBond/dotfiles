@@ -2,6 +2,7 @@ ungoogled-chromium	com.github.Eloston.UngoogledChromium	100.0.4896.75	stable	fla
 Codecs	com.github.Eloston.UngoogledChromium.Codecs		stable	flathub	system
 Rosalie's Mupen GUI	com.github.Rosalie241.RMG	v0.1.4	stable	flathub	system
 Tor Browser Launcher	com.github.micahflee.torbrowser-launcher	0.3.5	stable	flathub	system
+Flatseal	com.github.tchx84.Flatseal	1.7.5	stable	flathub	system
 Google Chrome	com.google.Chrome	100.0.4896.60-1	stable	flathub	system
 OBS Studio	com.obsproject.Studio	27.2.4	stable	flathub	system
 Spotify	com.spotify.Client	1.1.80.699.gc3dac750	stable	flathub	system
@@ -29,7 +30,6 @@ i386	org.freedesktop.Platform.ffmpeg_full.i386		21.08	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	flathub	system
 Freedesktop SDK	org.freedesktop.Sdk	21.08.12	21.08	flathub	system
 GNU Image Manipulation Program	org.gimp.GIMP	2.10.30	stable	flathub	system
-Extensions	org.gnome.Extensions	42.0	stable	flathub	system
 GNOME Application Platform version 41	org.gnome.Platform		41	flathub	system
 GNOME Application Platform version 42	org.gnome.Platform		42	flathub	system
 Inkscape	org.inkscape.Inkscape	1.1.2	stable	flathub	system

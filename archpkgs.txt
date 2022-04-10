@@ -51,6 +51,7 @@ glava 1.6.3-2
 glfw-x11 3.3.7-1
 gmrun 1.3w-1
 gnome-keyring 1:40.0-1
+gnome-system-monitor 42.0-1
 gnuchess 6.2.9-1
 gnugo 3.8-7
 go 2:1.18-1
