@@ -2,7 +2,7 @@
 width = 300
 height = 300
 origin = top-right
-offset = 5x25
+offset = 5x27
 monitor = 0
 follow = mouse
 indicate_hidden = yes
