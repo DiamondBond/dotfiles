@@ -1,48 +1,26 @@
-ungoogled-chromium	com.github.Eloston.UngoogledChromium	100.0.4896.75	stable	flathub	system
-Codecs	com.github.Eloston.UngoogledChromium.Codecs		stable	flathub	system
-Rosalie's Mupen GUI	com.github.Rosalie241.RMG	v0.1.4	stable	flathub	system
-Tor Browser Launcher	com.github.micahflee.torbrowser-launcher	0.3.5	stable	flathub	system
-Flatseal	com.github.tchx84.Flatseal	1.7.5	stable	flathub	system
-Google Chrome	com.google.Chrome	100.0.4896.60-1	stable	flathub	system
-OBS Studio	com.obsproject.Studio	27.2.4	stable	flathub	system
-Spotify	com.spotify.Client	1.1.80.699.gc3dac750	stable	flathub	system
-Steam	com.valvesoftware.Steam	1.0.0.74	stable	flathub	system
-FreeTube	io.freetubeapp.FreeTube	0.16.0 Beta	stable	flathub	system
-WhatsApp Desktop	io.github.mimbrero.WhatsAppDesktop	1.2.2	stable	flathub	system
-mGBA	io.mgba.mGBA	0.9.3	stable	flathub	system
-Qt Creator	io.qt.QtCreator	7.0.0	stable	flathub	system
-Blender	org.blender.Blender	3.1.2	stable	flathub	system
-Codecs	org.blender.Blender.Codecs		stable	flathub	system
-DeSmuME	org.desmume.DeSmuME	0.9.11	stable	flathub	system
-FileZilla	org.filezillaproject.Filezilla	3.58.0	stable	flathub	system
-TAP-plugins	org.freedesktop.LinuxAudio.Plugins.TAP	1.0.1	21.08	flathub	system
-SWH	org.freedesktop.LinuxAudio.Plugins.swh	0.4.17	21.08	flathub	system
-Freedesktop Platform	org.freedesktop.Platform	21.08.12	21.08	flathub	system
-i386	org.freedesktop.Platform.Compat.i386		21.08	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	21.1.8	20.08	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	21.3.8	21.08	flathub	system
-default	org.freedesktop.Platform.GL32.default		21.08	flathub	system
-Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	flathub	system
-Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	flathub	system
-i386	org.freedesktop.Platform.VAAPI.Intel.i386		21.08	flathub	system
-ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		21.08	flathub	system
-i386	org.freedesktop.Platform.ffmpeg_full.i386		21.08	flathub	system
-openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	21.08.12	21.08	flathub	system
-GNU Image Manipulation Program	org.gimp.GIMP	2.10.30	stable	flathub	system
-GNOME Application Platform version 41	org.gnome.Platform		41	flathub	system
-GNOME Application Platform version 42	org.gnome.Platform		42	flathub	system
-Inkscape	org.inkscape.Inkscape	1.1.2	stable	flathub	system
-KDE Application Platform	org.kde.Platform		5.15-21.08	flathub	system
-QtSNI	org.kde.PlatformTheme.QtSNI		5.15	flathub	system
-QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	flathub	system
-KDE Software Development Kit	org.kde.Sdk		5.15	flathub	system
-Kdenlive	org.kde.kdenlive	21.12.3	stable	flathub	system
-Krita	org.kde.krita	5.0.2	stable	flathub	system
-NeoChat	org.kde.neochat	22.02	stable	flathub	system
-qutebrowser	org.qutebrowser.qutebrowser	2.5.0	stable	flathub	system
-Telegram Desktop	org.telegram.desktop	3.6.1	stable	flathub	system
-Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.36.0	stable	flathub	system
-flatpak-wine71	org.winehq.flatpak-wine71		7.1-20220129	flatpak-wine71-origin	user
-Cawbird	uk.co.ibboard.cawbird	1.5	stable	flathub	system
-Zoom	us.zoom.Zoom	5.9.6.2225	stable	flathub	system
+com.github.Eloston.UngoogledChromium
+com.github.Rosalie241.RMG
+com.github.micahflee.torbrowser-launcher
+com.github.tchx84.Flatseal
+com.google.Chrome
+com.obsproject.Studio
+com.spotify.Client
+io.freetubeapp.FreeTube
+io.github.mimbrero.WhatsAppDesktop
+io.gitlab.librewolf-community
+io.mgba.mGBA
+io.qt.QtCreator
+org.blender.Blender
+org.desmume.DeSmuME
+org.filezillaproject.Filezilla
+org.gimp.GIMP
+org.inkscape.Inkscape
+org.kde.kdenlive
+org.kde.kolourpaint
+org.kde.krita
+org.kde.neochat
+org.qutebrowser.qutebrowser
+org.telegram.desktop
+org.winehq.flatpak-wine71
+uk.co.ibboard.cawbird
+us.zoom.Zoom
