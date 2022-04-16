@@ -15,7 +15,7 @@ nm-applet &
 blueman-applet &
 /home/diamond/git/matebook-applet/matebook-applet &
 emacs --daemon &
-dropbox start -i &
+#dropbox start -i &
 
 # XFCE
 #xfdesktop &

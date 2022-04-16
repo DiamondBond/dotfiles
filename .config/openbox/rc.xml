@@ -209,7 +209,12 @@
     <!--     <command>/home/diamond/bin/ui.sh</command> -->
     <!--   </action> -->
     <!-- </keybind> -->
-    <keybind key="W-x">
+	<keybind key="W-b">
+	  <action name="Execute">
+		<command>/home/diamond/bin/powerprofiles.sh</command>
+	  </action>
+	</keybind>
+	<keybind key="W-x">
       <action name="Execute">
         <command>/home/diamond/bin/launcher.sh</command>
       </action>
@@ -411,11 +416,11 @@
         <command>dmenu_run</command>
       </action>
     </keybind>
-    <keybind key="C-space">
-      <action name="Execute">
-        <command>dunstctl close-all</command>
-      </action>
-    </keybind>
+    <!-- <keybind key="C-space"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>dunstctl close-all</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="Print">
       <action name="Execute">
         <command>xfce4-screenshooter -f</command>
@@ -597,7 +602,7 @@
     </keybind>
     <keybind key="A-S-F12">
       <action name="Execute">
-        <command>/home/diamond/bin/toggle_compositing</command>
+        <command>/home/diamond/bin/dwm_tog_comp</command>
       </action>
     </keybind>
     <keybind key="S-W-Up">

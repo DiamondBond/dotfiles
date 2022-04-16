@@ -28,7 +28,7 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
     <menu id="applications" label="apps">
     <item label="chromium">
       <action name="Execute">
-        <execute>chromium</execute>
+        <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium</execute>
       </action>
     </item>
     <item label="vscode">
@@ -43,7 +43,7 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
     </item>
     <item label="telegram">
       <action name="Execute">
-        <execute>telegram-desktop</execute>
+        <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop</execute>
       </action>
     </item>
     <item label="discord">
@@ -53,15 +53,19 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
     </item>
     <item label="spotify">
       <action name="Execute">
-        <execute>env LD_PRELOAD=/usr/local/lib/spotify-adblock.so
-        spotify</execute>
+        <execute>flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'</execute>
       </action>
     </item>
-    <item label="mixer">
+	<item label="mixer">
       <action name="Execute">
         <execute>pavucontrol</execute>
       </action>
     </item>
+	<item label="paint">
+	  <action name="Execute">
+		<execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kolourpaint --file-forwarding org.kde.kolourpaint</execute>
+	  </action>
+	</item>
 	</menu>
     <menu id="settings" label="settings">
       <item label="info">
@@ -71,15 +75,20 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
       </item>
       <item label="compositor">
         <action name="Execute">
-          <execute>/home/diamond/bin/toggle_compositing</execute>
+          <execute>/home/diamond/bin/dwm_tog_comp</execute>
         </action>
       </item>
-	  <item label="powersave">
+	  <item label="powerctl">
         <action name="Execute">
-          <execute>xterm -e "sudo powertop --auto-tune"</execute>
+          <execute>/home/diamond/bin/powerprofiles.sh</execute>
         </action>
       </item>
-      <item label="----------">
+	  <item label="mousecfg">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/kmaccel</execute>
+		</action>
+	  </item>
+	  <item label="----------">
         <action name="" />
       </item>
       <item label="reconfigure">
