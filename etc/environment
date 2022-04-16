@@ -1,0 +1,9 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#export MOZ_ENABLE_WAYLAND=1
+#export QT_QPA_PLATFORM=wayland
+export MOZ_X11_EGL=1 
+export MOZ_DISABLE_RDD_SANDBOX=1
