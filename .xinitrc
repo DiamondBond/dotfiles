@@ -42,6 +42,7 @@ xset b off # Disables bell
 xset -dpms # Disables Energy Star features
 xset s off # Disables screen saver
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources # Xresources
+#export VDPAU_DRIVER=va_gl
 
 # Session
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -52,9 +53,9 @@ export SSH_AUTH_SOCK
 xrandr --output eDP-1 --set "scaling mode" "Full"
 xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable
 picom -b --experimental-backends --config ~/.config/picom.conf
-hsetroot -solid dimgray
+hsetroot -solid "#898989"
 
-# Launch dwm with DBus [Usually NetworkManager starts this for us]
+# Launch dwm with DBus
 #exec dbus-launch --sh-syntax --exit-with-session /usr/local/bin/dwm
 
 # Launch dwm
