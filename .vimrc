@@ -65,7 +65,7 @@ set smartindent
 set smarttab
 set softtabstop=4
 set ruler
-#set wrap
+"set wrap
 set undolevels=1000
 set backspace=indent,eol,start
 set hidden
