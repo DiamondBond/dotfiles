@@ -42,7 +42,6 @@ xset b off # Disables bell
 xset -dpms # Disables Energy Star features
 xset s off # Disables screen saver
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources # Xresources
-#export VDPAU_DRIVER=va_gl
 
 # Session
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
