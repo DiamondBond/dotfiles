@@ -5,6 +5,7 @@ com.github.tchx84.Flatseal
 com.google.Chrome
 com.obsproject.Studio
 com.spotify.Client
+im.riot.Riot
 io.freetubeapp.FreeTube
 io.github.mimbrero.WhatsAppDesktop
 io.gitlab.librewolf-community
@@ -18,7 +19,6 @@ org.inkscape.Inkscape
 org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.krita
-org.kde.neochat
 org.qutebrowser.qutebrowser
 org.telegram.desktop
 org.winehq.flatpak-wine71

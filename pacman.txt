@@ -28,7 +28,7 @@ coin-or-mp 1.8.4-4
 cpio 2.13-2
 cpupower 5.17-1
 dhclient 4.4.3-1
-dialog 1:1.3_20220117-1
+dialog 1:1.3_20220414-1
 discord 0.0.17-1
 dmenu 5.1-1
 dmidecode 3.3-1
@@ -167,7 +167,7 @@ polkit-gnome 0.105-8
 powertop 2.14-1
 protonvpn 1.0.0-2
 pstoedit 3.78-1
-pyright 1.1.238-1
+pyright 1.1.239-1
 python-pip 21.0-1
 qemu 6.2.0-4
 qpdf 10.6.3-1
@@ -209,7 +209,7 @@ texlive-publishers 2021.62814-1
 texlive-science 2021.62659-1
 thunar 4.16.11-1
 thunar-volman 4.16.0-1
-thunderbird 91.8.0-2
+thunderbird 91.8.1-1
 timidity++ 2.15.0-5
 tk 8.6.12-1
 tmux 3.2_a-1
@@ -247,7 +247,7 @@ xfce4-pulseaudio-plugin 0.4.3-2
 xfce4-screenshooter 1.9.10-2
 xfce4-session 4.16.0-2
 xfce4-settings 4.16.2-1
-xfce4-terminal 1.0.1-1
+xfce4-terminal 1.0.2-1
 xfce4-whiskermenu-plugin 2.7.1-1
 xfdesktop 4.16.0-2
 xfwm4 4.16.1-3
