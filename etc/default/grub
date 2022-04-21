@@ -4,7 +4,7 @@ GRUB_DEFAULT=0
 GRUB_TIMEOUT_STYLE=hidden
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet mitigations=off selinux=0 apparmor=0 ipv6.disable=1 random.trust_cpu=on resume=UUID=d9fdbab0-33c5-4774-a939-4eab61e8cd08"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet intel_pstate=disable mitigations=off selinux=0 apparmor=0 ipv6.disable=1 random.trust_cpu=on resume=UUID=d9fdbab0-33c5-4774-a939-4eab61e8cd08"
 GRUB_CMDLINE_LINUX=""
 
 
