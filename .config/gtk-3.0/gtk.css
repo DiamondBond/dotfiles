@@ -4,3 +4,8 @@ vte-terminal {
     padding: 05px 05px 05px 05px;
     -VteTerminal-inner-border: 05px 05px 05px 05px;
 }
+
+#XfcePanelWindow {
+   -XfcePanelWindow-popup-delay: 0;
+   -XfcePanelWindow-popdown-delay: 0;
+}
