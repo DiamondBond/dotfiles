@@ -892,7 +892,7 @@ TaskBarWorkspacesLeft=1 # 0/1
 # TaskbarButtonWidthDivisor=3 # [1-50]
 
 #  Terminal emulator must accept -e option.
-# TerminalCommand="xterm -hold"
+TerminalCommand="xterm -hold"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%I:%M %p"
