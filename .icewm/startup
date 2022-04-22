@@ -1,30 +1,45 @@
 #!/bin/sh
 
-[ -x ~/.icewm/restart ] && source ~/.icewm/restart
-
-# set X11
+#==============#
+# X11
+#==============#
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources # Merge Xresources
 xset b off # Disables bell
 xset -dpms # Disables Energy Star features
 xset s off # Disables screen saver
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+#==============#
 # Session
+#==============#
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 export SSH_AUTH_SOCK
 
+#==============#
 # Display
+#==============#
 xrandr --output eDP-1 --set "scaling mode" "Full"
 xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable
-picom -b --config ~/.config/picom.conf &
 
-# set wallpaper
+#==============#
+# Compositor
+#==============#
+[ -x ~/.icewm/restart ] && source ~/.icewm/restart
+
+#==============#
+# Wallpaper
+#==============#
 feh --bg-tile ~/Pictures/Wallpapers/bitmaps/408.png &
 #hsetroot -solid "#898989"
 
-# notifications
+#==============#
+# Notifications
+#==============#
 dunst &
 
+#==============#
+# Tray Icons
+#==============#
 # start network manager
 sleep 1 && nm-applet &
 
@@ -40,8 +55,11 @@ sleep 1 && ~/git/matebook-applet/matebook-applet &
 # start dropbox
 sleep 1 && dropbox start -i &
 
+#==============#
+# Daemons
+#==============#
+# start Emacs
+emacs --daemon &
+
 # start gestures service
 libinput-gestures &
-
-# start emacs
-emacs --daemon &
