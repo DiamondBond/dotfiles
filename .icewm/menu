@@ -48,7 +48,7 @@ menu "Multimedia" folder {
     prog "PulseAudio Volume Control" - pavucontrol
     prog "Qt V4L2 test Utility" - qv4l2
     prog "Qt V4L2 video capture utility" - qvidcap
-    prog "Spotify" - flatpak run --branch=stable --arch=x86_64 --command=spotify --file-forwarding com.spotify.Client @@u
+	prog "Spotify" - flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"' @@u
 }
 menu "Network" folder {
     prog "Avahi SSH Server Browser" - bssh

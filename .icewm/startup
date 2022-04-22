@@ -58,8 +58,8 @@ sleep 1 && dropbox start -i &
 #==============#
 # Daemons
 #==============#
-# start Emacs
-emacs --daemon &
-
 # start gestures service
 libinput-gestures &
+
+# start Emacs
+emacs --daemon &
