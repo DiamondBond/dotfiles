@@ -1,0 +1,150 @@
+menu "Development" folder {
+    prog "Emacs" - emacsclient -c -a 'emacs'
+    prog "Qt Creator" - flatpak run --branch=stable --arch=x86_64 --command=qtcreator --file-forwarding io.qt.QtCreator @@
+    prog "Visual Studio Code" - code
+}
+menu "Editors" folder {
+    prog "GVim" - gvim
+    prog "Mousepad" - mousepad
+    prog "Vim" - xterm -e vim
+}
+menu "Education" folder {
+    prog "Kiwix" - kiwix-desktop
+}
+menu "Games" folder {
+    menu "Adventure" folder {
+        prog "OpenMW Content Editor" - openmw-cs
+        prog "OpenMW Launcher" - openmw-launcher
+    }
+    menu "Arcade" folder {
+        prog "GZDoom" - gzdoom
+    }
+    menu "Strategy" folder {
+        prog "OpenRA - Dune 2000" - openra-d2k
+        prog "OpenRA - Red Alert" - openra-ra
+        prog "OpenRA - Tiberian Dawn" - openra-cnc
+    }
+    prog "DeSmuME (Gtk)" - flatpak run --branch=stable --arch=x86_64 --command=desmume org.desmume.DeSmuME
+    prog "Dwarf Fortress" - /opt/linux-dwarf-pack/linux-dwarf-pack.sh
+    prog "mGBA" - flatpak run --branch=stable --arch=x86_64 --command=mgba-qt --file-forwarding io.mgba.mGBA @@
+    prog "Rosalie's Mupen GUI" - flatpak run --branch=stable --arch=x86_64 --command=RMG --file-forwarding com.github.Rosalie241.RMG @@
+    prog "Snes9x" - snes9x-gtk
+}
+menu "Graphics" folder {
+    prog "Blender" - flatpak run --branch=stable --arch=x86_64 --command=blender --file-forwarding org.blender.Blender @@
+    prog "GNU Image Manipulation Program" - flatpak run --branch=stable --arch=x86_64 --command=gimp-2.10 --file-forwarding org.gimp.GIMP @@u
+    prog "Gpick" - gpick
+    prog "Inkscape" - flatpak run --branch=stable --arch=x86_64 --command=inkscape --file-forwarding org.inkscape.Inkscape @@
+    prog "KolourPaint" - flatpak run --branch=stable --arch=x86_64 --command=kolourpaint --file-forwarding org.kde.kolourpaint @@u
+    prog "Krita" - flatpak run --branch=stable --arch=x86_64 --command=krita --file-forwarding org.kde.krita @@
+    prog "nomacs" - nomacs
+    prog "XDvi" - xdvi
+}
+menu "Multimedia" folder {
+    prog "Audacity" - env UBUNTU_MENUPROXY=0 audacity
+    prog "Kdenlive" - flatpak run --branch=stable --arch=x86_64 --command=kdenlive --file-forwarding org.kde.kdenlive @@
+    prog "mpv Media Player" - mpv --player-operation-mode=pseudo-gui
+    prog "OBS Studio" - flatpak run --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio
+    prog "PulseAudio Volume Control" - pavucontrol
+    prog "Qt V4L2 test Utility" - qv4l2
+    prog "Qt V4L2 video capture utility" - qvidcap
+    prog "Spotify" - flatpak run --branch=stable --arch=x86_64 --command=spotify --file-forwarding com.spotify.Client @@u
+}
+menu "Network" folder {
+    prog "Avahi SSH Server Browser" - bssh
+    prog "Avahi VNC Server Browser" - bvnc
+    prog "Cawbird" - flatpak run --branch=stable --arch=x86_64 --command=cawbird uk.co.ibboard.cawbird
+    prog "Discord" - discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
+    prog "Discord" - discord
+    prog "Dropbox" - dropbox
+    prog "Element" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/element --file-forwarding im.riot.Riot @@u
+    prog "FileZilla" - flatpak run --branch=stable --arch=x86_64 --command=filezilla org.filezillaproject.Filezilla
+    prog "Firefox" - /usr/lib/firefox/firefox
+    prog "Google Chrome" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
+    prog "HexChat" - hexchat
+    prog "LibreWolf" - flatpak run --branch=stable --arch=x86_64 --command=librewolf --file-forwarding io.gitlab.librewolf-community @@u
+    prog "Mail Reader" - exo-open --launch MailReader
+    prog "Notmuch (emacs interface)" - notmuch-emacs-mua
+    prog "ProtonVPN" - protonvpn
+    prog "qutebrowser" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/qutebrowser --file-forwarding org.qutebrowser.qutebrowser --untrusted-args @@u
+    prog "Remote Viewer" - remote-viewer
+    prog "Steam (Native)" - steam-native
+    prog "Telegram Desktop" - flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u
+    prog "Thunderbird" - /usr/lib/thunderbird/thunderbird
+    prog "Tor Browser" - flatpak run --branch=stable --arch=x86_64 --command=torbrowser-launcher --file-forwarding com.github.micahflee.torbrowser-launcher @@u
+    prog "Tor Browser Launcher Settings" - flatpak run --branch=stable --arch=x86_64 --command=torbrowser-launcher com.github.micahflee.torbrowser-launcher --settings
+    prog "Transmission" - transmission-gtk
+    prog "Ungoogled Chromium" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
+    prog "Web Browser" - exo-open --launch WebBrowser
+    prog "WhatsApp Desktop" - flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
+    prog "Zoom" - flatpak run --branch=stable --arch=x86_64 --command=zoom --file-forwarding us.zoom.Zoom @@u
+}
+menu "Office" folder {
+    prog "Document Viewer" - evince
+    prog "LibreOffice Impress" - libreoffice
+    prog "Zathura" - zathura
+}
+menu "Shells" folder {
+    prog "flatpak-wine (7.1)" - flatpak run --branch=7.1-20220129 --arch=x86_64 --command=flatpak-wine-gui.sh --file-forwarding org.winehq.flatpak-wine71 @@
+    prog "gmrun" - gmrun
+    prog "Thunar File Manager" - thunar
+    prog "UXTerm" - uxterm
+    prog "Xfce Terminal" - xfce4-terminal
+    prog "XTerm" - xterm
+}
+menu "System" folder {
+    menu "Settings" folder {
+        menu "GNOME" folder {
+            prog "Advanced Network Configuration" - nm-connection-editor
+            prog "Bluetooth Manager" - blueman-manager
+            prog "LightDM GTK+ Greeter settings" - lightdm-gtk-greeter-settings-pkexec
+        }
+        menu "Xfce" folder {
+            prog "Bluetooth Adapters" - blueman-adapters
+            prog "Settings Manager" - xfce4-settings-manager
+        }
+        prog "Accessibility" - xfce4-accessibility-settings
+        prog "Appearance" - xfce4-appearance-settings
+        prog "Color Profiles" - xfce4-color-settings
+        prog "Customize Look and Feel" - lxappearance
+        prog "Default Applications" - xfce4-mime-settings
+        prog "Desktop" - xfdesktop-settings
+        prog "Display" - xfce4-display-settings
+        prog "File Manager Settings" - thunar-settings
+        prog "Keyboard" - xfce4-keyboard-settings
+        prog "Monitor Settings" - lxrandr
+        prog "Mouse and Touchpad" - xfce4-mouse-settings
+        prog "Notifications" - xfce4-notifyd-config
+        prog "Panel" - xfce4-panel --preferences
+        prog "Power Manager" - xfce4-power-manager-settings
+        prog "Removable Drives and Media" - thunar-volman-settings
+        prog "Session and Startup" - xfce4-session-settings
+        prog "Settings Editor" - xfce4-settings-editor
+        prog "Text Editor Settings" - mousepad --preferences
+        prog "Window Manager" - xfwm4-settings
+        prog "Window Manager Tweaks" - xfwm4-tweaks-settings
+        prog "Workspaces" - xfwm4-workspace-settings
+        prog "Xfce Terminal Settings" - xfce4-terminal --preferences
+    }
+    prog "Avahi Zeroconf Browser" - avahi-discover
+    prog "BleachBit" - bleachbit
+    prog "GNOME System Monitor" - gnome-system-monitor
+    prog "GParted" - gparted
+    prog "Hardware Locality lstopo" - lstopo
+    prog "Htop" - xterm -e htop
+    prog "Log Out" - xfce4-session-logout
+    prog "Virtual Machine Manager" - virt-manager
+}
+menu "Utilities" folder {
+    prog "About Xfce" - xfce4-about
+    prog "Application Finder" - xfce4-appfinder
+    prog "Engrampa Archive Manager" - engrampa
+    prog "File Manager" - exo-open --launch FileManager
+    prog "Flatseal" - flatpak run --branch=stable --arch=x86_64 --command=com.github.tchx84.Flatseal com.github.tchx84.Flatseal
+    prog "FreeTube" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/run.sh --file-forwarding io.freetubeapp.FreeTube @@u
+    prog "Galculator" - galculator
+    prog "picom" - picom
+    prog "Run Program..." - xfce4-appfinder --collapsed
+    prog "Screenshot" - xfce4-screenshooter
+    prog "Terminal Emulator" - exo-open --launch TerminalEmulator
+}

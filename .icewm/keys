@@ -1,0 +1,44 @@
+# Applications
+key "Alt+Ctrl+t"            xfce4-terminal
+key "Alt+Shift+Enter"       xterm
+key "Alt+E"                 thunar
+key "Super+E"               emacsclient -c -n -a 'emacs'
+key "Alt+W"                 firefox
+key "Super+2"               /bin/sh -c "/home/diamond/bin/launchchromium.sh"
+key "Alt+G"                 galculator
+key "Shift+Ctrl+Escape"     gnome-system-monitor
+key "Alt+F3"                xfce4-appfinder
+key "Alt+F2"                gmrun
+key "Alt+Space"             rofi -show combi
+key "Super+Tab"             rofi -show window
+key "Alt+Ctrl+P"            pavucontrol
+key "Alt+Ctrl+X"            xkill
+key "Super+V"               mpv --player-operation-mode=pseudo-gui
+key "Super+M"               /bin/sh -c "/home/diamond/bin/startmusic"
+key "Super+X"               /bin/sh -c "/home/diamond/bin/launcher.sh"
+key "Alt+Shift+G"           /bin/sh -c "/home/diamond/bin/kmaccel"
+key "Alt+Shift+F"           /bin/sh -c "/home/diamond/bin/statf"
+key "Ctrl+Shift+r"          icesh restart
+key "Ctrl+Space"            dunstctl close-all
+key "Alt+Shift+F12"         /bin/sh -c "/home/diamond/bin/dwm_tog_comp"
+key "Super+C"               /bin/sh -c "/home/diamond/bin/windowcenter"
+key "Super+L"               /bin/sh -c "/home/diamond/bin/slock.sh"
+key "Super+D"               thunar /home/diamond/Desktop
+
+switchkey "Super+p"         icewm-menu-xrandr
+
+# "Multimedia key" bindings for Xorg.
+key "XF86AudioRaiseVolume"   /bin/sh -c "/home/diamond/bin/changeVolume +5%"
+key "XF86AudioLowerVolume"   /bin/sh -c "/home/diamond/bin/changeVolume -5%"
+key "XF86AudioMute"          /bin/sh -c "/home/diamond/bin/toggleVolume"
+key "XF86AudioMicMute"       /bin/sh -c "/home/diamond/bin/toggleMic"
+key "Print"                  xfce4-screenshooter -f
+key "Shift+Print"            xfce4-screenshooter -r
+key "Alt+Print"              xfce4-screenshooter
+
+# Tiling
+key "Super+Left" icesh -f left top sizeto 50% 100%
+key "Super+Right" icesh -f right top sizeto 50% 100%
+
+key "XF86MonBrightnessUp" /bin/sh -c "/home/diamond/bin/changeBrightness 5%+"
+key "XF86MonBrightnessDown" /bin/sh -c "/home/diamond/bin/changeBrightness 5%-"
