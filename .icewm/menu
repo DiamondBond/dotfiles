@@ -55,7 +55,6 @@ menu "Network" folder {
     prog "Avahi VNC Server Browser" - bvnc
     prog "Cawbird" - flatpak run --branch=stable --arch=x86_64 --command=cawbird uk.co.ibboard.cawbird
     prog "Discord" - discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
-    prog "Discord" - discord
     prog "Dropbox" - dropbox
     prog "Element" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/element --file-forwarding im.riot.Riot @@u
     prog "FileZilla" - flatpak run --branch=stable --arch=x86_64 --command=filezilla org.filezillaproject.Filezilla
