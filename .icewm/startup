@@ -62,4 +62,9 @@ sleep 1 && dropbox start -i &
 libinput-gestures &
 
 # start Emacs
-emacs --daemon &
+if pgrep -x "emacs" > /dev/null
+then
+    echo "emacs running" > /dev/null
+else
+    emacs --daemon &
+fi
