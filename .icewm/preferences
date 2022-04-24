@@ -577,16 +577,16 @@ MouseWinSize="Alt+Pointer_Button3"
 # OpenCommand=""
 
 #  Draw border around workspace buttons (if PagerShowPreview=1)
-PagerShowBorders=1 # 0/1
+#PagerShowBorders=1 # 0/1
 
 #  Show workspace name label on workspace button (if PagerShowPreview=1)
-PagerShowLabels=0 # 0/1
+#PagerShowLabels=1 # 0/1
 
 #  Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1)
-PagerShowMinimized=0 # 0/1
+#PagerShowMinimized=1 # 0/1
 
 #  Show number of workspace on workspace button (if PagerShowPreview=1)
-PagerShowNumbers=1 # 0/1
+#PagerShowNumbers=1 # 0/1
 
 #  Show a mini desktop preview on each workspace button.
 PagerShowPreview=1 # 0/1
@@ -814,16 +814,16 @@ TaskBarLaunchOnSingleClick=1 # 0/1
 # TaskBarNetSamples=20 # [2-1000]
 
 #  Enable TaskBarShowAPMStatus if a battery is present.
-TaskBarShowAPMAuto=0 # 0/1
+TaskBarShowAPMAuto=1 # 0/1
 
 #  Show battery status in graph mode.
-TaskBarShowAPMGraph=0 # 0/1
+#TaskBarShowAPMGraph=0 # 0/1
 
 #  Show battery status monitor on task bar.
-TaskBarShowAPMStatus=0 # 0/1
+#TaskBarShowAPMStatus=0 # 0/1
 
 #  Show battery status on task bar in time-format.
-TaskBarShowAPMTime=0 # 0/1
+#TaskBarShowAPMTime=0 # 0/1
 
 #  Show windows from all workspaces on task bar.
 # TaskBarShowAllWindows=0 # 0/1
@@ -835,7 +835,7 @@ TaskBarShowCPUStatus=1 # 0/1
 TaskBarShowClock=1 # 0/1
 
 #  Show a button to collapse the taskbar.
-TaskBarShowCollapseButton=0 # 0/1
+#TaskBarShowCollapseButton=1 # 0/1
 
 #  Show memory usage status on task bar (Linux only)
 # TaskBarShowMEMStatus=1 # 0/1

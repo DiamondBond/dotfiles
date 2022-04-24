@@ -1,8 +1,2 @@
 #!/bin/sh
-if pgrep -x "picom" > /dev/null
-then
-    killall picom &
-else
-    picom -b --config ~/.config/picom.conf &
-fi
-
+[ -x ~/bin/dwm_tog_comp ] && source ~/bin/dwm_tog_comp
