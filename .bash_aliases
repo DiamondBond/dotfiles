@@ -138,3 +138,8 @@ alias update='yay && flatpak update'
 alias adw-update="cd ~/git/adw-gtk3 && git fetch origin && git reset --hard origin/main && git clean -fd && meson build && sudo ninja -C build install"
 
 alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'
+
+alias fixmeup='update && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
+
+alias checkzombie='ps -ef | grep startup'
+alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
