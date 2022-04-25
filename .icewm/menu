@@ -125,6 +125,7 @@ menu "Utilities" folder {
     prog "File Manager" - exo-open --launch FileManager
     prog "Flatseal" - flatpak run --branch=stable --arch=x86_64 --command=com.github.tchx84.Flatseal com.github.tchx84.Flatseal
     prog "FreeTube" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/run.sh --file-forwarding io.freetubeapp.FreeTube @@u
+	prog "FSV" - fsv2
     prog "Galculator" - galculator
     prog "Run Program..." - xfce4-appfinder --collapsed
     prog "Screenshot" - xfce4-screenshooter
