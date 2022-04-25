@@ -48,6 +48,7 @@ menu "Multimedia" folder {
 }
 menu "Network" folder {
     prog "Cawbird" - flatpak run --branch=stable --arch=x86_64 --command=cawbird uk.co.ibboard.cawbird
+    prog "Claws" - claws-mail
     prog "Discord" - discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
     prog "Dropbox" - dropbox
     prog "Element" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/element --file-forwarding im.riot.Riot @@u
