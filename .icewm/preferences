@@ -379,31 +379,32 @@ KeySysWorkspacePrevTakeWin="Alt+Ctrl+Shift+Left"
 # KeyTaskBarSwitchPrev=""
 
 #  Moves the active window to the top middle of the screen.
-# KeyWinArrangeC="Ctrl+Alt+KP_5"
+# KeyWinArrangeC="Ctrl+Alt+5"
+KeyWinArrangeC="Super+C"
 
 #  Moves the active window to the middle right of the screen.
-# KeyWinArrangeE="Ctrl+Alt+KP_6"
+ KeyWinArrangeE="Ctrl+Alt+6"
 
 #  Moves the active window to the top middle of the screen.
-# KeyWinArrangeN="Ctrl+Alt+KP_8"
+ KeyWinArrangeN="Ctrl+Alt+8"
 
 #  Moves the active window to the top right of the screen.
-# KeyWinArrangeNE="Ctrl+Alt+KP_9"
+ KeyWinArrangeNE="Ctrl+Alt+9"
 
 #  Moves the active window to the top left corner of the screen.
-# KeyWinArrangeNW="Ctrl+Alt+KP_7"
+ KeyWinArrangeNW="Ctrl+Alt+7"
 
 #  Moves the active window to the bottom middle of the screen.
-# KeyWinArrangeS="Ctrl+Alt+KP_2"
+ KeyWinArrangeS="Ctrl+Alt+2"
 
 #  Moves the active window to the bottom right of the screen.
-# KeyWinArrangeSE="Ctrl+Alt+KP_3"
+ KeyWinArrangeSE="Ctrl+Alt+3"
 
 #  Moves the active window to the bottom left of the screen.
-# KeyWinArrangeSW="Ctrl+Alt+KP_1"
+ KeyWinArrangeSW="Ctrl+Alt+1"
 
 #  Moves the active window to the middle left of the screen.
-# KeyWinArrangeW="Ctrl+Alt+KP_4"
+ KeyWinArrangeW="Ctrl+Alt+4"
 
 #  Closes the active window.
 KeyWinClose="Alt+Shift+C"
@@ -436,13 +437,13 @@ KeyWinMinimize="Alt+grave"
 KeyWinMove="Alt+Shift+E"
 
 #  Switches focus to the next window.
-KeyWinNext=""
+KeyWinNext="Alt+J"
 
 #  Makes the active window occupy all work spaces.
-KeyWinOccupyAll=""
+KeyWinOccupyAll="Alt+Shift+D"
 
 #  Switches focus to the previous window.
-KeyWinPrev=""
+KeyWinPrev="Alt+K"
 
 #  Raises the window which currently has input focus.
 KeyWinRaise=""
