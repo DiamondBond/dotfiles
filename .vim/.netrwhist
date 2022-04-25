@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/diamond/bin'
+let g:netrw_dirhist_1='/home/diamond/git/QuestionnaireParser/.git'
+let g:netrw_dirhist_0='/home/diamond/.config/discord'
+let g:netrw_dirhist_9='/home/diamond/.config/gtk-3.0'
+let g:netrw_dirhist_8='/home/diamond/.config'
+let g:netrw_dirhist_7='/home/diamond/.config/gtk-3.0'
+let g:netrw_dirhist_6='/home/diamond/.config/openbox'
+let g:netrw_dirhist_5='/home/diamond/.config'
+let g:netrw_dirhist_4='/home/diamond/.config/openbox'
+let g:netrw_dirhist_3='/home/diamond/.local/share/applications'

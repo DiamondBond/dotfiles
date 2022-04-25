@@ -1,16 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'junegunn/goyo.vim'
-
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
-Plug 'jceb/vim-orgmode'
-
-Plug 'tpope/vim-speeddating'
-
-Plug 'rust-lang/rust.vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
