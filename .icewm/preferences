@@ -740,7 +740,7 @@ RequestFocusOnAppRaise=1 # 0/1
 ShutdownCommand="systemctl poweroff"
 
 #  Maximized windows can be resized.
-SizeMaximized=1 # 0/1
+#SizeMaximized=1 # 0/1
 
 #  Smart window placement with minimal overlap.
 SmartPlacement=1 # 0/1
