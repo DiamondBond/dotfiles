@@ -126,7 +126,6 @@ menu "Utilities" folder {
     prog "Flatseal" - flatpak run --branch=stable --arch=x86_64 --command=com.github.tchx84.Flatseal com.github.tchx84.Flatseal
     prog "FreeTube" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/run.sh --file-forwarding io.freetubeapp.FreeTube @@u
     prog "Galculator" - galculator
-    prog "picom" - picom
     prog "Run Program..." - xfce4-appfinder --collapsed
     prog "Screenshot" - xfce4-screenshooter
     prog "Terminal Emulator" - exo-open --launch TerminalEmulator
