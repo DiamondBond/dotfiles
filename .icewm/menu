@@ -131,4 +131,4 @@ menu "Utilities" folder {
     prog "Screenshot" - xfce4-screenshooter
     prog "Terminal Emulator" - exo-open --launch TerminalEmulator
 }
-menuprog "XDG descriptors" folder icewm-menu-fdo
+menuprog "XDG" folder icewm-menu-fdo
