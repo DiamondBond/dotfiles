@@ -130,3 +130,4 @@ menu "Utilities" folder {
     prog "Screenshot" - xfce4-screenshooter
     prog "Terminal Emulator" - exo-open --launch TerminalEmulator
 }
+menuprog "Desktop Apps" folder icewm-menu-fdo
