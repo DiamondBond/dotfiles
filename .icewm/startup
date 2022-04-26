@@ -44,13 +44,13 @@ dunst &
 sleep 1 && nm-applet &
 
 # start power manager
-sleep 1 && xfce4-power-manager &
+#sleep 1 && xfce4-power-manager &
 
 # start bluetooth manager
-sleep 1 && blueman-applet &
+#sleep 1 && blueman-applet &
 
 # start matebook applet
-sleep 1 && ~/git/matebook-applet/matebook-applet &
+#sleep 1 && ~/git/matebook-applet/matebook-applet &
 
 # start dropbox
 sleep 1 && dropbox start -i &
