@@ -38,5 +38,6 @@ key "Ctrl+Shift+r"          icesh restart
 key "Ctrl+Space"            dunstctl close-all
 key "Alt+Shift+F12"         /bin/sh -c "/home/diamond/bin/dwm_tog_comp"
 #key "Super+C"               /bin/sh -c "/home/diamond/bin/windowcenter"
+key "Super+G"               galculator
 key "Super+L"               /bin/sh -c "/home/diamond/bin/slock.sh"
 key "Super+D"               thunar /home/diamond/Desktop
