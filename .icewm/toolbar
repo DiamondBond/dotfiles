@@ -4,6 +4,7 @@
 # modifications to this file will be overwritten when you reinstall icewm.
 #
 prog "Firefox" firefox firefox
+prog "Mail" claws-mail claws-mail
 prog "thunar" folder thunar
 prog "xterm" xterm xterm
 prog "Emacs" emacs emacsclient -c -n -a 'emacs'
