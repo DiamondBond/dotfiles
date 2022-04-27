@@ -48,7 +48,7 @@ sleep 1 && nm-applet &
 #sleep 1 && xfce4-power-manager &
 
 # start bluetooth manager
-#sleep 1 && blueman-applet &
+sleep 1 && blueman-applet &
 
 # start matebook applet
 #sleep 1 && ~/git/matebook-applet/matebook-applet &
