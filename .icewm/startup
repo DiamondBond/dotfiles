@@ -73,9 +73,18 @@ fi
 #==============#
 # Oneshot
 #==============#
+# ROG KERIS
 if xinput list | grep "ROG KERIS  " > /dev/null
 then
     sleep 1 && ~/bin/kmaccel
 else
     echo "ROG KERIS not plugged in" > /dev/null
+fi
+
+# Viper Mini
+if xinput list | grep "Viper Mini  " > /dev/null
+then
+    sleep 1 && ~/bin/kmviperaccel
+else
+    echo "Viper Mini not plugged in" > /dev/null
 fi
