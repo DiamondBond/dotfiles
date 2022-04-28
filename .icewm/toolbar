@@ -5,6 +5,6 @@
 #
 prog "Firefox" firefox firefox
 prog "Mail" claws-mail claws-mail
+prog "Emacs" emacs emacsclient -c -n -a 'emacs'
 prog "thunar" folder thunar
 prog "xterm" xterm xterm
-prog "Emacs" emacs emacsclient -c -n -a 'emacs'

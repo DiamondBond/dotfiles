@@ -118,6 +118,7 @@ menu "System" folder {
     prog "Hardware Locality lstopo" - lstopo
     prog "Htop" - xterm -e htop
     prog "Virtual Machine Manager" - virt-manager
+    prog "Boxes" - gnome-boxes
 }
 menu "Utilities" folder {
     prog "About Xfce" - xfce4-about
