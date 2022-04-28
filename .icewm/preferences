@@ -479,7 +479,7 @@ LockCommand="sh -c ~/bin/slock.sh"
 # LogoutCancelCommand=""
 
 #  Command to start logout.
-# LogoutCommand=""
+#LogoutCommand="sh -c ~/.icewm/logout.sh"
 
 #  Lower the active window when clicked again.
 LowerOnClickWhenRaised=0 # 0/1
