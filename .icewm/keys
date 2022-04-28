@@ -34,7 +34,7 @@ key "Super+M"               /bin/sh -c "/home/diamond/bin/startmusic"
 key "Super+X"               /bin/sh -c "/home/diamond/bin/launcher.sh"
 key "Alt+Shift+G"           /bin/sh -c "/home/diamond/bin/kmaccel"
 key "Alt+Shift+F"           /bin/sh -c "/home/diamond/bin/statf"
-key "Ctrl+Shift+r"          icesh restart
+key "Alt+Ctrl+Shift+r"      icesh restart
 key "Ctrl+Space"            dunstctl close-all
 key "Alt+Shift+F12"         /bin/sh -c "/home/diamond/bin/dwm_tog_comp"
 #key "Super+C"               /bin/sh -c "/home/diamond/bin/windowcenter"
