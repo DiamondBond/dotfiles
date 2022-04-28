@@ -44,7 +44,7 @@ menu "Multimedia" folder {
     prog "mpv Media Player" - mpv --player-operation-mode=pseudo-gui
     prog "OBS Studio" - flatpak run --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio
     prog "PulseAudio Volume Control" - pavucontrol
-	prog "Spotify" - flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"' @@u
+	prog "Spotify" - env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U
 }
 menu "Network" folder {
     prog "Cawbird" - flatpak run --branch=stable --arch=x86_64 --command=cawbird uk.co.ibboard.cawbird
