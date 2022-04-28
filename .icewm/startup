@@ -65,7 +65,17 @@ libinput-gestures &
 # start Emacs
 if pgrep -x "emacs" > /dev/null
 then
-    echo "emacs running" > /dev/null
+    echo "emacs is already running" > /dev/null
 else
     emacs --daemon &
+fi
+
+#==============#
+# Oneshot
+#==============#
+if xinput list | grep "ROG KERIS  " > /dev/null
+then
+    sleep 1 && ~/bin/kmaccel
+else
+    echo "ROG KERIS not plugged in" > /dev/null
 fi
