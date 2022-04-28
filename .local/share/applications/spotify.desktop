@@ -1,9 +1,10 @@
 [Desktop Entry]
 Type=Application
-Name=Spotify (adblock)
+Name=Spotify
 GenericName=Music Player
-Icon=com.spotify.Client
-Exec=flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"' @@u %U @@
+Icon=spotify-client
+TryExec=spotify
+Exec=env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U
 Terminal=false
 MimeType=x-scheme-handler/spotify;
 Categories=Audio;Music;Player;AudioVideo;
