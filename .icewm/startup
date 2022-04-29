@@ -7,6 +7,7 @@
 xset b off # Disables bell
 xset -dpms # Disables Energy Star features
 xset s off # Disables screen saver
+setxkbmap -option caps:escape # Make Caps an additional Escape
 
 #==============#
 # Session
