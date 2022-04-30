@@ -38,6 +38,12 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
 		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
 	}
+	menu "Brightness" display-brightness-symbolic.svg {
+		prog "100%" display-brightness-symbolic.svg sh -c ~/bin/bri100
+		prog "75%" daytime-sunrise-symbolic.svg sh -c ~/bin/bri75
+		prog "50%" keyboard-brightness-symbolic.svg sh -c ~/bin/bri50
+		prog "25%" daytime-sunset-symbolic.svg sh -c ~/bin/bri25
+	}
 	menu "Compositor" preferences-desktop-display-symbolic.svg {
 		prog "Status" view-reveal-symbolic.svg sh -c ~/bin/pgrep_picom
 		separator
@@ -45,12 +51,6 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Stop" media-playback-stop-symbolic.svg sh -c ~/bin/stop_picom
 		separator
 		prog "Restart" system-reboot-symbolic.svg sh -c ~/bin/dwm_tog_comp
-	}
-	menu "Brightness" display-brightness-symbolic.svg {
-		prog "100%" display-brightness-symbolic.svg sh -c ~/bin/bri100
-		prog "75%" daytime-sunrise-symbolic.svg sh -c ~/bin/bri75
-		prog "50%" keyboard-brightness-symbolic.svg sh -c ~/bin/bri50
-		prog "25%" daytime-sunset-symbolic.svg sh -c ~/bin/bri25
 	}
 	menu "Applets" applications-system-symbolic.svg {
 		prog "Bluetooth" bluetooth-active-symbolic.svg blueman-applet
