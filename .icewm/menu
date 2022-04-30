@@ -1,4 +1,4 @@
-menu "Web" folder {
+menu "Web" network-wired-symbolic.svg {
 	prog "Chrome" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
 	prog "Chromium" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
 	prog "Librewolf" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=librewolf --file-forwarding io.gitlab.librewolf-community @@u
@@ -13,7 +13,7 @@ menu "Web" folder {
 	prog "Thunderbird" mail-message-new-symbolic.svg thunderbird
 }
 
-menu "Scripts" folder {
+menu "Scripts" utilities-terminal-symbolic.svg {
 	menu "Desktop" preferences-desktop-display-symbolic.svg {
 		prog "Start Desktop" preferences-desktop-remote-desktop-symbolic.svg sh -c ~/bin/start_desktop
 		prog "Stop Desktop" system-log-out-symbolic.svg sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
@@ -40,4 +40,4 @@ prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-deco
 prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
 separator
 
-menuprog "Applications" folder icewm-menu-fdo
+menuprog "Applications" applications-utilities-symbolic.svg icewm-menu-fdo
