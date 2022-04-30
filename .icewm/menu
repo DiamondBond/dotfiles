@@ -17,8 +17,8 @@ menu "Scripts" folder {
 	prog "Stop Desktop" - sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
 	separator
 	prog "Set Solid" - hsetroot -solid "#898989"
+	prog "Set Tiled" - sh -c "feh --bg-tile ~/.icewm/bg.png"
 	prog "Set Cosmos" - sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
-	prog "Set Wallpaper" - sh -c "feh --bg-tile ~/.icewm/bg.png"
 	separator
 	prog "Matebook Applet" - sh -c ~/git/matebook-applet/matebook-applet
 	separator
