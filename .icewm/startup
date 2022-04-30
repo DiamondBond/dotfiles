@@ -10,11 +10,12 @@ xset s off # Disables screen saver
 setxkbmap -option caps:escape # Make Caps an additional Escape
 
 #==============#
-# Keyring
+# Session
 #==============#
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 export SSH_AUTH_SOCK
+export $(dbus-launch)
 
 #==============#
 # Display
