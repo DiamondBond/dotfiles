@@ -14,9 +14,17 @@ menu "Web" network-wired-symbolic.svg {
 }
 
 menu "Scripts" utilities-terminal-symbolic.svg {
-	menu "Desktop" preferences-desktop-display-symbolic.svg {
-		prog "Start Desktop" preferences-desktop-remote-desktop-symbolic.svg sh -c ~/bin/start_desktop
-		prog "Stop Desktop" system-log-out-symbolic.svg sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
+	menu "Desktop" preferences-desktop-remote-desktop-symbolic.svg {
+		prog "Start" media-playback-start-symbolic.svg sh -c ~/bin/start_desktop
+		prog "Stop" media-playback-stop-symbolic.svg sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
+	}
+	menu "Compositor" preferences-desktop-display-symbolic.svg {
+		prog "Status" view-reveal-symbolic.svg sh -c ~/bin/pgrep_picom
+		separator
+		prog "Start" media-playback-start-symbolic.svg sh -c ~/bin/start_picom
+		prog "Stop" media-playback-stop-symbolic.svg sh -c ~/bin/stop_picom
+		separator
+		prog "Restart" system-reboot-symbolic.svg sh -c ~/bin/dwm_tog_comp
 	}
 	menu "Background" preferences-desktop-wallpaper-symbolic.svg {
 		prog "Set Solid" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#898989"
@@ -24,8 +32,8 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
 	}
 	menu "Applets" applications-system-symbolic.svg {
-		prog "Bluetooth Applet" bluetooth-active-symbolic.svg blueman-applet
-		prog "Matebook Applet" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
+		prog "Bluetooth" bluetooth-active-symbolic.svg blueman-applet
+		prog "Battery" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
 	}
 	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
