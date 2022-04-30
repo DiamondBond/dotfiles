@@ -104,13 +104,14 @@ alias chess='./bin/LucasChessR/bin/LucasR'
 
 # apt
 #alias cleanup='sudo apt autoclean && sudo apt autoremove && sudo apt clean'
-alias cleanup='sudo paccache -r'
-alias unused_orphans='sudo pacman -Qtdq'
 #alias remove_unused_orphans='sudo pacman -Rns $(pacman -Qtdq)'
 # alias updfetch='sudo apt update && apt list --upgradable'
 # alias updsystem='sudo apt upgrade'
 # alias updnvidia='sudo apt full-upgrade'
 
+# pacman
+alias cleanup='sudo paccache -r'
+alias unused_orphans='sudo pacman -Qtdq'
 
 #alias androidstudio='/opt/android-studio/bin/studio.sh'
 
