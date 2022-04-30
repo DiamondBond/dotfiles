@@ -37,8 +37,6 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 	}
 	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
-	separator
-	prog "Start Win10 VM" virt-manager sh -c ~/bin/run_w10
 }
 
 separator
@@ -46,6 +44,8 @@ prog "Telegram" mail-unread-symbolic.svg flatpak run --branch=stable --arch=x86_
 prog "WhatsApp" user-invisible-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
 prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
 prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
+separator
+prog "Virt-Manager" virt-manager sh -c ~/bin/run_w10
 separator
 
 menuprog "Applications" applications-utilities-symbolic.svg icewm-menu-fdo
