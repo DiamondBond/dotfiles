@@ -9,20 +9,12 @@ prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-deco
 prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
 prog "Mixer" audio-card-symbolic.svg pavucontrol
 separator
-menu "Virt-Manager" virt-manager {
-	prog "Run Win10" virt-manager sh -c ~/bin/run_w10
-	prog "Stop Win10" virt-manager sh -c ~/bin/stop_w10
-	separator
-	prog "Run Ubuntu" virt-manager notify-send "pending"
-	prog "Stop Ubuntu" virt-manager notify-send "pending"
-}
-separator
 
 menu "Web" network-wired-symbolic.svg {
 	prog "Chromium" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
-	prog "Chrome" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
 	prog "Librewolf" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=librewolf --file-forwarding io.gitlab.librewolf-community @@u
 	prog "Qutebrowser" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/qutebrowser --file-forwarding org.qutebrowser.qutebrowser --untrusted-args @@u
+	prog "Chrome" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
 	separator
 	prog "ProtonVPN" network-vpn-symbolic.svg protonvpn
 	separator
@@ -66,6 +58,12 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 	}
 	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
+}
+separator
+
+menu "Virt-Manager" virt-manager {
+	prog "Run Win10" virt-manager sh -c ~/bin/run_w10
+	prog "Stop Win10" virt-manager sh -c ~/bin/stop_w10
 }
 separator
 
