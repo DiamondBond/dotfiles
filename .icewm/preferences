@@ -1437,7 +1437,7 @@ TrayIconMaxWidth=32 # [16-128]
 # DesktopBackgroundCenter=0 # 0/1
 
 #  Desktop background color(s)
-# DesktopBackgroundColor=""
+# DesktopBackgroundColor="#386CA3"
 
 #  Desktop background image(s)
 # DesktopBackgroundImage=""

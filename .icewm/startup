@@ -37,7 +37,7 @@ xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xa
 # Wallpaper
 #==============#
 #hsetroot -solid "#898989" &
-feh --bg-tile ~/.icewm/bg.png &
+#feh --bg-tile ~/.icewm/bg.png &
 
 #==============#
 # Notifications
