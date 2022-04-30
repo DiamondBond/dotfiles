@@ -30,7 +30,7 @@ xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xa
 #==============#
 # DESKTOP
 #==============#
-#xfdesktop &
+xfdesktop &
 
 #==============#
 # Wallpaper

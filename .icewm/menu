@@ -1,35 +1,40 @@
 menu "Web" folder {
-	prog "Chrome" -  /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
-	prog "Chromium" - flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
-	prog "Librewolf" - /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=librewolf --file-forwarding io.gitlab.librewolf-community @@u
-	prog "Qutebrowser" - /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/qutebrowser --file-forwarding org.qutebrowser.qutebrowser --untrusted-args @@u
+	prog "Chrome" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
+	prog "Chromium" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
+	prog "Librewolf" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=librewolf --file-forwarding io.gitlab.librewolf-community @@u
+	prog "Qutebrowser" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/qutebrowser --file-forwarding org.qutebrowser.qutebrowser --untrusted-args @@u
 	separator
-	prog "ProtonVPN" - protonvpn
+	prog "ProtonVPN" network-vpn-symbolic.svg protonvpn
 	separator
-	prog "Element" - /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/element --file-forwarding im.riot.Riot @@u
-	prog "HexChat" - hexchat --existing
+	prog "Element" goa-panel-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/element --file-forwarding im.riot.Riot @@u
+	prog "HexChat" media-view-subtitles-symbolic.svg hexchat --existing
 	separator
-	prog "Claws Mail" - claws-mail
-	prog "Thunderbird" - thunderbird
+	prog "Claws Mail" mail-unread-symbolic.svg claws-mail
+	prog "Thunderbird" mail-message-new-symbolic.svg thunderbird
 }
+
 menu "Scripts" folder {
-	prog "Start Desktop" - sh -c ~/bin/start_desktop
-	prog "Stop Desktop" - sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
+	menu "Desktop" preferences-desktop-display-symbolic.svg {
+		prog "Start Desktop" preferences-desktop-remote-desktop-symbolic.svg sh -c ~/bin/start_desktop
+		prog "Stop Desktop" system-log-out-symbolic.svg sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
+	}
+	menu "Background" preferences-desktop-wallpaper-symbolic.svg {
+		prog "Set Solid" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#898989"
+		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
+		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
+	}
 	separator
-	prog "Set Solid" - hsetroot -solid "#898989"
-	prog "Set Tiled" - sh -c "feh --bg-tile ~/.icewm/bg.png"
-	prog "Set Cosmos" - sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
+	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
+	prog "Matebook Applet" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
 	separator
-	prog "Matebook Applet" - sh -c ~/git/matebook-applet/matebook-applet
-	separator
-	prog "Kill Mouse Accel" - sh -c ~/bin/kmaccel
+	prog "Start Win10 VM" virt-manager sh -c ~/bin/run_w10
 }
+
 separator
-prog "Telegram" telegram-desktop flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u
-prog "WhatsApp" - flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
-prog "Discord" - discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
-prog "Spotify" - flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
+prog "Telegram" mail-unread-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u
+prog "WhatsApp" user-invisible-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
+prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
+prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
 separator
-prog "Win10 VM" virt-manager sh -c ~/bin/run_w10
-separator
+
 menuprog "Applications" folder icewm-menu-fdo
