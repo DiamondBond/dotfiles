@@ -10,7 +10,7 @@ xset s off # Disables screen saver
 setxkbmap -option caps:escape # Make Caps an additional Escape
 
 #==============#
-# Session
+# Keyring
 #==============#
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
@@ -19,7 +19,7 @@ export SSH_AUTH_SOCK
 #==============#
 # Display
 #==============#
-xrandr --output eDP-1 --set "scaling mode" "Full"
+xrandr --output eDP-1 --set "scaling mode" "Full" &
 xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable
 
 #==============#
@@ -28,7 +28,7 @@ xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xa
 [ -x ~/.icewm/restart ] && source ~/.icewm/restart
 
 #==============#
-# DESKTOP
+# Desktop
 #==============#
 #xfdesktop &
 
@@ -83,5 +83,5 @@ fi
 #==============#
 # Oneshot
 #==============#
-# Disable mouse acceleration
+# disable mouse acceleration
 [ -x ~/bin/kmaccel ] && source ~/bin/kmaccel
