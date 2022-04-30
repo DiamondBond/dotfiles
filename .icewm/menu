@@ -23,9 +23,12 @@ menu "Scripts" folder {
 		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
 		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
 	}
+	menu "Applets" applications-system-symbolic.svg {
+		prog "Bluetooth Applet" bluetooth-active-symbolic.svg blueman-applet
+		prog "Matebook Applet" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
+	}
 	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
-	prog "Matebook Applet" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
 	separator
 	prog "Start Win10 VM" virt-manager sh -c ~/bin/run_w10
 }
