@@ -1399,7 +1399,7 @@ TitleBarJustify=1 # [0-100]
 # TitleButtonsSupported="xmis"
 
 #  Name of the title bar font.
-# TitleFontName="-misc-dejavu sans-medium-r-normal--12-*-*-*-*-*-*-*"
+ TitleFontName="-misc-dejavu sans-medium-r-normal--12-*-*-*-*-*-*-*"
 
 #  Name of the title bar font.
 #TitleFontNameXft="Charcoal:size=11"
@@ -1437,7 +1437,7 @@ TrayIconMaxWidth=32 # [16-128]
 # DesktopBackgroundCenter=0 # 0/1
 
 #  Desktop background color(s)
-# DesktopBackgroundColor="#386CA3"
+#DesktopBackgroundColor="#386CA3"
 
 #  Desktop background image(s)
 # DesktopBackgroundImage=""

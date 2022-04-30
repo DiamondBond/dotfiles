@@ -1,3 +1,23 @@
+prog "Term" xterm xterm
+prog "Files" folder thunar
+prog "Emacs" emacs emacsclient -c -n -a 'emacs'
+prog "Email" claws-mail claws-mail
+separator
+prog "Telegram" mail-unread-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u
+prog "WhatsApp" user-invisible-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
+prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
+prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
+prog "Mixer" audio-card-symbolic.svg pavucontrol
+separator
+menu "Virt-Manager" virt-manager {
+	prog "Run Win10" virt-manager sh -c ~/bin/run_w10
+	prog "Stop Win10" virt-manager sh -c ~/bin/stop_w10
+	separator
+	prog "Run Ubuntu" virt-manager notify-send "pending"
+	prog "Stop Ubuntu" virt-manager notify-send "pending"
+}
+separator
+
 menu "Web" network-wired-symbolic.svg {
 	prog "Chromium" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium @@u
 	prog "Chrome" web-browser-symbolic.svg /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u
@@ -18,6 +38,14 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Start" media-playback-start-symbolic.svg sh -c ~/bin/start_desktop
 		prog "Stop" media-playback-stop-symbolic.svg sh -c "killall xfdesktop; feh --bg-tile ~/.icewm/bg.png"
 	}
+	menu "Background" preferences-desktop-wallpaper-symbolic.svg {
+		prog "Default" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#386CA3"
+		prog "Variety" preferences-desktop-wallpaper-symbolic.svg variety
+		separator
+		prog "Set Solid" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#898989"
+		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
+		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
+	}
 	menu "Compositor" preferences-desktop-display-symbolic.svg {
 		prog "Status" view-reveal-symbolic.svg sh -c ~/bin/pgrep_picom
 		separator
@@ -25,11 +53,6 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Stop" media-playback-stop-symbolic.svg sh -c ~/bin/stop_picom
 		separator
 		prog "Restart" system-reboot-symbolic.svg sh -c ~/bin/dwm_tog_comp
-	}
-	menu "Background" preferences-desktop-wallpaper-symbolic.svg {
-		prog "Set Solid" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#898989"
-		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
-		prog "Set Cosmos" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-scale ~/Pictures/Wallpapers/Neyerm63_l2.jpg"
 	}
 	menu "Brightness" display-brightness-symbolic.svg {
 		prog "100%" display-brightness-symbolic.svg sh -c ~/bin/bri100
@@ -44,15 +67,6 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
 }
-
-separator
-prog "Telegram" mail-unread-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop -- @@u
-prog "WhatsApp" user-invisible-symbolic.svg flatpak run --branch=stable --arch=x86_64 --command=whatsapp-desktop-linux io.github.mimbrero.WhatsAppDesktop
-prog "Discord" system-users-symbolic.svg discord --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization
-prog "Spotify" folder-music-symbolic.svg flatpak run --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'
-prog "Mixer" audio-speakers-symbolic.svg pavucontrol
-separator
-prog "Virt-Manager" virt-manager sh -c ~/bin/run_w10
 separator
 
 menuprog "Applications" applications-utilities-symbolic.svg icewm-menu-fdo
