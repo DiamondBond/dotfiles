@@ -28,12 +28,15 @@ xinput | grep 'ELAN224A' | grep 'pointer' | grep -Po 'id=\d+' | cut -d= -f2 | xa
 [ -x ~/.icewm/restart ] && source ~/.icewm/restart
 
 #==============#
+# DESKTOP
+#==============#
+#xfdesktop &
+
+#==============#
 # Wallpaper
 #==============#
-#feh --bg-tile ~/Pictures/Wallpapers/bitmaps/408.png &
-feh --bg-tile ~/.icewm/bg.png &
 #hsetroot -solid "#898989" &
-xfdesktop &
+feh --bg-tile ~/.icewm/bg.png &
 
 #==============#
 # Notifications
@@ -62,7 +65,12 @@ sleep 1 && dropbox start -i &
 # Daemons
 #==============#
 # start gestures service
-libinput-gestures &
+if pgrep -x "libinput-gestures" > /dev/null
+then
+    echo "gestures already running" > /dev/null
+else
+	libinput-gestures &
+fi
 
 # start Emacs
 if pgrep -x "emacs" > /dev/null
@@ -75,18 +83,5 @@ fi
 #==============#
 # Oneshot
 #==============#
-# ROG KERIS
-if xinput list | grep "ROG KERIS  " > /dev/null
-then
-    sleep 1 && ~/bin/kmaccel
-else
-    echo "ROG KERIS not plugged in" > /dev/null
-fi
-
-# Viper Mini
-if xinput list | grep "Viper Mini  " > /dev/null
-then
-    sleep 1 && ~/bin/kmviperaccel
-else
-    echo "Viper Mini not plugged in" > /dev/null
-fi
+# Disable mouse acceleration
+[ -x ~/bin/kmaccel ] && source ~/bin/kmaccel
