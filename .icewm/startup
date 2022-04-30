@@ -69,7 +69,7 @@ if pgrep -x "libinput-gestures" > /dev/null
 then
     echo "gestures already running" > /dev/null
 else
-	libinput-gestures &
+    libinput-gestures &
 fi
 
 # start Emacs
