@@ -1,0 +1,23 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=IceWM
+GenericName=Window Manager
+Comment=This session logs you into IceWM
+Icon=icewm
+TryExec=/home/diamond/.icewm/icewm-session.sh
+Exec=/home/diamond/.icewm/icewm-session.sh
+NoDisplay=false
+Hidden=false
+StartupNotify=false
+X-GNOME-Autostart-Notify=false
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+X-GNOME-WMName=icewm
+DesktopNames=ICEWM
+X-LightDM-DesktopName=icewm
+
+[Window Manager]
+Name=icewm
+SessionManaged=true
+StartupNotification=false
