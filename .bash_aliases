@@ -144,3 +144,5 @@ alias fixmeup='update && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphan
 
 alias checkzombie='ps -ef | grep startup'
 alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
+
+alias emptytrash="zenity --question --width 230 --text 'Do you want to empty the trash?' && gio trash --empty"
