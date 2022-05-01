@@ -57,6 +57,9 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		prog "Battery" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
 	}
 	separator
+	prog "Sunrise" daytime-sunrise-symbolic.svg sh -c ~/bin/sunrise.sh
+	prog "Sunset" daytime-sunset-symbolic.svg sh -c ~/bin/sunset.sh
+	separator
 	prog "Kill Mouse Accel" input-mouse-symbolic.svg sh -c ~/bin/kmaccel
 }
 separator
