@@ -3,11 +3,11 @@
 #==============#
 # X11
 #==============#
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources # Merge Xresources
-xset b off # Disables bell
-xset -dpms # Disables Energy Star features
-xset s off # Disables screen saver
-setxkbmap -option caps:escape # Make Caps an additional Escape
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources & # Merge Xresources
+xset b off & # Disables bell
+xset -dpms & # Disables Energy Star features
+xset s off & # Disables screen saver
+setxkbmap -option caps:escape & # Make Caps an additional Escape
 
 #==============#
 # Session
