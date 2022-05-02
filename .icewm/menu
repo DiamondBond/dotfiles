@@ -32,7 +32,6 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 	}
 	menu "Background" preferences-desktop-wallpaper-symbolic.svg {
 		prog "Default" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#386CA3"
-		prog "Variety" preferences-desktop-wallpaper-symbolic.svg variety
 		separator
 		prog "Set Solid" preferences-desktop-wallpaper-symbolic.svg hsetroot -solid "#898989"
 		prog "Set Tiled" preferences-desktop-wallpaper-symbolic.svg sh -c "feh --bg-tile ~/.icewm/bg.png"
