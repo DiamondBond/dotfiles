@@ -14,8 +14,9 @@ setxkbmap -option caps:escape & # Make Caps an additional Escape
 #==============#
 #export $(dbus-launch)
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
-export SSH_AUTH_SOCK
+# eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
+# export SSH_AUTH_SOCK
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 #==============#
 # Display

@@ -1,5 +1,5 @@
 full_width_title=true
-title_alignment=left
+#title_alignment=left
 button_spacing=2
 button_offset=3
 maximized_offset=3
