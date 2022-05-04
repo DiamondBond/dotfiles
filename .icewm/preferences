@@ -452,7 +452,7 @@ KeyWinRaise=""
 KeyWinRestore=""
 
 #  Rolls up the active window.
-KeyWinRollup="Alt+Shift+S"
+KeyWinRollup="Alt+Shift+T"
 
 #  Starts resizing of the active window.
 #KeyWinSize="Alt+Shift+R"
