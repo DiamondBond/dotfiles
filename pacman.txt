@@ -93,8 +93,8 @@ kiwix-desktop 2.2.1-3
 kiwix-tools 3.2.0-4
 lhasa 0.3.1-3
 lib32-gamemode 1.6.1-2
-lib32-gst-plugins-base-libs 1.20.1-1
-lib32-gst-plugins-good 1.20.1-1
+lib32-gst-plugins-base-libs 1.20.2-1
+lib32-gst-plugins-good 1.20.2-1
 lib32-gtk3 3.24.31-1
 lib32-libxslt 1.1.35-1
 lib32-ocl-icd 2.3.1-1
@@ -149,7 +149,7 @@ networkmanager 1.36.4-1
 nodejs 18.1.0-1
 nomacs 1:3.17.2206-7
 notmuch 0.36-1
-noto-fonts 20201226-2
+noto-fonts 20220502-1
 noto-fonts-emoji 20211101-1
 npm 8.5.5-1
 ntfs-3g 2021.8.22-1
@@ -221,7 +221,7 @@ thunar 4.16.11-2
 thunar-archive-plugin 0.5.0-2
 thunar-media-tags-plugin 0.3.0-2
 thunar-volman 4.16.0-1
-thunderbird 91.8.1-1
+thunderbird 91.9.0-1
 timidity++ 2.15.0-5
 tk 8.6.12-1
 tmux 3.2_a-1
