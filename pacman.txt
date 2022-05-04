@@ -171,6 +171,7 @@ pipewire-pulse 1:0.3.51-1
 pkgconf 1.8.0-1
 polkit-gnome 0.105-9
 powertop 2.14-1
+prettier 2.6.2-1
 protonvpn 1.0.0-2
 pstoedit 3.78-1
 pyright 1.1.244-1
