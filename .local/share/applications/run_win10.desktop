@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Start Win10
+Comment=Start Windows 10.
+Exec=/home/diamond/bin/run_w10
+Icon=virt-manager
+Path=
+Terminal=false
+StartupNotify=false
