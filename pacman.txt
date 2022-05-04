@@ -28,6 +28,7 @@ cmake 3.23.1-1
 coin-or-mp 1.8.4-4
 cpio 2.13-2
 cpupower 5.17-1
+deno 1.21.1-1
 dhclient 4.4.3-1
 dialog 1:1.3_20220414-1
 discord 0.0.17-1
