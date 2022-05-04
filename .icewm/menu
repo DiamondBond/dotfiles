@@ -51,6 +51,18 @@ menu "Scripts" utilities-terminal-symbolic.svg {
 		separator
 		prog "Restart" system-reboot-symbolic.svg sh -c ~/bin/dwm_tog_comp
 	}
+	menu "Volume" audio-volume-medium-symbolic.svg {
+		prog "Set 100%" audio-volume-overamplified-symbolic.svg sh -c "pactl set-sink-volume 0 100%"
+		prog "Set 75%" audio-volume-high-symbolic.svg sh -c "pactl set-sink-volume 0 75%"
+		prog "Set 50%" audio-volume-medium-symbolic.svg sh -c "pactl set-sink-volume 0 50%"
+		prog "Set 25%" audio-volume-low-symbolic.svg sh -c "pactl set-sink-volume 0 25%"
+		separator
+		prog "Increase 15%" audio-volume-medium-symbolic.svg sh -c "~/bin/changeVolume +15%"
+		prog "Decrease 15%" audio-volume-low-symbolic.svg sh -c "~/bin/changeVolume -15%"
+		separator
+		prog "Toggle Audio Mute" audio-volume-muted-symbolic.svg sh -c ~/bin/toggleVolume
+		prog "Toggle Mic Mute" microphone-disabled-symbolic.svg sh -c ~/bin/toggleMic
+	}
 	menu "Applets" applications-system-symbolic.svg {
 		prog "Bluetooth" bluetooth-active-symbolic.svg blueman-applet
 		prog "Battery" media-optical-bd-symbolic.svg sh -c ~/git/matebook-applet/matebook-applet
