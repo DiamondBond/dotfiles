@@ -131,7 +131,7 @@ alias journalsize='du /var/log/journal -h'
 
 alias youtube-dl='yt-dlp'
 
-alias update='yay && flatpak update'
+alias updatepkg='yay && flatpak update'
 
 #alias fixgrub='sudo grub-editenv create'
 #alias caffeine='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
@@ -140,7 +140,7 @@ alias adw-update="cd ~/git/adw-gtk3 && git fetch origin && git reset --hard orig
 
 alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'
 
-alias fixmeup='update && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
+alias updatesys='updatepkg && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
 
 alias checkzombie='ps -ef | grep startup'
 alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
