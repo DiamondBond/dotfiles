@@ -139,7 +139,7 @@ alias updatepkg='yay && flatpak update'
 alias adw-update="cd ~/git/adw-gtk3 && git fetch origin && git reset --hard origin/main && git clean -fd && meson build && sudo ninja -C build install"
 
 alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'
-alias RESETFROMHEAD_LEGACY='git fetch && git reset --hard origin/main && git clean -fd'
+alias RESETFROMHEAD_LEGACY='git fetch && git reset --hard origin/master && git clean -fd'
 
 alias updatesys='updatepkg && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
 
