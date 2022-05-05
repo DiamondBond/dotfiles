@@ -87,7 +87,7 @@ intel-gpu-tools 1.26-1
 intel-media-driver 22.3.1-1
 intel-ucode 20220419-1
 iptables-nft 1:1.8.7-1
-jre-openjdk 18.0.1.u10-1
+jre-openjdk 18.0.1.1.u2-1
 kiwix-desktop 2.2.1-3
 kiwix-tools 3.2.0-4
 lhasa 0.3.1-3
@@ -98,7 +98,7 @@ lib32-gtk3 3.24.33-1
 lib32-libxslt 1.1.35-1
 lib32-ocl-icd 2.3.1-1
 lib32-v4l-utils 1.22.1-1
-libayatana-appindicator 0.5.91-1
+libayatana-appindicator 0.5.91-2
 libdbusmenu-gtk2 16.04.0-5
 libgccjit 11.2.0-4
 libguestfs 1.46.2-2
@@ -239,7 +239,7 @@ upx 3.96-3
 valgrind 3.19.0-1
 virt-manager 4.0.0-1
 virt-viewer 11.0-1
-visual-studio-code-bin 1.66.2-2
+visual-studio-code-bin 1.67.0-1
 webkit2gtk 2.36.1-1
 wget 1.21.3-1
 which 2.21-5
@@ -249,12 +249,12 @@ xaw3d 1.6.3-2
 xbindkeys 1.8.7-2
 xclip 0.13-3
 xcompmgr 1.1.8-2
-xdg-desktop-portal 1.14.3-1
+xdg-desktop-portal 1.14.4-1
 xdg-user-dirs 0.17-3
 xdotool 3.20211022.1-1
+xfce-theme-greybird 3.23.1-1
 xfce4-appfinder 4.16.1-2
 xfce4-cpugraph-plugin 1.2.6-1
-xfce4-memgraph-plugin 1.2.5-1
 xfce4-panel 4.16.4-1
 xfce4-power-manager 4.16.0-3
 xfce4-pulseaudio-plugin 0.4.3-2
