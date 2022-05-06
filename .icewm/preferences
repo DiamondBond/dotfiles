@@ -764,7 +764,7 @@ SnapMove=1 # 0/1
 # TaskBarApmGraphWidth=10 # [1-1000]
 
 #  Task bar at top of the screen.
-# TaskBarAtTop=0 # 0/1
+# TaskBarAtTop=1 # 0/1
 
 #  Auto hide task bar after delay.
 # TaskBarAutoHide=0 # 0/1
