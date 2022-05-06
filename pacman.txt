@@ -216,6 +216,7 @@ texlive-pictures 2022.62992-1
 texlive-pstricks 2022.62977-1
 texlive-publishers 2022.63013-1
 texlive-science 2022.62977-1
+the_silver_searcher 2.2.0-2
 thunar 4.16.11-2
 thunar-archive-plugin 0.5.0-2
 thunar-media-tags-plugin 0.3.0-2
