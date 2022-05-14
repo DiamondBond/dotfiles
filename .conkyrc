@@ -1,0 +1,51 @@
+conky.config = {
+    background = false,
+    own_window = true,
+    own_window_class = 'Desktop',
+    own_window_transparent = false,
+    own_window_type = 'dock',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_visual = true,
+    own_window_argb_value = 40,
+    double_buffer = true,
+    use_spacer = 'none',
+    use_xft = true,
+    xftalpha = 1,
+    font = 'Liberation Sans:size=10',
+    update_interval = 1,
+    uppercase = false,
+    override_utf8_locale = true,
+    stippled_borders = 1,
+    border_width = 5,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    show_graph_scale = false,
+    show_graph_range = false,
+    alignment = 'top_right',
+    minimum_width = 240,
+    minimum_height = 100,
+    maximum_width = 240,
+    gap_x = 12,
+    gap_y = 42,
+    net_avg_samples = 2,
+    cpu_avg_samples = 4,
+    short_units = true,
+    pad_percents = 2,
+    text_buffer_size = 2048,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+}
+
+conky.text = [[
+$alignr S Y S T E M    I N F O
+${hr}
+Host:$alignr$nodename
+Uptime:$alignr$uptime
+RAM:$alignr$mem/$memmax
+Swap usage:$alignr$swap/$swapmax
+Disk usage:$alignr${fs_used /}/${fs_size /}
+CPU usage:$alignr${cpu cpu0}%
+]]
