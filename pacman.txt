@@ -16,6 +16,7 @@ bat 0.20.0-2
 bear 3.0.19-3
 bison 3.8.2-4
 bleachbit 4.4.2-2
+blueman 2.2.4-1
 bridge-utils 1.7.1-1
 brightnessctl 0.5.1-2
 btop 1.2.6-1
@@ -26,6 +27,7 @@ clang 13.0.1-2
 claws-mail 4.1.0-1
 cmake 3.23.1-1
 coin-or-mp 1.8.4-4
+conky 1.12.2-2
 cpio 2.13-2
 cpupower 5.17-1
 deno 1.21.3-1
@@ -224,7 +226,6 @@ thunderbird 91.9.0-1
 timidity++ 2.15.0-5
 tk 8.6.12-1
 tmux 3.2_a-1
-touchegg 2.0.14-2
 transmission-gtk 3.00-4
 tree 2.0.2-1
 ttf-dejavu 2.37+18+g9b5d1b2f-3
