@@ -233,6 +233,7 @@ tmux 3.2_a-1
 transmission-gtk 3.00-4
 tree 2.0.2-1
 ttf-dejavu 2.37+18+g9b5d1b2f-3
+ttf-go-mono-git r328.70e8d0d-1
 ttf-ms-fonts 2.0-12
 tumbler 4.16.0-3
 typescript-language-server 0.10.0-1
