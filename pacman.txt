@@ -248,6 +248,7 @@ wget 1.21.3-1
 which 2.21-5
 wireless_tools 30.pre9-3
 wmctrl 1.07-6
+wordnet-cli 3.1-4
 xaw3d 1.6.3-2
 xbindkeys 1.8.7-2
 xclip 0.13-3
