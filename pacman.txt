@@ -41,6 +41,7 @@ dosfstools 4.2-2
 dropbox 148.4.4519-1
 edk2-ovmf 202202-2
 efibootmgr 17-2
+elementary-xfce-icons 0.16-1
 engrampa 1.26.0-1
 evince 42.2-1
 evtest 1.34-2
@@ -150,6 +151,7 @@ nodejs 18.1.0-1
 nomacs 1:3.17.2206-7
 notmuch 0.36-1
 noto-fonts 20220502-2
+noto-fonts-cjk 20220126-1
 noto-fonts-emoji 20211101-1
 npm 8.5.5-1
 ntfs-3g 2021.8.22-1
