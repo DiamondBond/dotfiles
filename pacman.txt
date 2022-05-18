@@ -40,6 +40,7 @@ dmidecode 3.3-1
 dnsmasq 2.86-1
 dosfstools 4.2-2
 dropbox 148.4.4519-1
+dunst 1.8.1-1
 edk2-ovmf 202202-2
 efibootmgr 17-2
 elementary-xfce-icons 0.16-1
