@@ -1,5 +1,5 @@
 accountsservice 22.08.8-2
-acpi_call 1.2.2-40
+acpi_call 1.2.2-41
 adwaita-icon-theme 41.0-1
 alsa-utils 1.2.6-1
 android-tools 31.0.3-5
@@ -66,7 +66,7 @@ gnome-system-monitor 42.0-1
 gnuchess 6.2.9-1
 gnugo 3.8-7
 go 2:1.18.2-1
-gopls 0.8.3-1
+gopls 0.8.4-1
 gparted 1.4.0-1
 gpick 0.2.6-4
 groff 1.22.4-7
@@ -118,10 +118,10 @@ light-locker 1.9.0-5
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-2
 lightdm-gtk-greeter-settings 1.2.2-7
-linux 5.17.8.arch1-1
+linux 5.17.9.arch1-1
 linux-dwarf-pack 0.47.05.r3-1
 linux-firmware 20220509.b19cbdc-1
-llvm 13.0.1-3
+llvm 13.0.1-4
 lrzip 0.641-2
 lsb-release 2.0.r48.3cf5103-1
 lxappearance-gtk3 0.6.3-4
@@ -188,7 +188,7 @@ pstoedit 3.78-1
 pyright 1.1.247-1
 python-ipykernel 6.13.0-1
 python-pip 21.0-1
-qemu-desktop 7.0.0-9
+qemu-desktop 7.0.0-10
 qpdf 10.6.3-1
 quicklisp 20150128-1
 r2ghidra 5.6.2.r1.ga4ba1ddc-1
@@ -201,7 +201,7 @@ rmlint 2.10.1-3
 rofi 1.7.3-1
 rsync 3.2.4-1
 ruby 3.0.4-1
-rust 1:1.60.0-1
+rust 1:1.61.0-1
 sassc 3.6.2-3
 sbcl 2.2.4-1
 screenfetch 3.9.1-1
