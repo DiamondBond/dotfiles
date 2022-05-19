@@ -13,12 +13,12 @@
     <focusLast>yes</focusLast>
     <!-- focus the last used window when changing desktops, instead of the one
        under the mouse pointer. when followMouse is enabled -->
-    <underMouse>no</underMouse>
+    <underMouse>yes</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>200</focusDelay>
+    <focusDelay>250</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
-    <raiseOnFocus>no</raiseOnFocus>
+    <raiseOnFocus>yes</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>y</name>
+    <name>win</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -56,7 +56,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Sans</name>
-      <size>10</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -65,7 +65,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Sans</name>
-      <size>10</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -74,7 +74,7 @@
     </font>
     <font place="MenuHeader">
       <name>Sans</name>
-      <size>10</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -83,7 +83,7 @@
     </font>
     <font place="MenuItem">
       <name>Sans</name>
-      <size>11</size>
+      <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -92,7 +92,7 @@
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Sans</name>
-      <size>10</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -531,10 +531,20 @@
       </action>
     </keybind>
     <keybind key="W-Tab">
+      <action name="Execute">
+        <command>emacsclient -e '(other-frame 1)'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-e">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
     </keybind>
+    <!-- <keybind key="W-Tab"> -->
+    <!--   <action name="ShowMenu"> -->
+    <!--     <menu>client-list-combined-menu</menu> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
