@@ -10,9 +10,19 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         -modi</execute>
       </action>
     </item>
-    <item label="term">
+    <item label="agenda">
       <action name="Execute">
-        <execute>xfce4-terminal</execute>
+        <execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
+      </action>
+    </item>
+	<item label="emacs">
+      <action name="Execute">
+        <execute>emacsclient -c -n -a 'emacs'</execute>
+      </action>
+    </item>
+    <item label="xterm">
+      <action name="Execute">
+        <execute>xterm</execute>
       </action>
     </item>
     <item label="files">
@@ -31,14 +41,14 @@ xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
         <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium</execute>
       </action>
     </item>
+	<item label="thunderbird">
+      <action name="Execute">
+        <execute>thunderbird</execute>
+      </action>
+    </item>
     <item label="vscode">
       <action name="Execute">
         <execute>code</execute>
-      </action>
-    </item>
-    <item label="emacs">
-      <action name="Execute">
-        <execute>emacsclient -c -n -a 'emacs'</execute>
       </action>
     </item>
     <item label="telegram">
