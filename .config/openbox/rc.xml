@@ -209,12 +209,12 @@
     <!--     <command>/home/diamond/bin/ui.sh</command> -->
     <!--   </action> -->
     <!-- </keybind> -->
-	<keybind key="W-b">
-	  <action name="Execute">
-		<command>/home/diamond/bin/powerprofiles.sh</command>
-	  </action>
-	</keybind>
-	<keybind key="W-x">
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>/home/diamond/bin/powerprofiles.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-x">
       <action name="Execute">
         <command>/home/diamond/bin/launcher.sh</command>
       </action>
@@ -239,11 +239,6 @@
         <command>/home/diamond/bin/daysout</command>
       </action>
     </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>lxrandr</command>
-      </action>
-    </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
         <command>xfce4-terminal</command>
@@ -259,6 +254,11 @@
         <command>galculator</command>
       </action>
     </keybind>
+	<keybind key="W-a">
+	  <action name="Execute">
+		<command>/home/diamond/bin/org-agenda-on-startup</command>
+	  </action>
+	</keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>/home/diamond/bin/grow</command>
@@ -276,9 +276,9 @@
       <action name="ToggleMaximize"/>
       <!-- <action name="ToggleDecorations"/> -->
     </keybind>
-    <keybind key="W-b">
-      <action name="ToggleDecorations"/>
-    </keybind>
+    <!-- <keybind key="W-b"> -->
+    <!--   <action name="ToggleDecorations"/> -->
+    <!-- </keybind> -->
     <keybind key="S-A-d">
       <action name="ToggleDecorations"/>
     </keybind>
@@ -594,7 +594,7 @@
     </keybind>
     <keybind key="A-F6">
       <action name="Execute">
-        <command>gmrun</command>
+        <command>emacsclient -e '(other-frame 1)'</command>
       </action>
     </keybind>
     <keybind key="A-F7">
