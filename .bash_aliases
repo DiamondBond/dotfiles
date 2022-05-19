@@ -147,3 +147,5 @@ alias checkzombie='ps -ef | grep startup'
 alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
 
 alias emptytrash="zenity --question --width 230 --text 'Do you want to empty the trash?' && gio trash --empty"
+
+alias grab_xwininfo='sleep 1; xwininfo -id $(xdotool getactivewindow)'
