@@ -5,7 +5,5 @@ vte-terminal {
     -VteTerminal-inner-border: 05px 05px 05px 05px;
 }
 
-#XfcePanelWindow {
-   -XfcePanelWindow-popup-delay: 0;
-   -XfcePanelWindow-popdown-delay: 0;
-}
+wnck-pager { background: #333; color: #ccc }
+wnck-pager:selected { background: #555; color: black }
