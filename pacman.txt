@@ -1,6 +1,6 @@
 accountsservice 22.08.8-2
 acpi_call 1.2.2-40
-adwaita-icon-theme 42.0+r1+gc144c3d75-1
+adwaita-icon-theme 41.0-1
 alsa-utils 1.2.6-1
 android-tools 31.0.3-5
 ani-cli 2.2-1
@@ -93,7 +93,6 @@ jre-openjdk 18.0.1.1.u2-1
 kega-fusion 3.63-17
 kiwix-desktop 2.2.1-3
 kiwix-tools 3.2.0-4
-la-capitaine-icon-theme 0.6.2-1
 lhasa 0.3.1-3
 lib32-gamemode 1.6.1-2
 lib32-gst-plugins-base-libs 1.20.2-1
