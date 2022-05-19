@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>6</number>
+    <number>9</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>&#x3B1;</name>
@@ -619,7 +619,7 @@
     </keybind>
     <keybind key="A-F6">
       <action name="Execute">
-        <command>emacsclient -c -e '(raise-frame)'</command>
+        <command>emacsclient -cne '(get-buffer-menu-in-new-frame)'</command>
       </action>
     </keybind>
     <keybind key="A-F7">
