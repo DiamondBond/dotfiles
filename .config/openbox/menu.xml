@@ -18,14 +18,14 @@
 		<execute>thunar</execute>
 	  </action>
 	</item>
-	<item label="emacs">
-	  <action name="Execute">
-		<execute>emacsclient -c -n -a 'emacs'</execute>
-	  </action>
-	</item>
 	<item label="xterm">
 	  <action name="Execute">
 		<execute>xterm</execute>
+	  </action>
+	</item>
+	<item label="emacs">
+	  <action name="Execute">
+		<execute>emacsclient -c -n -a 'emacs'</execute>
 	  </action>
 	</item>
 	<item label="agenda">
@@ -33,6 +33,18 @@
 		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
 	  </action>
 	</item>
+	<menu id="sundial" label="sundial">
+	  <item label="sunrise">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/sunrise.sh</execute>
+		</action>
+	  </item>
+	  <item label="sunset">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/sunset.sh</execute>
+		</action>
+	  </item>
+	</menu>
 	<menu id="virt" label="virt">
 	  <item label="Start Win10">
 		<action name="Execute">
@@ -47,18 +59,6 @@
 	  <item label="Manager">
 		<action name="Execute">
 		  <execute>virt-manager</execute>
-		</action>
-	  </item>
-	</menu>
-	<menu id="sundial" label="sundial">
-	  <item label="sunrise">
-		<action name="Execute">
-		  <execute>/home/diamond/bin/sunrise.sh</execute>
-		</action>
-	  </item>
-	  <item label="sunset">
-		<action name="Execute">
-		  <execute>/home/diamond/bin/sunset.sh</execute>
 		</action>
 	  </item>
 	</menu>
