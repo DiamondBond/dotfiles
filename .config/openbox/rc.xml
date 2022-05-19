@@ -256,7 +256,12 @@
     </keybind>
 	<keybind key="W-a">
 	  <action name="Execute">
-		<command>/home/diamond/bin/org-agenda-on-startup</command>
+		<command>/home/diamond/bin/icedteawindow</command>
+	  </action>
+	</keybind>
+	<keybind key="W-w">
+	  <action name="Execute">
+		<command>/home/diamond/bin/centermax</command>
 	  </action>
 	</keybind>
     <keybind key="W-r">
