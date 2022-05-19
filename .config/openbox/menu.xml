@@ -34,11 +34,6 @@
 	  </action>
 	</item>
 	<menu id="virt" label="virt">
-	  <item label="Virt-Manager">
-		<action name="Execute">
-		  <execute>virt-manager</execute>
-		</action>
-	  </item>
 	  <item label="Start Win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/run_w10</execute>
@@ -47,6 +42,11 @@
 	  <item label="Stop Win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/stop_w10</execute>
+		</action>
+	  </item>
+	  <item label="Manager">
+		<action name="Execute">
+		  <execute>virt-manager</execute>
 		</action>
 	  </item>
 	</menu>
