@@ -1,5 +1,6 @@
 com.github.Eloston.UngoogledChromium
 com.github.Rosalie241.RMG
+com.github.libresprite.LibreSprite
 com.github.micahflee.torbrowser-launcher
 com.github.tchx84.Flatseal
 com.google.Chrome
