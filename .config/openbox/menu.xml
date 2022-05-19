@@ -1,121 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+			  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			  xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
   <menu id="root-menu" label="Openbox 3">
-    <item label="run">
-      <action name="Execute">
-        <execute>rofi -combi-modi window,drun -show combi
-        -modi</execute>
-      </action>
-    </item>
-    <item label="agenda">
-      <action name="Execute">
-        <execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
-      </action>
-    </item>
-	<item label="emacs">
-      <action name="Execute">
-        <execute>emacsclient -c -n -a 'emacs'</execute>
-      </action>
-    </item>
-    <item label="xterm">
-      <action name="Execute">
-        <execute>xterm</execute>
-      </action>
-    </item>
-    <item label="files">
-      <action name="Execute">
-        <execute>thunar</execute>
-      </action>
-    </item>
-    <item label="firefox">
-      <action name="Execute">
-        <execute>firefox</execute>
-      </action>
-    </item>
-    <menu id="applications" label="apps">
-    <item label="chromium">
-      <action name="Execute">
-        <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium</execute>
-      </action>
-    </item>
-	<item label="thunderbird">
-      <action name="Execute">
-        <execute>thunderbird</execute>
-      </action>
-    </item>
-    <item label="vscode">
-      <action name="Execute">
-        <execute>code</execute>
-      </action>
-    </item>
-    <item label="telegram">
-      <action name="Execute">
-        <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop</execute>
-      </action>
-    </item>
-    <item label="discord">
-      <action name="Execute">
-        <execute>discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy</execute>
-      </action>
-    </item>
-    <item label="spotify">
-      <action name="Execute">
-        <execute>flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'</execute>
-      </action>
-    </item>
-	<item label="mixer">
-      <action name="Execute">
-        <execute>pavucontrol</execute>
-      </action>
-    </item>
-	<item label="paint">
+	<item label="run">
 	  <action name="Execute">
-		<execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kolourpaint --file-forwarding org.kde.kolourpaint</execute>
+		<execute>rofi -combi-modi window,drun -show combi -modi</execute>
 	  </action>
 	</item>
+	<item label="firefox">
+	  <action name="Execute">
+		<execute>firefox</execute>
+	  </action>
+	</item>
+	<item label="files">
+	  <action name="Execute">
+		<execute>thunar</execute>
+	  </action>
+	</item>
+	<item label="emacs">
+	  <action name="Execute">
+		<execute>emacsclient -c -n -a 'emacs'</execute>
+	  </action>
+	</item>
+	<item label="xterm">
+	  <action name="Execute">
+		<execute>xterm</execute>
+	  </action>
+	</item>
+	<item label="agenda">
+	  <action name="Execute">
+		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
+	  </action>
+	</item>
+	<menu id="virt" label="virt">
+	  <item label="Virt-Manager">
+		<action name="Execute">
+		  <execute>virt-manager</execute>
+		</action>
+	  </item>
+	  <item label="Start Win10">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/run_w10</execute>
+		</action>
+	  </item>
+	  <item label="Stop Win10">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/stop_w10</execute>
+		</action>
+	  </item>
 	</menu>
-    <menu id="settings" label="settings">
-      <item label="info">
-        <action name="Execute">
-          <execute>xterm -e /home/diamond/bin/sysinfo</execute>
-        </action>
-      </item>
-      <item label="compositor">
-        <action name="Execute">
-          <execute>/home/diamond/bin/dwm_tog_comp</execute>
-        </action>
-      </item>
-	  <item label="powerctl">
-        <action name="Execute">
-          <execute>/home/diamond/bin/powerprofiles.sh</execute>
-        </action>
-      </item>
-	  <item label="mousecfg">
+	<menu id="sundial" label="sundial">
+	  <item label="sunrise">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/sunrise.sh</execute>
+		</action>
+	  </item>
+	  <item label="sunset">
+		<action name="Execute">
+		  <execute>/home/diamond/bin/sunset.sh</execute>
+		</action>
+	  </item>
+	</menu>
+	<menu id="applications" label="apps">
+	  <item label="chromium">
+		<action name="Execute">
+		  <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium</execute>
+		</action>
+	  </item>
+	  <item label="thunderbird">
+		<action name="Execute">
+		  <execute>thunderbird</execute>
+		</action>
+	  </item>
+	  <item label="vscode">
+		<action name="Execute">
+		  <execute>code</execute>
+		</action>
+	  </item>
+	  <item label="telegram">
+		<action name="Execute">
+		  <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=telegram-desktop --file-forwarding org.telegram.desktop</execute>
+		</action>
+	  </item>
+	  <item label="discord">
+		<action name="Execute">
+		  <execute>discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy</execute>
+		</action>
+	  </item>
+	  <item label="spotify">
+		<action name="Execute">
+		  <execute>flatpak run --file-forwarding --command=sh com.spotify.Client -c 'eval "$(sed s#LD_PRELOAD=#LD_PRELOAD=$HOME/.spotify-adblock/spotify-adblock.so:#g /app/bin/spotify)"'</execute>
+		</action>
+	  </item>
+	  <item label="mixer">
+		<action name="Execute">
+		  <execute>pavucontrol</execute>
+		</action>
+	  </item>
+	  <item label="paint">
+		<action name="Execute">
+		  <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kolourpaint --file-forwarding org.kde.kolourpaint</execute>
+		</action>
+	  </item>
+	</menu>
+	<menu id="settings" label="settings">
+	  <menu id="compositor" label="compositor">
+		<item label="status">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/pgrep_picom</execute>
+		  </action>
+		</item>
+		<item label="start">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/start_picom</execute>
+		  </action>
+		</item>
+		<item label="stop">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/stop_picom</execute>
+		  </action>
+		</item>
+		<item label="restart">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/dwm_tog_comp</execute>
+		  </action>
+		</item>
+	  </menu>
+	  <menu id="power" label="powerctl">
+		<item label="status">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/powerctlstatus</execute>
+		  </action>
+		</item>
+		<item label="performance">
+		  <action name="Execute">
+			<execute>powerprofilesctl set performance</execute>
+		  </action>
+		</item>
+		<item label="balanced">
+		  <action name="Execute">
+			<execute>powerprofilesctl set balanced</execute>
+		  </action>
+		</item>
+		<item label="power-saver">
+		  <action name="Execute">
+			<execute>powerprofilesctl set power-saver</execute>
+		  </action>
+		</item>
+	  </menu>
+	  <item label="mousectl">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/kmaccel</execute>
 		</action>
 	  </item>
-	  <!-- <item label="-\-\-\-\-\-\-\-\-\-"> -->
-      <!--   <action name="" /> -->
-      <!-- </item> -->
-      <item label="reconfigure">
-        <action name="Reconfigure" />
-      </item>
-      <item label="reinitialize">
-        <action name="Restart" />
-      </item>
-      <!-- <item label="-\-\-\-\-\-\-\-\-\-"> -->
-      <!--   <action name="" /> -->
-      <!-- </item> -->
-      <item label="exit">
-        <action name="Exit" />
-        <!-- <action name="Execute"> -->
-        <!--   <execute>/home/diamond/bin/power.sh</execute> -->
-        <!-- </action> -->
-      </item>
-    </menu>
+	  <item label="reconfigure">
+		<action name="Reconfigure" />
+	  </item>
+	  <item label="reinitialize">
+		<action name="Restart" />
+	  </item>
+	  <item label="exit">
+		<action name="Exit" />
+		<!-- <action name="Execute"> -->
+		<!--   <execute>/home/diamond/bin/power.sh</execute> -->
+		<!-- </action> -->
+	  </item>
+	</menu>
   </menu>
 </openbox_menu>
