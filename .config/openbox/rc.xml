@@ -274,7 +274,7 @@
         <command>/home/diamond/bin/centermax</command>
       </action>
     </keybind>
-	<keybind key="W-S-f">
+	<keybind key="W-f">
 	  <action name="Execute">
 		<command>/home/diamond/bin/ffreadsize</command>
 	  </action>
