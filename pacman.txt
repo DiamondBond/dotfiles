@@ -30,7 +30,7 @@ coin-or-mp 1.8.4-4
 conky 1.12.2-2
 cpio 2.13-2
 cpupower 5.17-1
-deno 1.21.3-1
+deno 1.22.0-1
 dhclient 4.4.3-1
 dialog 1:1.3_20220414-1
 discord 0.0.17-1
@@ -44,12 +44,12 @@ efibootmgr 17-2
 elementary-xfce-icons 0.16-1
 engrampa 1.26.0-1
 evince 42.2-1
-evtest 1.34-2
+evtest 1.35-1
 extra-cmake-modules 5.94.0-1
 fakeroot 1.28-1
 feh 3.8-2
 ffmpegthumbnailer 2.2.2-4
-firefox 100.0.1-1
+firefox 100.0.2-1
 flatpak 1:1.12.7-1
 flex 2.6.4-3
 fsv2 1:0.9.1-3
@@ -89,7 +89,7 @@ innoextract 1.9-5
 intel-gpu-tools 1.26-1
 intel-media-driver 22.4.1-1
 intel-ucode 20220510-1
-iptables-nft 1:1.8.7-1
+iptables-nft 1:1.8.8-1
 jre-openjdk 18.0.1.1.u2-1
 kega-fusion 3.63-17
 kiwix-desktop 2.2.1-3
