@@ -6,7 +6,7 @@ vte-terminal {
 }
 
 wnck-pager { background: #333; color: #ccc }
-wnck-pager:selected { background: #555; color: black }
+ wnck-pager:selected { background: #777; color: black }
 
 /* transparent windows border */
 #whiskermenu-window>frame>border { border-color: transparent; }
