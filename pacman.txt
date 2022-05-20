@@ -1,6 +1,6 @@
 accountsservice 22.08.8-2
 acpi_call 1.2.2-41
-adwaita-icon-theme 41.0-1
+adwaita-icon-theme 42.0+r1+gc144c3d75-1
 alsa-utils 1.2.6-1
 android-tools 31.0.3-5
 ani-cli 2.2-1
