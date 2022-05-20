@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Buffers
+Comment=Opens up a *Buffer List*
+Exec=emacsclient -c -n -e '(get-buffer-menu-in-new-frame)'
+Icon=emacs-document
+Path=
+Terminal=false
+StartupNotify=false
+X-XFCE-Source=file:///home/diamond/Desktop/*Buffer%20List*.desktop

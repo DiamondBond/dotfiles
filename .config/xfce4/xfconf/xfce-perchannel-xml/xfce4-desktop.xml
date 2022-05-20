@@ -6,12 +6,12 @@
       <property name="monitoreDP-1" type="empty">
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
+          <property name="image-style" type="int" value="0"/>
           <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/ocean.jpg"/>
           <property name="rgba1" type="array">
-            <value type="double" value="0.000000"/>
-            <value type="double" value="0.000000"/>
-            <value type="double" value="0.000000"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
             <value type="double" value="1.000000"/>
           </property>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
@@ -83,7 +83,7 @@
       <property name="show-trash" type="bool" value="false"/>
     </property>
     <property name="gravity" type="int" value="0"/>
-    <property name="icon-size" type="uint" value="48"/>
+    <property name="icon-size" type="uint" value="42"/>
     <property name="style" type="int" value="2"/>
   </property>
 </channel>

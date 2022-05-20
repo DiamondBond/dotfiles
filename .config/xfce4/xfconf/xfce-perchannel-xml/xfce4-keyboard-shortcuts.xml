@@ -31,49 +31,22 @@
       </property>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
-      <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
+      <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="Print" type="string" value="xfce4-screenshooter"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
-      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
-      <property name="HomePage" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Alt&gt;w" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Alt&gt;e" type="string" value="thunar"/>
-      <property name="&lt;Alt&gt;F2" type="string" value="gmrun">
+      <property name="&lt;Alt&gt;F2" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;x" type="string" value="xkill"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="gnome-system-monitor"/>
-      <property name="&lt;Alt&gt;space" type="string" value="rofi -show combi"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;Return" type="string" value="xterm"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="pavucontrol"/>
-      <property name="&lt;Super&gt;g" type="string" value="galculator"/>
-      <property name="&lt;Super&gt;m" type="string" value="/home/diamond/bin/startmusic"/>
-      <property name="&lt;Super&gt;x" type="string" value="/home/diamond/bin/launcher.sh"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;f" type="string" value="/home/diamond/bin/statf"/>
-      <property name="&lt;Super&gt;c" type="string" value="/home/diamond/bin/windowcenter"/>
-      <property name="&lt;Shift&gt;&lt;Alt&gt;g" type="string" value="/home/diamond/bin/kmaccel"/>
-      <property name="&lt;Super&gt;b" type="string" value="/home/diamond/bin/powerprofiles.sh"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="BackSpace" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;2" type="string" value="/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium"/>
-      <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
-      <property name="&lt;Super&gt;e" type="string" value="emacsclient -c -n -a &apos;emacs&apos;"/>
-      <property name="&lt;Super&gt;Tab" type="string" value="emacsclient -e &apos;(other-frame 1)&apos;"/>
-      <property name="&lt;Super&gt;r" type="string" value="/home/diamond/bin/grow">
+      <property name="&lt;Super&gt;r" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Shift&gt;&lt;Super&gt;r" type="string" value="/home/diamond/bin/shrink"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="emacsclient -e  &quot;(select-frame-set-input-focus (selected-frame))&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

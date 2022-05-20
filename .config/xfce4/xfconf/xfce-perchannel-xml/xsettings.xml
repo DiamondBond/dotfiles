@@ -23,8 +23,8 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="FontName" type="empty"/>
-    <property name="MonospaceFontName" type="empty"/>
+    <property name="FontName" type="string" value="Sans 10"/>
+    <property name="MonospaceFontName" type="string" value="Monospace 10"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="ToolbarStyle" type="empty"/>
@@ -32,8 +32,8 @@
     <property name="MenuImages" type="bool" value="true"/>
     <property name="ButtonImages" type="bool" value="false"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="Adwaita"/>
-    <property name="CursorThemeSize" type="int" value="16"/>
+    <property name="CursorThemeName" type="string" value="default"/>
+    <property name="CursorThemeSize" type="int" value="22"/>
     <property name="DecorationLayout" type="string" value="menu:minimize,maximize,close"/>
     <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>

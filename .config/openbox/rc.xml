@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>5</top>
-    <bottom>5</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -436,6 +436,11 @@
         <command>rofi -combi-modi window,drun -show combi -modi combi</command>
       </action>
     </keybind>
+    <keybind key="W-space">
+      <action name="Execute">
+        <command>/home/diamond/bin/org-rofi-todo.py</command>
+      </action>
+    </keybind>
     <keybind key="S-A-p">
       <action name="Execute">
         <command>dmenu_run</command>
@@ -565,11 +570,11 @@
     <!--     <menu>client-list-combined-menu</menu> -->
     <!--   </action> -->
     <!-- </keybind> -->
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
+    <!-- <keybind key="W-space"> -->
+    <!--   <action name="ShowMenu"> -->
+    <!--     <menu>root-menu</menu> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <keybind key="A-C-q">
       <action name="ShowMenu">
         <menu>root-menu</menu>

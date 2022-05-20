@@ -22,8 +22,12 @@ wnck-pager:selected { background: #eee; color: black }
 
 /* #whiskermenu-button image { -gtk-icon-transform: scale(1); min-height: 44px; min-width: 44px; } */
 
+/* .xfce4-panel { */
+/* 	border-width: 1px; border-color: : #000000; */
+/* } */
+
 .xfce4-panel widget grid button { 
 	font-family: 'MaterialIcons'; 
 	font-size: 16px; 
-	padding: 0 10px; 
+	padding:  10px; 
 }

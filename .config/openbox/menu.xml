@@ -104,6 +104,23 @@
 		</action>
 	  </item>
 	</menu>
+	<menu id="applets" label="applets">
+	  <item label="nm-applet">
+		<action name="Execute">
+		  <execute>nm-applet</execute>
+		</action>
+	  </item>
+	  <item label="blueman-applet">
+		<action name="Execute">
+		  <execute>blueman-applet</execute>
+		</action>
+	  </item>
+	  <item label="matebook-applet">
+		<action name="Execute">
+		  <execute>/home/diamond/git/matebook-applet/matebook-applet</execute>
+		</action>
+	  </item>
+	</menu>
 	<menu id="settings" label="settings">
 	  <menu id="compositor" label="compositor">
 		<item label="status">
