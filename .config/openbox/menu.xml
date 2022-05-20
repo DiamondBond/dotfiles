@@ -8,6 +8,11 @@
 		<execute>rofi -combi-modi window,drun -show combi -modi</execute>
 	  </action>
 	</item>
+	<item label="xterm">
+	  <action name="Execute">
+		<execute>xterm</execute>
+	  </action>
+	</item>
 	<item label="firefox">
 	  <action name="Execute">
 		<execute>firefox</execute>
@@ -18,14 +23,15 @@
 		<execute>thunar</execute>
 	  </action>
 	</item>
-	<item label="xterm">
-	  <action name="Execute">
-		<execute>xterm</execute>
-	  </action>
-	</item>
+	<separator/>
 	<item label="emacs">
 	  <action name="Execute">
 		<execute>emacsclient -c -n -a 'emacs'</execute>
+	  </action>
+	</item>
+	<item label="buffers">
+	  <action name="Execute">
+		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
 	  </action>
 	</item>
 	<item label="agenda">
@@ -33,24 +39,14 @@
 		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
 	  </action>
 	</item>
-	<menu id="sundial" label="sundial">
-	  <item label="sunrise">
-		<action name="Execute">
-		  <execute>/home/diamond/bin/sunrise.sh</execute>
-		</action>
-	  </item>
-	  <item label="sunset">
-		<action name="Execute">
-		  <execute>/home/diamond/bin/sunset.sh</execute>
-		</action>
-	  </item>
-	</menu>
+	<separator/>
 	<menu id="virt" label="virt">
 	  <item label="virt-manager">
 		<action name="Execute">
 		  <execute>virt-manager</execute>
 		</action>
 	  </item>
+	  <separator/>
 	  <item label="start win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/run_w10</execute>
@@ -63,6 +59,36 @@
 	  </item>
 	</menu>
 	<menu id="applications" label="apps">
+	  <menu id="applets" label="applets">
+		<item label="nm-applet">
+		  <action name="Execute">
+			<execute>nm-applet</execute>
+		  </action>
+		</item>
+		<item label="blueman-applet">
+		  <action name="Execute">
+			<execute>blueman-applet</execute>
+		  </action>
+		</item>
+		<item label="matebook-applet">
+		  <action name="Execute">
+			<execute>/home/diamond/git/matebook-applet/matebook-applet</execute>
+		  </action>
+		</item>
+	  </menu>
+	  <menu id="sundial" label="sundial">
+		<item label="sunrise">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/sunrise.sh</execute>
+		  </action>
+		</item>
+		<item label="sunset">
+		  <action name="Execute">
+			<execute>/home/diamond/bin/sunset.sh</execute>
+		  </action>
+		</item>
+	  </menu>
+	  <separator/>
 	  <item label="chromium">
 		<action name="Execute">
 		  <execute>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chromium --file-forwarding com.github.Eloston.UngoogledChromium</execute>
@@ -104,23 +130,7 @@
 		</action>
 	  </item>
 	</menu>
-	<menu id="applets" label="applets">
-	  <item label="nm-applet">
-		<action name="Execute">
-		  <execute>nm-applet</execute>
-		</action>
-	  </item>
-	  <item label="blueman-applet">
-		<action name="Execute">
-		  <execute>blueman-applet</execute>
-		</action>
-	  </item>
-	  <item label="matebook-applet">
-		<action name="Execute">
-		  <execute>/home/diamond/git/matebook-applet/matebook-applet</execute>
-		</action>
-	  </item>
-	</menu>
+	<separator/>
 	<menu id="settings" label="settings">
 	  <menu id="compositor" label="compositor">
 		<item label="status">
@@ -176,6 +186,7 @@
 		  <execute>nm-connection-editor</execute>
 		</action>
 	  </item>
+	  <separator/>
 	  <item label="reconfigure">
 		<action name="Reconfigure" />
 	  </item>

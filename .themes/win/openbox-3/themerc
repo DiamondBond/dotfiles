@@ -11,7 +11,7 @@ menu.title.text.color: black
 menu.title.text.justify: Right
 menu.border.width: 1
 menu.border.color: black
-menu.separator.color: white
+menu.separator.color: black
 menu.overlap.x: -5
 
 window.label.text.justify: left
