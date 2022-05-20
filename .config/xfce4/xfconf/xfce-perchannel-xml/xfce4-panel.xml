@@ -98,6 +98,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="icon-size" type="int" value="0"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-885"/>
         <value type="string" value="dropbox-client-891"/>
         <value type="string" value="dropbox-client-893"/>
         <value type="string" value="dropbox-client-862"/>

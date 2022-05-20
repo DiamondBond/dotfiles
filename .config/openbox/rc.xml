@@ -229,6 +229,11 @@
     <!--     <command>/home/diamond/bin/np</command> -->
     <!--   </action> -->
     <!-- </keybind> -->
+	<keybind key="C-A-S-b">
+      <action name="Execute">
+        <command>/home/diamond/bin/sendpaneltoback</command>
+      </action>
+    </keybind>
     <keybind key="C-A-b">
       <action name="Execute">
         <command>/home/diamond/bin/procbar</command>
