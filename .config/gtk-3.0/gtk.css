@@ -20,7 +20,7 @@ wnck-pager:selected { background: #eee; color: black }
 /* smaller search entry box */
 #whiskermenu-window>frame>stack>box>box>entry { margin: 5px; font-size: 6pt;}
 
-#whiskermenu-button image { -gtk-icon-transform: scale(1); min-height: 44px; min-width: 44px; }
+/* #whiskermenu-button image { -gtk-icon-transform: scale(1); min-height: 44px; min-width: 44px; } */
 
 .xfce4-panel widget grid button { 
 	font-family: 'MaterialIcons'; 
