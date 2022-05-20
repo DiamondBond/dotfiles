@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>5</top>
+    <bottom>40</bottom>
+    <left>5</left>
+    <right>5</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -271,12 +271,12 @@
     </keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>/home/diamond/bin/centermax</command>
+        <command>/home/diamond/bin/ffreadsize</command>
       </action>
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>/home/diamond/bin/ffreadsize</command>
+        <command>/home/diamond/bin/centermax</command>
       </action>
     </keybind>
     <keybind key="W-S-s">
