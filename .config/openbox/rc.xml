@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>9</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>&#x3B1;</name>
@@ -274,16 +274,16 @@
         <command>/home/diamond/bin/centermax</command>
       </action>
     </keybind>
-	<keybind key="W-f">
-	  <action name="Execute">
-		<command>/home/diamond/bin/ffreadsize</command>
-	  </action>
-	</keybind>
-	<keybind key="W-S-s">
-	  <action name="Execute">
-		<command>/home/diamond/bin/xtermsmol</command>
-	  </action>
-	</keybind>
+    <keybind key="W-f">
+      <action name="Execute">
+        <command>/home/diamond/bin/ffreadsize</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <command>/home/diamond/bin/xtermsmol</command>
+      </action>
+    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>/home/diamond/bin/grow</command>
