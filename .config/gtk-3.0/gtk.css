@@ -5,8 +5,8 @@ vte-terminal {
 	-VteTerminal-inner-border: 05px 05px 05px 05px;
 }
 
-wnck-pager { background: #333; color: #ccc }
- wnck-pager:selected { background: #777; color: black }
+wnck-pager { background: #fff; color: #ccc }
+wnck-pager:selected { background: #eee; color: black }
 
 /* transparent windows border */
 #whiskermenu-window>frame>border { border-color: transparent; }
