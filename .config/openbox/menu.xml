@@ -46,6 +46,11 @@
 		  <execute>virt-manager</execute>
 		</action>
 	  </item>
+	  <item label="cassowary">
+		<action name="Execute">
+		  <execute>python3 -m cassowary -a</execute>
+		</action>
+	  </item>
 	  <separator/>
 	  <item label="start win10">
 		<action name="Execute">
@@ -138,6 +143,7 @@
 			<execute>/home/diamond/bin/pgrep_picom</execute>
 		  </action>
 		</item>
+		<separator/>
 		<item label="start">
 		  <action name="Execute">
 			<execute>/home/diamond/bin/start_picom</execute>
@@ -148,6 +154,7 @@
 			<execute>/home/diamond/bin/stop_picom</execute>
 		  </action>
 		</item>
+		<separator/>
 		<item label="restart">
 		  <action name="Execute">
 			<execute>/home/diamond/bin/dwm_tog_comp</execute>
@@ -160,6 +167,7 @@
 			<execute>/home/diamond/bin/powerctlstatus</execute>
 		  </action>
 		</item>
+		<separator/>
 		<item label="performance">
 		  <action name="Execute">
 			<execute>powerprofilesctl set performance</execute>

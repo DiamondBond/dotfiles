@@ -52,6 +52,7 @@ ffmpegthumbnailer 2.2.2-4
 firefox 100.0.2-1
 flatpak 1:1.12.7-1
 flex 2.6.4-3
+freerdp 2:2.7.0-1
 fsv2 1:0.9.1-3
 fzf 0.30.0-2
 galculator 2.1.4-7
