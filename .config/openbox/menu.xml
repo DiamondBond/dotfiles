@@ -13,6 +13,11 @@
 		<execute>xterm</execute>
 	  </action>
 	</item>
+	<item label="emacs">
+	  <action name="Execute">
+		<execute>emacsclient -c -n -a 'emacs'</execute>
+	  </action>
+	</item>
 	<item label="firefox">
 	  <action name="Execute">
 		<execute>firefox</execute>
@@ -24,19 +29,14 @@
 	  </action>
 	</item>
 	<separator/>
-	<item label="emacs">
+	<item label="agenda">
 	  <action name="Execute">
-		<execute>emacsclient -c -n -a 'emacs'</execute>
+		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
 	  </action>
 	</item>
 	<item label="buffers">
 	  <action name="Execute">
 		<execute>emacsclient -cne '(get-buffer-menu-in-new-frame)'</execute>
-	  </action>
-	</item>
-	<item label="agenda">
-	  <action name="Execute">
-		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
 	  </action>
 	</item>
 	<separator/>

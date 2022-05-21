@@ -83,7 +83,7 @@
     <property name="plugin-18" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16529770281.desktop"/>
+        <value type="string" value="16531477461.desktop"/>
       </property>
     </property>
     <property name="plugin-3" type="string" value="separator">
@@ -243,7 +243,7 @@
     </property>
     <property name="plugin-20" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16530856982.desktop"/>
+        <value type="string" value="16531476222.desktop"/>
       </property>
     </property>
   </property>
