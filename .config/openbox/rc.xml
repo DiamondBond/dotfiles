@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>10</top>
-    <bottom>75</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -530,7 +530,7 @@
     </keybind>
     <keybind key="C-Escape">
       <action name="Execute">
-        <command>xfce4-popup-applicationsmenu</command>
+        <command>xfce4-popup-whiskermenu</command>
       </action>
     </keybind>
     <keybind key="C-S-Escape">

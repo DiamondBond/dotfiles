@@ -41,7 +41,6 @@ dosfstools 4.2-2
 dropbox 148.4.4519-1
 edk2-ovmf 202202-2
 efibootmgr 17-2
-elementary-xfce-icons 0.16-1
 engrampa 1.26.0-1
 evince 42.2-1
 evtest 1.35-1
@@ -77,7 +76,7 @@ gsimplecal 2.2-1
 gst-plugins-ugly 1.20.2-1
 gtk-engine-murrine 0.98.2-4
 gtk-engines 2.21.0-5
-gvim 8.2.4827-1
+gvim 8.2.4981-1
 gzdoom 4.7.1-1
 hddtemp 0.3.beta15.53-3
 hexchat 2.16.1-1
@@ -235,7 +234,7 @@ thunar 4.16.11-2
 thunar-archive-plugin 0.5.0-2
 thunar-media-tags-plugin 0.3.0-2
 thunar-volman 4.16.0-1
-thunderbird 91.9.0-1
+thunderbird 91.9.1-1
 timidity++ 2.15.0-5
 tk 8.6.12-1
 tmux 3.2_a-1
@@ -268,7 +267,6 @@ xcompmgr 1.1.8-2
 xdg-desktop-portal 1.14.4-1
 xdg-user-dirs 0.17-3
 xdotool 3.20211022.1-1
-xfce-theme-greybird 3.23.1-1
 xfce4-appfinder 4.16.1-2
 xfce4-clipman-plugin 1.6.2-1
 xfce4-cpugraph-plugin 1.2.6-1

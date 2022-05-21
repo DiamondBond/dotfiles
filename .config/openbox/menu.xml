@@ -46,12 +46,6 @@
 		  <execute>virt-manager</execute>
 		</action>
 	  </item>
-	  <item label="cassowary">
-		<action name="Execute">
-		  <execute>python3 -m cassowary -a</execute>
-		</action>
-	  </item>
-	  <separator/>
 	  <item label="start win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/run_w10</execute>
@@ -60,6 +54,22 @@
 	  <item label="stop win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/stop_w10</execute>
+		</action>
+	  </item>
+	  <separator/>
+	  <item label="cassowary">
+		<action name="Execute">
+		  <execute>python3 -m cassowary -a</execute>
+		</action>
+	  </item>
+	  <item label="rdp-full">
+		<action name="Execute">
+		  <execute>xterm -e "xfreerdp /f /u:Diamond /v:192.168.122.149"</execute>
+		</action>
+	  </item>
+	  <item label="rdp-window">
+		<action name="Execute">
+		  <execute>xterm -e "xfreerdp /u:Diamond /v:192.168.122.149"</execute>
 		</action>
 	  </item>
 	</menu>
@@ -154,7 +164,6 @@
 			<execute>/home/diamond/bin/stop_picom</execute>
 		  </action>
 		</item>
-		<separator/>
 		<item label="restart">
 		  <action name="Execute">
 			<execute>/home/diamond/bin/dwm_tog_comp</execute>
