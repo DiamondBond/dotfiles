@@ -16,18 +16,18 @@
       <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="icon-size" type="uint" value="20"/>
-      <property name="length" type="uint" value="100"/>
+      <property name="length" type="uint" value="85"/>
       <property name="mode" type="uint" value="0"/>
       <property name="nrows" type="uint" value="2"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
         <value type="int" value="14"/>
         <value type="int" value="4"/>
-        <value type="int" value="2"/>
-        <value type="int" value="15"/>
         <value type="int" value="19"/>
+        <value type="int" value="15"/>
         <value type="int" value="13"/>
-        <value type="int" value="17"/>
+        <value type="int" value="2"/>
+        <value type="int" value="20"/>
         <value type="int" value="1"/>
         <value type="int" value="3"/>
         <value type="int" value="5"/>
@@ -47,7 +47,8 @@
       <property name="popdown-speed" type="int" value="0"/>
       <property name="position" type="string" value="p=10;x=1087;y=1411"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="30"/>
+      <property name="size" type="uint" value="32"/>
+      <property name="length-adjust" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -81,7 +82,6 @@
         <value type="string" value="16529732884.desktop"/>
       </property>
     </property>
-    <property name="plugin-17" type="string" value="thunar-tpa"/>
     <property name="plugin-18" type="string" value="xfce4-clipman-plugin"/>
     <property name="plugin-2" type="string" value="launcher">
       <property name="items" type="array">
@@ -226,11 +226,6 @@
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-19" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16530254963.desktop"/>
-      </property>
-    </property>
     <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
     </property>
@@ -245,6 +240,16 @@
     </property>
     <property name="plugin-24" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-19" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16530856381.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-20" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16530856982.desktop"/>
+      </property>
     </property>
   </property>
 </channel>

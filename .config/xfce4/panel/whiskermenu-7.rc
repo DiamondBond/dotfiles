@@ -1,7 +1,7 @@
 favorites=firefox.desktop,thunderbird.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,com.github.Eloston.UngoogledChromium.desktop,org.telegram.desktop.desktop,io.github.mimbrero.WhatsAppDesktop.desktop,discord.desktop,spotify-adblock.desktop,im.riot.Riot.desktop,io.github.Hexchat.desktop,run_win10.desktop
 recent=transmission-gtk.desktop,spotify-adblock.desktop,discord.desktop,org.telegram.desktop.desktop,org.bleachbit.BleachBit.desktop,run_win10.desktop,thunderbird.desktop,com.github.Eloston.UngoogledChromium.desktop,firefox.desktop,virt-manager.desktop
 button-title=\ Applications\ 
-button-icon=/home/diamond/Pictures/Misc/Icons/kstars_horizon_dark.svg
+button-icon=org.xfce.panel.applicationsmenu
 button-single-row=true
 show-button-title=false
 show-button-icon=true
