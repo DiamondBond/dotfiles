@@ -9,9 +9,9 @@
           <property name="image-style" type="int" value="0"/>
           <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/ocean.jpg"/>
           <property name="rgba1" type="array">
-            <value type="double" value="0.730000"/>
-            <value type="double" value="0.730000"/>
-            <value type="double" value="0.730000"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
             <value type="double" value="1.000000"/>
           </property>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>

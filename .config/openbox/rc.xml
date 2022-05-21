@@ -639,7 +639,7 @@
     </keybind>
     <keybind key="A-F6">
       <action name="Execute">
-        <command>emacsclient -e '(get-buffer-menu-in-new-frame)'</command>
+        <command>emacsclient -cne '(get-buffer-menu-in-new-frame)'</command>
       </action>
     </keybind>
     <keybind key="A-F7">

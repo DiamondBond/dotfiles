@@ -10,6 +10,7 @@
   <property name="initial-opacity" type="double" value="1.000000"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="Cassowary"/>
       <value type="string" value="chromium"/>
       <value type="string" value="com.uploadedlobster.peek"/>
       <value type="string" value="discord"/>

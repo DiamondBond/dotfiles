@@ -31,7 +31,7 @@
 	</item>
 	<item label="buffers">
 	  <action name="Execute">
-		<execute>bash -ic /home/diamond/bin/org-agenda-on-startup</execute>
+		<execute>emacsclient -cne '(get-buffer-menu-in-new-frame)'</execute>
 	  </action>
 	</item>
 	<item label="agenda">

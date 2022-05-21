@@ -13,7 +13,7 @@
         <value type="double" value="1.000000"/>
         <value type="double" value="1.000000"/>
       </property>
-      <property name="background-style" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="icon-size" type="uint" value="20"/>
       <property name="length" type="uint" value="100"/>
@@ -41,8 +41,6 @@
         <value type="int" value="24"/>
         <value type="int" value="12"/>
         <value type="int" value="22"/>
-        <value type="int" value="21"/>
-        <value type="int" value="23"/>
       </property>
       <property name="popdown-speed" type="int" value="0"/>
       <property name="position" type="string" value="p=10;x=1087;y=1411"/>
@@ -232,13 +230,7 @@
     <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
     </property>
-    <property name="plugin-21" type="string" value="windowmenu">
-      <property name="style" type="uint" value="1"/>
-    </property>
     <property name="plugin-22" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-23" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-24" type="string" value="separator">
