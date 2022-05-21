@@ -12,3 +12,4 @@ X-AppStream-Ignore=True
 Name=Web Browser
 Comment=Browse the web
 X-XFCE-Source=file:///usr/share/applications/xfce4-web-browser.desktop
+Path=

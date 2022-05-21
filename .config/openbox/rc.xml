@@ -15,7 +15,7 @@
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>yes</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>250</focusDelay>
+    <focusDelay>500</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
     <raiseOnFocus>yes</raiseOnFocus>
@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>10</top>
+    <bottom>70</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -585,12 +585,28 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
+    <keybind key="C-A-S-1">
+      <action name="SendToLayer">
+        <layer>bottom</layer>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-2">
+      <action name="SendToLayer">
+        <layer>normal</layer>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-3">
+      <action name="SendToLayer">
+        <layer>top</layer>
+      </action>
+    </keybind>
     <keybind key="C-A-Left">
       <action name="DesktopPrevious"/>
     </keybind>
     <keybind key="C-A-Right">
       <action name="DesktopNext"/>
     </keybind>
+    <!-- Cardinal switching -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
@@ -1221,32 +1237,20 @@
       <fullscreen>no</fullscreen>
       <maximized>no</maximized>
     </application>
-    <application class="Gimp" name="gimp" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
+    <!-- <application class="*"> -->
+    <!--   <decor>no</decor> -->
+    <!-- </application> -->
+    <application class="Polybar">
+      <layer>below</layer>
     </application>
-    <application class="Gimp" name="gimp" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
+    <application class="Xfce4-panel">
+      <layer>below</layer>
     </application>
-    <application class="Gimp" name="gimp" role="gimp-image-window" type="normal">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
+    <application class="tint2">
+      <layer>below</layer>
     </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-toolbox" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-dock" type="utility">
-      <maximized>vertical</maximized>
-    </application>
-    <application class="Gimp" name="gimp-2.8" role="gimp-image-window" type="normal">
-      <position force="no">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application name="xfce4-terminal">
-      <decor>yes</decor>
-    </application>
+    <!-- <application name="xfce4-terminal"> -->
+    <!--   <decor>yes</decor> -->
+    <!-- </application> -->
   </applications>
 </openbox_config>

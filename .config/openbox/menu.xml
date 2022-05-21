@@ -57,11 +57,17 @@
 		</action>
 	  </item>
 	  <separator/>
-	  <item label="cassowary">
+	  <item label="cassowary -bc">
+		<action name="Execute">
+		  <execute>python3 -m cassowary -bc</execute>
+		</action>
+	  </item>
+	  <item label="cassowary -a">
 		<action name="Execute">
 		  <execute>python3 -m cassowary -a</execute>
 		</action>
 	  </item>
+	  <separator/>
 	  <item label="rdp-full">
 		<action name="Execute">
 		  <execute>xterm -e "xfreerdp /f /u:Diamond /v:192.168.122.149"</execute>

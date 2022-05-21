@@ -6,8 +6,8 @@
       <property name="monitoreDP-1" type="empty">
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="0"/>
-          <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/ocean.jpg"/>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/bitmaps/405.png"/>
           <property name="rgba1" type="array">
             <value type="double" value="0.501961"/>
             <value type="double" value="0.501961"/>
@@ -73,17 +73,17 @@
   </property>
   <property name="last" type="empty">
     <property name="window-width" type="int" value="770"/>
-    <property name="window-height" type="int" value="798"/>
+    <property name="window-height" type="int" value="794"/>
   </property>
   <property name="desktop-icons" type="empty">
-    <property name="tooltip-size" type="double" value="64.000000"/>
+    <property name="tooltip-size" type="double" value="48.000000"/>
     <property name="file-icons" type="empty">
       <property name="show-home" type="bool" value="false"/>
       <property name="show-filesystem" type="bool" value="false"/>
       <property name="show-trash" type="bool" value="false"/>
     </property>
     <property name="gravity" type="int" value="0"/>
-    <property name="icon-size" type="uint" value="46"/>
+    <property name="icon-size" type="uint" value="44"/>
     <property name="style" type="int" value="2"/>
   </property>
 </channel>
