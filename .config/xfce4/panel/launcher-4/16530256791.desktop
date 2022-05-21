@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Exec=exo-open --launch WebBrowser %u
-Icon=org.xfce.webbrowser
+Icon=/home/diamond/Pictures/Misc/Icons/safari.png
 StartupNotify=true
 Terminal=false
 Categories=Network;X-XFCE;X-Xfce-Toplevel;
