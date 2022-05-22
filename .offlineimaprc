@@ -1,24 +1,24 @@
 [general]
-accounts = diamondbond1
+accounts = Gmail
 maxsyncaccounts = 1
+pythonfile = ~/.offlineimap.py
 
-[Account diamondbond1]
-localrepository = diamondbond1-Local
-remoterepository = diamondbond1-Remote
-synclabels = yes
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
 
-postsynchook = ~/.config/offlineimap/postsync.sh
+[Repository Local]
+type = Maildir
+localfolders = ~/mail
 
-[Repository diamondbond1-Local]
-type = GmailMaildir
-localfolders = ~/mail/diamondbond1
-
-[Repository diamondbond1-Remote]
+[Repository Remote]
 type = Gmail
 remoteuser = diamondbond1@gmail.com
-remotepass = <APP-SPECIFIC-PASS>
+remotepasseval = get_password_emacs("imap.gmail.com", "diamondbond1@gmail.com", "993")
+realdelete = no
 
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Spam', '[Gmail]/All Mail', '[Gmail]/Starred', '[Gmail]/Important']
+
+holdconnectionopen = true
+keepalive = 60
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
-
-folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail']
-nametrans = lambda foldername: re.sub('^\[Gmail\]/All Mail$', 'all',foldername)
