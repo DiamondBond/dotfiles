@@ -7,11 +7,11 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/wallpaper-default-flat.png"/>
+          <property name="last-image" type="string" value="/home/diamond/Pictures/Wallpapers/.dark.jpg"/>
           <property name="rgba1" type="array">
-            <value type="double" value="0.466667"/>
-            <value type="double" value="0.462745"/>
-            <value type="double" value="0.482353"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
+            <value type="double" value="0.501961"/>
             <value type="double" value="1.000000"/>
           </property>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>

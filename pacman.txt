@@ -144,7 +144,6 @@ mpd 0.23.7-1
 mpv 1:0.34.1-4
 msmtp 1.8.20-1
 mtools 1:4.0.39-1
-mu 1.6.10-1
 mupdf-gl 1.19.1-1
 mupdf-tools 1.19.1-1
 mupen64plus 2.5-20
@@ -190,7 +189,7 @@ powertop 2.14-1
 prettier 2.6.2-1
 protonvpn 1.0.0-2
 pstoedit 3.78-1
-pyright 1.1.247-1
+pyright 1.1.248-1
 python-ipykernel 6.13.0-1
 python-pip 21.0-1
 qemu-desktop 7.0.0-10
