@@ -11,7 +11,7 @@
         <value type="double" value="1.000000"/>
         <value type="double" value="1.000000"/>
         <value type="double" value="1.000000"/>
-        <value type="double" value="0.870000"/>
+        <value type="double" value="1.000000"/>
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="false"/>
@@ -180,6 +180,8 @@
         <value type="string" value="systray"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “note9” active: note9 (71%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (94%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (93%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (85%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (83%)"/>

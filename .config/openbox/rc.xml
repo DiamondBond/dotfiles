@@ -159,7 +159,7 @@
        cases. -->
   <margins>
     <top>10</top>
-    <bottom>70</bottom>
+    <bottom>69</bottom>
     <left>10</left>
     <right>10</right>
   </margins>
@@ -241,7 +241,7 @@
     </keybind>
     <keybind key="S-A-y">
       <action name="Execute">
-        <command>/home/diamond/bin/daysout</command>
+        <command>/home/diamond/bin/toggle_nm_panel</command>
       </action>
     </keybind>
     <keybind key="C-A-t">
@@ -606,6 +606,25 @@
     <keybind key="C-A-Right">
       <action name="DesktopNext"/>
     </keybind>
+    <!--gaps 3 windows-->
+    <!-- <keybind key="W-x"> -->
+    <!--   <action name="Unmaximize"/> -->
+    <!--   <action name="MoveResizeTo"> -->
+    <!--     <x>34%</x> -->
+    <!--     <y>2%</y> -->
+    <!--     <height>96%</height> -->
+    <!--     <width>32%</width> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="W-c"> -->
+    <!--   <action name="Unmaximize"/> -->
+    <!--   <action name="MoveResizeTo"> -->
+    <!--     <x>-1%</x> -->
+    <!--     <y>2%</y> -->
+    <!--     <height>96%</height> -->
+    <!--     <width>32%</width> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- Cardinal switching -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -621,7 +640,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
       </action>
     </keybind>

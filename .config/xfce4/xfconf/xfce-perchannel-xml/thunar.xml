@@ -21,5 +21,5 @@
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
-  <property name="last-menubar-visible" type="bool" value="false"/>
+  <property name="last-menubar-visible" type="bool" value="true"/>
 </channel>

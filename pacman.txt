@@ -90,6 +90,7 @@ intel-gpu-tools 1.26-1
 intel-media-driver 22.4.1-1
 intel-ucode 20220510-1
 iptables-nft 1:1.8.8-1
+isync 1.4.4-1
 jre-openjdk 18.0.1.1.u2-1
 kega-fusion 3.63-17
 kiwix-desktop 2.2.1-3
@@ -141,7 +142,9 @@ mousepad 0.5.9-1
 mpc 0.34-2
 mpd 0.23.7-1
 mpv 1:0.34.1-4
+msmtp 1.8.20-1
 mtools 1:4.0.39-1
+mu 1.6.10-1
 mupdf-gl 1.19.1-1
 mupdf-tools 1.19.1-1
 mupen64plus 2.5-20
@@ -262,6 +265,7 @@ which 2.21-5
 wireless_tools 30.pre9-3
 wmctrl 1.07-6
 wordnet-cli 3.1-4
+xaos 4.2.1-2
 xaw3d 1.6.3-3
 xbindkeys 1.8.7-2
 xclip 0.13-3
@@ -273,6 +277,7 @@ xfce4-appfinder 4.16.1-2
 xfce4-clipman-plugin 1.6.2-1
 xfce4-cpugraph-plugin 1.2.6-1
 xfce4-docklike-plugin 0.4.0-2
+xfce4-indicator-plugin 2.4.1-1
 xfce4-panel 4.16.4-1
 xfce4-panel-profiles 1.0.13-1
 xfce4-power-manager 4.16.0-3
