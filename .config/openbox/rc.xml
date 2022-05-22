@@ -629,19 +629,19 @@
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
+        <x>1</x>
+        <y>2</y>
         <width>50%</width>
-        <height>100%</height>
+        <height>99%</height>
       </action>
     </keybind>
     <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
+        <x>-1</x>
+        <y>2</y>
         <width>49%</width>
-        <height>100%</height>
+        <height>99%</height>
       </action>
     </keybind>
     <keybind key="W-Up">
@@ -659,7 +659,7 @@
         <x>0</x>
         <y>-0</y>
         <width>100%</width>
-        <height>50%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="A-F4">
