@@ -1,8 +1,0 @@
-[user]
-onlyDisplayVisible=false
-keyComboActive=true
-noWindowsListIfSingle=true
-showPreviews=true
-pinned=/usr/share/applications/firefox.desktop;/usr/share/applications/thunar.desktop;/usr/share/applications/xfce4-terminal.desktop;/usr/local/share/applications/emacsclient.desktop;/var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop;/usr/share/applications/discord.desktop;/home/diamond/.local/share/applications/spotify-adblock.desktop;
-forceIconSize=true
-iconSize=24
