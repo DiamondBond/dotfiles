@@ -78,9 +78,9 @@
   <property name="desktop-icons" type="empty">
     <property name="tooltip-size" type="double" value="48.000000"/>
     <property name="file-icons" type="empty">
-      <property name="show-home" type="bool" value="false"/>
+      <property name="show-home" type="bool" value="true"/>
       <property name="show-filesystem" type="bool" value="false"/>
-      <property name="show-trash" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="true"/>
     </property>
     <property name="gravity" type="int" value="0"/>
     <property name="icon-size" type="uint" value="46"/>
