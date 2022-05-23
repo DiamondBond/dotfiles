@@ -262,6 +262,7 @@ webkit2gtk 2.36.2-1
 wget 1.21.3-1
 which 2.21-5
 wireless_tools 30.pre9-3
+wkhtmltopdf 0.12.6-1
 wmctrl 1.07-6
 wordnet-cli 3.1-4
 xaos 4.2.1-2

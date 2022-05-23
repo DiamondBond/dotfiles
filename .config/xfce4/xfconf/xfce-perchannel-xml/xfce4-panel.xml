@@ -15,7 +15,7 @@
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="18"/>
+      <property name="icon-size" type="uint" value="16"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
