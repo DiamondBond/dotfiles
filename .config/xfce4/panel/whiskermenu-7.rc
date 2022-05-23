@@ -1,7 +1,7 @@
-favorites=firefox.desktop,thunderbird.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,com.github.Eloston.UngoogledChromium.desktop,org.telegram.desktop.desktop,io.github.mimbrero.WhatsAppDesktop.desktop,discord.desktop,spotify-adblock.desktop,im.riot.Riot.desktop,io.github.Hexchat.desktop,emacs.desktop,cassowary_linux_bg_service.desktop,run_win10.desktop,cassowaryunknown.desktop,cassowaryMicrosoftWord.desktop,cassowaryMicrosoftExcel.desktop,cassowaryMicrosoftPowerPoint.desktop
-recent=emacs.desktop,cassowaryunknown.desktop,org.bleachbit.BleachBit.desktop,virt-manager.desktop,cassowary_linux_bg_service.desktop,spotify-adblock.desktop,discord.desktop,thunderbird.desktop,run_win10.desktop,org.telegram.desktop.desktop
+favorites=firefox.desktop,thunderbird.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,com.github.Eloston.UngoogledChromium.desktop,org.telegram.desktop.desktop,io.github.mimbrero.WhatsAppDesktop.desktop,discord.desktop,spotify-adblock.desktop,im.riot.Riot.desktop,io.github.Hexchat.desktop,emacs.desktop,virt-manager.desktop,cassowary_linux.desktop,cassowaryunknown.desktop,cassowaryMicrosoftWord.desktop,cassowaryMicrosoftExcel.desktop,cassowaryMicrosoftPowerPoint.desktop
+recent=org.telegram.desktop.desktop,spotify-adblock.desktop,discord.desktop,emacs.desktop,cassowaryunknown.desktop,org.bleachbit.BleachBit.desktop,virt-manager.desktop,thunderbird.desktop,run_win10.desktop
 button-title=\ Applications\ 
-button-icon=/home/diamond/Pictures/Misc/Icons/kstars_horizon_dark.svg
+button-icon=/home/diamond/Pictures/Misc/Icons/kstars_horizon_black.svg
 button-single-row=true
 show-button-title=false
 show-button-icon=true

@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>9</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>10</top>
-    <bottom>69</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>42</top>
+    <bottom>12</bottom>
+    <left>12</left>
+    <right>12</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -632,7 +632,7 @@
         <x>1</x>
         <y>2</y>
         <width>50%</width>
-        <height>99%</height>
+        <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-Right">
@@ -641,7 +641,7 @@
         <x>-1</x>
         <y>2</y>
         <width>49%</width>
-        <height>99%</height>
+        <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-Up">

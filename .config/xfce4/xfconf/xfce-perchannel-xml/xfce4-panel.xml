@@ -15,15 +15,15 @@
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="20"/>
+      <property name="icon-size" type="uint" value="18"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
-      <property name="nrows" type="uint" value="2"/>
+      <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
-        <value type="int" value="15"/>
         <value type="int" value="4"/>
+        <value type="int" value="15"/>
         <value type="int" value="13"/>
         <value type="int" value="1"/>
         <value type="int" value="3"/>
@@ -31,16 +31,12 @@
         <value type="int" value="11"/>
         <value type="int" value="16"/>
         <value type="int" value="6"/>
-        <value type="int" value="18"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
-        <value type="int" value="10"/>
-        <value type="int" value="24"/>
         <value type="int" value="12"/>
-        <value type="int" value="2"/>
       </property>
       <property name="popdown-speed" type="int" value="0"/>
-      <property name="position" type="string" value="p=10;x=1087;y=1411"/>
+      <property name="position" type="string" value="p=6;x=1080;y=17"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="28"/>
     </property>
@@ -54,12 +50,12 @@
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="4"/>
     </property>
-    <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-11" type="string" value="pager">
-      <property name="rows" type="uint" value="3"/>
+      <property name="rows" type="uint" value="2"/>
+      <property name="miniature-view" type="bool" value="true"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="%I:%M %p%n%a %_d %b"/>
+      <property name="digital-format" type="string" value=" %I:%M %p "/>
       <property name="mode" type="uint" value="2"/>
       <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
@@ -76,17 +72,13 @@
     <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
     </property>
-    <property name="plugin-18" type="string" value="xfce4-clipman-plugin"/>
-    <property name="plugin-24" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16530256791.desktop"/>
+        <value type="string" value="16532738641.desktop"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="separator">
@@ -95,6 +87,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="icon-size" type="int" value="0"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-876"/>
         <value type="string" value="dropbox-client-880"/>
         <value type="string" value="dropbox-client-874"/>
         <value type="string" value="dropbox-client-868"/>
@@ -227,8 +220,5 @@
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-2" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
   </property>
 </channel>
