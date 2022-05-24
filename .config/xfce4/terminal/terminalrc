@@ -7,7 +7,7 @@ MiscCursorBlinks=TRUE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscDefaultGeometry=80x24
 MiscInheritGeometry=FALSE
-MiscMenubarDefault=FALSE
+MiscMenubarDefault=TRUE
 MiscMouseAutohide=FALSE
 MiscMouseWheelZoom=TRUE
 MiscToolbarDefault=FALSE
@@ -30,5 +30,4 @@ ScrollingUnlimited=TRUE
 TitleMode=TERMINAL_TITLE_REPLACE
 ColorSelectionForeground=#bf00c000c500
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
-ScrollingBar=TERMINAL_SCROLLBAR_NONE
 
