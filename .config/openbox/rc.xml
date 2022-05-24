@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>flat</name>
+    <name>dolphin</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
