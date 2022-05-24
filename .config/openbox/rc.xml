@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>win</name>
+    <name>Clearlooks</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -560,12 +560,12 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-Tab">
+    <keybind key="W-S-e">
       <action name="Execute">
         <command>emacsclient -e '(other-frame 1)'</command>
       </action>
     </keybind>
-    <keybind key="W-S-e">
+    <keybind key="W-Tab">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
