@@ -1259,15 +1259,15 @@
     <!-- <application class="*"> -->
     <!--   <decor>no</decor> -->
     <!-- </application> -->
-    <application class="Polybar">
-      <layer>below</layer>
-    </application>
-    <application class="Xfce4-panel">
-      <layer>below</layer>
-    </application>
-    <application class="tint2">
-      <layer>below</layer>
-    </application>
+    <!-- <application class="Polybar"> -->
+    <!--   <layer>below</layer> -->
+    <!-- </application> -->
+    <!-- <application class="Xfce4-panel"> -->
+    <!--   <layer>below</layer> -->
+    <!-- </application> -->
+    <!-- <application class="tint2"> -->
+    <!--   <layer>below</layer> -->
+    <!-- </application> -->
     <!-- <application name="xfce4-terminal"> -->
     <!--   <decor>yes</decor> -->
     <!-- </application> -->
