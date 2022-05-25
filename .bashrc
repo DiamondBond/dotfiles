@@ -85,7 +85,7 @@ export EDITOR="$VISUAL"
 shopt -s expand_aliases
 
 # set PATH
-PATH="$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/bin:$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.local/share/gem:$PATH"
 
 # set shell prompt
 export PS1='\[\e]0;\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\] \w '
