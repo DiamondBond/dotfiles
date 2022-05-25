@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>33</top>
+    <bottom>7</bottom>
+    <left>7</left>
+    <right>7</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -451,11 +451,11 @@
         <command>dmenu_run</command>
       </action>
     </keybind>
-    <!-- <keybind key="C-space"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <command>dunstctl close-all</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="C-space">
+      <action name="Execute">
+        <command>/home/diamond/bin/xfce_notif_dismiss</command>
+      </action>
+    </keybind>
     <keybind key="Print">
       <action name="Execute">
         <command>xfce4-screenshooter -f</command>
