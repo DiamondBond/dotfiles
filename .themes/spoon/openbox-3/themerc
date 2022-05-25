@@ -4,7 +4,7 @@ menu.items.bg.color: white
 menu.items.text.color: black
 menu.items.active.bg: Flat
 menu.items.active.bg.color: white
-menu.items.active.text.color: #0063b1
+menu.items.active.text.color: #622486
 menu.title.bg: Flat
 menu.title.bg.color: white
 menu.title.text.color: black
@@ -22,7 +22,6 @@ osd.border.width: 1
 
 # windows
 border.width: 1
-#*.border.color: gray
 *.active.border.color: #000000
 *.inactive.border.color: gray
 window.client.padding.width: 0
@@ -34,14 +33,12 @@ padding.width: 6
 
 # active window
 window.*.*.bg: Flat Parentrelative
-window.active.*.*.bg.color: #0078d7
-window.inactive.*.*.bg.color: white
-#window.*.*.*.image.color: black
-window.active.*.image.color: white
-window.inactive.*.image.color: gray
-#window.*.label.text.color: black
-window.active.label.text.color: white
-window.inactive.label.text.color: gray
+window.active.*.*.bg.color: white
+window.active.*.image.color: black
+window.active.label.text.color: black
+window.inactive.*.*.bg.color: #f8f8f8
+window.inactive.*.image.color: #282828
+window.inactive.label.text.color: #282828
 
 # handle
 window.active.handle.bg: Flat

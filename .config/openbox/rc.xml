@@ -158,10 +158,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>38</top>
-    <bottom>12</bottom>
-    <left>12</left>
-    <right>12</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>BottomLeft</position>
@@ -640,7 +640,7 @@
       <action name="MoveResizeTo">
         <x>-1</x>
         <y>2</y>
-        <width>49%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>

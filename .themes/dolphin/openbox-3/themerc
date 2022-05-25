@@ -23,13 +23,13 @@ osd.border.width: 1
 # windows
 border.width: 1
 *.active.border.color: #000000
-*.inactive.border.color: #aaaaaa
+*.inactive.border.color: gray
 window.client.padding.width: 0
 window.handle.width: 0
 
 # titlebars
-padding.height: 7
-padding.width: 7
+padding.height: 6
+padding.width: 6
 
 # active window
 window.*.*.bg: Flat Parentrelative
