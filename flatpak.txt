@@ -21,7 +21,6 @@ org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.krita
 org.qutebrowser.qutebrowser
-org.telegram.desktop
 org.winehq.flatpak-wine71
 uk.co.ibboard.cawbird
 us.zoom.Zoom

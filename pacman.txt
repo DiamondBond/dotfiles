@@ -217,6 +217,7 @@ snes9x-gtk 1.60-8
 steam 1.0.0.74-1
 steam-native-runtime 1.0.0.70-3
 sudo 1.9.10-1
+telegram-desktop 3.7.3-1
 terminus-font 4.49.1-2
 testdisk 7.1-4
 texinfo 6.8-2
