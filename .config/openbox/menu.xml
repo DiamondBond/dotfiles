@@ -207,6 +207,11 @@
 		  <execute>/home/diamond/bin/kmaccel</execute>
 		</action>
 	  </item>
+	  <item label="themectl">
+		<action name="Execute">
+		  <execute>xterm -e /home/diamond/bin/switch-ob-theme.sh</execute>
+		</action>
+	  </item>
 	  <item label="netctl">
 		<action name="Execute">
 		  <execute>nm-connection-editor</execute>
