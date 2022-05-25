@@ -8,6 +8,7 @@
 		<execute>rofi -combi-modi window,drun -show combi -modi</execute>
 	  </action>
 	</item>
+	<separator/>
 	<item label="xterm">
 	  <action name="Execute">
 		<execute>xterm</execute>
@@ -46,6 +47,7 @@
 		  <execute>virt-manager</execute>
 		</action>
 	  </item>
+	  <separator/>
 	  <item label="start win10">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/run_w10</execute>
@@ -57,12 +59,12 @@
 		</action>
 	  </item>
 	  <separator/>
-	  <item label="cassowary -bc">
+	  <item label="cassowary bg">
 		<action name="Execute">
 		  <execute>python3 -m cassowary -bc</execute>
 		</action>
 	  </item>
-	  <item label="cassowary -a">
+	  <item label="cassowary gui">
 		<action name="Execute">
 		  <execute>python3 -m cassowary -a</execute>
 		</action>
@@ -199,6 +201,7 @@
 		  </action>
 		</item>
 	  </menu>
+	  <separator/>
 	  <item label="mousectl">
 		<action name="Execute">
 		  <execute>/home/diamond/bin/kmaccel</execute>
@@ -216,6 +219,7 @@
 	  <item label="reinitialize">
 		<action name="Restart" />
 	  </item>
+	  <separator/>
 	  <item label="exit">
 		<action name="Exit" />
 		<!-- <action name="Execute"> -->
