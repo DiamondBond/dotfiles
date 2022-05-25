@@ -81,6 +81,7 @@ gzdoom 4.7.1-1
 hddtemp 0.3.beta15.53-3
 hexchat 2.16.1-1
 hsetroot 1.0.5-1
+htmldoc 1.9.16-1
 htop 3.2.0-1
 hunspell-en_us 2020.12.07-4
 icewm 2.9.7-1
