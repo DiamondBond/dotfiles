@@ -304,7 +304,7 @@
     </keybind>
     <keybind key="S-A-w">
       <action name="ToggleMaximize"/>
-      <!-- <action name="ToggleDecorations"/> -->
+      <action name="ToggleDecorations"/>
     </keybind>
     <!-- <keybind key="W-b"> -->
     <!--   <action name="ToggleDecorations"/> -->
