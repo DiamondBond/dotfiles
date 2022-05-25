@@ -4,8 +4,8 @@ adwaita-icon-theme 42.0+r1+gc144c3d75-1
 alsa-utils 1.2.6-1
 android-tools 31.0.3-5
 ani-cli 2.2-1
-arch-wiki-docs 20211222-1
-arch-wiki-lite 20211222-1
+arch-wiki-docs 20220525-1
+arch-wiki-lite 20220525-1
 aria2 1.36.0-1
 arj 3.10.22-13
 audacity 1:2.4.1-7
@@ -25,7 +25,7 @@ cheese 41.1-2
 chez-scheme 9.5.8-1
 clang 13.0.1-2
 claws-mail 4.1.0-1
-cmake 3.23.1-1
+cmake 3.23.2-1
 coin-or-mp 1.8.4-4
 conky 1.12.2-2
 cpio 2.13-2
@@ -338,7 +338,7 @@ xorg-xrefresh 1.0.6-3
 xorg-xset 1.2.4-3
 xorg-xsetroot 1.1.2-3
 xorg-xvinfo 1.1.4-3
-xorg-xwayland 22.1.1-1
+xorg-xwayland 22.1.2-1
 xorg-xwd 1.0.8-1
 xorg-xwininfo 1.1.5-3
 xorg-xwud 1.0.5-3
