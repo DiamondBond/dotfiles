@@ -42,7 +42,7 @@ dropbox 148.4.4519-1
 edk2-ovmf 202202-2
 efibootmgr 17-2
 engrampa 1.26.0-1
-evince 42.2-1
+evince 42.3-1
 evtest 1.35-1
 extra-cmake-modules 5.94.0-1
 fakeroot 1.29-1
@@ -62,7 +62,7 @@ glava 1.6.3-2
 glfw-x11 3.3.7-1
 gmrun 1.3w-1
 gnome-disk-utility 42.0-1
-gnome-keyring 1:42.0-1
+gnome-keyring 1:42.1-1
 gnome-system-monitor 42.0-1
 gnuchess 6.2.9-1
 gnugo 3.8-7
