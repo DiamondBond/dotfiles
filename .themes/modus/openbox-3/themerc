@@ -28,7 +28,7 @@ window.client.padding.width: 0
 window.handle.width: 0
 
 # titlebars
-padding.height: 6
+padding.height: 5
 padding.width: 6
 
 # active window
