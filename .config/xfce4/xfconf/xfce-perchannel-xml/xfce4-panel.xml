@@ -13,7 +13,7 @@
         <value type="double" value="1.000000"/>
         <value type="double" value="1.000000"/>
       </property>
-      <property name="background-style" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="icon-size" type="uint" value="16"/>
       <property name="length" type="uint" value="100"/>
