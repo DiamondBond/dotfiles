@@ -29,14 +29,14 @@ window.client.padding.width: 0
 window.handle.width: 0
 
 # titlebars
-padding.height: 6
-padding.width: 6
+padding.height: 5
+padding.width: 5
 
 # active window
 window.*.*.bg: Flat Parentrelative
-window.active.*.*.bg.color: #0078d7
+window.active.*.*.bg.color: #3584E4
+#window.active.*.*.bg.color: #0078D7
 window.inactive.*.*.bg.color: white
-#window.*.*.*.image.color: black
 window.active.*.image.color: white
 window.inactive.*.image.color: gray
 #window.*.label.text.color: black
