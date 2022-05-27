@@ -492,6 +492,11 @@ and back in -->
         </startupnotify>
       </action>
     </keybind>
+	<keybind key="W-2">
+	  <action name="Execute">
+		<command>/home/diamond/bin/launchchromium.sh</command>
+	  </action>
+	</keybind>
     <keybind key="C-A-l">
       <action name="Execute">
         <command>xflock4</command>
