@@ -43,7 +43,7 @@
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-10" type="string" value="tasklist">
-      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
       <property name="middle-click" type="uint" value="1"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-wireframes" type="bool" value="true"/>
