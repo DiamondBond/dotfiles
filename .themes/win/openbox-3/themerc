@@ -30,7 +30,7 @@ window.handle.width: 0
 
 # titlebars
 padding.height: 5
-padding.width: 5
+padding.width: 6
 
 # active window
 window.*.*.bg: Flat Parentrelative
