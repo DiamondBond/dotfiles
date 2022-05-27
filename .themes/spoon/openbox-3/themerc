@@ -4,7 +4,7 @@ menu.items.bg.color: white
 menu.items.text.color: black
 menu.items.active.bg: Flat
 menu.items.active.bg.color: white
-menu.items.active.text.color: #622486
+menu.items.active.text.color: #3584E4
 menu.title.bg: Flat
 menu.title.bg.color: white
 menu.title.text.color: black
@@ -17,7 +17,7 @@ menu.overlap.x: -5
 window.label.text.justify: left
 
 # osd
-osd.label.text.color: white
+osd.label.text.color: black
 osd.border.width: 1
 
 # windows

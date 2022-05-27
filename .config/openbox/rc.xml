@@ -40,7 +40,7 @@
 		 'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>spoon</name>
+    <name>win</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
 		avaible characters are NDSLIMC, each can occur at most once.
@@ -575,11 +575,6 @@ and back in -->
         <menu>client-list-combined-menu</menu>
       </action>
     </keybind>
-    <!-- <keybind key="W-Tab"> -->
-    <!--   <action name="ShowMenu"> -->
-    <!--     <menu>client-list-combined-menu</menu> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
     <!-- <keybind key="W-space"> -->
     <!--   <action name="ShowMenu"> -->
     <!--     <menu>root-menu</menu> -->
