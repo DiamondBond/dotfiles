@@ -39,7 +39,7 @@
       <property name="popdown-speed" type="int" value="0"/>
       <property name="position" type="string" value="p=8;x=1080;y=1424"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="28"/>
+      <property name="size" type="uint" value="30"/>
     </property>
   </property>
   <property name="plugins" type="empty">
