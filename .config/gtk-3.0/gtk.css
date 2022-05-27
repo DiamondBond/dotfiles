@@ -9,10 +9,10 @@ vte-terminal {
 /* wnck-pager:selected { background: #eee; color: black } */
 
 /* transparent windows border */
-#whiskermenu-window>frame>border { border-color: transparent; }
+/* #whiskermenu-window>frame>border { border-color: transparent; } */
 
 /* transparent grip image - also makes the name transparent - they are tied together */
-#whiskermenu-window { color: transparent }
+/* #whiskermenu-window { color: transparent } */
 
 /* smaller toolbar widgets and area */
 #whiskermenu-window>frame>stack>box>box * { -gtk-icon-transform: scale(0.5); margin: 0px; padding: 0px; font-size: 6pt;}
