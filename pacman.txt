@@ -107,7 +107,7 @@ lib32-v4l-utils 1.22.1-1
 libayatana-appindicator 0.5.91-2
 libdbusmenu-gtk2 16.04.0-5
 libgccjit 12.1.0-2
-libguestfs 1.48.1-2
+libguestfs 1.48.1-3
 libinput-gestures 2.73-1
 libjxl 0.6.1-3
 libmythes 1:1.2.4-5
@@ -125,7 +125,7 @@ linux 5.17.9.arch1-1
 linux-dwarf-pack 0.47.05.r3-1
 linux-firmware 20220509.b19cbdc-1
 llvm 13.0.1-4
-lrzip 0.641-2
+lrzip 0.651-2
 lsb-release 2.0.r48.3cf5103-1
 lxappearance-gtk3 0.6.3-4
 lxrandr 0.3.2-2
