@@ -24,7 +24,7 @@ osd.border.width: 1
 border.width: 1
 #*.border.color: gray
 *.active.border.color: #000000
-*.inactive.border.color: gray
+*.inactive.border.color: black
 window.client.padding.width: 0
 window.handle.width: 0
 
@@ -38,10 +38,10 @@ window.active.*.*.bg.color: #3584E4
 #window.active.*.*.bg.color: #0078D7
 window.inactive.*.*.bg.color: white
 window.active.*.image.color: white
-window.inactive.*.image.color: gray
+window.inactive.*.image.color: black
 #window.*.label.text.color: black
 window.active.label.text.color: white
-window.inactive.label.text.color: gray
+window.inactive.label.text.color: black
 
 # handle
 window.active.handle.bg: Flat
