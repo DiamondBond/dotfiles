@@ -1,5 +1,5 @@
 accountsservice 22.08.8-2
-acpi_call 1.2.2-41
+acpi_call 1.2.2-42
 adwaita-icon-theme 42.0+r1+gc144c3d75-1
 alsa-utils 1.2.6-1
 android-tools 31.0.3-5
@@ -17,11 +17,11 @@ base 2-2
 bat 0.20.0-2
 bear 3.0.19-4
 bison 3.8.2-4
-bleachbit 4.4.2-2
+bleachbit 4.4.2-3
 blueman 2.2.4-1
 bridge-utils 1.7.1-1
 brightnessctl 0.5.1-2
-btop 1.2.6-1
+btop 1.2.7-1
 ccls 0.20210330-5
 cheese 41.1-2
 chez-scheme 9.5.8-1
@@ -32,7 +32,7 @@ coin-or-mp 1.8.4-4
 conky 1.12.2-2
 cpio 2.13-2
 cpupower 5.17-1
-deno 1.22.0-1
+deno 1.22.1-1
 dhclient 4.4.3-1
 dialog 1:1.3_20220414-1
 discord 0.0.17-1
@@ -56,7 +56,7 @@ flex 2.6.4-3
 flite 2.2-1
 freerdp 2:2.7.0-1
 fsv2 1:0.9.1-3
-fzf 0.30.0-2
+fzf 0.30.0-3
 galculator 2.1.4-7
 gamemode 1.6.1-2
 gcc 12.1.0-2
@@ -102,6 +102,7 @@ jupyter-notebook 6.4.11-1
 kega-fusion 3.63-17
 kiwix-desktop 2.2.1-3
 kiwix-tools 3.2.0-4
+languagetool 5.7-1
 lhasa 0.3.1-3
 lib32-gamemode 1.6.1-2
 lib32-gst-plugins-base-libs 1.20.2-1
@@ -278,7 +279,7 @@ valgrind 3.19.0-3
 virt-manager 4.0.0-1
 virt-viewer 11.0-1
 visual-studio-code-bin 1.67.2-1
-webkit2gtk 2.36.2-1
+webkit2gtk 2.36.3-1
 wget 1.21.3-1
 which 2.21-5
 wireless_tools 30.pre9-3
