@@ -30,4 +30,6 @@ ScrollingUnlimited=TRUE
 TitleMode=TERMINAL_TITLE_REPLACE
 ColorSelectionForeground=#bf00c000c500
 MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
+ColorForeground=#000000
+ColorBackground=#ffffffffdddd
 

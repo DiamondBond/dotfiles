@@ -8,14 +8,14 @@
     <property name="panel-1" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.062745"/>
-        <value type="double" value="0.062745"/>
-        <value type="double" value="0.062745"/>
+        <value type="double" value="0.286275"/>
+        <value type="double" value="0.286275"/>
+        <value type="double" value="0.286275"/>
         <value type="double" value="1.000000"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="20"/>
+      <property name="icon-size" type="uint" value="18"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
@@ -29,9 +29,9 @@
         <value type="int" value="15"/>
         <value type="int" value="10"/>
         <value type="int" value="3"/>
-        <value type="int" value="5"/>
         <value type="int" value="11"/>
-        <value type="int" value="16"/>
+        <value type="int" value="14"/>
+        <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
@@ -40,7 +40,7 @@
       <property name="popdown-speed" type="int" value="0"/>
       <property name="position" type="string" value="p=8;x=1080;y=1426"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="35"/>
+      <property name="size" type="uint" value="28"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -53,15 +53,11 @@
       <property name="middle-click" type="uint" value="1"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-wireframes" type="bool" value="true"/>
-      <property name="sort-order" type="uint" value="4"/>
+      <property name="sort-order" type="uint" value="1"/>
       <property name="show-handle" type="bool" value="true"/>
     </property>
-    <property name="plugin-11" type="string" value="pager">
-      <property name="miniature-view" type="bool" value="true"/>
-      <property name="rows" type="uint" value="2"/>
-    </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value=" %_I:%M %p "/>
+      <property name="digital-format" type="string" value=" %a %_d %b, %I:%M %p "/>
       <property name="mode" type="uint" value="2"/>
       <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
@@ -74,9 +70,6 @@
       <property name="items" type="array">
         <value type="string" value="16535435831.desktop"/>
       </property>
-    </property>
-    <property name="plugin-16" type="string" value="separator">
-      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -93,6 +86,10 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="icon-size" type="int" value="0"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-15609"/>
+        <value type="string" value="dropbox-client-14936"/>
+        <value type="string" value="dropbox-client-857"/>
+        <value type="string" value="dropbox-client-896"/>
         <value type="string" value="dropbox-client-20758"/>
         <value type="string" value="dropbox-client-20090"/>
         <value type="string" value="dropbox-client-19363"/>
@@ -238,6 +235,12 @@
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-2" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="2"/>
+    </property>
+    <property name="plugin-14" type="string" value="pager">
+      <property name="rows" type="uint" value="2"/>
     </property>
   </property>
 </channel>
