@@ -565,11 +565,11 @@ and back in -->
 		</startupnotify>
 	  </action>
 	</keybind>
-	<!-- <keybind key="F9"> -->
-	<!--   <action name="Execute"> -->
-	<!--     <command>/home/diamond/bin/switchtoemacs</command> -->
-	<!--   </action> -->
-	<!-- </keybind> -->
+	<keybind key="F9">
+	  <action name="Execute">
+		<command>/home/diamond/bin/switchtoemacs</command>
+	  </action>
+	</keybind>
 	<keybind key="W-Tab">
 	  <action name="ShowMenu">
 		<menu>client-list-combined-menu</menu>
