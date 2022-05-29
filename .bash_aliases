@@ -54,7 +54,7 @@ alias et="emacsclient -t"
 alias em="emacsclient -c -a 'emacs'"
 alias ed="emacsclient -c -n"
 alias vi='vim'
-alias startemacs="emacs --daemon"
+alias edaemon="tangle.sh && emacs --daemon"
 alias hardkillemacs="emacsclient -e '(kill-emacs)'"
 alias killemacs="emacsclient -c -n -a 'emacs' -e '(save-buffers-kill-emacs)'"
 alias emacsfull='emacsclient -c -a "" -F "((fullscreen . maximized))" -n'
@@ -136,12 +136,11 @@ alias updatepkg='yay && flatpak update'
 #alias fixgrub='sudo grub-editenv create'
 #alias caffeine='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
 
-alias adw-update="cd ~/git/adw-gtk3 && git fetch origin && git reset --hard origin/main && git clean -fd && meson build && sudo ninja -C build install"
-
 alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'
 alias RESETFROMHEAD_LEGACY='git fetch && git reset --hard origin/master && git clean -fd'
 
-alias updatesys='updatepkg && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
+alias updatesysclean='updatepkg && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
+alias updatesys='yay && flatpak update'
 
 alias checkzombie='ps -ef | grep startup'
 alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
@@ -149,3 +148,8 @@ alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
 alias emptytrash="zenity --question --width 230 --text 'Do you want to empty the trash?' && gio trash --empty"
 
 alias grab_xwininfo='sleep 1; xwininfo -id $(xdotool getactivewindow)'
+
+alias vinull='$EDITOR /dev/null'
+
+alias winexec='python3 -m cassowary -c guest-run --'
+alias windex='winexec C:\\bin\\Index\\Index.exe'
