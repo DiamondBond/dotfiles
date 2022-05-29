@@ -83,7 +83,7 @@
       <property name="show-trash" type="bool" value="true"/>
     </property>
     <property name="gravity" type="int" value="0"/>
-    <property name="icon-size" type="uint" value="46"/>
+    <property name="icon-size" type="uint" value="48"/>
     <property name="style" type="int" value="2"/>
   </property>
 </channel>
