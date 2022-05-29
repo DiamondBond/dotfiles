@@ -7,120 +7,225 @@
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
-      <property name="background-alpha" type="uint" value="100"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.850000"/>
+      </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="enter-opacity" type="uint" value="100"/>
-      <property name="icon-size" type="uint" value="0"/>
-      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="icon-size" type="uint" value="18"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="1"/>
-        <value type="int" value="2"/>
-        <value type="int" value="3"/>
-        <value type="int" value="4"/>
-        <value type="int" value="14"/>
-        <value type="int" value="5"/>
-        <value type="int" value="6"/>
-        <value type="int" value="13"/>
         <value type="int" value="7"/>
+        <value type="int" value="4"/>
+        <value type="int" value="1"/>
+        <value type="int" value="13"/>
+        <value type="int" value="15"/>
+        <value type="int" value="10"/>
+        <value type="int" value="3"/>
+        <value type="int" value="5"/>
+        <value type="int" value="11"/>
+        <value type="int" value="16"/>
+        <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
-        <value type="int" value="10"/>
-        <value type="int" value="11"/>
         <value type="int" value="12"/>
       </property>
-      <property name="position" type="string" value="p=8;x=512;y=752"/>
+      <property name="popdown-speed" type="int" value="0"/>
+      <property name="position" type="string" value="p=6;x=1080;y=14"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="39"/>
+      <property name="size" type="uint" value="26"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="whiskermenu"/>
-    <property name="plugin-10" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-1" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/diamond"/>
     </property>
-    <property name="plugin-11" type="string" value="clock">
-      <property name="digital-format" type="string" value="%I:%M %p%n%x"/>
+    <property name="plugin-10" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="0"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="4"/>
+    </property>
+    <property name="plugin-11" type="string" value="pager">
+      <property name="miniature-view" type="bool" value="true"/>
+      <property name="rows" type="uint" value="2"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-format" type="string" value=" %I:%M %p "/>
       <property name="mode" type="uint" value="2"/>
-      <property name="show-frame" type="bool" value="true"/>
-      <property name="tooltip-format" type="string" value="%A, %d %B, %Y"/>
+      <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
-    <property name="plugin-12" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-13" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16536868321.desktop"/>
+      </property>
     </property>
-    <property name="plugin-2" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16535435831.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="2"/>
     </property>
-    <property name="plugin-3" type="string" value="launcher">
-      <property name="disable-tooltips" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="xfce4-web-browser.desktop"/>
-      </property>
-      <property name="show-label" type="bool" value="false"/>
-    </property>
-    <property name="plugin-4" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="xfce4-file-manager.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-5" type="string" value="tasklist">
-      <property name="flat-buttons" type="bool" value="true"/>
-      <property name="grouping" type="uint" value="1"/>
-      <property name="include-all-monitors" type="bool" value="true"/>
-      <property name="include-all-workspaces" type="bool" value="false"/>
-      <property name="middle-click" type="uint" value="0"/>
-      <property name="show-handle" type="bool" value="true"/>
-      <property name="show-labels" type="bool" value="false"/>
-      <property name="show-only-minimized" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="false"/>
-      <property name="sort-order" type="uint" value="0"/>
-      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
-      <property name="window-scrolling" type="bool" value="true"/>
-    </property>
-    <property name="plugin-6" type="string" value="separator">
+    <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-7" type="string" value="systray">
-      <property name="hide-new-items" type="bool" value="false"/>
-      <property name="icon-size" type="int" value="0"/>
-      <property name="menu-is-primary" type="bool" value="false"/>
-      <property name="names-hidden" type="array">
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16532738641.desktop"/>
       </property>
-      <property name="show-frame" type="bool" value="false"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="2"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="icon-size" type="int" value="0"/>
+      <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-147882"/>
+        <value type="string" value="dropbox-client-133976"/>
+        <value type="string" value="dropbox-client-133580"/>
+        <value type="string" value="dropbox-client-876"/>
+        <value type="string" value="dropbox-client-880"/>
+        <value type="string" value="dropbox-client-874"/>
+        <value type="string" value="dropbox-client-868"/>
+        <value type="string" value="dropbox-client-894"/>
+        <value type="string" value="dropbox-client-919"/>
+        <value type="string" value="dropbox-client-872"/>
+        <value type="string" value="dropbox-client-898"/>
+        <value type="string" value="dropbox-client-895"/>
+        <value type="string" value="dropbox-client-886"/>
+        <value type="string" value="dropbox-client-885"/>
+        <value type="string" value="dropbox-client-891"/>
+        <value type="string" value="dropbox-client-893"/>
+        <value type="string" value="dropbox-client-862"/>
+        <value type="string" value="dropbox-client-863"/>
+        <value type="string" value="dropbox-client-844"/>
+        <value type="string" value="dropbox-client-842"/>
+        <value type="string" value="dropbox-client-31849"/>
+        <value type="string" value="dropbox-client-25219"/>
+        <value type="string" value="dropbox-client-846"/>
+        <value type="string" value="dropbox-client-848"/>
+        <value type="string" value="dropbox-client-888"/>
+        <value type="string" value="dropbox-client-883"/>
+        <value type="string" value="dropbox-client-901"/>
+        <value type="string" value="dropbox-client-903"/>
+        <value type="string" value="dropbox-client-907"/>
+        <value type="string" value="dropbox-client-909"/>
+        <value type="string" value="dropbox-client-920"/>
+        <value type="string" value="dropbox-client-917"/>
+        <value type="string" value="dropbox-client-928"/>
+        <value type="string" value="dropbox-client-941"/>
+        <value type="string" value="dropbox-client-943"/>
+        <value type="string" value="dropbox-client-2294"/>
+        <value type="string" value="dropbox-client-1685"/>
+        <value type="string" value="dropbox-client-925"/>
+        <value type="string" value="dropbox-client-953"/>
+        <value type="string" value="dropbox-client-958"/>
+        <value type="string" value="dropbox-client-1950"/>
+        <value type="string" value="dropbox-client-952"/>
+        <value type="string" value="dropbox-client-20205"/>
+        <value type="string" value="dropbox-client-913"/>
+        <value type="string" value="dropbox-client-52327"/>
+        <value type="string" value="dropbox-client-900"/>
+        <value type="string" value="dropbox-client-887"/>
+        <value type="string" value="dropbox-client-865"/>
+        <value type="string" value="dropbox-client-889"/>
+        <value type="string" value="dropbox-client-897"/>
+        <value type="string" value="dropbox-client-892"/>
+        <value type="string" value="dropbox-client-899"/>
+        <value type="string" value="dropbox-client-890"/>
+        <value type="string" value="dropbox-client-884"/>
+        <value type="string" value="dropbox-client-877"/>
+        <value type="string" value="dropbox-client-2549"/>
+        <value type="string" value="dropbox-client-1443"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="dropbox-client-985"/>
+        <value type="string" value="dropbox-client-1380"/>
+        <value type="string" value="dropbox-client-995"/>
+        <value type="string" value="dropbox-client-12555"/>
+        <value type="string" value="dropbox-client-1047"/>
+        <value type="string" value="dropbox-client-1008"/>
+        <value type="string" value="dropbox-client-1017"/>
+        <value type="string" value="dropbox-client-1013"/>
+        <value type="string" value="dropbox-client-1001"/>
+        <value type="string" value="dropbox-client-1015"/>
+        <value type="string" value="zoom.real "/>
+        <value type="string" value="dropbox-client-966"/>
+        <value type="string" value="dropbox-client-1007"/>
+        <value type="string" value="dropbox-client-983"/>
+        <value type="string" value="dropbox-client-979"/>
+        <value type="string" value="dropbox-client-988"/>
+        <value type="string" value="dropbox-client-987"/>
+        <value type="string" value="dropbox-client-991"/>
+        <value type="string" value="virt-manager"/>
+        <value type="string" value="dropbox-client-990"/>
+        <value type="string" value="dropbox-client-3887"/>
+        <value type="string" value="dropbox-client-904"/>
+        <value type="string" value="dropbox-client-926"/>
+        <value type="string" value="dropbox-client-64611"/>
+        <value type="string" value="whatsapp-desktop-linux1"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="dropbox-client-1116"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="systray"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “note9” active: note9 (71%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (94%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (93%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (85%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (83%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (86%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (73%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (89%)"/>
+        <value type="string" value="virt-manager"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (74%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (69%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (87%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (81%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (79%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (63%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (78%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (90%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (75%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (84%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (82%)"/>
+        <value type="string" value="hexchat"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (68%)"/>
+        <value type="string" value="bluetooth disabled"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (72%)"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (67%)"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (77%)"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (76%)"/>
+        <value type="string" value="gpick"/>
+        <value type="string" value="matebook-applet"/>
+        <value type="string" value="wi-fi network connection “note9” active: note9 (80%)"/>
+      </property>
       <property name="single-row" type="bool" value="false"/>
-      <property name="size-max" type="uint" value="24"/>
       <property name="square-icons" type="bool" value="true"/>
       <property name="symbolic-icons" type="bool" value="false"/>
-      <property name="known-items" type="array">
-        <value type="string" value="blueman"/>
-        <value type="string" value="dropbox-client-883"/>
-        <value type="string" value="systray"/>
-        <value type="string" value="TelegramDesktop"/>
-      </property>
     </property>
-    <property name="plugin-8" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-9" type="string" value="pulseaudio">
+    <property name="plugin-7" type="string" value="whiskermenu"/>
+    <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="show-notifications" type="bool" value="false"/>
+      <property name="mpris-players" type="string" value="chromium.instance2;spotify"/>
+      <property name="show-notifications" type="bool" value="true"/>
     </property>
-    <property name="plugin-13" type="string" value="pager">
-      <property name="rows" type="uint" value="2"/>
-    </property>
-    <property name="plugin-14" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16537829591.desktop"/>
-      </property>
-    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
   </property>
 </channel>

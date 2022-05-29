@@ -128,7 +128,7 @@ light-locker 1.9.0-5
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-2
 lightdm-gtk-greeter-settings 1.2.2-7
-linux 5.17.9.arch1-1
+linux 5.18.arch1-1
 linux-dwarf-pack 0.47.05.r3-1
 linux-firmware 20220509.b19cbdc-1
 llvm 13.0.1-4
@@ -146,7 +146,7 @@ mame-tools 0.244-1
 menumaker 0.99.14-2
 mesa-utils 8.4.0-8
 meson 0.62.1-1
-misfortune 0.1.1.2-135
+misfortune 0.1.1.2-136
 mlocate 0.26.git.20170220-7
 mousepad 0.5.9-1
 mpc 0.34-2
