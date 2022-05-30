@@ -25,8 +25,8 @@
         <value type="int" value="2"/>
         <value type="int" value="4"/>
         <value type="int" value="1"/>
-        <value type="int" value="13"/>
         <value type="int" value="15"/>
+        <value type="int" value="13"/>
         <value type="int" value="10"/>
         <value type="int" value="3"/>
         <value type="int" value="11"/>
@@ -53,7 +53,7 @@
       <property name="middle-click" type="uint" value="1"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-wireframes" type="bool" value="true"/>
-      <property name="sort-order" type="uint" value="1"/>
+      <property name="sort-order" type="uint" value="0"/>
       <property name="show-handle" type="bool" value="true"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
@@ -86,6 +86,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="icon-size" type="int" value="0"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-879"/>
         <value type="string" value="dropbox-client-15609"/>
         <value type="string" value="dropbox-client-14936"/>
         <value type="string" value="dropbox-client-857"/>
@@ -186,6 +187,7 @@
         <value type="string" value="systray"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “note9” active: note9 (70%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (88%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (71%)"/>
         <value type="string" value="wi-fi network connection “note9” active: note9 (94%)"/>
