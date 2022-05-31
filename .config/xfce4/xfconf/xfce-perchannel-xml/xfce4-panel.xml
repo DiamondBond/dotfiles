@@ -15,7 +15,7 @@
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="18"/>
+      <property name="icon-size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
@@ -38,9 +38,9 @@
         <value type="int" value="12"/>
       </property>
       <property name="popdown-speed" type="int" value="0"/>
-      <property name="position" type="string" value="p=8;x=1080;y=1426"/>
+      <property name="position" type="string" value="p=8;x=1080;y=1425"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="28"/>
+      <property name="size" type="uint" value="36"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -50,14 +50,17 @@
     <property name="plugin-10" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="grouping" type="uint" value="0"/>
-      <property name="middle-click" type="uint" value="1"/>
+      <property name="middle-click" type="uint" value="2"/>
+      <property name="show-handle" type="bool" value="true"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="4"/>
-      <property name="show-handle" type="bool" value="true"/>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value=" %a %_d %b, %I:%M %p "/>
+      <property name="digital-format" type="string" value="&lt;span font_desc=&quot;Sans 12&quot; color=&quot;#000000&quot; weight=&quot;bold&quot;&gt; %I:%M %p &lt;/span&gt;"/>
       <property name="mode" type="uint" value="2"/>
       <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
@@ -66,10 +69,16 @@
         <value type="string" value="16536868321.desktop"/>
       </property>
     </property>
+    <property name="plugin-14" type="string" value="pager">
+      <property name="rows" type="uint" value="2"/>
+    </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="16535435831.desktop"/>
       </property>
+    </property>
+    <property name="plugin-2" type="string" value="separator">
+      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -86,6 +95,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="icon-size" type="int" value="0"/>
       <property name="known-items" type="array">
+        <value type="string" value="dropbox-client-911"/>
         <value type="string" value="dropbox-client-879"/>
         <value type="string" value="dropbox-client-15609"/>
         <value type="string" value="dropbox-client-14936"/>
@@ -235,14 +245,5 @@
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-2" type="string" value="separator">
-      <property name="style" type="uint" value="2"/>
-    </property>
-    <property name="plugin-11" type="string" value="separator">
-      <property name="style" type="uint" value="2"/>
-    </property>
-    <property name="plugin-14" type="string" value="pager">
-      <property name="rows" type="uint" value="2"/>
-    </property>
   </property>
 </channel>

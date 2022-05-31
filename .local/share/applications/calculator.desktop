@@ -33,3 +33,4 @@ Terminal=false
 Type=Application
 Categories=Utility;
 StartupNotify=true
+NoDisplay=true
