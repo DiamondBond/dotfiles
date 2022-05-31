@@ -22,5 +22,6 @@ org.kde.kolourpaint
 org.kde.krita
 org.qutebrowser.qutebrowser
 org.winehq.flatpak-wine71
+org.zealdocs.Zeal
 uk.co.ibboard.cawbird
 us.zoom.Zoom
