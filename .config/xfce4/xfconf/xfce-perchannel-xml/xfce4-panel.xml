@@ -53,7 +53,7 @@
       <property name="middle-click" type="uint" value="1"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="show-wireframes" type="bool" value="true"/>
-      <property name="sort-order" type="uint" value="0"/>
+      <property name="sort-order" type="uint" value="4"/>
       <property name="show-handle" type="bool" value="true"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
