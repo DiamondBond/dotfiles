@@ -80,6 +80,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;r" type="string" value="/home/diamond/bin/shrink"/>
       <property name="F6" type="string" value="emacsclient -cne &apos;(get-buffer-menu-in-new-frame)&apos;"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
+      <property name="&lt;Primary&gt;space" type="string" value="/home/diamond/bin/xfce_notif_dismiss"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
