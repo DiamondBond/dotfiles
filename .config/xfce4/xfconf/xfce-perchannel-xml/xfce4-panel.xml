@@ -60,7 +60,7 @@
       <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="&lt;span font_desc=&quot;Sans 12&quot; color=&quot;#000000&quot; weight=&quot;bold&quot;&gt; %I:%M %p &lt;/span&gt;"/>
+      <property name="digital-format" type="string" value="&lt;span font_desc=&quot;Sans 12&quot; color=&quot;#000000&quot;&gt; %I:%M %p &lt;/span&gt;"/>
       <property name="mode" type="uint" value="2"/>
       <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
