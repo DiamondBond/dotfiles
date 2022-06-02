@@ -37,7 +37,7 @@
         <value type="int" value="12"/>
       </property>
       <property name="popdown-speed" type="int" value="0"/>
-      <property name="position" type="string" value="p=6;x=57;y=720"/>
+      <property name="position" type="string" value="p=6;x=1080;y=14"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="26"/>
     </property>
@@ -76,7 +76,7 @@
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16532738641.desktop"/>
+        <value type="string" value="16541532925.desktop"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="separator">
