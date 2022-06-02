@@ -15,21 +15,20 @@
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
-      <property name="icon-size" type="uint" value="20"/>
+      <property name="icon-size" type="uint" value="18"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
-        <value type="int" value="2"/>
         <value type="int" value="4"/>
         <value type="int" value="1"/>
         <value type="int" value="15"/>
         <value type="int" value="13"/>
         <value type="int" value="10"/>
         <value type="int" value="3"/>
-        <value type="int" value="11"/>
+        <value type="int" value="16"/>
         <value type="int" value="14"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
@@ -38,9 +37,9 @@
         <value type="int" value="12"/>
       </property>
       <property name="popdown-speed" type="int" value="0"/>
-      <property name="position" type="string" value="p=8;x=1080;y=1425"/>
+      <property name="position" type="string" value="p=6;x=57;y=720"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="30"/>
+      <property name="size" type="uint" value="26"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -53,14 +52,11 @@
       <property name="middle-click" type="uint" value="2"/>
       <property name="show-handle" type="bool" value="true"/>
       <property name="show-labels" type="bool" value="true"/>
-      <property name="show-wireframes" type="bool" value="true"/>
-      <property name="sort-order" type="uint" value="4"/>
-    </property>
-    <property name="plugin-11" type="string" value="separator">
-      <property name="style" type="uint" value="2"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="sort-order" type="uint" value="1"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="&lt;span font_desc=&quot;Sans 12&quot; color=&quot;#000000&quot;&gt; %I:%M %p &lt;/span&gt;"/>
+      <property name="digital-format" type="string" value=" %a %_d %b, %I:%M %p "/>
       <property name="mode" type="uint" value="2"/>
       <property name="timezone" type="string" value="Asia/Colombo"/>
     </property>
@@ -69,16 +65,10 @@
         <value type="string" value="16536868321.desktop"/>
       </property>
     </property>
-    <property name="plugin-14" type="string" value="pager">
-      <property name="rows" type="uint" value="2"/>
-    </property>
     <property name="plugin-15" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="16535435831.desktop"/>
       </property>
-    </property>
-    <property name="plugin-2" type="string" value="separator">
-      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -245,5 +235,11 @@
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-14" type="string" value="pager">
+      <property name="rows" type="uint" value="2"/>
+    </property>
+    <property name="plugin-16" type="string" value="separator">
+      <property name="style" type="uint" value="2"/>
+    </property>
   </property>
 </channel>
