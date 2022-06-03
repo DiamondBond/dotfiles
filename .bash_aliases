@@ -131,7 +131,7 @@ alias journalsize='du /var/log/journal -h'
 
 alias youtube-dl='yt-dlp'
 
-alias updatepkg='yay && flatpak update'
+alias updatepkg='yay -Syyu && flatpak update'
 
 #alias fixgrub='sudo grub-editenv create'
 #alias caffeine='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
@@ -140,7 +140,7 @@ alias RESETFROMHEAD='git fetch && git reset --hard origin/main && git clean -fd'
 alias RESETFROMHEAD_LEGACY='git fetch && git reset --hard origin/master && git clean -fd'
 
 alias updatesysclean='updatepkg && cleanup && yay -Sc && sudo pacman -Rnsc $(unused_orphans)'
-alias updatesys='yay && flatpak update'
+alias updatesys='yay -Syyu && flatpak update'
 
 alias checkzombie='ps -ef | grep startup'
 alias killzombie='pkill -9 -f "/bin/sh /home/diamond/.icewm/startup"'
@@ -153,3 +153,5 @@ alias vinull='$EDITOR /dev/null'
 
 alias winexec='python3 -m cassowary -c guest-run --'
 alias windex='winexec C:\\bin\\Index\\Index.exe'
+
+alias erepl="rlwrap emacs --batch --eval \"(progn (require 'cl) (loop (print (eval (read)))))\""
