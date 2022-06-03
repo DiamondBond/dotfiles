@@ -147,6 +147,7 @@ menumaker 0.99.14-2
 mesa-utils 8.5.0-1
 meson 0.62.1-1
 misfortune 0.1.1.2-137
+mit-scheme 11.2-4
 mlocate 0.26.git.20170220-7
 mousepad 0.5.9-1
 mpc 0.34-2

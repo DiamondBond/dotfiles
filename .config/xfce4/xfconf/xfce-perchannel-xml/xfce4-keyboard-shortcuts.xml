@@ -48,7 +48,6 @@
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Alt&gt;w" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Alt&gt;e" type="string" value="thunar"/>
       <property name="&lt;Super&gt;e" type="string" value="emacsclient -c -n -a &apos;emacs&apos;"/>
       <property name="&lt;Alt&gt;F2" type="string" value="gmrun">
         <property name="startup-notify" type="bool" value="true"/>
