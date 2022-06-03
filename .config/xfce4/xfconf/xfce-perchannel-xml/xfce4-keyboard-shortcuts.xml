@@ -83,6 +83,7 @@
       <property name="&lt;Shift&gt;&lt;Alt&gt;y" type="string" value="/home/diamond/bin/toggle_nm_panel"/>
       <property name="&lt;Shift&gt;F6" type="string" value="emacsclient -cne &apos;(get-buffer-menu-in-new-frame)&apos;"/>
       <property name="&lt;Super&gt;space" type="string" value="/home/diamond/bin/org-rofi-todo.py"/>
+      <property name="&lt;Alt&gt;e" type="string" value="thunar"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
