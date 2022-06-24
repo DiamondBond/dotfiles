@@ -4,6 +4,7 @@ com.github.libresprite.LibreSprite
 com.github.micahflee.torbrowser-launcher
 com.github.tchx84.Flatseal
 com.google.Chrome
+com.microsoft.Teams
 com.obsproject.Studio
 com.spotify.Client
 im.riot.Riot
@@ -21,7 +22,6 @@ org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.krita
 org.qutebrowser.qutebrowser
-org.winehq.flatpak-wine71
 org.zealdocs.Zeal
 uk.co.ibboard.cawbird
 us.zoom.Zoom
