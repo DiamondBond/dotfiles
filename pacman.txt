@@ -1,10 +1,10 @@
 accountsservice 22.08.8-2
-acpi_call 1.2.2-47
+acpi_call 1.2.2-49
 adwaita-icon-theme 42.0+r1+gc144c3d75-1
 alsa-utils 1.2.7-1
 android-tools 31.0.3-6
-ani-cli 3.0-3
-arb 2.22.1-1
+ani-cli 3.2-1
+arb 2.22.1-2
 arch-wiki-docs 20220525-1
 arch-wiki-lite 20220525-1
 aria2 1.36.0-1
@@ -15,7 +15,7 @@ autoconf 2.71-1
 automake 1.16.5-1
 base 2-2
 bat 0.21.0-1
-bear 3.0.19-5
+bear 3.0.19-6
 bison 3.8.2-4
 bleachbit 4.4.2-3
 blueman 2.2.5-1
@@ -33,7 +33,7 @@ coin-or-mp 1.8.4-4
 conky 1.12.2-2
 cpio 2.13-2
 cpupower 5.18-1
-deno 1.23.0-1
+deno 1.23.1-1
 dhclient 4.4.3-1
 dialog 1:1.3_20220526-1
 discord 0.0.18-1
@@ -52,7 +52,7 @@ extra-cmake-modules 5.95.0-1
 fakeroot 1.29-1
 feh 3.9-1
 ffmpegthumbnailer 2.2.2-4
-firefox 101.0.1-1
+firefox 102.0-1
 flatpak 1:1.12.7-1
 flex 2.6.4-3
 flite 2.2-1
@@ -62,7 +62,7 @@ fzf 0.30.0-3
 galculator 2.1.4-7
 gamemode 1.6.1-2
 gcc 12.1.0-2
-git 2.36.1-1
+git 2.37.0-1
 glava 1.6.3-2
 glfw-x11 3.3.7-1
 gmrun 1.3w-1
@@ -77,7 +77,7 @@ gparted 1.4.0-1
 gpick 0.2.6-5
 groff 1.22.4-7
 grub 2:2.06.r261.g2f4430cc0-1
-gsimplecal 2.2-1
+gsimplecal 2.4-1
 gst-plugins-ugly 1.20.3-1
 gtk-engine-murrine 0.98.2-4
 gtk-engines 2.21.0-5
@@ -102,8 +102,8 @@ jdk-openjdk 18.0.1.1.u2-1
 jre-openjdk 18.0.1.1.u2-1
 jupyter-notebook 6.4.12-1
 kega-fusion 3.63-17
-kiwix-desktop 2.2.1-3
-kiwix-tools 3.2.0-4
+kiwix-desktop 2.2.2-1
+kiwix-tools 3.3.0-1
 languagetool 5.7-1
 lhasa 0.3.1-3
 lib32-gamemode 1.6.1-2
@@ -130,9 +130,9 @@ light-locker 1.9.0-5
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-2
 lightdm-gtk-greeter-settings 1.2.2-7
-linux 5.18.5.arch1-1
+linux 5.18.7.arch1-1
 linux-dwarf-pack 0.47.05.r3-1
-linux-firmware 20220509.b19cbdc-1
+linux-firmware 20220610.7b71b75-1
 llvm 13.0.1-6
 llvm11-libs 11.1.0-6
 lrzip 0.651-2
@@ -172,7 +172,7 @@ notmuch 0.36-1
 noto-fonts 20220607-1
 noto-fonts-cjk 20220126-1
 noto-fonts-emoji 20211101-1
-npm 8.5.5-1
+npm 8.6.0-1
 ntfs-3g 2022.5.17-1
 obconf 2.0.4-7
 ocl-icd 2.3.1-1
@@ -197,14 +197,14 @@ pkgconf 1.8.0-1
 plank 0.11.89-4
 polkit-gnome 0.105-9
 polybar 3.6.3-2
-power-profiles-daemon 0.11.1-1
+power-profiles-daemon 0.12-1
 powertop 2.14-1
 prettier 2.7.1-1
 primecount 7.3-1
 primesieve 7.9-1
 protonvpn 1.0.0-2
 pstoedit 3.78-1
-pyright 1.1.255-1
+pyright 1.1.256-1
 python-ipykernel 6.15.0-1
 python-pip 21.0-1
 qemu-desktop 7.0.0-10
@@ -213,7 +213,7 @@ qpdf 10.6.3-1
 qt5-quick3d 5.15.5+kde+r1-1
 qt6-quick3d 6.3.1-1
 quicklisp 20150128-1
-r 4.2.0-4
+r 4.2.1-1
 r2ghidra 5.6.2.r1.ga4ba1ddc-1
 radare2 5.6.6-3
 raylib 4.0.0-2
@@ -236,8 +236,8 @@ slop 7.5-7
 snes9x-gtk 1.60-8
 steam 1.0.0.74-1
 steam-native-runtime 1.0.0.70-3
-sudo 1.9.11.p2-1
-telegram-desktop 4.0.0-1
+sudo 1.9.11.p3-1
+telegram-desktop 4.0.2-2
 terminus-font 4.49.1-2
 testdisk 7.1-4
 texinfo 6.8-2
@@ -259,7 +259,7 @@ thunar-archive-plugin 0.5.0-2
 thunar-media-tags-plugin 0.3.0-2
 thunar-volman 4.16.0-1
 thunderbird 91.10.0-1
-tiled 1.8.5-1
+tiled 1.9.0-1
 timidity++ 2.15.0-5
 tint2 17.0.2-2
 tk 8.6.12-1
@@ -273,7 +273,7 @@ ttf-ms-fonts 2.0-12
 ttf-roboto 2.138-4
 ttf-roboto-mono 3.000-1
 tumbler 4.16.0-3
-typescript-language-server 0.11.1-1
+typescript-language-server 0.11.2-1
 unace 2.5-11
 unarj 2.65-1
 unixodbc 2.3.11-1
@@ -284,7 +284,7 @@ valgrind 3.19.0-4
 virt-manager 4.0.0-1
 virt-viewer 11.0-1
 visual-studio-code-bin 1.68.1-1
-vkd3d 1.3-1
+vkd3d 1.4-1
 webkit2gtk 2.36.3-1
 wget 1.21.3-1
 which 2.21-5
