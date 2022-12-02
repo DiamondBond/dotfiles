@@ -23,5 +23,4 @@ org.kde.kolourpaint
 org.kde.krita
 org.qutebrowser.qutebrowser
 org.zealdocs.Zeal
-uk.co.ibboard.cawbird
 us.zoom.Zoom
