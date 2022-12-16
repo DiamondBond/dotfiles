@@ -224,6 +224,8 @@ bindsym mod4+e exec emacsclient -c -n -a 'emacs'
 bindsym mod4+Shift+e exec thunar
 # calculator
 bindsym mod4+g exec galculator
+# calendar
+bindsym mod4+Shift+g exec gsimplecal
 # mixer
 bindsym $mod+Ctrl+p exec pavucontrol
 # mpv
@@ -276,6 +278,7 @@ for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Software-properties-gtk"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="BleachBit"] floating enable
+for_window [class="whatsapp-desktop-linux"] floating enable
 
 # =========
 # AUTOSTART
