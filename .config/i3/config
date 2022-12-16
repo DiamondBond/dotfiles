@@ -248,6 +248,12 @@ bindsym $mod+ctrl+Shift+g exec sh -c ~/bin/kmaccel
 # task manager
 bindsym ctrl+Shift+Escape exec gnome-system-monitor
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
 # ========
 # FLOATING
 # ========
