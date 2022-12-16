@@ -211,6 +211,7 @@ bindsym $mod+Ctrl+Left workspace prev
 # windowcenter
 bindsym mod4+c exec sh -c ~/bin/windowcenter
 # app switching/launching
+bindsym $mod+Tab workspace back_and_forth
 bindsym mod4+Tab exec rofi -show window
 bindsym $mod+F3 exec xfce4-appfinder
 bindsym $mod+F2 exec gmrun
