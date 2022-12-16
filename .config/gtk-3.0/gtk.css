@@ -1,37 +1,6 @@
 VteTerminal,
 TerminalScreen,
 vte-terminal {
-	padding: 05px 05px 05px 05px;
-	-VteTerminal-inner-border: 05px 05px 05px 05px;
+        padding: 05px 05px 05px 05px;
+        -VteTerminal-inner-border: 05px 05px 05px 05px;
 }
-
-/* wnck-pager { background: #fff; color: #ccc } */
-/* wnck-pager:selected { background: #eee; color: black } */
-
-/* transparent windows border */
-/* #whiskermenu-window>frame>border { border-color: transparent; } */
-
-/* transparent grip image - also makes the name transparent - they are tied together */
-/* #whiskermenu-window { color: transparent } */
-
-/* smaller toolbar widgets and area */
-#whiskermenu-window>frame>stack>box>box * { -gtk-icon-transform: scale(0.5); margin: 0px; padding: 0px; font-size: 6pt;}
-
-/* smaller search entry box */
-#whiskermenu-window>frame>stack>box>box>entry { margin: 5px; font-size: 6pt;}
-
-/* #whiskermenu-button image { -gtk-icon-transform: scale(1); min-height: 44px; min-width: 44px; } */
-
-/* .xfce4-panel { */
-/* 	border-width: 1px; border-color: : #000000; */
-/* } */
-
-/* .xfce4-panel widget grid button {  */
-/* 	font-family: 'MaterialIcons';  */
-/* 	font-size: 16px;  */
-/* 	padding:  10px;  */
-/* } */
-
-/* tooltip { */
-/*     opacity: 0; */
-/* } */
