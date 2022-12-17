@@ -170,6 +170,11 @@ mode "resize" {
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
+        bindsym Shift+h resize shrink width 100 px or 100 ppt
+        bindsym Shift+j resize grow height 100 px or 100 ppt
+        bindsym Shift+k resize shrink height 100 px or 100 ppt
+        bindsym Shift+l resize grow width 100 px or 100 ppt
+
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -182,7 +187,8 @@ mode "resize" {
         bindsym mod4+r mode "default"
 }
 
-bindsym mod4+r mode "resize"
+#bindsym mod4+r mode "resize"
+bindsym $mod+Shift+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -249,10 +255,13 @@ bindsym $mod+ctrl+Shift+g exec sh -c ~/bin/kmaccel
 bindsym ctrl+Shift+Escape exec gnome-system-monitor
 
 # Make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+Shift+grave move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+grave scratchpad show
+
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
 
 # ========
 # FLOATING
