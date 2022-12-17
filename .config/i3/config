@@ -295,6 +295,7 @@ for_window [class="Software-properties-gtk"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="BleachBit"] floating enable
 for_window [class="whatsapp-desktop-linux"] floating enable
+for_window [class="XTerm"] floating enable
 
 # =========
 # AUTOSTART
