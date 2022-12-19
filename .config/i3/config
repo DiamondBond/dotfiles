@@ -195,6 +195,13 @@ bindsym $mod+Shift+r mode "resize"
 bar {
         status_command i3status
 }
+#bar {
+#        status_command bumblebee-status \
+#				-m nic battery cpu memory pasink pasource date time \
+#				-p time.format="%I:%M %p" date.format ="%a, %b %d %Y" \
+#				-t iceberg-contrast
+#		position top
+#}
 
 # ========
 # KEYBINDS
@@ -296,6 +303,13 @@ for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="BleachBit"] floating enable
 for_window [class="whatsapp-desktop-linux"] floating enable
 for_window [class="XTerm"] floating enable
+for_window [class="Engrampa"] floating enable
+
+# i3-gaps
+#for_window [class=".*"] border pixel 1
+#gaps inner 7
+#gaps outer 5
+#smart_gaps on
 
 # =========
 # AUTOSTART
