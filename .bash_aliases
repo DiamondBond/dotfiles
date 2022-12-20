@@ -155,3 +155,6 @@ alias winexec='python3 -m cassowary -c guest-run --'
 alias windex='winexec C:\\bin\\Index\\Index.exe'
 
 alias erepl="rlwrap emacs --batch --eval \"(progn (require 'cl) (loop (print (eval (read)))))\""
+
+alias lunarvim="~/.local/bin/lvim"
+alias lunarvide="neovide --neovim-bin=/home/diamond/.local/bin/lvim"
