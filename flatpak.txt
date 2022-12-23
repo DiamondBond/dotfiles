@@ -14,6 +14,7 @@ com.slack.Slack
 com.spotify.Client
 com.transmissionbt.Transmission
 com.uploadedlobster.peek
+com.usebottles.bottles
 com.visualstudio.code
 im.riot.Riot
 io.freetubeapp.FreeTube
