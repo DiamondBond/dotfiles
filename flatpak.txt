@@ -6,11 +6,14 @@ com.github.libresprite.LibreSprite
 com.github.micahflee.torbrowser-launcher
 com.github.tchx84.Flatseal
 com.google.Chrome
+com.jetbrains.IntelliJ-IDEA-Community
+com.jetbrains.PyCharm-Community
 com.microsoft.Teams
 com.obsproject.Studio
 com.slack.Slack
 com.spotify.Client
 com.transmissionbt.Transmission
+com.uploadedlobster.peek
 com.visualstudio.code
 im.riot.Riot
 io.freetubeapp.FreeTube
