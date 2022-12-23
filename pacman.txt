@@ -31,7 +31,7 @@ bridge-utils 1.7.1-1
 brightnessctl 0.5.1-2
 btop 1.2.13-1
 bumblebee-status 2.1.6-1
-cabal-install 3.4.1.0-60
+cabal-install 3.4.1.0-61
 ccls 0.20220729-1
 cheese 43.0-1
 chez-scheme 9.5.8-1
@@ -96,14 +96,14 @@ gnome-system-monitor 42.0-1
 gnuchess 6.2.9-3
 gnugo 3.8-7
 go 2:1.19.4-1
-gopls 0.10.1-1
+gopls 0.11.0-1
 gparted 1.4.0-1
 gpick 0.2.6-6
 graphviz 7.0.4-1
 groff 1.22.4-7
 grub 2:2.06.r403.g7259d55ff-1
 gsimplecal 2.4.1-1
-gst-plugins-ugly 1.20.4-3
+gst-plugins-ugly 1.20.5-1
 gtk-engine-murrine 0.98.2-4
 gtk-engines 2.21.0-5
 gvfs 1.50.2-1
@@ -119,7 +119,7 @@ hunspell-en_us 2020.12.07-4
 i3-wm 4.21.1-1
 i3lock 2.14.1-1
 i3status 2.14-1
-icewm 3.2.3-1
+icewm 3.3.0-1
 imagemagick 7.1.0.55-2
 innoextract 1.9-7
 intel-gpu-tools 1.26-1
@@ -168,7 +168,7 @@ lightdm 1:1.32.0-4
 lightdm-gtk-greeter 1:2.0.8-3
 lightdm-gtk-greeter-settings 1.2.2-7
 linux 6.0.12.arch1-1
-linux-firmware 20221109.60310c2-2
+linux-firmware 20221214.f3c283e-1
 llvm 14.0.6-4
 llvm11-libs 11.1.0-6
 love 11.4-1
@@ -187,7 +187,7 @@ media-player-info 24-2
 menumaker 0.99.14-2
 mesa-utils 8.5.0-2
 meson 0.64.1-1
-misfortune 0.1.2.1-18
+misfortune 0.1.2.1-19
 mit-scheme 11.2-4
 mlocate 0.26.git.20170220-7
 mousepad 0.5.10-1
@@ -204,7 +204,6 @@ nasm 2.15.05-1
 ncdu 2.2.1-1
 ncmpcpp 0.9.2-9
 neofetch 7.1.0-2
-neovide 0.10.3-1
 net-tools 2.10-1
 network-manager-applet 1.30.0-1
 networkmanager 1.40.8-1
@@ -232,7 +231,7 @@ oxygen-icons 1:5.101.0-1
 p7zip 1:17.04-3
 pacman-contrib 1.8.0-1
 pamixer 1.6-2
-pandoc 2.19.2-38
+pandoc 2.19.2-40
 patch 2.7.6-8
 pavucontrol 1:5.0+r61+gee77d86-2
 peek 1.5.1-3
@@ -255,7 +254,7 @@ pstoedit 3.78-1
 pycharm-community-edition 2022.3-1
 pyright 1.1.284-1
 python-i3ipc 2.2.1-3
-python-ipykernel 6.19.3-1
+python-ipykernel 6.19.4-1
 python-pip 22.3.1-1
 python-tzlocal 1:4.2-1
 qemu-desktop 7.2.0-1
@@ -273,7 +272,7 @@ ripgrep 13.0.0-2
 rlwrap 0.46.1-1
 rmlint 2.10.1-3
 rofi 1.7.5-1
-rsync 3.2.7-2
+rsync 3.2.7-3
 ruby 3.0.4-20
 rust 1:1.66.0-1
 sassc 3.6.2-3
@@ -281,14 +280,14 @@ sbcl 2.2.11-1
 screenfetch 3.9.1-1
 scrot 1.7-1
 sfml 2.5.1-3
-shellcheck 0.8.0-247
+shellcheck 0.8.0-249
 slop 7.6-2
 smartmontools 7.3-1
 snes9x-gtk 1.61-1
 socat 1.7.4.4-1
 solid 5.101.0-1
 steam 1.0.0.75-1
-steam-native-runtime 1.0.0.75-1
+steam-native-runtime 1.0.0.75-2
 sudo 1.9.12.p1-1
 syndication 5.101.0-1
 telegram-desktop 4.4.1-3
@@ -312,7 +311,7 @@ thunar 4.18.0-1
 thunar-archive-plugin 0.5.0-2
 thunar-media-tags-plugin 0.3.0-2
 thunar-volman 4.18.0-1
-thunderbird 102.6.0-1
+thunderbird 102.6.1-1
 tiled 1.9.2-1
 timidity++ 2.15.0-9
 tk 8.6.13-1
@@ -336,6 +335,7 @@ tumbler 4.18.0-1
 typescript-language-server 2.2.0-1
 unace 2.5-11
 unarj 2.65-1
+unclutter 1:1.6-2
 unixodbc 2.3.11-1
 unrar 1:6.2.3-1
 unzip 6.0-19
@@ -345,7 +345,7 @@ vala-panel-appmenu-xfce-git 0.7.6.r21.g87abe53-1
 valgrind 3.19.0-5
 virt-manager 4.1.0-1
 virt-viewer 11.0-2
-visual-studio-code-bin 1.74.1-1
+visual-studio-code-bin 1.74.2-1
 vkd3d 1.5-1
 vulkan-tools 1.3.226-1
 webkit2gtk 2.38.2-2
@@ -412,7 +412,7 @@ xorg-xclock 1.1.1-1
 xorg-xcmsdb 1.0.6-1
 xorg-xcursorgen 1.0.8-1
 xorg-xdpyinfo 1.3.3-4
-xorg-xdriinfo 1.0.6-3
+xorg-xdriinfo 1.0.7-1
 xorg-xev 1.2.5-1
 xorg-xfontsel 1.1.0-1
 xorg-xgamma 1.0.7-1
