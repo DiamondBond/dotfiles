@@ -24,3 +24,5 @@ org.kde.krita
 org.qutebrowser.qutebrowser
 org.zealdocs.Zeal
 us.zoom.Zoom
+com.transmissionbt.Transmission
+
