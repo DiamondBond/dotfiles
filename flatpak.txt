@@ -26,3 +26,4 @@ us.zoom.Zoom
 com.transmissionbt.Transmission
 org.kde.elisa
 org.mozilla.Thunderbird
+com.visualstudio.code
