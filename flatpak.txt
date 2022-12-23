@@ -30,6 +30,7 @@ org.kde.elisa
 org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.krita
+org.keepassxc.KeePassXC
 org.mozilla.Thunderbird
 org.qutebrowser.qutebrowser
 org.telegram.desktop
