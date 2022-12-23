@@ -12,7 +12,6 @@ io.freetubeapp.FreeTube
 io.github.mimbrero.WhatsAppDesktop
 io.gitlab.librewolf-community
 io.mgba.mGBA
-io.qt.QtCreator
 org.blender.Blender
 org.desmume.DeSmuME
 org.filezillaproject.Filezilla
