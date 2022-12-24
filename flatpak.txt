@@ -22,6 +22,7 @@ io.github.mimbrero.WhatsAppDesktop
 io.gitlab.librewolf-community
 io.mgba.mGBA
 io.qt.QtCreator
+net.lutris.Lutris
 org.blender.Blender
 org.desmume.DeSmuME
 org.filezillaproject.Filezilla
