@@ -1,3 +1,4 @@
+com.dangeredwolf.ModernDeck
 com.discordapp.Discord
 com.dropbox.Client
 com.github.Eloston.UngoogledChromium
