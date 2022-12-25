@@ -159,3 +159,5 @@ alias erepl="rlwrap emacs --batch --eval \"(progn (require 'cl) (loop (print (ev
 
 #alias lunarvim="~/.local/bin/lvim"
 #alias lunarvide="neovide --neovim-bin=/home/diamond/.local/bin/lvim"
+
+alias updatesys='sudo dnf update -y && sudo dnf upgrade -y && flatpak update'
