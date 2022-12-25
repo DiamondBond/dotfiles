@@ -35,6 +35,7 @@ org.kde.kolourpaint
 org.kde.krita
 org.keepassxc.KeePassXC
 org.mozilla.Thunderbird
+org.nicotine_plus.Nicotine
 org.qutebrowser.qutebrowser
 org.telegram.desktop
 org.zealdocs.Zeal
