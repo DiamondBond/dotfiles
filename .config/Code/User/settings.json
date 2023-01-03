@@ -1,0 +1,5 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "react-native-tools.showUserTips": false,
+  "workbench.startupEditor": "none",
+}
