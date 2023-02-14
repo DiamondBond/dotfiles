@@ -1,5 +1,36 @@
 {
+  "editor.fontFamily": "Menlo",
+  // "editor.fontSize": 16,
   "telemetry.telemetryLevel": "off",
+  "update.showReleaseNotes": false,
   "react-native-tools.showUserTips": false,
   "workbench.startupEditor": "none",
+  "window.menuBarVisibility": "toggle",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "editor.inlineSuggest.enabled": true
 }
