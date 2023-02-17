@@ -72,3 +72,5 @@ Xft.lcdfilter: lcddefault
 ! Cursor
 Xcursor.theme: Adwaita
 Xcursor.size: 16
+
+xterm*reverseVideo: on
